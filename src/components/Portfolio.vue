@@ -1,6 +1,6 @@
 <template>
   <div class="portfolio">
-    <h1>Portfolio</h1>
+    <h2>Portfolio</h2>
   </div>
 </template>
 
@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style scoped>
-h1 {
+h2 {
   color: red;
 }
 </style>

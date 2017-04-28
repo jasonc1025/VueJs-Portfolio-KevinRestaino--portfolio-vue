@@ -19,6 +19,7 @@ export default {
   align-items: center;
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 
   a, span {
     margin-left: 16px;
