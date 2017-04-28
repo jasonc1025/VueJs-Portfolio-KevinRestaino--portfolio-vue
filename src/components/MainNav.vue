@@ -1,6 +1,6 @@
 <template>
   <div class="mainNav">
-    <router-link tag="a" to="/">Portfolio</router-link>
+    <router-link tag="a" to="/">Work</router-link>
     <router-link tag="a" to="/resume">Resume</router-link>
     <span>|</span>
     <a href="https://github.com/krestaino">GitHub</a>
