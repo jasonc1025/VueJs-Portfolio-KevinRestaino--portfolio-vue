@@ -33,8 +33,11 @@ export default {
         .on('enter', el => {
           el.classList.add('loading')
 
-          let imageUrl = el.firstChild.getAttribute('data-src')
-          el.firstChild.setAttribute('src', imageUrl)
+          let imageSrc = el.firstChild.getAttribute('data-src')
+          let imageSrcset = el.firstChild.getAttribute('data-srcset')
+
+          el.firstChild.setAttribute('src', imageSrc)
+          el.firstChild.setAttribute('srcset', imageSrcset)
 
           el.firstChild.addEventListener('load', function () {
             el.classList.add('loaded')
@@ -77,7 +80,7 @@ body {
 
 #app {
   margin: auto;
-  max-width: 1000px;
+  max-width: 800px;
 }
 
 a {

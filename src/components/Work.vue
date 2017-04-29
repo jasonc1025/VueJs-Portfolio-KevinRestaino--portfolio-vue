@@ -5,7 +5,7 @@
         <a :href="'/work/'+project.category+'/'+project.slug">
           <h3>{{ project.title }}</h3>
           <div class="imageContainer lazy">
-            <img :data-src="'/static/work/'+project.category+'/'+project.slug+'/'+project.slug+'_thumb@2x.png'">
+            <img :data-src="'/static/work/'+project.category+'/'+project.slug+'/'+project.slug+'_thumb.png'" :data-srcset="'/static/work/'+project.category+'/'+project.slug+'/'+project.slug+'_thumb@2x.png 2x'">
             <div class="spinner"></div>
           </div>
         </a>
@@ -83,7 +83,7 @@ h2 {
     }
 
     .lazy {
-      min-height: 272px;
+      min-height: 450px;
     }
 
     img {
