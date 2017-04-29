@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Work from '@/components/Work'
-import ShureAxientDigital from '@/components/Work/ShureAxientDigital.vue'
+import Project from '@/components/Project.vue'
 import Resume from '@/components/Resume'
 
 Vue.use(Router)
@@ -20,9 +20,8 @@ export default new Router({
       component: Resume
     },
     {
-      path: '/work/shure/axient-digital',
-      name: 'Axient Digital',
-      component: ShureAxientDigital
+      path: '/work/:category/:project',
+      component: Project
     }
   ]
 })
