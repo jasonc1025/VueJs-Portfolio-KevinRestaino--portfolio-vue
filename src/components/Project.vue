@@ -39,7 +39,7 @@ export default {
     }
   },
   methods: {
-    getPorject: function () {
+    getProjectJSON: function () {
       var result = this.$myStore.state.projects.filter(function (obj) {
         return obj.slug === this.$route.params.project
       }.bind(this))
@@ -51,7 +51,13 @@ export default {
     }
   },
   beforeMount () {
-    this.getPorject()
+    this.getProjectJSON()
+  },
+  mounted () {
+    window.scrollTo(0, 0)
+  },
+  updated () {
+    window.scrollTo(0, 0)
   }
 }
 </script>
@@ -95,12 +101,13 @@ export default {
 }
 
 .image {
+  background-color: #000;
   box-shadow: 0px 0px 36px 0px rgba(0,0,0,0.25);
   margin: 24px auto 0;
   max-width: 1000px;
 
   .lazy {
-    min-height: 450px;
+    min-height: 490px;
   }
 }
 </style>
