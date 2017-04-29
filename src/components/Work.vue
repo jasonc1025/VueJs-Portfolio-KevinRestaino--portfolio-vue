@@ -48,7 +48,7 @@ export default {
         {
           category: 'shure',
           slug: 'kse1500',
-          title: 'KSE1500 Electrostatic Earphone System – Shure'
+          title: 'KSE1500 Electrostatic Earphone System dsfsd f dsfsdfsdf – Shure'
         }
       ]
     }
@@ -80,6 +80,7 @@ h2 {
       font-size: 20px;
       margin-top: -9px;
       opacity: 0;
+      padding: 0 16px;
       position: absolute;
       text-align: center;
       transform: translateY(-18px);
@@ -90,11 +91,14 @@ h2 {
     }
 
     .imageContainer {
+      box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.35);
+      border-radius: 3px;
       overflow: hidden;
       position: relative;
 
       &::after {
         background-color: rgba(0,0,0,0);
+        border-radius: inherit;
         content: '';
         height: 100%;
         left: 0;

@@ -86,12 +86,12 @@ export default {
 }
 </script>
 
-<style scoped>
-h2 {
-  color: blue;
-}
-
-li {
-  margin-top: 30px;
+<style scoped lang="scss">
+ul {
+  text-align: center;
+  
+  li {
+    margin-top: 30px;
+  }
 }
 </style>

@@ -2,7 +2,6 @@
   <div class="mainNav">
     <router-link tag="a" to="/">Work</router-link>
     <router-link tag="a" to="/resume">Resume</router-link>
-    <span>|</span>
     <a href="https://github.com/krestaino">GitHub</a>
     <a href="https://www.linkedin.com/in/kevinrestaino/">LinkedIn</a>
   </div>
@@ -21,11 +20,16 @@ export default {
   justify-content: center;
   margin-top: 30px;
 
-  a, span {
-    margin-left: 16px;
+  a {
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
 
-    &:first-child {
-      margin-left: 0;
+    &:hover {
+      border-bottom: 1px solid;
+    }
+
+    + a {
+      margin-left: 16px;
     }
   }
 }

@@ -1,8 +1,15 @@
 <template>
   <div id="app">
-    <h1>Kevin Restaino</h1>
-    <MainNav></MainNav>
-    <router-view></router-view>
+    <header class="header">
+      <h1>Kevin Restaino</h1>
+      <MainNav></MainNav>
+    </header>
+    <section class="route">
+      <router-view></router-view>
+    </section>
+    <footer class="footer">
+      <span>© {{ currentYear }} Kevin Restaino. All rights reserved.</span>
+    </footer>
   </div>
 </template>
 
@@ -17,6 +24,7 @@ export default {
   },
   data () {
     return {
+      currentYear: new Date().getFullYear(),
       projects: [
         {
           category: 'shure',
@@ -54,8 +62,8 @@ export default {
 
 <style lang="scss">
 html {
+  background-color: #f1f1f1;
   box-sizing: border-box;
-  font-size: 18px;
   overflow-y: scroll;
 }
 
@@ -64,23 +72,30 @@ html {
 }
 
 body {
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
   padding: 50px;
   line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
   margin: auto;
   max-width: 1000px;
 }
 
 a {
-  color: #42b983;
+  color: #aaa;
   text-decoration: none;
+}
+
+h1 {
+  font-size: 34px;
+  font-weight: 100;
+  text-align: center;
 }
 
 h2 {
@@ -147,7 +162,7 @@ h2 {
 }
 
 .spinner:after {
-  background-color: #fff;
+  background-color: #f1f1f1;
   border-radius: 50%;
   bottom: 0;
   content: '';
@@ -166,6 +181,18 @@ h2 {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+.footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+
+  span {
+    color: #bbb;
+    font-size: 14px;
   }
 }
 </style>

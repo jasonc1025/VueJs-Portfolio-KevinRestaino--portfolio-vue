@@ -55,6 +55,7 @@ export default {
 
 <style scoped lang="scss">
 .image {
+  box-shadow: 0px 0px 36px 0px rgba(0,0,0,0.25);
   margin: 30px auto 0 auto;
   max-width: 1000px;
 
