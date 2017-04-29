@@ -12,7 +12,7 @@ export default new Vuex.Store({
         location: 'Niles, IL',
         timePeriod: {
           from: 'August 2016',
-          to: 'Current'
+          to: 'Present'
         }
       },
       {
@@ -43,7 +43,7 @@ export default new Vuex.Store({
         }
       },
       {
-        title: 'Front-end Developer, Intern',
+        title: 'Intern, Front-end Developer',
         company: 'Carbon Credit Capital',
         location: 'New York, NY',
         timePeriod: {

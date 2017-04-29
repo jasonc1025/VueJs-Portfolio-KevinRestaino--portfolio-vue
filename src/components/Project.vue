@@ -1,12 +1,21 @@
 <template>
   <div class="work">
     <div class="details">
-      <div class="col">
-        <h2 v-html="this.title"></h2>
+      <div class="row">
+        <div class="col">
+          <div>
+            <h2 v-html="this.title"></h2>
+          </div>
+        </div>
+        <div class="col buttons">
+          <a class="button" target="_blank" :href="this.github" v-if="github">GitHub Repo</a>
+          <a class="button" target="_blank" :href="this.url">Live Site</a>
+        </div>
       </div>
-      <div class="col">
-        <a class="button" target="_blank" :href="this.github" v-if="github">GitHub Repo</a>
-        <a class="button" target="_blank" :href="this.url">Live Site</a>
+      <div class="row">
+        <div class="col">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.</p>
+        </div>
       </div>
     </div>
     <ul class="image">
@@ -51,10 +60,26 @@ export default {
 .details {
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 
-  .col {
+  .row {
+    align-items: flex-end;
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    & + .row {
+      margin-top: 18px;
+    }
+
+    .col {
+      display: flex;
+      flex-direction: column;
+
+      &.buttons {
+        flex-direction: row;
+      }
+    }
   }
 
   h2 {
