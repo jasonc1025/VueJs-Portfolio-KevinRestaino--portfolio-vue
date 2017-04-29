@@ -53,9 +53,19 @@ export default {
   display: flex;
   justify-content: space-between;
 
+  .col {
+    display: flex;
+  }
+
   h2 {
     font-size: 18px;
     font-weight: 400;
+  }
+
+  .button {
+    & + .button {
+      margin-left: 16px;
+    }
   }
 }
 
