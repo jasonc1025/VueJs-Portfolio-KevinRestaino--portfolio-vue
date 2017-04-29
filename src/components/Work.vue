@@ -1,7 +1,7 @@
 <template>
   <div>
     <ul class="projects">
-      <li v-for="project in work">
+      <li v-for="project in projects">
         <a :href="'/work/'+project.category+'/'+project.slug">
           <h3>{{ project.title }}</h3>
           <div class="imageContainer lazy">
@@ -19,38 +19,7 @@ export default {
   name: 'work',
   data () {
     return {
-      work: [
-        {
-          category: 'shure',
-          slug: 'axient-digital',
-          title: 'Axient® Digital – Shure'
-        },
-        {
-          category: 'personal',
-          slug: 'weather',
-          title: 'Weather Vue – Personal Project'
-        },
-        {
-          category: 'shure',
-          slug: 'motiv',
-          title: 'MOTIV™ Recording Microphones – Shure'
-        },
-        {
-          category: 'personal',
-          slug: 'color-con',
-          title: 'Color Con – Personal Project'
-        },
-        {
-          category: 'shure',
-          slug: 'ksm8',
-          title: 'KSM8 Dualdyne™ Vocal Microphone – Shure'
-        },
-        {
-          category: 'shure',
-          slug: 'kse1500',
-          title: 'KSE1500 Electrostatic Earphone System – Shure'
-        }
-      ]
+      projects: this.$myStore.state.projects
     }
   }
 }
@@ -67,8 +36,11 @@ h2 {
   flex-wrap: wrap;
 
   li {
-    padding: 8px;
-    width: 50%;
+    width: 100%;
+
+    & + li {
+      margin-top: 36px;
+    }
 
     a {
       display: block;
@@ -116,7 +88,6 @@ h2 {
     img {
       display: block;
       height: auto;
-      max-height: 272.25px;
       max-width: 100%;
       transition: 0.3s;
     }

@@ -24,14 +24,7 @@ export default {
   },
   data () {
     return {
-      currentYear: new Date().getFullYear(),
-      projects: [
-        {
-          category: 'shure',
-          title: 'Axient Digital',
-          imageParts: 10
-        }
-      ]
+      currentYear: new Date().getFullYear()
     }
   },
   methods: {

@@ -19,32 +19,11 @@ export default {
   },
   methods: {
     populateImageList: function () {
-      switch (this.$route.params.project) {
-        case 'axient-digital':
-          this.imageListLength = 16
-          break
-        case 'motiv':
-          this.imageListLength = 15
-          break
-        case 'microflex-advance':
-          this.imageListLength = 10
-          break
-        case 'ksm8':
-          this.imageListLength = 10
-          break
-        case 'kse1500':
-          this.imageListLength = 8
-          break
-        case 'blog':
-          this.imageListLength = 10
-          break
-        case 'weather':
-          this.imageListLength = 1
-          break
-        case 'color-con':
-          this.imageListLength = 1
-          break
-      }
+      var result = this.$myStore.state.projects.filter(function (obj) {
+        return obj.slug === this.$route.params.project
+      }.bind(this))
+
+      this.imageListLength = result[0].imageListLength
     }
   },
   beforeMount () {
