@@ -5,9 +5,7 @@
       <MainNav></MainNav>
     </header>
     <section class="route">
-      <transition name="fade">
-        <router-view></router-view>
-      </transition>
+      <router-view></router-view>
     </section>
     <footer class="footer">
       <span>© {{ currentYear }} Kevin Restaino. All rights reserved.</span>
@@ -218,5 +216,6 @@ h1 {
 
 .fade-leave-to {
   display: none;
+  opacity: 0;
 }
 </style>
