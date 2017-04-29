@@ -75,49 +75,57 @@ export default new Vuex.Store({
         category: 'shure',
         slug: 'axient-digital',
         title: 'Axient® Digital – Shure',
-        imageListLength: 16
+        imageListLength: 16,
+        url: 'http://www.shure.com/americas/axient-digital'
       },
       {
         category: 'personal',
         slug: 'weather',
         title: 'Weather Vue – Personal Project',
-        imageListLength: 1
+        imageListLength: 1,
+        url: 'https://weather.kmr.io'
       },
       {
         category: 'shure',
         slug: 'motiv',
         title: 'MOTIV™ Recording Microphones – Shure',
-        imageListLength: 15
+        imageListLength: 15,
+        url: 'http://www.shure.com/americas/motiv/recording-musician'
       },
       {
         category: 'personal',
         slug: 'color-con',
         title: 'Color Con – Personal Project',
-        imageListLength: 1
+        imageListLength: 1,
+        url: 'https://color-con.kmr.io'
       },
       {
         category: 'shure',
         slug: 'microflex-advance',
         title: 'Microflex® Advance™ Conference Room Audio – Shure',
-        imageListLength: 10
+        imageListLength: 10,
+        url: 'http://www.shure.com/americas/microflex-advance'
       },
       {
         category: 'shure',
         slug: 'ksm8',
         title: 'KSM8 Dualdyne™ Vocal Microphone – Shure',
-        imageListLength: 10
+        imageListLength: 10,
+        url: 'http://www.shure.com/americas/ksm8'
       },
       {
         category: 'shure',
         slug: 'kse1500',
         title: 'KSE1500 Electrostatic Earphone System – Shure',
-        imageListLength: 8
+        imageListLength: 8,
+        url: 'http://www.shure.com/americas/kse1500'
       },
       {
         category: 'shure',
         slug: 'blog',
         title: 'Blog – Shure',
-        imageListLength: 10
+        imageListLength: 10,
+        url: 'http://blog.shure.com'
       }
     ]
   }

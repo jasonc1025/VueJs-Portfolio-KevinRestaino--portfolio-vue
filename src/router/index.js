@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Work from '@/components/Work'
 import Project from '@/components/Project.vue'
-import Resume from '@/components/Resume'
+import Experience from '@/components/Experience'
 
 Vue.use(Router)
 
@@ -15,9 +15,9 @@ export default new Router({
       component: Work
     },
     {
-      path: '/resume',
-      name: 'Resume',
-      component: Resume
+      path: '/experience',
+      name: 'Experience',
+      component: Experience
     },
     {
       path: '/work/:category/:project',

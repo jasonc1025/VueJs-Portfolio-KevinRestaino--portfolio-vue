@@ -94,8 +94,17 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  margin-top: 36px;
+.button {
+  background-color: #ddd;
+  border-radius: 3px;
+  padding: 8px 16px;
+  font-size: 16px;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #ccc;
+    color: #666;
+  }
 }
 
 .lazy {
@@ -178,6 +187,11 @@ h2 {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.header {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 24px;
 }
 
 .footer {

@@ -31,7 +31,6 @@ h2 {
 }
 
 .projects {
-  margin-top: 36px;
   display: flex;
   flex-wrap: wrap;
 

@@ -1,9 +1,9 @@
 <template>
   <div class="mainNav">
     <router-link tag="a" to="/">Work</router-link>
-    <router-link tag="a" to="/resume">Resume</router-link>
-    <a href="https://github.com/krestaino">GitHub</a>
-    <a href="https://www.linkedin.com/in/kevinrestaino/">LinkedIn</a>
+    <router-link tag="a" to="/experience">Experience</router-link>
+    <a href="https://github.com/krestaino" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/kevinrestaino/" target="_blank">LinkedIn</a>
   </div>
 </template>
 
@@ -18,7 +18,7 @@ export default {
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-top: 36px;
+  margin: 36px auto;
 
   a {
     border-bottom: 1px solid transparent;
