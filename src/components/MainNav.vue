@@ -18,7 +18,7 @@ export default {
   align-items: center;
   display: flex;
   justify-content: center;
-  margin: 36px auto;
+  margin: 9px auto 26px;
 
   a {
     border-bottom: 1px solid transparent;
