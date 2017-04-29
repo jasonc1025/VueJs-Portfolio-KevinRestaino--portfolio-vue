@@ -28,7 +28,7 @@ export default {
     }
   },
   methods: {
-    imageLoad () {
+    lazyLoad () {
       inView('.lazy')
         .on('enter', el => {
           el.classList.add('loading')
@@ -40,18 +40,18 @@ export default {
           el.firstChild.setAttribute('srcset', imageSrcset)
 
           el.firstChild.addEventListener('load', () => {
-            el.classList.add('loaded')
             el.classList.remove('loading')
+            el.classList.add('loaded')
           })
         })
       inView.offset(-300)
     }
   },
   mounted () {
-    this.imageLoad()
+    this.lazyLoad()
   },
   updated () {
-    this.imageLoad()
+    this.lazyLoad()
   }
 }
 </script>
@@ -204,19 +204,6 @@ h1 {
     color: #bbb;
     font-size: 14px;
   }
-}
-
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.3s;
-}
-
-.fade-enter, .fade-leave-to {
-  opacity: 0;
-}
-
-.fade-leave-to {
-  display: none;
-  opacity: 0;
 }
 
 @import 'scss/_ie11.scss'
