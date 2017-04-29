@@ -30,13 +30,14 @@ export default {
     imageLoad () {
       inView('.lazy')
         .on('enter', el => {
+          el.classList.add('loading')
+
           let imageUrl = el.firstChild.getAttribute('data-src')
           el.firstChild.setAttribute('src', imageUrl)
 
           el.firstChild.addEventListener('load', function () {
-            setTimeout(function () {
-              el.classList.add('loaded')
-            }, 200)
+            el.classList.add('loaded')
+            el.classList.remove('loading')
           })
         })
       inView.offset(-300)
@@ -97,14 +98,16 @@ h2 {
     width: 100%;
   }
 
-  .loading {
-    opacity: 1;
+  &.loading {
+    .spinner {
+      opacity: 1;
+    }
   }
 
   &.loaded {
     opacity: 1;
 
-    .loading {
+    .spinner {
       opacity: 0;
       transition: none;
     }
@@ -115,8 +118,8 @@ h2 {
   }
 }
 
-.loading {
-  animation: loading 1.4s infinite linear;
+.spinner {
+  animation: spinner 1.4s infinite linear;
   background: #d5d5d8;
   background: linear-gradient(to right, #d5d5d8 10%, rgba(255, 255, 255, 0) 42%);
   border-radius: 50%;
@@ -131,7 +134,7 @@ h2 {
   width: 40px;
 }
 
-.loading:before {
+.spinner:before {
   background: #d5d5d8;
   border-radius: 100% 0 0 0;
   content: '';
@@ -142,7 +145,8 @@ h2 {
   width: 50%;
 }
 
-.loading:after {
+.spinner:after {
+  background-color: #fff;
   border-radius: 50%;
   bottom: 0;
   content: '';
@@ -155,7 +159,7 @@ h2 {
   width: 75%;
 }
 
-@keyframes loading {
+@keyframes spinner {
   0% {
     transform: rotate(0deg);
   }

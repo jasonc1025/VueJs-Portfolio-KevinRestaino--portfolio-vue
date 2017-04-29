@@ -6,7 +6,7 @@
           <h3>{{ project.title }}</h3>
           <div class="imageContainer lazy">
             <img :data-src="'/static/work/'+project.category+'/'+project.slug+'/'+project.slug+'_thumb@2x.png'">
-            <div class="loading"></div>
+            <div class="spinner"></div>
           </div>
         </a>
       </li>
@@ -106,16 +106,13 @@ h2 {
     }
 
     .lazy {
-      min-height: 250px;
-
-      .loading:after {
-        background: #fff;
-      }
+      min-height: 272px;
     }
 
     img {
       display: block;
       height: auto;
+      max-height: 272.25px;
       max-width: 100%;
       transition: 0.3s;
     }

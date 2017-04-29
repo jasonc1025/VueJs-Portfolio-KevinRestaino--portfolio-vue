@@ -3,7 +3,7 @@
     <ul class="image">
       <li class="lazy" v-for="n in imageListLength">
         <img :data-src="'/static/work/'+$route.params.category+'/'+$route.params.project+'/'+$route.params.project+'-'+n+'.png'">
-        <div class="loading"></div>
+        <div class="spinner"></div>
       </li>
     </ul>
   </div>
@@ -60,10 +60,6 @@ export default {
 
   .lazy {
     min-height: 500px;
-
-    .loading:after {
-      background: #fff;
-    }
   }
 }
 </style>
