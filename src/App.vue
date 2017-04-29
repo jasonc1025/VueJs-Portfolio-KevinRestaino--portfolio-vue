@@ -169,7 +169,7 @@ h1 {
 }
 
 .spinner:after {
-  background-color: #000;
+  background-color: #f1f1f1;
   border-radius: 50%;
   bottom: 0;
   content: '';

@@ -63,8 +63,6 @@ h2 {
     }
 
     .imageContainer {
-      background-color: #000;
-      box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.35);
       border-radius: 3px;
       overflow: hidden;
       position: relative;

@@ -102,6 +102,10 @@ export default {
 
   .lazy {
     min-height: 490px;
+
+    .spinner:after {
+      background-color: #000;
+    }
   }
 }
 </style>
