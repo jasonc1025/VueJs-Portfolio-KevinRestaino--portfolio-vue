@@ -69,7 +69,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 300;
-  padding: 50px;
+  padding: 36px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -86,13 +86,13 @@ a {
 }
 
 h1 {
-  font-size: 34px;
+  font-size: 28px;
   font-weight: 100;
   text-align: center;
 }
 
 h2 {
-  margin-top: 30px;
+  margin-top: 36px;
 }
 
 .lazy {
@@ -181,7 +181,7 @@ h2 {
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 36px;
 
   span {
     color: #bbb;

@@ -31,7 +31,7 @@ h2 {
 }
 
 .projects {
-  margin-top: 30px;
+  margin-top: 36px;
   display: flex;
   flex-wrap: wrap;
 
@@ -49,7 +49,8 @@ h2 {
 
     h3 {
       color: #fff;
-      font-size: 20px;
+      font-size: 28px;
+      font-weight: 100;
       margin-top: -9px;
       opacity: 0;
       padding: 0 16px;
