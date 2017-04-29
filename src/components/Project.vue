@@ -101,7 +101,15 @@ export default {
   max-width: 1000px;
 
   .lazy {
-    min-height: 490px;
+    min-height: 450px;
+
+    &:last-child {
+      min-height: 0;
+    }
+
+    &:first-child {
+      min-height: 450px;
+    }
 
     .spinner:after {
       background-color: #000;

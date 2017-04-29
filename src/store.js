@@ -73,7 +73,7 @@ export default new Vuex.Store({
     projects: [
       {
         category: 'shure',
-        imageListLength: 16,
+        imageListLength: 20,
         slug: 'axient-digital',
         title: 'Axient® Digital – Shure',
         url: 'http://www.shure.com/americas/axient-digital'
@@ -88,7 +88,7 @@ export default new Vuex.Store({
       },
       {
         category: 'shure',
-        imageListLength: 15,
+        imageListLength: 18,
         slug: 'motiv',
         title: 'MOTIV™ Recording Microphones – Shure',
         url: 'http://www.shure.com/americas/motiv/recording-musician'
@@ -103,28 +103,28 @@ export default new Vuex.Store({
       },
       {
         category: 'shure',
-        imageListLength: 10,
+        imageListLength: 12,
         slug: 'microflex-advance',
         title: 'Microflex® Advance™ Conference Room Audio – Shure',
         url: 'http://www.shure.com/americas/microflex-advance'
       },
       {
         category: 'shure',
-        imageListLength: 10,
+        imageListLength: 12,
         slug: 'ksm8',
         title: 'KSM8 Dualdyne™ Vocal Microphone – Shure',
         url: 'http://www.shure.com/americas/ksm8'
       },
       {
         category: 'shure',
-        imageListLength: 8,
+        imageListLength: 9,
         slug: 'kse1500',
         title: 'KSE1500 Electrostatic Earphone System – Shure',
         url: 'http://www.shure.com/americas/kse1500'
       },
       {
         category: 'shure',
-        imageListLength: 10,
+        imageListLength: 14,
         slug: 'blog',
         title: 'Blog – Shure',
         url: 'http://blog.shure.com'

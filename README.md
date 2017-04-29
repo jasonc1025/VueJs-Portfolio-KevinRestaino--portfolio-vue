@@ -18,4 +18,7 @@ npm run build
 npm run build --report
 ```
 
+## Image Split
+```convert -crop 1600x900 file.png -scene 1 file-%d.png```
+
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
