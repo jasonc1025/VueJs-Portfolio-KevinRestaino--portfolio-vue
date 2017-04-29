@@ -2,13 +2,13 @@
   <div>
     <ul class="projects">
       <li v-for="project in projects">
-        <a :href="'/work/'+project.category+'/'+project.slug">
+        <router-link tag="a" :to="'/work/'+project.category+'/'+project.slug">
           <h3>{{ project.title }}</h3>
           <div class="imageContainer lazy">
             <img :data-src="'/static/work/'+project.category+'/'+project.slug+'/'+project.slug+'_thumb.png'" :data-srcset="'/static/work/'+project.category+'/'+project.slug+'/'+project.slug+'_thumb@2x.png 2x'">
             <div class="spinner"></div>
           </div>
-        </a>
+        </router-link>
       </li>
     </ul>
   </div>
@@ -63,6 +63,7 @@ h2 {
     }
 
     .imageContainer {
+      background-color: #000;
       box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.35);
       border-radius: 3px;
       overflow: hidden;
@@ -89,7 +90,6 @@ h2 {
       display: block;
       height: auto;
       max-width: 100%;
-      transition: 0.3s;
     }
 
     a:hover {

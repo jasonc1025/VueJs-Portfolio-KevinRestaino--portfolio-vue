@@ -52,12 +52,6 @@ export default {
   },
   beforeMount () {
     this.getProjectJSON()
-  },
-  mounted () {
-    window.scrollTo(0, 0)
-  },
-  updated () {
-    window.scrollTo(0, 0)
   }
 }
 </script>

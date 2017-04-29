@@ -117,7 +117,7 @@ h1 {
     display: block;
     height: auto;
     opacity: 0;
-    transition: 0.3s;
+    transition: 1s;
     width: 100%;
   }
 
@@ -169,7 +169,7 @@ h1 {
 }
 
 .spinner:after {
-  background-color: #f1f1f1;
+  background-color: #000;
   border-radius: 50%;
   bottom: 0;
   content: '';
