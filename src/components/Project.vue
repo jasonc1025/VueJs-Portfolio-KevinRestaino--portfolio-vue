@@ -20,7 +20,7 @@
     </div>
     <ul class="image">
       <li class="lazy" v-for="n in imageListLength">
-        <img :data-src="'/static/work/'+$route.params.category+'/'+$route.params.project+'/'+$route.params.project+'-'+n+'.png'" :data-srcset="'/static/work/'+$route.params.category+'/'+$route.params.project+'/'+$route.params.project+'-'+n+'@2x.png 2x'">
+        <img :data-src="`/static/work/${$route.params.category}/${$route.params.project}/${$route.params.project}-${n}.png`" :data-srcset="'/static/work/${$route.params.category}/${$route.params.project}/${$route.params.project}-${n}@2x.png 2x'">
         <div class="spinner"></div>
       </li>
     </ul>
@@ -30,7 +30,7 @@
 <script>
 export default {
   name: 'project',
-  data: function () {
+  data () {
     return {
       github: null,
       imageListLength: null,
@@ -39,10 +39,10 @@ export default {
     }
   },
   methods: {
-    getProjectJSON: function () {
-      var result = this.$myStore.state.projects.filter(function (obj) {
+    getProjectJSON () {
+      let result = this.$myStore.state.projects.filter((obj) => {
         return obj.slug === this.$route.params.project
-      }.bind(this))
+      })
 
       this.github = result[0].github
       this.imageListLength = result[0].imageListLength

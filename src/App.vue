@@ -41,7 +41,7 @@ export default {
           el.firstChild.setAttribute('src', imageSrc)
           el.firstChild.setAttribute('srcset', imageSrcset)
 
-          el.firstChild.addEventListener('load', function () {
+          el.firstChild.addEventListener('load', () => {
             el.classList.add('loaded')
             el.classList.remove('loading')
           })
