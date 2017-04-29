@@ -5,6 +5,7 @@
         <h2 v-html="this.title"></h2>
       </div>
       <div class="col">
+        <a class="button" target="_blank" :href="this.github" v-if="github">GitHub Repo</a>
         <a class="button" target="_blank" :href="this.url">Live Site</a>
       </div>
     </div>
@@ -22,8 +23,10 @@ export default {
   name: 'project',
   data: function () {
     return {
+      github: null,
       imageListLength: null,
-      title: null
+      title: null,
+      url: null
     }
   },
   methods: {
@@ -32,6 +35,7 @@ export default {
         return obj.slug === this.$route.params.project
       }.bind(this))
 
+      this.github = result[0].github
       this.imageListLength = result[0].imageListLength
       this.title = result[0].title
       this.url = result[0].url

@@ -73,58 +73,60 @@ export default new Vuex.Store({
     projects: [
       {
         category: 'shure',
+        imageListLength: 16,
         slug: 'axient-digital',
         title: 'Axient® Digital – Shure',
-        imageListLength: 16,
         url: 'http://www.shure.com/americas/axient-digital'
       },
       {
         category: 'personal',
+        github: 'https://github.com/krestaino/weather-vue/',
+        imageListLength: 1,
         slug: 'weather',
         title: 'Weather Vue – Personal Project',
-        imageListLength: 1,
         url: 'https://weather.kmr.io'
       },
       {
         category: 'shure',
+        imageListLength: 15,
         slug: 'motiv',
         title: 'MOTIV™ Recording Microphones – Shure',
-        imageListLength: 15,
         url: 'http://www.shure.com/americas/motiv/recording-musician'
       },
       {
         category: 'personal',
+        github: 'https://github.com/krestaino/color-con/',
+        imageListLength: 1,
         slug: 'color-con',
         title: 'Color Con – Personal Project',
-        imageListLength: 1,
         url: 'https://color-con.kmr.io'
       },
       {
         category: 'shure',
+        imageListLength: 10,
         slug: 'microflex-advance',
         title: 'Microflex® Advance™ Conference Room Audio – Shure',
-        imageListLength: 10,
         url: 'http://www.shure.com/americas/microflex-advance'
       },
       {
         category: 'shure',
+        imageListLength: 10,
         slug: 'ksm8',
         title: 'KSM8 Dualdyne™ Vocal Microphone – Shure',
-        imageListLength: 10,
         url: 'http://www.shure.com/americas/ksm8'
       },
       {
         category: 'shure',
+        imageListLength: 8,
         slug: 'kse1500',
         title: 'KSE1500 Electrostatic Earphone System – Shure',
-        imageListLength: 8,
         url: 'http://www.shure.com/americas/kse1500'
       },
       {
         category: 'shure',
+        imageListLength: 10,
         slug: 'blog',
         title: 'Blog – Shure',
-        imageListLength: 10,
         url: 'http://blog.shure.com'
       }
     ]
