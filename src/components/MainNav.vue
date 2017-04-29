@@ -27,10 +27,6 @@ export default {
     &:first-child {
       margin-left: 0;
     }
-
-    &.router-link-exact-active {
-      font-weight: bold;
-    }
   }
 }
 </style>

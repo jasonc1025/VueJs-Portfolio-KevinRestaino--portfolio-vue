@@ -56,6 +56,7 @@ export default {
 html {
   box-sizing: border-box;
   font-size: 18px;
+  overflow-y: scroll;
 }
 
 *, *:before, *:after {
