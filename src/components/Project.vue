@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col">
+        <div class="col ie11Hack">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.</p>
         </div>
       </div>

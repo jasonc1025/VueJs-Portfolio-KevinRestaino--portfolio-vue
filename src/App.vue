@@ -218,4 +218,6 @@ h1 {
   display: none;
   opacity: 0;
 }
+
+@import 'scss/_ie11.scss'
 </style>
