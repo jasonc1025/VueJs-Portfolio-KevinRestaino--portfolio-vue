@@ -117,7 +117,7 @@ h1 {
     display: block;
     height: auto;
     opacity: 0;
-    transition: 1s;
+    transition: 0.3s;
     width: 100%;
   }
 
