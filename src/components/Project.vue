@@ -20,7 +20,7 @@
     </div>
     <ul class="image">
       <li class="lazy" v-for="n in imageListLength">
-        <img :data-src="`/static/work/${$route.params.category}/${$route.params.project}/${$route.params.project}-${n}.png`" :data-srcset="'/static/work/${$route.params.category}/${$route.params.project}/${$route.params.project}-${n}@2x.png 2x'">
+        <img :data-src="`/static/work/${$route.params.category}/${$route.params.project}/${$route.params.project}-${n}.png`" :data-srcset="`/static/work/${$route.params.category}/${$route.params.project}/${$route.params.project}-${n}@2x.png 2x`">
         <div class="spinner"></div>
       </li>
     </ul>
