@@ -39,7 +39,7 @@ export default {
   max-width: 1000px;
 
   .lazy {
-    min-height: 500px;
+    min-height: 450px;
   }
 }
 </style>
