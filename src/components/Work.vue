@@ -48,7 +48,7 @@ export default {
         {
           category: 'shure',
           slug: 'kse1500',
-          title: 'KSE1500 Electrostatic Earphone System dsfsd f dsfsdfsdf – Shure'
+          title: 'KSE1500 Electrostatic Earphone System – Shure'
         }
       ]
     }
