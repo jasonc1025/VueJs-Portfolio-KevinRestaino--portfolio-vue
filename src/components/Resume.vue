@@ -1,6 +1,5 @@
 <template>
   <div class="resume">
-    <h2>Resume</h2>
     <ul>
       <li v-for="job in jobs">
         <div class="title">{{ job.title }}</div>

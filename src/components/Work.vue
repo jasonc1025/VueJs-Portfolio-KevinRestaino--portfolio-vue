@@ -1,11 +1,13 @@
 <template>
   <div>
-    <h2>Work</h2>
     <ul class="projects">
       <li v-for="project in work">
         <a :href="'/work/'+project.category+'/'+project.slug">
           <h3>{{ project.title }}</h3>
-          <img :src="'/static/work/'+project.category+'/'+project.slug+'/'+project.slug+'_thumb@2x.png'">
+          <div class="imageContainer lazy">
+            <img :data-src="'/static/work/'+project.category+'/'+project.slug+'/'+project.slug+'_thumb@2x.png'">
+            <div class="loading"></div>
+          </div>
         </a>
       </li>
     </ul>
@@ -68,13 +70,65 @@ h2 {
     padding: 8px;
     width: 50%;
 
+    a {
+      display: block;
+      position: relative;
+    }
+
     h3 {
-      margin-bottom: 16px;
+      color: #fff;
+      font-size: 20px;
+      margin-top: -9px;
+      opacity: 0;
+      position: absolute;
+      text-align: center;
+      transform: translateY(-18px);
+      transition: 0.3s;
+      top: 50%;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .imageContainer {
+      overflow: hidden;
+      position: relative;
+
+      &::after {
+        background-color: rgba(0,0,0,0);
+        content: '';
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: 0.3s;
+        width: 100%;
+      }
+    }
+
+    .lazy {
+      min-height: 250px;
+
+      .loading:after {
+        background: #fff;
+      }
     }
 
     img {
+      display: block;
       height: auto;
       max-width: 100%;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      h3 {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .imageContainer::after {
+        background-color: rgba(0,0,0,0.85);
+      }
     }
   }
 }
