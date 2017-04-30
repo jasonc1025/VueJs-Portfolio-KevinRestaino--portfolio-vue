@@ -113,5 +113,17 @@ export default {
   box-shadow: 0px 0px 36px 0px rgba(0,0,0,0.25);
   margin: 24px auto 0;
   max-width: 1000px;
+
+  .lazy {
+    min-height: 450px;
+
+    &:last-child {
+      min-height: 0;
+    }
+
+    &:first-child {
+      min-height: 450px;
+    }
+  }
 }
 </style>
