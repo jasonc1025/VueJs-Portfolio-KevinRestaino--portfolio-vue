@@ -40,8 +40,10 @@ export default {
           el.firstChild.setAttribute('srcset', imageSrcset)
 
           el.firstChild.addEventListener('load', () => {
-            el.classList.remove('loading')
-            el.classList.add('loaded')
+            setTimeout(function () {
+              el.classList.remove('loading')
+              el.classList.add('loaded')
+            }, 10000)
           })
         })
       inView.offset(-300)
@@ -139,48 +141,24 @@ h1 {
   }
 }
 
-.spinner {
-  animation: spinner 1.4s infinite linear;
-  background: #d5d5d8;
-  background: linear-gradient(to right, #d5d5d8 10%, rgba(255, 255, 255, 0) 42%);
+.spinner,
+.spinner:after {
   border-radius: 50%;
   height: 40px;
-  left: 50%;
-  margin: -20px;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateZ(0);
-  transition: 0.3s;
   width: 40px;
 }
 
-.spinner:before {
-  background: #d5d5d8;
-  border-radius: 100% 0 0 0;
-  content: '';
-  height: 50%;
-  left: 0;
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #aaa;
+  animation: spin 1.1s infinite linear;
+  left: 50%;
+  margin: -20px;
   position: absolute;
-  top: 0;
-  width: 50%;
+  top: 50%;
 }
 
-.spinner:after {
-  background-color: #f1f1f1;
-  border-radius: 50%;
-  bottom: 0;
-  content: '';
-  height: 75%;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 75%;
-}
-
-@keyframes spinner {
+@keyframes spin {
   0% {
     transform: rotate(0deg);
   }

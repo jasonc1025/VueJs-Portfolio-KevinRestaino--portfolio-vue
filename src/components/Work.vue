@@ -85,7 +85,7 @@ h2 {
     }
 
     .lazy {
-      min-height: 450px;
+      // min-height: 450px;
     }
 
     img {
