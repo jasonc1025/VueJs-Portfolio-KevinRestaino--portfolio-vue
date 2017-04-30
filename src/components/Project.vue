@@ -113,11 +113,5 @@ export default {
   box-shadow: 0px 0px 36px 0px rgba(0,0,0,0.25);
   margin: 24px auto 0;
   max-width: 1000px;
-
-  .lazy {
-    .spinner:after {
-      background-color: #fff;
-    }
-  }
 }
 </style>

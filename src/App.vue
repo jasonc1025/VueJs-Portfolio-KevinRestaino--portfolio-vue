@@ -40,10 +40,8 @@ export default {
           el.firstChild.setAttribute('srcset', imageSrcset)
 
           el.firstChild.addEventListener('load', () => {
-            setTimeout(function () {
-              el.classList.remove('loading')
-              el.classList.add('loaded')
-            }, 10000)
+            el.classList.remove('loading')
+            el.classList.add('loaded')
           })
         })
       inView.offset(-300)

@@ -84,10 +84,6 @@ h2 {
       }
     }
 
-    .lazy {
-      // min-height: 450px;
-    }
-
     img {
       display: block;
       height: auto;
