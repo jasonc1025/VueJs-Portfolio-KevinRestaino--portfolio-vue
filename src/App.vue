@@ -84,7 +84,7 @@ body {
 }
 
 a {
-  color: #aaa;
+  color: #888;
   text-decoration: none;
 }
 

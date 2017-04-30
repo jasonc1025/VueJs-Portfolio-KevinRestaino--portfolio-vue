@@ -1,5 +1,5 @@
 <template>
-  <div class="work">
+  <div class="work" v-if="project">
     <div class="details">
       <div class="row">
         <div class="col">
@@ -20,22 +20,30 @@
     </div>
     <ul class="image">
       <li class="lazy" v-for="n in imageListLength">
-        <img :data-src="`/static/work/${$route.params.category}/${$route.params.project}/${$route.params.project}-${n}.png`" :data-srcset="`/static/work/${$route.params.category}/${$route.params.project}/${$route.params.project}-${n}@2x.png 2x`">
+        <img :data-src="`/static/work/${category}/${$route.params.project}/${$route.params.project}-${n}.png`" :data-srcset="`/static/work/${category}/${$route.params.project}/${$route.params.project}-${n}@2x.png 2x`">
         <div class="spinner"></div>
       </li>
     </ul>
   </div>
+  <Error v-else></Error>
 </template>
 
 <script>
+import Error from './Error'
+
 export default {
   name: 'project',
+  components: {
+    Error
+  },
   data () {
     return {
+      category: null,
       github: null,
       imageListLength: null,
       title: null,
-      url: null
+      url: null,
+      project: null
     }
   },
   methods: {
@@ -44,10 +52,16 @@ export default {
         return obj.slug === this.$route.params.project
       })
 
-      this.github = result[0].github
-      this.imageListLength = result[0].imageListLength
-      this.title = result[0].title
-      this.url = result[0].url
+      if (result.length) {
+        if (result[0].category === this.$route.params.category) {
+          this.project = result
+          this.category = result[0].category
+          this.github = result[0].github
+          this.imageListLength = result[0].imageListLength
+          this.title = result[0].title
+          this.url = result[0].url
+        }
+      }
     }
   },
   beforeMount () {
