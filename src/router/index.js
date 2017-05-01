@@ -21,7 +21,7 @@ export default new Router({
       component: Experience
     },
     {
-      path: '/work/:category/:project',
+      path: '/work/:category/:slug',
       component: Project
     },
     {

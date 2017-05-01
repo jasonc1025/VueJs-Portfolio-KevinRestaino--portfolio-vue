@@ -73,6 +73,7 @@ export default new Vuex.Store({
     projects: [
       {
         category: 'shure',
+        id: 8,
         imageListLength: 20,
         slug: 'axient-digital',
         title: 'Axient® Digital – Shure',
@@ -81,6 +82,7 @@ export default new Vuex.Store({
       {
         category: 'personal',
         github: 'https://github.com/krestaino/weather-vue/',
+        id: 7,
         imageListLength: 1,
         slug: 'weather',
         title: 'Weather Vue – Personal Project',
@@ -88,6 +90,7 @@ export default new Vuex.Store({
       },
       {
         category: 'shure',
+        id: 6,
         imageListLength: 18,
         slug: 'motiv',
         title: 'MOTIV™ Recording Microphones – Shure',
@@ -96,6 +99,7 @@ export default new Vuex.Store({
       {
         category: 'personal',
         github: 'https://github.com/krestaino/color-con/',
+        id: 5,
         imageListLength: 1,
         slug: 'color-con',
         title: 'Color Con – Personal Project',
@@ -103,6 +107,7 @@ export default new Vuex.Store({
       },
       {
         category: 'shure',
+        id: 4,
         imageListLength: 12,
         slug: 'microflex-advance',
         title: 'Microflex® Advance™ Conference Room Audio – Shure',
@@ -110,6 +115,7 @@ export default new Vuex.Store({
       },
       {
         category: 'shure',
+        id: 3,
         imageListLength: 12,
         slug: 'ksm8',
         title: 'KSM8 Dualdyne™ Vocal Microphone – Shure',
@@ -117,6 +123,7 @@ export default new Vuex.Store({
       },
       {
         category: 'shure',
+        id: 2,
         imageListLength: 9,
         slug: 'kse1500',
         title: 'KSE1500 Electrostatic Earphone System – Shure',
@@ -124,6 +131,7 @@ export default new Vuex.Store({
       },
       {
         category: 'shure',
+        id: 1,
         imageListLength: 14,
         slug: 'blog',
         title: 'Blog – Shure',

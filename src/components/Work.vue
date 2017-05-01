@@ -1,6 +1,5 @@
 <template>
   <div class="work">
-    <h1>{{ APP.el }}</h1>
     <ul class="projects">
       <li v-for="project in projects">
         <router-link tag="a" :to="`/work/${project.category}/${project.slug}`">
