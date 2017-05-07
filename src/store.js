@@ -77,7 +77,8 @@ export default new Vuex.Store({
         imageListLength: 20,
         slug: 'axient-digital',
         title: 'Axient® Digital – Shure',
-        url: 'http://www.shure.com/americas/axient-digital'
+        url: 'http://www.shure.com/americas/axient-digital',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
       },
       {
         category: 'personal',
@@ -86,7 +87,8 @@ export default new Vuex.Store({
         imageListLength: 1,
         slug: 'weather',
         title: 'Weather Vue – Personal Project',
-        url: 'https://weather.kmr.io'
+        url: 'https://weather.kmr.io',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
       },
       {
         category: 'shure',
@@ -94,7 +96,8 @@ export default new Vuex.Store({
         imageListLength: 18,
         slug: 'motiv',
         title: 'MOTIV™ Recording Microphones – Shure',
-        url: 'http://www.shure.com/americas/motiv/recording-musician'
+        url: 'http://www.shure.com/americas/motiv/recording-musician',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
       },
       {
         category: 'personal',
@@ -103,7 +106,8 @@ export default new Vuex.Store({
         imageListLength: 1,
         slug: 'color-con',
         title: 'Color Con – Personal Project',
-        url: 'https://color-con.kmr.io'
+        url: 'https://color-con.kmr.io',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
       },
       {
         category: 'shure',
@@ -111,7 +115,8 @@ export default new Vuex.Store({
         imageListLength: 12,
         slug: 'microflex-advance',
         title: 'Microflex® Advance™ Conference Room Audio – Shure',
-        url: 'http://www.shure.com/americas/microflex-advance'
+        url: 'http://www.shure.com/americas/microflex-advance',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
       },
       {
         category: 'shure',
@@ -119,7 +124,8 @@ export default new Vuex.Store({
         imageListLength: 12,
         slug: 'ksm8',
         title: 'KSM8 Dualdyne™ Vocal Microphone – Shure',
-        url: 'http://www.shure.com/americas/ksm8'
+        url: 'http://www.shure.com/americas/ksm8',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
       },
       {
         category: 'shure',
@@ -127,7 +133,8 @@ export default new Vuex.Store({
         imageListLength: 9,
         slug: 'kse1500',
         title: 'KSE1500 Electrostatic Earphone System – Shure',
-        url: 'http://www.shure.com/americas/kse1500'
+        url: 'http://www.shure.com/americas/kse1500',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
       },
       {
         category: 'shure',
@@ -135,7 +142,8 @@ export default new Vuex.Store({
         imageListLength: 14,
         slug: 'blog',
         title: 'Blog – Shure',
-        url: 'http://blog.shure.com'
+        url: 'http://blog.shure.com',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
       }
     ]
   }
