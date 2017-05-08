@@ -15,7 +15,6 @@
 
 <script>
 import MainNav from './components/MainNav'
-import inView from 'in-view'
 
 export default {
   name: 'app',
@@ -26,32 +25,6 @@ export default {
     return {
       currentYear: new Date().getFullYear()
     }
-  },
-  methods: {
-    lazyLoad () {
-      inView('.lazy')
-        .on('enter', el => {
-          el.classList.add('loading')
-
-          let imageSrc = el.firstChild.getAttribute('data-src')
-          let imageSrcset = el.firstChild.getAttribute('data-srcset')
-
-          el.firstChild.setAttribute('src', imageSrc)
-          el.firstChild.setAttribute('srcset', imageSrcset)
-
-          el.firstChild.addEventListener('load', () => {
-            el.classList.remove('loading')
-            el.classList.add('loaded')
-          })
-        })
-      inView.offset(-300)
-    }
-  },
-  mounted () {
-    this.lazyLoad()
-  },
-  updated () {
-    this.lazyLoad()
   }
 }
 </script>
@@ -115,7 +88,6 @@ h1 {
     display: block;
     height: auto;
     opacity: 0;
-    transition: 0.3s;
     width: 100%;
   }
 
