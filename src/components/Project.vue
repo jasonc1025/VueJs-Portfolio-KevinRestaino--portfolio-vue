@@ -1,5 +1,9 @@
 <template>
   <div class="work" v-if="project">
+    <nav>
+      <router-link tag="a" :to="`/work/${previousProject.category}/${previousProject.slug}`" v-if="previousProject.slug">Previous</router-link>
+      <router-link tag="a" :to="`/work/${nextProject.category}/${nextProject.slug}`" v-if="nextProject.slug">Next</router-link>
+    </nav>
     <div class="details">
       <div class="row">
         <div class="col">
@@ -38,11 +42,13 @@ export default {
   },
   data () {
     return {
-      project: {}
+      project: {},
+      previousProject: {},
+      nextProject: {}
     }
   },
   methods: {
-    getProject () {
+    getProjects () {
       let result = this.$myStore.state.projects.filter((obj) => {
         return obj.slug === this.$route.params.slug
       })
@@ -50,12 +56,41 @@ export default {
       if (result.length) {
         if (result[0].category === this.$route.params.category) {
           this.project = result[0]
+          this.getPreviousProject()
+          this.getNextProject()
         }
+      }
+    },
+    getPreviousProject () {
+      let result = this.$myStore.state.projects.filter((obj) => {
+        return obj.id === this.project.id - 1
+      })
+
+      if (result.length) {
+        this.previousProject = result[0]
+      } else {
+        this.previousProject = {}
+      }
+    },
+    getNextProject () {
+      let result = this.$myStore.state.projects.filter((obj) => {
+        return obj.id === this.project.id + 1
+      })
+
+      if (result.length) {
+        this.nextProject = result[0]
+      } else {
+        this.nextProject = {}
       }
     }
   },
   beforeMount () {
-    this.getProject()
+    this.getProjects()
+  },
+  watch: {
+    '$route.params.slug' () {
+      this.getProjects()
+    }
   }
 }
 </script>
