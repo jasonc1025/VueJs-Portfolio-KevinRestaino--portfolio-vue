@@ -1,8 +1,8 @@
 {
   "name": "kmr.io",
   "version": "1.0.0",
-  "description": "Online portfolio of Kevin Restaino",
-  "author": "Kevin Restaino <kevinrestaino@gmail.com>",
+  "description": "Online portfolio of Jason W Chan",
+  "author": "Jason W Chan <jasonc@eande.world>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
