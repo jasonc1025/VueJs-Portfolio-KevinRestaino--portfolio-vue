@@ -25,6 +25,7 @@
         <router-link class="button" tag="a" :to="`/work/${nextProject.category}/${nextProject.slug}`" v-if="nextProject.slug">Next Project</router-link>
       </div>
     </nav>
+    <!-- [jwc] post all images dynamically -->
     <ul class="image">
       <li class="lazy" v-for="n in project.imageListLength">
         <img v-lazy="`/static/work/${project.category}/${project.slug}/${project.slug}-${n}.png`" :data-srcset="`/static/work/${project.category}/${project.slug}/${project.slug}-${n}@2x.png 2x`">

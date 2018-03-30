@@ -72,79 +72,145 @@ export default new Vuex.Store({
     ],
     projects: [
       {
-        category: 'shure',
+        category: 'vue',
         id: 8,
-        imageListLength: 20,
-        slug: 'axient-digital',
-        title: 'Axient® Digital – Shure',
-        url: 'http://www.shure.com/americas/axient-digital',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
-      },
-      {
-        category: 'personal',
-        github: 'https://github.com/krestaino/weather-vue/',
-        id: 7,
         imageListLength: 1,
-        slug: 'weather',
-        title: 'Weather Vue – Personal Project',
-        url: 'https://weather.kmr.io',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
+        slug: '38c-ShoppityPlus',
+        title: 'Shoppity',
+        url: 'http://138.68.57.214:8083/',
+        description: 'Shoppity Plus'
       },
       {
-        category: 'shure',
-        id: 6,
-        imageListLength: 18,
-        slug: 'motiv',
-        title: 'MOTIV™ Recording Microphones – Shure',
-        url: 'http://www.shure.com/americas/motiv/recording-musician',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
-      },
-      {
-        category: 'personal',
-        github: 'https://github.com/krestaino/color-con/',
-        id: 5,
+        category: 'vue',
+        id: 8,
         imageListLength: 1,
-        slug: 'color-con',
-        title: 'Color Con – Personal Project',
-        url: 'https://color-con.kmr.io',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
+        slug: '73c-03f-CooperaPlus',
+        title: 'Coopera',
+        url: 'http://138.68.57.214:8082/',
+        description: 'Coopera Plus'
       },
       {
-        category: 'shure',
-        id: 4,
-        imageListLength: 12,
-        slug: 'microflex-advance',
-        title: 'Microflex® Advance™ Conference Room Audio – Shure',
-        url: 'http://www.shure.com/americas/microflex-advance',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
+        category: 'vue',
+        id: 8,
+        imageListLength: 1,
+        slug: '38b-PizzaPlanetPlus',
+        title: 'Pizza Planet',
+        url: 'http://138.68.57.214:8081/',
+        description: 'Pizza Planet Plus'
       },
       {
-        category: 'shure',
-        id: 3,
-        imageListLength: 12,
-        slug: 'ksm8',
-        title: 'KSM8 Dualdyne™ Vocal Microphone – Shure',
-        url: 'http://www.shure.com/americas/ksm8',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
+        category: 'vue',
+        id: 8,
+        imageListLength: 1,
+        slug: '37q-03f-CastleDuelPlus',
+        title: 'Castle Duel',
+        url: 'https://jasonc1025.github.io/VueJs-CastleDuel-GuillaumeC/ ',
+        description: 'Castle Duel Plus'
       },
       {
-        category: 'shure',
-        id: 2,
-        imageListLength: 9,
-        slug: 'kse1500',
-        title: 'KSE1500 Electrostatic Earphone System – Shure',
-        url: 'http://www.shure.com/americas/kse1500',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
+        category: 'vue',
+        id: 8,
+        imageListLength: 1,
+        slug: '37j-Sec18-StockTraderPlus',
+        title: 'Stock Trader',
+        url: 'http://stocktrader-vuejs-maxs.s3-website-us-west-1.amazonaws.com/',
+        description: 'Stock Trader Plus'
       },
       {
-        category: 'shure',
-        id: 1,
-        imageListLength: 14,
-        slug: 'blog',
-        title: 'Blog – Shure',
-        url: 'http://blog.shure.com',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
+        category: 'react',
+        id: 8,
+        imageListLength: 1,
+        slug: '53c-03d-03d-BurgerBuilderPlus',
+        title: 'Burger Builder',
+        url: 'https://myburger-react-maxs.firebaseapp.com',
+        description: 'Burger Builder Plus'
+      },
+      {
+        category: 'react',
+        id: 8,
+        imageListLength: 1,
+        slug: '53ka-Blog',
+        title: 'Blog',
+        url: 'https://stoic-mestorf-1d9170.netlify.com',
+        description: 'Description'
       }
+
+      // [jwc]+x
+      // {
+      //   category: 'shure',
+      //   id: 8,
+      //   imageListLength: 20,
+      //   // [jwc]+1 slug: 'axient-digital',
+      //   slug: 'axient-digital',
+      //   title: 'Axient® Digital – Shure',
+      //   url: 'http://www.shure.com/americas/axient-digital',
+      //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
+      // },
+      // {
+      //   category: 'personal',
+      //   github: 'https://github.com/krestaino/weather-vue/',
+      //   id: 7,
+      //   imageListLength: 1,
+      //   slug: 'weather',
+      //   title: 'Weather Vue – Personal Project',
+      //   url: 'https://weather.kmr.io',
+      //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
+      // },
+      // {
+      //   category: 'shure',
+      //   id: 6,
+      //   imageListLength: 18,
+      //   slug: 'motiv',
+      //   title: 'MOTIV™ Recording Microphones – Shure',
+      //   url: 'http://www.shure.com/americas/motiv/recording-musician',
+      //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
+      // },
+      // {
+      //   category: 'personal',
+      //   github: 'https://github.com/krestaino/color-con/',
+      //   id: 5,
+      //   imageListLength: 1,
+      //   slug: 'color-con',
+      //   title: 'Color Con – Personal Project',
+      //   url: 'https://color-con.kmr.io',
+      //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
+      // }
+      // {
+      //   category: 'shure',
+      //   id: 4,
+      //   imageListLength: 12,
+      //   slug: 'microflex-advance',
+      //   title: 'Microflex® Advance™ Conference Room Audio – Shure',
+      //   url: 'http://www.shure.com/americas/microflex-advance',
+      //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
+      // },
+      // {
+      //   category: 'shure',
+      //   id: 3,
+      //   imageListLength: 12,
+      //   slug: 'ksm8',
+      //   title: 'KSM8 Dualdyne™ Vocal Microphone – Shure',
+      //   url: 'http://www.shure.com/americas/ksm8',
+      //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
+      // },
+      // {
+      //   category: 'shure',
+      //   id: 2,
+      //   imageListLength: 9,
+      //   slug: 'kse1500',
+      //   title: 'KSE1500 Electrostatic Earphone System – Shure',
+      //   url: 'http://www.shure.com/americas/kse1500',
+      //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
+      // },
+      // {
+      //   category: 'shure',
+      //   id: 1,
+      //   imageListLength: 14,
+      //   slug: 'blog',
+      //   title: 'Blog – Shure',
+      //   url: 'http://blog.shure.com',
+      //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
+      // }
     ]
   }
 })
