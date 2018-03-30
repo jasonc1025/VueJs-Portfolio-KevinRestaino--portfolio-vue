@@ -1,6 +1,6 @@
 # kmr.io
 
-> Online portfolio of Kevin Restaino
+> Online portfolio of Jason W Chan
 
 ## Build Setup
 

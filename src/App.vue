@@ -1,14 +1,14 @@
 <template>
   <div id="app">
     <header class="header">
-      <h1>Kevin Restaino</h1>
+      <h1>Jason W Chan</h1>
       <MainNav></MainNav>
     </header>
     <section class="route">
       <router-view></router-view>
     </section>
     <footer class="footer">
-      <span>© {{ currentYear }} Kevin Restaino. All rights reserved.</span>
+      <span>© {{ currentYear }} Jason W Chan. All rights reserved.</span>
     </footer>
   </div>
 </template>
