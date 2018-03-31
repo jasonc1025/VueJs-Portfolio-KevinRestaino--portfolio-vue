@@ -76,7 +76,7 @@ export default new Vuex.Store({
         id: 8,
         imageListLength: 1,
         slug: '38c-ShoppityPlus',
-        title: 'Shoppity',
+        title: 'Vue : Vuex, Digital Ocean ~ Linux 16',
         url: 'http://138.68.57.214:8083/',
         description: 'Shoppity Plus'
       },
