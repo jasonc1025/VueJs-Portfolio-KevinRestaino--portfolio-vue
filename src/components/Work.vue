@@ -2,8 +2,20 @@
   <div class="work">
     <ul class="projects">
       <li v-for="project in projects">
-        <router-link tag="a" :to="`/work/${project.category}/${project.slug}`">
-          <h3>{{ project.title }}</h3>
+
+        <a class="button" target="_blank" :href="project.url">
+        <!-- <router-link tag="a" :to="`/work/${project.category}/${project.slug}`"> -->
+        
+          <!-- [jwc] Need to embed both 'title' fields in the same '<h3>' with a '<b>' inbetween -->
+          <h3>Press to Enter... {{ project.title }} <br> {{ project.title02 }}</h3>
+          <!-- [jwc] not work, will overlay prior <h3>{{ project.title02 }}</h3> -->
+          <!-- <h3> Hello2 {{ project.title }} </h3> -->
+          <h2> {{ project.webFrontEnd }} </h2>
+          <h2> {{ project.webBackEnd }} </h2>
+          <!-- <p> Hello2 {{ project.title }} </p> -->
+
+          <!-- Y <a class="button" target="_blank" :href="project.url">Live Site</a> -->
+
           <div class="imageContainer lazy">
             <!-- [jwc]+x -->
             <!-- [jwc]orig: <img v-lazy="`/static/work/${project.category}/${project.slug}/${project.slug}_thumb.png`" :data-srcset="`/static/work/${project.category}/${project.slug}/${project.slug}_thumb@2x.png 2x`"> -->
@@ -11,7 +23,10 @@
             <!-- Y <img v-lazy="`/static/work/${project.category}/${project.slug}/${project.slug}_thumb.gif`" :data-srcset="`/static/work/${project.category}/${project.slug}/${project.slug}_thumb@2x.gif 2x`"> -->
             <div class="spinner"></div>
           </div>
-        </router-link>
+
+        <!-- </router-link> -->
+        </a>
+
       </li>
     </ul>
   </div>
@@ -30,7 +45,10 @@ export default {
 
 <style scoped lang="scss">
 h2 {
-  color: red;
+  // [jwc]+2 color: red;
+  font-size: 18px;
+  font-weight: 400;
+
 }
 
 .projects {
