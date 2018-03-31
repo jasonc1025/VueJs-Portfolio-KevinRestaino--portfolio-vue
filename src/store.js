@@ -77,7 +77,7 @@ export default new Vuex.Store({
         imageListLength: 1,
         slug: '38c-ShoppityPlus',
         title: 'Shoppity',
-        webFrontEnd: 'Front-end: Vue, Vuex',
+        webFrontEnd: 'Front-end: Vue, Vuex, Stripe (Credit Card Purchasing)',
         webBackEnd: 'Back-end : Digital Ocean ~ Linux Ubuntu',
         url: 'http://138.68.57.214:8083/',
         description: 'Shoppity'
@@ -99,7 +99,7 @@ export default new Vuex.Store({
         imageListLength: 1,
         slug: '38b-PizzaPlanetPlus',
         title: 'Pizza Planet',
-        webFrontEnd: 'Front-end: Vue, Vuex, Google-Firebase',
+        webFrontEnd: 'Front-end: Vue, Vuex, Google-Firebase (Database)',
         webBackEnd: 'Back-end : Digital Ocean ~ Linux Ubuntu',
         url: 'http://138.68.57.214:8081/',
         description: 'Pizza Planet'
@@ -110,7 +110,7 @@ export default new Vuex.Store({
         imageListLength: 1,
         slug: '37q-03f-CastleDuelPlus',
         title: 'Castle Duel',
-        webFrontEnd: 'Front-end: Vue : SVG Grapics, TweenJs',
+        webFrontEnd: 'Front-end: Vue : SVG Grapics, TweenJs (Animation)',
         webBackEnd: 'Back-end : Digital Ocean ~ Linux Ubuntu',
         url: 'https://jasonc1025.github.io/VueJs-CastleDuel-GuillaumeC/ ',
         description: 'Castle Duel'
@@ -143,7 +143,7 @@ export default new Vuex.Store({
         imageListLength: 1,
         slug: '53ka-Blog',
         title: 'Blog',
-        webFrontEnd: 'Front-end: React, Gatsby, GraphQl, Particles.js, Jest',
+        webFrontEnd: 'Front-end: React, Gatsby, GraphQl, Particles.js (Animation), Jest',
         webBackEnd: 'Back-end : Netlify-GitHub',
         url: 'https://stoic-mestorf-1d9170.netlify.com',
         description: 'Blog'
