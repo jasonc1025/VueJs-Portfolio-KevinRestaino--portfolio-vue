@@ -133,8 +133,34 @@ export default new Vuex.Store({
         title: 'Blog',
         url: 'https://stoic-mestorf-1d9170.netlify.com',
         description: 'Description'
+      },
+      {
+        category: 'node',
+        id: 8,
+        imageListLength: 1,
+        slug: '17-10g-ObsidioPlus',
+        title: 'Obsidio',
+        url: 'https://obsidio-alvin-l.herokuapp.com/',
+        description: 'Description'
+      },
+      {
+        category: 'node',
+        id: 8,
+        imageListLength: 1,
+        slug: '37l-DangThatsDelicious',
+        title: 'Now That\'s Delicious',
+        url: 'https://dang-thats-delicious-jwc.herokuapp.com/',
+        description: 'Description'
+      },
+      {
+        category: 'node',
+        id: 8,
+        imageListLength: 1,
+        slug: '11h-ArduBlockly',
+        title: 'ArduBlockly-EandE',
+        url: 'http://138.68.57.214:8001/ardublockly/index.html',
+        description: 'Description'
       }
-
       // [jwc]+x
       // {
       //   category: 'shure',
