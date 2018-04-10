@@ -7,7 +7,7 @@
         <!-- <router-link tag="a" :to="`/work/${project.category}/${project.slug}`"> -->
         
           <!-- [jwc] Need to embed both 'title' fields in the same '<h3>' with a '<b>' inbetween -->
-          <h3>Press to Enter... {{ project.title }} <br> {{ project.title02 }}</h3>
+          <h3>Press to Enter {{ project.title }}... <br> {{ project.title02 }}</h3>
           <!-- [jwc] not work, will overlay prior <h3>{{ project.title02 }}</h3> -->
           <!-- <h3> Hello2 {{ project.title }} </h3> -->
           <h2> {{ project.headerLine01 }} </h2>
