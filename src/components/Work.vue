@@ -10,8 +10,8 @@
           <h3>Press to Enter... {{ project.title }} <br> {{ project.title02 }}</h3>
           <!-- [jwc] not work, will overlay prior <h3>{{ project.title02 }}</h3> -->
           <!-- <h3> Hello2 {{ project.title }} </h3> -->
-          <h2> {{ project.webFrontEnd }} </h2>
-          <h2> {{ project.webBackEnd }} </h2>
+          <h2> {{ project.headerLine01 }} </h2>
+          <h2> {{ project.headerLine02 }} </h2>
           <!-- <p> Hello2 {{ project.title }} </p> -->
 
           <!-- Y <a class="button" target="_blank" :href="project.url">Live Site</a> -->
