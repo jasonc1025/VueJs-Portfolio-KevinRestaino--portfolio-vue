@@ -2,6 +2,7 @@
   <div id="app">
     <header class="header">
       <h1>Jason W Chan</h1>
+      <h2>Full-Stack Web Instructor & Developer</h2>
       <MainNav></MainNav>
     </header>
     <section class="route">
@@ -63,7 +64,13 @@ a {
 
 h1 {
   font-size: 28px;
-  font-weight: 100;
+  font-weight: 300;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 300;
   text-align: center;
 }
 
