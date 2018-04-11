@@ -1,7 +1,8 @@
 <template>
   <div class="divStyle">
     <ul class="ulStyle">
-      <li v-for="project in projects">
+      <!--Y <li v-for="project in projects" v-if="project.category=='react'"> -->
+      <li v-for="project in projects" v-if="project.category==projectCategory">
 
         <a class="button" target="_blank" :href="project.url">
         <!-- <router-link tag="a" :to="`/work/${project.category}/${project.slug}`"> -->
@@ -38,7 +39,9 @@ export default {
   name: 'WorkReactComponent',
   data () {
     return {
-      projects: this.$myStore.state.projectsReact
+      // projects: this.$myStore.state.projectsReact
+      projects: this.$myStore.state.projects,
+      projectCategory: 'react'
     }
   }
 }

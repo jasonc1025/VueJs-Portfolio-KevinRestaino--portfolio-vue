@@ -71,11 +71,9 @@ export default new Vuex.Store({
       }
     ],
     projects: [
-    ],
-    projectsReact: [
       {
         category: 'react',
-        id: 8,
+        id: 0,
         imageListLength: 1,
         slug: '53c-03d-03d-BurgerBuilderPlus',
         title: 'Burger Builder',
@@ -87,129 +85,145 @@ export default new Vuex.Store({
       },
       {
         category: 'react',
-        id: 8,
+        id: 0,
         imageListLength: 1,
         slug: '53ka-BlogPlus',
         title: 'Blog',
-        headerLine01: '* Front-end: React, Gatsby, GraphQl, Particles.js (Animation), Jest',
-        headerLine02: '* Back-end: Netlify-GitHub',
+        headerLine01: 'React, Gatsby, GraphQl, Particles.js (Animation), Jest',
+        headerLine02: 'Netlify-GitHub',
         url: 'https://stoic-mestorf-1d9170.netlify.com',
         description: 'Blog'
       },
       {
         category: 'react',
-        id: 8,
+        id: 0,
         imageListLength: 1,
         slug: '53p-CatchOfTheDayPlus',
         title: 'Catch of the Day',
-        headerLine01: '* Front-end: React, Authentication (GitHub, Twitter, FaceBook)',
-        headerLine02: '* Back-end: Netlify',
+        headerLine01: 'React, Authentication (GitHub, Twitter, FaceBook)',
+        headerLine02: 'Netlify',
         url: 'http://react-catchoftheday-wesbos.netlify.com/',
         description: 'Catch of the Day'
       },
       {
         category: 'react',
-        id: 8,
+        id: 0,
         imageListLength: 1,
         slug: '37e-BookshopPlus',
         title: 'Bookshop',
-        headerLine01: '* Front-end: Mondo, Express, React & Node (MERN)',
-        headerLine02: '* Back-end: Amazon ~ Elastic Beanstalk (EB)',
+        headerLine01: 'Mondo, Express, React & Node (MERN)',
+        headerLine02: 'Amazon ~ Elastic Beanstalk (EB)',
         url: 'http://react-bookshop-marco-tomasello.nyu2gnsj37.us-west-1.elasticbeanstalk.com/',
         description: 'Bookshop'
-      }
-    ],
-    projectsVueJs: [
+      },
       {
         category: 'vuejs',
-        id: 8,
+        id: 0,
         imageListLength: 1,
         slug: '38c-ShoppityPlus',
         title: 'Shoppity',
-        headerLine01: '* Front-end: Vue, Vuex, Stripe (Credit Card Purchasing)',
-        headerLine02: '* Back-end: Digital Ocean ~ Linux Ubuntu',
+        headerLine01: 'Vue, Vuex, Stripe (Credit Card Purchasing)',
+        headerLine02: 'Digital Ocean ~ Linux Ubuntu',
         url: 'http://138.68.57.214:8083/',
         description: 'Shoppity'
       },
       {
         category: 'vuejs',
-        id: 8,
+        id: 0,
         imageListLength: 1,
         slug: '73c-03f-CooperaPlus',
         title: 'Coopera',
-        headerLine01: '* Front-end: Vue, Socket.io, WebSocket',
-        headerLine02: '* Back-end: Digital Ocean ~ Linux Ubuntu',
+        headerLine01: 'Vue, Socket.io, WebSocket',
+        headerLine02: 'Digital Ocean ~ Linux Ubuntu',
         url: 'http://138.68.57.214:8082/',
         description: 'Coopera'
       },
       {
         category: 'vuejs',
-        id: 8,
+        id: 0,
         imageListLength: 1,
         slug: '38b-PizzaPlanetPlus',
         title: 'Pizza Planet',
-        headerLine01: '* Front-end: Vue, Vuex, Google-Firebase (Database)',
-        headerLine02: '* Back-end: Digital Ocean ~ Linux Ubuntu',
+        headerLine01: 'Vue, Vuex, Google-Firebase (Database)',
+        headerLine02: 'Digital Ocean ~ Linux Ubuntu',
         url: 'http://138.68.57.214:8081/',
         description: 'Pizza Planet'
       },
       {
         category: 'vuejs',
-        id: 8,
+        id: 0,
         imageListLength: 1,
         slug: '37q-03f-CastleDuelPlus',
         title: 'Castle Duel',
-        headerLine01: '* Front-end: Vue : SVG Grapics, TweenJs (Animation)',
-        headerLine02: '* Back-end: Digital Ocean ~ Linux Ubuntu',
+        headerLine01: 'Vue : SVG Grapics, TweenJs (Animation)',
+        headerLine02: 'Digital Ocean ~ Linux Ubuntu',
         url: 'https://jasonc1025.github.io/VueJs-CastleDuel-GuillaumeC/ ',
         description: 'Castle Duel'
       },
       {
         category: 'vuejs',
-        id: 8,
+        id: 0,
         imageListLength: 1,
         slug: '37j-Sec18-StockTraderPlus',
         title: 'Stock Trader',
-        headerLine01: '* Front-end: Vue, Vuex, Bootstrap',
-        headerLine02: '* Back-end: Amazon S3, Digital Ocean ~ NginX',
+        headerLine01: 'Vue, Vuex, Bootstrap',
+        headerLine02: 'Amazon S3, Digital Ocean ~ NginX',
         url: 'http://stocktrader-vuejs-maxs.s3-website-us-west-1.amazonaws.com/',
         description: 'Stock Trader'
-      }
-    ],
-    projectsNodeJs: [
+      },
       {
         category: 'nodejs',
-        id: 8,
+        id: 0,
         imageListLength: 1,
         slug: '17-10g-ObsidioPlus',
         title: 'Obsidio',
-        headerLine01: '* Front-end: Node, Express, Socket.io',
-        headerLine02: '* Back-end: Heroku',
+        headerLine01: 'Node, Express, Socket.io',
+        headerLine02: 'Heroku',
         url: 'https://obsidio-alvin-l.herokuapp.com/',
         description: 'Description'
       },
       {
         category: 'nodejs',
-        id: 8,
+        id: 0,
         imageListLength: 1,
         slug: '37l-DangThatsDelicious',
         title: 'Now That\'s Delicious',
-        headerLine01: '* Front-end: Node, Axios, Express, MongoDB, Mongoose, Passport',
-        headerLine02: '* Back-end: Heroku, Now-Zeit',
+        headerLine01: 'Node, Axios, Express, MongoDB, Mongoose, Passport',
+        headerLine02: 'Heroku, Now-Zeit',
         url: 'https://dang-thats-delicious-jwc.herokuapp.com/',
         description: 'Description'
-      }
-    ],
-    projectsJavascriptPython: [
+      },
       {
         category: 'javascript-python',
-        id: 8,
+        id: 0,
         imageListLength: 1,
         slug: '11h-ArduBlockly',
         title: 'ArduBlockly-EandE',
-        headerLine01: '* Front-end: Node, Google-Blockly, Electron',
-        headerLine02: '* Back-end: Digital Ocean ~ Ubuntu, Python Bottle',
+        headerLine01: 'Node, Google-Blockly, Electron',
+        headerLine02: 'Python Bottle & Digital Ocean ~ Ubuntu',
         url: 'http://138.68.57.214:8001/ardublockly/index.html',
+        description: 'Description'
+      },
+      {
+        category: 'javascript-python',
+        id: 0,
+        imageListLength: 1,
+        slug: '11h-ArduBlockly',
+        title: 'CI Portal',
+        headerLine01: 'JavaScript, HTML, CSS',
+        headerLine02: 'Netlify',
+        url: 'https://siemens-cipportal-trunk.netlify.com',
+        description: 'Description'
+      },
+      {
+        category: 'javascript-python',
+        id: 0,
+        imageListLength: 1,
+        slug: '11h-ArduBlockly',
+        title: 'Energy IP: SDP Analyzer',
+        headerLine01: 'JavaScript, HTML, CSS',
+        headerLine02: 'Netlify',
+        url: 'https://siemens-energyip-trunk-eipsdpanalyzer.netlify.com',
         description: 'Description'
       }
     ]
