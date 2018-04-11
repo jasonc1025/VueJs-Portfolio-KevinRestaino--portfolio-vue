@@ -1,6 +1,6 @@
 <template>
-  <div class="work">
-    <ul class="projects">
+  <div class="workStyle">
+    <ul class="projectsStyle">
       <li v-for="project in projects">
 
         <a class="button" target="_blank" :href="project.url">
@@ -34,7 +34,7 @@
 
 <script>
 export default {
-  name: 'work',
+  name: 'WorkComponent',
   data () {
     return {
       projects: this.$myStore.state.projects
@@ -51,7 +51,7 @@ h2 {
 
 }
 
-.projects {
+.projectsStyle {
   display: flex;
   flex-wrap: wrap;
 
