@@ -48,7 +48,7 @@ h2 {
   // [jwc]+2 color: red;
   font-size: 18px;
   font-weight: 400;
-
+  text-align: left;
 }
 
 .ulStyle {

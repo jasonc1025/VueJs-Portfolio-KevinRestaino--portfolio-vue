@@ -78,7 +78,7 @@ export default new Vuex.Store({
         slug: '38c-ShoppityPlus',
         title: 'Shoppity',
         headerLine01: '* Front-end: Vue, Vuex, Stripe (Credit Card Purchasing)',
-        headerLine02: '* Back-end : Digital Ocean ~ Linux Ubuntu',
+        headerLine02: '* Back-end: Digital Ocean ~ Linux Ubuntu',
         url: 'http://138.68.57.214:8083/',
         description: 'Shoppity'
       },
@@ -89,7 +89,7 @@ export default new Vuex.Store({
         slug: '73c-03f-CooperaPlus',
         title: 'Coopera',
         headerLine01: '* Front-end: Vue, Socket.io, WebSocket',
-        headerLine02: '* Back-end : Digital Ocean ~ Linux Ubuntu',
+        headerLine02: '* Back-end: Digital Ocean ~ Linux Ubuntu',
         url: 'http://138.68.57.214:8082/',
         description: 'Coopera'
       },
@@ -100,7 +100,7 @@ export default new Vuex.Store({
         slug: '38b-PizzaPlanetPlus',
         title: 'Pizza Planet',
         headerLine01: '* Front-end: Vue, Vuex, Google-Firebase (Database)',
-        headerLine02: '* Back-end : Digital Ocean ~ Linux Ubuntu',
+        headerLine02: '* Back-end: Digital Ocean ~ Linux Ubuntu',
         url: 'http://138.68.57.214:8081/',
         description: 'Pizza Planet'
       },
@@ -111,7 +111,7 @@ export default new Vuex.Store({
         slug: '37q-03f-CastleDuelPlus',
         title: 'Castle Duel',
         headerLine01: '* Front-end: Vue : SVG Grapics, TweenJs (Animation)',
-        headerLine02: '* Back-end : Digital Ocean ~ Linux Ubuntu',
+        headerLine02: '* Back-end: Digital Ocean ~ Linux Ubuntu',
         url: 'https://jasonc1025.github.io/VueJs-CastleDuel-GuillaumeC/ ',
         description: 'Castle Duel'
       },
@@ -122,7 +122,7 @@ export default new Vuex.Store({
         slug: '37j-Sec18-StockTraderPlus',
         title: 'Stock Trader',
         headerLine01: '* Front-end: Vue, Vuex, Bootstrap',
-        headerLine02: '* Back-end : Amazon S3, Digital Ocean ~ NginX',
+        headerLine02: '* Back-end: Amazon S3, Digital Ocean ~ NginX',
         url: 'http://stocktrader-vuejs-maxs.s3-website-us-west-1.amazonaws.com/',
         description: 'Stock Trader'
       },
@@ -133,7 +133,7 @@ export default new Vuex.Store({
         slug: '53c-03d-03d-BurgerBuilderPlus',
         title: 'Burger Builder',
         headerLine01: '* Front-end: React, Axios, Redux, Enzyme, Jest',
-        headerLine02: '* Back-end : Google-Firebase',
+        headerLine02: '* Back-end: Google-Firebase',
         url: 'https://myburger-react-maxs.firebaseapp.com',
         description: 'Burger Builder'
       },
@@ -144,7 +144,7 @@ export default new Vuex.Store({
         slug: '53ka-Blog',
         title: 'Blog',
         headerLine01: '* Front-end: React, Gatsby, GraphQl, Particles.js (Animation), Jest',
-        headerLine02: '* Back-end : Netlify-GitHub',
+        headerLine02: '* Back-end: Netlify-GitHub',
         url: 'https://stoic-mestorf-1d9170.netlify.com',
         description: 'Blog'
       },
@@ -155,7 +155,7 @@ export default new Vuex.Store({
         slug: '17-10g-ObsidioPlus',
         title: 'Obsidio',
         headerLine01: '* Front-end: Node, Express, Socket.io',
-        headerLine02: '* Back-end : Heroku',
+        headerLine02: '* Back-end: Heroku',
         url: 'https://obsidio-alvin-l.herokuapp.com/',
         description: 'Description'
       },
@@ -166,7 +166,7 @@ export default new Vuex.Store({
         slug: '37l-DangThatsDelicious',
         title: 'Now That\'s Delicious',
         headerLine01: '* Front-end: Node, Axios, Express, MongoDB, Mongoose, Passport',
-        headerLine02: '* Back-end : Heroku, Now-Zeit',
+        headerLine02: '* Back-end: Heroku, Now-Zeit',
         url: 'https://dang-thats-delicious-jwc.herokuapp.com/',
         description: 'Description'
       },
@@ -177,7 +177,7 @@ export default new Vuex.Store({
         slug: '11h-ArduBlockly',
         title: 'ArduBlockly-EandE',
         headerLine01: '* Front-end: Node, Google-Blockly, Electron',
-        headerLine02: '* Back-end : Digital Ocean ~ Ubuntu, Python Bottle',
+        headerLine02: '* Back-end: Digital Ocean ~ Ubuntu, Python Bottle',
         url: 'http://138.68.57.214:8001/ardublockly/index.html',
         description: 'Description'
       }
@@ -190,7 +190,7 @@ export default new Vuex.Store({
         slug: '53c-03d-03d-BurgerBuilderPlus',
         title: 'Burger Builder',
         headerLine01: '* Front-end: React, Axios, Redux, Enzyme, Jest',
-        headerLine02: '* Back-end : Google-Firebase',
+        headerLine02: '* Back-end: Google-Firebase',
         url: 'https://myburger-react-maxs.firebaseapp.com',
         description: 'Burger Builder'
       },
@@ -201,7 +201,7 @@ export default new Vuex.Store({
         slug: '53ka-Blog',
         title: 'Blog',
         headerLine01: '* Front-end: React, Gatsby, GraphQl, Particles.js (Animation), Jest',
-        headerLine02: '* Back-end : Netlify-GitHub',
+        headerLine02: '* Back-end: Netlify-GitHub',
         url: 'https://stoic-mestorf-1d9170.netlify.com',
         description: 'Blog'
       }
@@ -214,7 +214,7 @@ export default new Vuex.Store({
         slug: '38c-ShoppityPlus',
         title: 'Shoppity',
         headerLine01: '* Front-end: Vue, Vuex, Stripe (Credit Card Purchasing)',
-        headerLine02: '* Back-end : Digital Ocean ~ Linux Ubuntu',
+        headerLine02: '* Back-end: Digital Ocean ~ Linux Ubuntu',
         url: 'http://138.68.57.214:8083/',
         description: 'Shoppity'
       },
@@ -225,7 +225,7 @@ export default new Vuex.Store({
         slug: '73c-03f-CooperaPlus',
         title: 'Coopera',
         headerLine01: '* Front-end: Vue, Socket.io, WebSocket',
-        headerLine02: '* Back-end : Digital Ocean ~ Linux Ubuntu',
+        headerLine02: '* Back-end: Digital Ocean ~ Linux Ubuntu',
         url: 'http://138.68.57.214:8082/',
         description: 'Coopera'
       },
@@ -236,7 +236,7 @@ export default new Vuex.Store({
         slug: '38b-PizzaPlanetPlus',
         title: 'Pizza Planet',
         headerLine01: '* Front-end: Vue, Vuex, Google-Firebase (Database)',
-        headerLine02: '* Back-end : Digital Ocean ~ Linux Ubuntu',
+        headerLine02: '* Back-end: Digital Ocean ~ Linux Ubuntu',
         url: 'http://138.68.57.214:8081/',
         description: 'Pizza Planet'
       },
@@ -247,7 +247,7 @@ export default new Vuex.Store({
         slug: '37q-03f-CastleDuelPlus',
         title: 'Castle Duel',
         headerLine01: '* Front-end: Vue : SVG Grapics, TweenJs (Animation)',
-        headerLine02: '* Back-end : Digital Ocean ~ Linux Ubuntu',
+        headerLine02: '* Back-end: Digital Ocean ~ Linux Ubuntu',
         url: 'https://jasonc1025.github.io/VueJs-CastleDuel-GuillaumeC/ ',
         description: 'Castle Duel'
       },
@@ -258,7 +258,7 @@ export default new Vuex.Store({
         slug: '37j-Sec18-StockTraderPlus',
         title: 'Stock Trader',
         headerLine01: '* Front-end: Vue, Vuex, Bootstrap',
-        headerLine02: '* Back-end : Amazon S3, Digital Ocean ~ NginX',
+        headerLine02: '* Back-end: Amazon S3, Digital Ocean ~ NginX',
         url: 'http://stocktrader-vuejs-maxs.s3-website-us-west-1.amazonaws.com/',
         description: 'Stock Trader'
       }
@@ -271,7 +271,7 @@ export default new Vuex.Store({
         slug: '17-10g-ObsidioPlus',
         title: 'Obsidio',
         headerLine01: '* Front-end: Node, Express, Socket.io',
-        headerLine02: '* Back-end : Heroku',
+        headerLine02: '* Back-end: Heroku',
         url: 'https://obsidio-alvin-l.herokuapp.com/',
         description: 'Description'
       },
@@ -282,7 +282,7 @@ export default new Vuex.Store({
         slug: '37l-DangThatsDelicious',
         title: 'Now That\'s Delicious',
         headerLine01: '* Front-end: Node, Axios, Express, MongoDB, Mongoose, Passport',
-        headerLine02: '* Back-end : Heroku, Now-Zeit',
+        headerLine02: '* Back-end: Heroku, Now-Zeit',
         url: 'https://dang-thats-delicious-jwc.herokuapp.com/',
         description: 'Description'
       },
@@ -293,7 +293,7 @@ export default new Vuex.Store({
         slug: '11h-ArduBlockly',
         title: 'ArduBlockly-EandE',
         headerLine01: '* Front-end: Node, Google-Blockly, Electron',
-        headerLine02: '* Back-end : Digital Ocean ~ Ubuntu, Python Bottle',
+        headerLine02: '* Back-end: Digital Ocean ~ Ubuntu, Python Bottle',
         url: 'http://138.68.57.214:8001/ardublockly/index.html',
         description: 'Description'
       }

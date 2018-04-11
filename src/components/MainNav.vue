@@ -1,11 +1,11 @@
 <template>
   <div class="mainNav">
-    <router-link tag="a" to="/work-react">React</router-link>
-    <router-link tag="a" to="/work-vue-js">Vue.js</router-link>
-    <router-link tag="a" to="/work-node-js">Node.js</router-link>
-    <router-link tag="a" to="/work-javascript-python">JavaScript/Python</router-link>
+    <router-link tag="a" to="/projects-react">React</router-link>
+    <router-link tag="a" to="/projects-vue-js">Vue.js</router-link>
+    <router-link tag="a" to="/projects-node-js">Node.js</router-link>
+    <router-link tag="a" to="/projects-javascript-python">JavaScript/Python</router-link>
     <!-- <router-link tag="a" to="/work">Work</router-link> -->
-    <router-link tag="a" to="/experience">Experience</router-link>
+    <router-link tag="a" to="/resume">Resume</router-link>
     <!-- [jwc] <a href="https://github.com/krestaino" target="_blank">GitHub</a> -->
     <a href="https://www.linkedin.com/in/kevinrestaino/" target="_blank">LinkedIn</a>
   </div>
