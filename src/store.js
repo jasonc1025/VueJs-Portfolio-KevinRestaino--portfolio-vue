@@ -71,116 +71,6 @@ export default new Vuex.Store({
       }
     ],
     projects: [
-      {
-        category: 'vue',
-        id: 8,
-        imageListLength: 1,
-        slug: '38c-ShoppityPlus',
-        title: 'Shoppity',
-        headerLine01: '* Front-end: Vue, Vuex, Stripe (Credit Card Purchasing)',
-        headerLine02: '* Back-end: Digital Ocean ~ Linux Ubuntu',
-        url: 'http://138.68.57.214:8083/',
-        description: 'Shoppity'
-      },
-      {
-        category: 'vue',
-        id: 8,
-        imageListLength: 1,
-        slug: '73c-03f-CooperaPlus',
-        title: 'Coopera',
-        headerLine01: '* Front-end: Vue, Socket.io, WebSocket',
-        headerLine02: '* Back-end: Digital Ocean ~ Linux Ubuntu',
-        url: 'http://138.68.57.214:8082/',
-        description: 'Coopera'
-      },
-      {
-        category: 'vue',
-        id: 8,
-        imageListLength: 1,
-        slug: '38b-PizzaPlanetPlus',
-        title: 'Pizza Planet',
-        headerLine01: '* Front-end: Vue, Vuex, Google-Firebase (Database)',
-        headerLine02: '* Back-end: Digital Ocean ~ Linux Ubuntu',
-        url: 'http://138.68.57.214:8081/',
-        description: 'Pizza Planet'
-      },
-      {
-        category: 'vue',
-        id: 8,
-        imageListLength: 1,
-        slug: '37q-03f-CastleDuelPlus',
-        title: 'Castle Duel',
-        headerLine01: '* Front-end: Vue : SVG Grapics, TweenJs (Animation)',
-        headerLine02: '* Back-end: Digital Ocean ~ Linux Ubuntu',
-        url: 'https://jasonc1025.github.io/VueJs-CastleDuel-GuillaumeC/ ',
-        description: 'Castle Duel'
-      },
-      {
-        category: 'vue',
-        id: 8,
-        imageListLength: 1,
-        slug: '37j-Sec18-StockTraderPlus',
-        title: 'Stock Trader',
-        headerLine01: '* Front-end: Vue, Vuex, Bootstrap',
-        headerLine02: '* Back-end: Amazon S3, Digital Ocean ~ NginX',
-        url: 'http://stocktrader-vuejs-maxs.s3-website-us-west-1.amazonaws.com/',
-        description: 'Stock Trader'
-      },
-      {
-        category: 'react',
-        id: 8,
-        imageListLength: 1,
-        slug: '53c-03d-03d-BurgerBuilderPlus',
-        title: 'Burger Builder',
-        headerLine01: '* Front-end: React, Axios, Redux, Enzyme, Jest',
-        headerLine02: '* Back-end: Google-Firebase',
-        url: 'https://myburger-react-maxs.firebaseapp.com',
-        description: 'Burger Builder'
-      },
-      {
-        category: 'react',
-        id: 8,
-        imageListLength: 1,
-        slug: '53ka-Blog',
-        title: 'Blog',
-        headerLine01: '* Front-end: React, Gatsby, GraphQl, Particles.js (Animation), Jest',
-        headerLine02: '* Back-end: Netlify-GitHub',
-        url: 'https://stoic-mestorf-1d9170.netlify.com',
-        description: 'Blog'
-      },
-      {
-        category: 'node',
-        id: 8,
-        imageListLength: 1,
-        slug: '17-10g-ObsidioPlus',
-        title: 'Obsidio',
-        headerLine01: '* Front-end: Node, Express, Socket.io',
-        headerLine02: '* Back-end: Heroku',
-        url: 'https://obsidio-alvin-l.herokuapp.com/',
-        description: 'Description'
-      },
-      {
-        category: 'node',
-        id: 8,
-        imageListLength: 1,
-        slug: '37l-DangThatsDelicious',
-        title: 'Now That\'s Delicious',
-        headerLine01: '* Front-end: Node, Axios, Express, MongoDB, Mongoose, Passport',
-        headerLine02: '* Back-end: Heroku, Now-Zeit',
-        url: 'https://dang-thats-delicious-jwc.herokuapp.com/',
-        description: 'Description'
-      },
-      {
-        category: 'node',
-        id: 8,
-        imageListLength: 1,
-        slug: '11h-ArduBlockly',
-        title: 'ArduBlockly-EandE',
-        headerLine01: '* Front-end: Node, Google-Blockly, Electron',
-        headerLine02: '* Back-end: Digital Ocean ~ Ubuntu, Python Bottle',
-        url: 'http://138.68.57.214:8001/ardublockly/index.html',
-        description: 'Description'
-      }
     ],
     projectsReact: [
       {
@@ -189,8 +79,9 @@ export default new Vuex.Store({
         imageListLength: 1,
         slug: '53c-03d-03d-BurgerBuilderPlus',
         title: 'Burger Builder',
-        headerLine01: '* Front-end: React, Axios, Redux, Enzyme, Jest',
-        headerLine02: '* Back-end: Google-Firebase',
+        headerLine00: 'Food Ordering System: Burger Builder',
+        headerLine01: 'React, Axios, Redux, Enzyme, Jest',
+        headerLine02: 'Google-Firebase',
         url: 'https://myburger-react-maxs.firebaseapp.com',
         description: 'Burger Builder'
       },
@@ -198,17 +89,39 @@ export default new Vuex.Store({
         category: 'react',
         id: 8,
         imageListLength: 1,
-        slug: '53ka-Blog',
+        slug: '53ka-BlogPlus',
         title: 'Blog',
         headerLine01: '* Front-end: React, Gatsby, GraphQl, Particles.js (Animation), Jest',
         headerLine02: '* Back-end: Netlify-GitHub',
         url: 'https://stoic-mestorf-1d9170.netlify.com',
         description: 'Blog'
+      },
+      {
+        category: 'react',
+        id: 8,
+        imageListLength: 1,
+        slug: '53p-CatchOfTheDayPlus',
+        title: 'Catch of the Day',
+        headerLine01: '* Front-end: React, Authentication (GitHub, Twitter, FaceBook)',
+        headerLine02: '* Back-end: Netlify',
+        url: 'http://react-catchoftheday-wesbos.netlify.com/',
+        description: 'Catch of the Day'
+      },
+      {
+        category: 'react',
+        id: 8,
+        imageListLength: 1,
+        slug: '37e-BookshopPlus',
+        title: 'Bookshop',
+        headerLine01: '* Front-end: Mondo, Express, React & Node (MERN)',
+        headerLine02: '* Back-end: Amazon ~ Elastic Beanstalk (EB)',
+        url: 'http://react-bookshop-marco-tomasello.nyu2gnsj37.us-west-1.elasticbeanstalk.com/',
+        description: 'Bookshop'
       }
     ],
     projectsVueJs: [
       {
-        category: 'vue',
+        category: 'vuejs',
         id: 8,
         imageListLength: 1,
         slug: '38c-ShoppityPlus',
@@ -219,7 +132,7 @@ export default new Vuex.Store({
         description: 'Shoppity'
       },
       {
-        category: 'vue',
+        category: 'vuejs',
         id: 8,
         imageListLength: 1,
         slug: '73c-03f-CooperaPlus',
@@ -230,7 +143,7 @@ export default new Vuex.Store({
         description: 'Coopera'
       },
       {
-        category: 'vue',
+        category: 'vuejs',
         id: 8,
         imageListLength: 1,
         slug: '38b-PizzaPlanetPlus',
@@ -241,7 +154,7 @@ export default new Vuex.Store({
         description: 'Pizza Planet'
       },
       {
-        category: 'vue',
+        category: 'vuejs',
         id: 8,
         imageListLength: 1,
         slug: '37q-03f-CastleDuelPlus',
@@ -252,7 +165,7 @@ export default new Vuex.Store({
         description: 'Castle Duel'
       },
       {
-        category: 'vue',
+        category: 'vuejs',
         id: 8,
         imageListLength: 1,
         slug: '37j-Sec18-StockTraderPlus',
@@ -265,7 +178,7 @@ export default new Vuex.Store({
     ],
     projectsNodeJs: [
       {
-        category: 'node',
+        category: 'nodejs',
         id: 8,
         imageListLength: 1,
         slug: '17-10g-ObsidioPlus',
@@ -276,7 +189,7 @@ export default new Vuex.Store({
         description: 'Description'
       },
       {
-        category: 'node',
+        category: 'nodejs',
         id: 8,
         imageListLength: 1,
         slug: '37l-DangThatsDelicious',
@@ -285,9 +198,11 @@ export default new Vuex.Store({
         headerLine02: '* Back-end: Heroku, Now-Zeit',
         url: 'https://dang-thats-delicious-jwc.herokuapp.com/',
         description: 'Description'
-      },
+      }
+    ],
+    projectsJavascriptPython: [
       {
-        category: 'node',
+        category: 'javascript-python',
         id: 8,
         imageListLength: 1,
         slug: '11h-ArduBlockly',

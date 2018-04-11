@@ -7,11 +7,12 @@
         <!-- <router-link tag="a" :to="`/work/${project.category}/${project.slug}`"> -->
         
           <!-- [jwc] Need to embed both 'title' fields in the same '<h3>' with a '<b>' inbetween -->
-          <h3>Press to Enter Demo Site: <br> {{ project.title }}... <br> {{ project.title02 }}</h3>
+          <h3>Press to Enter Demo Site: <br> {{ project.title }} <br> {{ project.title02 }}</h3>
           <!-- [jwc] not work, will overlay prior <h3>{{ project.title02 }}</h3> -->
           <!-- <h3> Hello2 {{ project.title }} </h3> -->
-          <h2> {{ project.headerLine01 }} </h2>
-          <h2> {{ project.headerLine02 }} </h2>
+          <h1> {{ project.headerLine00 }} </h1>
+          <h2> &bull; Front-End: <b> {{ project.headerLine01 }} </b> </h2>
+          <h2> &bull; Back-End: <b> {{ project.headerLine02 }} </b> </h2>
           <!-- <p> Hello2 {{ project.title }} </p> -->
 
           <!-- Y <a class="button" target="_blank" :href="project.url">Live Site</a> -->
@@ -44,11 +45,20 @@ export default {
 </script>
 
 <style scoped lang="scss">
+h1 {
+  // [jwc]+2 color: red;
+  font-size: 16px;
+  font-weight: 200;
+  text-align: left;
+}
 h2 {
   // [jwc]+2 color: red;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 200;
   text-align: left;
+}
+b { 
+    font-weight: bold;
 }
 
 .ulStyle {
