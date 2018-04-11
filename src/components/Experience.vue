@@ -1,5 +1,5 @@
 <template>
-  <div class="resume">
+  <div class="resumeStyle">
     <ul>
       <li v-for="job in jobs">
         <div class="title">{{ job.title }}</div>
@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: 'resume',
+  name: 'ResumeComponent',
   data () {
     return {
       jobs: this.$myStore.state.jobs
