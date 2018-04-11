@@ -1,8 +1,12 @@
 <template>
   <div class="mainNav">
+    <router-link tag="a" to="/">React</router-link>
+    <router-link tag="a" to="/">Vue.js</router-link>
+    <router-link tag="a" to="/">Node.js</router-link>
+    <router-link tag="a" to="/">JavaScript/Python</router-link>
     <router-link tag="a" to="/">Work</router-link>
     <router-link tag="a" to="/experience">Experience</router-link>
-    <a href="https://github.com/krestaino" target="_blank">GitHub</a>
+    <!-- [jwc] <a href="https://github.com/krestaino" target="_blank">GitHub</a> -->
     <a href="https://www.linkedin.com/in/kevinrestaino/" target="_blank">LinkedIn</a>
   </div>
 </template>

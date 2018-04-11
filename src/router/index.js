@@ -12,6 +12,26 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'React',
+      component: Work
+    },
+    {
+      path: '/',
+      name: 'Vue.js',
+      component: Work
+    },
+    {
+      path: '/',
+      name: 'Node.js',
+      component: Work
+    },
+    {
+      path: '/',
+      name: 'Python',
+      component: Work
+    },
+    {
+      path: '/',
       name: 'Work',
       component: Work
     },
