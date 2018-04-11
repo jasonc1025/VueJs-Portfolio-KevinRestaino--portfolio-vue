@@ -46,7 +46,7 @@ export default {
 <style scoped lang="scss">
 h2 {
   // [jwc]+2 color: red;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   text-align: left;
 }
