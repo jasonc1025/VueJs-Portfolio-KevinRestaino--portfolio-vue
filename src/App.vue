@@ -3,24 +3,25 @@
     <header class="header">
       <h1>Jason W Chan</h1>
       <h2>Full-Stack Web Instructor & Developer</h2>
-      <MainNav></MainNav>
+      <mainNavComponent></mainNavComponent>
     </header>
     <section class="route">
       <router-view></router-view>
     </section>
     <footer class="footer">
-      <span>© {{ currentYear }} Jason W Chan. All rights reserved.</span>
+      <!-- <span> Portfolio developed using Vue.js & Netlify <br> © {{ currentYear }} Encourage and Empower. All rights reserved.</span> -->
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /> &nbsp </a><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Portfolio by Jason W Chan using Vue.js, Express & Netlify <br> Creative Commons Attribution-NonCommercial-ShareAlike <br> 4.0 International License</a>
     </footer>
   </div>
 </template>
 
 <script>
-import MainNav from './components/MainNav'
+import mainNavComponent from './components/MainNav'
 
 export default {
-  name: 'app',
+  name: 'appComponent',
   components: {
-    MainNav
+    mainNavComponent
   },
   data () {
     return {
@@ -158,6 +159,12 @@ h2 {
   span {
     color: #bbb;
     font-size: 14px;
+    text-align: center;
+  }
+  a {
+    color: #bbb;
+    font-size: 14px;
+    text-align: center;
   }
 }
 
