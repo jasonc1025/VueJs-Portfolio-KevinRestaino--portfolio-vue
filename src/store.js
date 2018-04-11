@@ -181,82 +181,122 @@ export default new Vuex.Store({
         url: 'http://138.68.57.214:8001/ardublockly/index.html',
         description: 'Description'
       }
-      // [jwc]+x
-      // {
-      //   category: 'shure',
-      //   id: 8,
-      //   imageListLength: 20,
-      //   // [jwc]+1 slug: 'axient-digital',
-      //   slug: 'axient-digital',
-      //   title: 'Axient® Digital – Shure',
-      //   url: 'http://www.shure.com/americas/axient-digital',
-      //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
-      // },
-      // {
-      //   category: 'personal',
-      //   github: 'https://github.com/krestaino/weather-vue/',
-      //   id: 7,
-      //   imageListLength: 1,
-      //   slug: 'weather',
-      //   title: 'Weather Vue – Personal Project',
-      //   url: 'https://weather.kmr.io',
-      //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
-      // },
-      // {
-      //   category: 'shure',
-      //   id: 6,
-      //   imageListLength: 18,
-      //   slug: 'motiv',
-      //   title: 'MOTIV™ Recording Microphones – Shure',
-      //   url: 'http://www.shure.com/americas/motiv/recording-musician',
-      //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
-      // },
-      // {
-      //   category: 'personal',
-      //   github: 'https://github.com/krestaino/color-con/',
-      //   id: 5,
-      //   imageListLength: 1,
-      //   slug: 'color-con',
-      //   title: 'Color Con – Personal Project',
-      //   url: 'https://color-con.kmr.io',
-      //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
-      // }
-      // {
-      //   category: 'shure',
-      //   id: 4,
-      //   imageListLength: 12,
-      //   slug: 'microflex-advance',
-      //   title: 'Microflex® Advance™ Conference Room Audio – Shure',
-      //   url: 'http://www.shure.com/americas/microflex-advance',
-      //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
-      // },
-      // {
-      //   category: 'shure',
-      //   id: 3,
-      //   imageListLength: 12,
-      //   slug: 'ksm8',
-      //   title: 'KSM8 Dualdyne™ Vocal Microphone – Shure',
-      //   url: 'http://www.shure.com/americas/ksm8',
-      //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
-      // },
-      // {
-      //   category: 'shure',
-      //   id: 2,
-      //   imageListLength: 9,
-      //   slug: 'kse1500',
-      //   title: 'KSE1500 Electrostatic Earphone System – Shure',
-      //   url: 'http://www.shure.com/americas/kse1500',
-      //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
-      // },
-      // {
-      //   category: 'shure',
-      //   id: 1,
-      //   imageListLength: 14,
-      //   slug: 'blog',
-      //   title: 'Blog – Shure',
-      //   url: 'http://blog.shure.com',
-      //   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt rutrum odio sit amet auctor. Vivamus at porttitor metus. Curabitur ac dictum orci. Suspendisse consectetur consequat sem nec luctus. In euismod vestibulum dui.'
-      // }
+    ],
+    projectsReact: [
+      {
+        category: 'react',
+        id: 8,
+        imageListLength: 1,
+        slug: '53c-03d-03d-BurgerBuilderPlus',
+        title: 'Burger Builder',
+        headerLine01: '* Front-end: React, Axios, Redux, Enzyme, Jest',
+        headerLine02: '* Back-end : Google-Firebase',
+        url: 'https://myburger-react-maxs.firebaseapp.com',
+        description: 'Burger Builder'
+      },
+      {
+        category: 'react',
+        id: 8,
+        imageListLength: 1,
+        slug: '53ka-Blog',
+        title: 'Blog',
+        headerLine01: '* Front-end: React, Gatsby, GraphQl, Particles.js (Animation), Jest',
+        headerLine02: '* Back-end : Netlify-GitHub',
+        url: 'https://stoic-mestorf-1d9170.netlify.com',
+        description: 'Blog'
+      }
+    ],
+    projectsVueJs: [
+      {
+        category: 'vue',
+        id: 8,
+        imageListLength: 1,
+        slug: '38c-ShoppityPlus',
+        title: 'Shoppity',
+        headerLine01: '* Front-end: Vue, Vuex, Stripe (Credit Card Purchasing)',
+        headerLine02: '* Back-end : Digital Ocean ~ Linux Ubuntu',
+        url: 'http://138.68.57.214:8083/',
+        description: 'Shoppity'
+      },
+      {
+        category: 'vue',
+        id: 8,
+        imageListLength: 1,
+        slug: '73c-03f-CooperaPlus',
+        title: 'Coopera',
+        headerLine01: '* Front-end: Vue, Socket.io, WebSocket',
+        headerLine02: '* Back-end : Digital Ocean ~ Linux Ubuntu',
+        url: 'http://138.68.57.214:8082/',
+        description: 'Coopera'
+      },
+      {
+        category: 'vue',
+        id: 8,
+        imageListLength: 1,
+        slug: '38b-PizzaPlanetPlus',
+        title: 'Pizza Planet',
+        headerLine01: '* Front-end: Vue, Vuex, Google-Firebase (Database)',
+        headerLine02: '* Back-end : Digital Ocean ~ Linux Ubuntu',
+        url: 'http://138.68.57.214:8081/',
+        description: 'Pizza Planet'
+      },
+      {
+        category: 'vue',
+        id: 8,
+        imageListLength: 1,
+        slug: '37q-03f-CastleDuelPlus',
+        title: 'Castle Duel',
+        headerLine01: '* Front-end: Vue : SVG Grapics, TweenJs (Animation)',
+        headerLine02: '* Back-end : Digital Ocean ~ Linux Ubuntu',
+        url: 'https://jasonc1025.github.io/VueJs-CastleDuel-GuillaumeC/ ',
+        description: 'Castle Duel'
+      },
+      {
+        category: 'vue',
+        id: 8,
+        imageListLength: 1,
+        slug: '37j-Sec18-StockTraderPlus',
+        title: 'Stock Trader',
+        headerLine01: '* Front-end: Vue, Vuex, Bootstrap',
+        headerLine02: '* Back-end : Amazon S3, Digital Ocean ~ NginX',
+        url: 'http://stocktrader-vuejs-maxs.s3-website-us-west-1.amazonaws.com/',
+        description: 'Stock Trader'
+      }
+    ],
+    projectsNodeJs: [
+      {
+        category: 'node',
+        id: 8,
+        imageListLength: 1,
+        slug: '17-10g-ObsidioPlus',
+        title: 'Obsidio',
+        headerLine01: '* Front-end: Node, Express, Socket.io',
+        headerLine02: '* Back-end : Heroku',
+        url: 'https://obsidio-alvin-l.herokuapp.com/',
+        description: 'Description'
+      },
+      {
+        category: 'node',
+        id: 8,
+        imageListLength: 1,
+        slug: '37l-DangThatsDelicious',
+        title: 'Now That\'s Delicious',
+        headerLine01: '* Front-end: Node, Axios, Express, MongoDB, Mongoose, Passport',
+        headerLine02: '* Back-end : Heroku, Now-Zeit',
+        url: 'https://dang-thats-delicious-jwc.herokuapp.com/',
+        description: 'Description'
+      },
+      {
+        category: 'node',
+        id: 8,
+        imageListLength: 1,
+        slug: '11h-ArduBlockly',
+        title: 'ArduBlockly-EandE',
+        headerLine01: '* Front-end: Node, Google-Blockly, Electron',
+        headerLine02: '* Back-end : Digital Ocean ~ Ubuntu, Python Bottle',
+        url: 'http://138.68.57.214:8001/ardublockly/index.html',
+        description: 'Description'
+      }
     ]
   }
 })

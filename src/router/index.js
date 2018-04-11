@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Work from '@/components/Work'
+import WorkReact from '@/components/WorkReact'
+import WorkVueJs from '@/components/WorkVueJs'
+import WorkNodeJs from '@/components/WorkNodeJs'
+import WorkJavaScriptPython from '@/components/WorkJavascriptPython'
 import Project from '@/components/Project.vue'
 import Experience from '@/components/Experience'
 import Error from '@/components/Error'
@@ -11,27 +15,27 @@ export default new Router({
   mode: 'history',
   routes: [
     {
-      path: '/',
+      path: '/work-react',
       name: 'React',
-      component: Work
+      component: WorkReact
     },
     {
-      path: '/',
+      path: '/work-vue-js',
       name: 'Vue.js',
-      component: Work
+      component: WorkVueJs
     },
     {
-      path: '/',
+      path: '/work-node-js',
       name: 'Node.js',
-      component: Work
+      component: WorkNodeJs
     },
     {
-      path: '/',
-      name: 'Python',
-      component: Work
+      path: '/work-javascript-python',
+      name: 'JavaScript/Python',
+      component: WorkJavaScriptPython
     },
     {
-      path: '/',
+      path: '/work',
       name: 'Work',
       component: Work
     },
