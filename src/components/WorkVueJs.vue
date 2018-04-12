@@ -21,8 +21,9 @@
           <div class="imageContainer lazy">
             <!-- [jwc]+x -->
             <!-- [jwc]orig: <img v-lazy="`/static/work/${project.category}/${project.slug}/${project.slug}_thumb.png`" :data-srcset="`/static/work/${project.category}/${project.slug}/${project.slug}_thumb@2x.png 2x`"> -->
-            <img v-lazy="`/static/work/${project.category}/${project.slug}/${project.slug}_thumb.png`" :data-srcset="`/static/work/${project.category}/${project.slug}/${project.slug}_thumb.png`">
+            <!-- Y <img v-lazy="`/static/work/${project.category}/${project.slug}/${project.slug}_thumb.png`" :data-srcset="`/static/work/${project.category}/${project.slug}/${project.slug}_thumb.png`"> -->
             <!-- Y <img v-lazy="`/static/work/${project.category}/${project.slug}/${project.slug}_thumb.gif`" :data-srcset="`/static/work/${project.category}/${project.slug}/${project.slug}_thumb@2x.gif 2x`"> -->
+            <img v-lazy="`/static/work/${project.category}/${project.slug}/${project.slug}_thumb.gif`" :data-srcset="`/static/work/${project.category}/${project.slug}/${project.slug}_thumb@2x.gif 2x`">
             <div class="spinner"></div>
           </div>
 
@@ -41,7 +42,7 @@ export default {
     return {
       // projects: this.$myStore.state.projectsVueJs
       projects: this.$myStore.state.projects,
-      projectCategory: 'vuejs'
+      projectCategory: 'vuejs-dir'
     }
   }
 }
@@ -51,8 +52,10 @@ export default {
 h1 {
   // [jwc]+2 color: red;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 400;
   text-align: left;
+  text-decoration: underline;
+  color:blue;
 }
 h2 {
   // [jwc]+2 color: red;

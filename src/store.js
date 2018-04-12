@@ -72,79 +72,67 @@ export default new Vuex.Store({
     ],
     projects: [
       {
-        category: 'react',
+        category: 'react-dir',
         id: 0,
         imageListLength: 1,
         slug: '53c-03d-03d-BurgerBuilderPlus',
         title: 'Burger Builder',
-        headerLine00: 'Food Ordering System: Burger Builder',
+        headerLine00: 'Fast-Food Order App: Burger Builder',
         headerLine01: 'React, Axios, Redux, Enzyme, Jest',
         headerLine02: 'Google-Firebase',
         url: 'https://myburger-react-maxs.firebaseapp.com',
         description: 'Burger Builder'
       },
       {
-        category: 'react',
+        category: 'react-dir',
         id: 0,
         imageListLength: 1,
         slug: '53ka-BlogPlus',
         title: 'Blog',
-        headerLine00: '',
+        headerLine00: 'Blog App: Full-Stack Web Dev',
         headerLine01: 'React, Gatsby, GraphQl, Particles.js (Animation), Jest',
-        headerLine02: 'Netlify-GitHub',
-        url: 'https://stoic-mestorf-1d9170.netlify.com',
+        headerLine02: 'Netlify',
+        url: 'https://react-gatsby-blog-dustinc.netlify.com',
         description: 'Blog'
       },
       {
-        category: 'react',
+        category: 'react-dir',
         id: 0,
         imageListLength: 1,
         slug: '53p-CatchOfTheDayPlus',
         title: 'Catch of the Day',
-        headerLine00: '',
-        headerLine01: 'React, Authentication (GitHub, Twitter, FaceBook)',
+        headerLine00: 'Seafood Order & Inventory App: Catch of the Day',
+        headerLine01: 'React, CRUD (Firebase-Google), Authentication (GitHub, Twitter, FaceBook)',
         headerLine02: 'Netlify',
         url: 'http://react-catchoftheday-wesbos.netlify.com/',
         description: 'Catch of the Day'
       },
       {
-        category: 'react',
+        category: 'react-dir',
         id: 0,
         imageListLength: 1,
         slug: '37e-BookshopPlus',
-        title: 'Bookshop',
-        headerLine00: '',
+        title: 'BookShop',
+        headerLine00: 'Bookstore Order & Admin App: BookShop',
         headerLine01: 'Mondo, Express, React & Node (MERN)',
         headerLine02: 'Amazon ~ Elastic Beanstalk (EB)',
         url: 'http://react-bookshop-marco-tomasello.nyu2gnsj37.us-west-1.elasticbeanstalk.com/',
         description: 'Bookshop'
       },
       {
-        category: 'vuejs',
+        category: 'vuejs-dir',
         id: 0,
         imageListLength: 1,
         slug: '38c-ShoppityPlus',
         title: 'Shoppity',
-        headerLine00: '',
-        headerLine01: 'Vue, Vuex, Stripe (Credit Card Purchasing)',
-        headerLine02: 'Digital Ocean ~ Linux Ubuntu',
-        url: 'http://138.68.57.214:8083/',
+        headerLine00: 'Clothing Store w/ Credit Card Purchasing: Shoppity',
+        headerLine01: 'Vue, Nuxt, Vuex, Stripe (Credit Card Purchasing)',
+        headerLine02: 'Netlify',
+        url: 'https://vuejs-shoppityplus-sarahdrasner.netlify.com/',
         description: 'Shoppity'
       },
       {
-        category: 'vuejs',
-        id: 0,
-        imageListLength: 1,
-        slug: '73c-03f-CooperaPlus',
-        title: 'Coopera',
-        headerLine00: '',
-        headerLine01: 'Vue, Socket.io, WebSocket',
-        headerLine02: 'Digital Ocean ~ Linux Ubuntu',
-        url: 'http://138.68.57.214:8082/',
-        description: 'Coopera'
-      },
-      {
-        category: 'vuejs',
+        category: 'vuejs-dir',
         id: 0,
         imageListLength: 1,
         slug: '38b-PizzaPlanetPlus',
@@ -156,7 +144,19 @@ export default new Vuex.Store({
         description: 'Pizza Planet'
       },
       {
-        category: 'vuejs',
+        category: 'vuejs-dir',
+        id: 0,
+        imageListLength: 1,
+        slug: '73c-03f-CooperaPlus',
+        title: 'Coopera',
+        headerLine00: '',
+        headerLine01: 'Vue, Socket.io, WebSocket',
+        headerLine02: 'Digital Ocean ~ Linux Ubuntu',
+        url: 'http://138.68.57.214:8082/',
+        description: 'Coopera'
+      },
+      {
+        category: 'vuejs-dir',
         id: 0,
         imageListLength: 1,
         slug: '37q-03f-CastleDuelPlus',
@@ -168,31 +168,31 @@ export default new Vuex.Store({
         description: 'Castle Duel'
       },
       {
-        category: 'vuejs',
+        category: 'vuejs-dir',
         id: 0,
         imageListLength: 1,
         slug: '37j-Sec18-StockTraderPlus',
         title: 'Stock Trader',
         headerLine00: '',
         headerLine01: 'Vue, Vuex, Bootstrap',
-        headerLine02: 'Amazon S3, Digital Ocean ~ NginX',
+        headerLine02: 'Amazon S3; Digital Ocean ~ NginX',
         url: 'http://stocktrader-vuejs-maxs.s3-website-us-west-1.amazonaws.com/',
         description: 'Stock Trader'
       },
       {
-        category: 'nodejs',
+        category: 'nodejs-dir',
         id: 0,
         imageListLength: 1,
         slug: '37l-DangThatsDelicious',
         title: 'Now That\'s Delicious',
         headerLine00: '',
         headerLine01: 'Node, Axios, Express, MongoDB, Mongoose, Passport',
-        headerLine02: 'Heroku, Now-Zeit',
+        headerLine02: 'Heroku; Now-Zeit',
         url: 'https://dang-thats-delicious-jwc.herokuapp.com/',
         description: 'Description'
       },
       {
-        category: 'nodejs',
+        category: 'nodejs-dir',
         id: 0,
         imageListLength: 1,
         slug: '17-10g-ObsidioPlus',
@@ -204,7 +204,7 @@ export default new Vuex.Store({
         description: 'Description'
       },
       {
-        category: 'javascript-python',
+        category: 'javascript-python-dir',
         id: 0,
         imageListLength: 1,
         slug: '11h-ArduBlockly',
@@ -216,7 +216,7 @@ export default new Vuex.Store({
         description: 'Description'
       },
       {
-        category: 'javascript-python',
+        category: 'javascript-python-dir',
         id: 0,
         imageListLength: 1,
         slug: '11h-ArduBlockly',
@@ -228,7 +228,7 @@ export default new Vuex.Store({
         description: 'Description'
       },
       {
-        category: 'javascript-python',
+        category: 'javascript-python-dir',
         id: 0,
         imageListLength: 1,
         slug: '11h-ArduBlockly',

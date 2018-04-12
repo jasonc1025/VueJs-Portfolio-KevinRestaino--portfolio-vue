@@ -42,7 +42,7 @@ export default {
     return {
       // projects: this.$myStore.state.projectsReact
       projects: this.$myStore.state.projects,
-      projectCategory: 'react'
+      projectCategory: 'react-dir'
     }
   }
 }
@@ -52,8 +52,10 @@ export default {
 h1 {
   // [jwc]+2 color: red;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 400;
   text-align: left;
+  text-decoration: underline;
+  color:blue;
 }
 h2 {
   // [jwc]+2 color: red;
