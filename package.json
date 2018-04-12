@@ -1,7 +1,7 @@
 {
-  "name": "kmr.io",
+  "name": "jasonc-portfolio",
   "version": "1.0.0",
-  "description": "Online portfolio of Jason W Chan",
+  "description": "Online Portfolio of Jason W Chan",
   "author": "Jason W Chan <jasonc@eande.world>",
   "private": true,
   "scripts": {

@@ -3,7 +3,7 @@
     <router-link tag="a" to="/projects-react">React</router-link>
     <router-link tag="a" to="/projects-vue-js">Vue.js</router-link>
     <router-link tag="a" to="/projects-node-js">Node.js</router-link>
-    <router-link tag="a" to="/projects-javascript-python">JavaScript/Python</router-link>
+    <router-link tag="a" to="/projects-javascript-python">JavaScript&Python</router-link>
     <!-- <router-link tag="a" to="/work">Work</router-link> -->
     <router-link tag="a" to="/resume">Resume</router-link>
     <!-- [jwc] <a href="https://github.com/krestaino" target="_blank">GitHub</a> -->
