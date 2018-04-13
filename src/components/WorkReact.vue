@@ -8,7 +8,8 @@
         <!-- <router-link tag="a" :to="`/work/${project.category}/${project.slug}`"> -->
         
           <!-- [jwc] Need to embed both 'title' fields in the same '<h3>' with a '<b>' inbetween -->
-          <h3>Watch this current 60sec Screencast <br> - or - <br> Press to Enter Live Demo Site: <br> {{ project.title }} <br> {{ project.title02 }}</h3>
+          <h3 v-if="project.url !==''">60-sec Screencast Now Playing<br>- or -<br>Press to Enter Live Demo Site:<br>{{ project.title }}<br>{{ project.title02 }}</h3>
+          <h3 v-else-if="project.url ===''">60-sec Screencast Now Playing:<br>{{ project.title }}<br>{{ project.title02 }}</h3>
           <!-- [jwc] not work, will overlay prior <h3>{{ project.title02 }}</h3> -->
           <!-- <h3> Hello2 {{ project.title }} </h3> -->
           <h1> {{ project.headerLine00 }} </h1>
@@ -92,9 +93,11 @@ b {
       padding: 0 16px;
       position: absolute;
       text-align: center;
-      transform: translateY(-18px);
-      transition: 0.3s;
-      top: 50%;
+      // [jwc]+1 transform: translateY(-18px);
+      transform: translateY(-100px);
+      // [jwc] transition: 0.3s;
+      transition:1s;
+      top: 45%;  // [jwc] was 50% (too low)
       width: 100%;
       z-index: 1;
     }
@@ -140,6 +143,9 @@ b {
       .imageContainer::after {
         background-color: rgba(0,0,0,0.85);
       }
+    }
+    .button:hover {
+      opacity: 0.5;
     }
   }
 }
