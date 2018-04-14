@@ -4,7 +4,14 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
+  mutations: {
+    increment (state) {
+      // mutate state
+      state.tabMode++
+    }
+  },
   state: {
+    tabMode: 1,
     jobs: [
       {
         title: 'Lead Instructor and Curriculum Developer',
