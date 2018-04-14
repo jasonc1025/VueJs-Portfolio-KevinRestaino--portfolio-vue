@@ -12,9 +12,9 @@
           <h3 v-else-if="project.url ===''">60-sec Screencast Now Playing:<br>{{ project.title }}<br>{{ project.title02 }}</h3>
           <!-- [jwc] not work, will overlay prior <h3>{{ project.title02 }}</h3> -->
           <!-- <h3> Hello2 {{ project.title }} </h3> -->
-          <h1> {{ project.headerLine00 }} </h1>
-          <h2> &bull; Front-End: <b> {{ project.headerLine01 }} </b> </h2>
-          <h2> &bull; Back-End: <b> {{ project.headerLine02 }} </b> </h2>
+          <h1> {{ project.headLine00 }} </h1>
+          <h2> &bull; Front-End: <b> {{ project.headLine01 }} </b> </h2>
+          <h2> &bull; Back-End: <b> {{ project.headLine02 }} </b> </h2>
           <!-- <p> Hello2 {{ project.title }} </p> -->
 
           <!-- Y <a class="button" target="_blank" :href="project.url">Live Site</a> -->
