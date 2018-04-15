@@ -150,7 +150,7 @@ export default new Vuex.Store({
         imageListLength: 1,
         slug: '38c-ShoppityPlus',
         title: 'Shoppity Plus',
-        headLine00: 'Clothing Order w/ Credit Card Purchasing: Shoppity Plus',
+        headLine00: 'Clothing Store w/ Credit Card Purchasing: Shoppity Plus',
         headLine01: 'Vue, Nuxt, Vuex, Stripe (Credit Card Purchasing)',
         headLine02: 'Netlify',
         url: 'https://vuejs-shoppityplus-sarahdrasner.netlify.com/',
