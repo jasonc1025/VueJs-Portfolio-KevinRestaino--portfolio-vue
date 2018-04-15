@@ -1,26 +1,28 @@
 <template>
-  <!-- Y <div class="mainNav" @click="tabMode += 1"> -->
-  <!-- <div class="mainNav" @click="setTabMode(100)"> -->
-  <div class="mainNav" @click="store.commit('increment')">
-    <router-link v-if="tabMode==1" tag="a" to="/projects-react" v-on:click="setTabMode(2)">React</router-link>
-    <router-link v-else tag="a" to="/projects-react">React2</router-link>
-    <button v-on:click="greet">Greet4
+  <!-- Y <div class="mainNav" @click="store.commit('increment')"> -->
+  <div class="mainNav">
 
-      <router-link tag="a" to="/projects-react" v-on:click="tabMode += 2">React4</router-link>
+    <router-link v-if="store.getters.tabModeGet==0" tag="a" to="/projects-react" @click.native="store.commit('tabModeSet','0')"><b>React</b></router-link>
+    <router-link v-else tag="a" to="/projects-react" @click.native="store.commit('tabModeSet','0')">React</router-link>
+    
+    <router-link v-if="store.getters.tabModeGet==1" tag="a" to="/projects-vue-js" @click.native="store.commit('tabModeSet','1')"><b>Vue.js</b></router-link>
+    <router-link v-else tag="a" to="/projects-vue-js" @click.native="store.commit('tabModeSet','1')">Vue.js</router-link>
 
-    </button>
-    <button v-on:click="setTabMode(2)">Greet2</button>
-    <button v-on:click="tabMode += 1">Greet3</button>
+    <!--Y <router-link tag="a" to="/projects-node-js" @click.native="store.commit('increment')">Node.js</router-link> -->
+    <!--Y <router-link tag="a" to="/projects-javascript-python" @click.native="store.commit('tabModeSet', 100)">Industry-Leading</router-link> -->
 
-    <router-link tag="a" to="/projects-vue-js" @click.native="tabMode += 1">Vue.js</router-link>
-    <!-- <router-link tag="a" to="/projects-node-js" v-on:click="greet">Node.js</router-link> -->
-    <!-- <router-link tag="a" to="/projects-node-js" @click.native="setTabMode(100)">Node.js</router-link> -->
-    <router-link tag="a" to="/projects-node-js" @click.native="greet">Node.js</router-link>
-    <router-link tag="a" to="/projects-javascript-python">Industry-Leading</router-link>
-    <!-- <router-link tag="a" to="/work">Work</router-link> -->
-    <router-link tag="a" to="/resume">Resume</router-link>
+    <router-link v-if="store.getters.tabModeGet==2" tag="a" to="/projects-node-js" @click.native="store.commit('tabModeSet','2')"><b>Node.js</b></router-link>
+    <router-link v-else tag="a" to="/projects-node-js" @click.native="store.commit('tabModeSet','2')">Node.js</router-link>
+
+    <router-link v-if="store.getters.tabModeGet==3" tag="a" to="/projects-javascript-python" @click.native="store.commit('tabModeSet','3')"><b>Industry-Leading</b></router-link>
+    <router-link v-else tag="a" to="/projects-javascript-python" @click.native="store.commit('tabModeSet','3')">Industry-Leading</router-link>
+
+    <router-link v-if="store.getters.tabModeGet==4" tag="a" to="/resume" @click.native="store.commit('tabModeSet','4')"><b>Resume</b></router-link>
+    <router-link v-else tag="a" to="/resume" @click.native="store.commit('tabModeSet','4')">Resume</router-link>
+
     <!-- [jwc] <a href="https://github.com/krestaino" target="_blank">GitHub</a> -->
-    <a href="https://www.linkedin.com/in/kevinrestaino/" target="_blank">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/jasonwchan1025/" target="_blank">LinkedIn</a>
+
   </div>
 </template>
 
@@ -34,23 +36,19 @@ export default {
     }
   },
   methods: {
-    setTabMode (value) {
-      this.$myStore.state.tabMode = value
-    },
     greet: function (event) {
       // `this` inside methods points to the Vue instance
       // alert('Hello ' + this.name + '!')
-      alert(this.tabMode)
-      alert(this.$myStore.state.tabMode)
-
-      // tabMode += 1
-      this.$myStore.state.tabMode += 1
-      // `event` is the native DOM event
-      if (event) {
-        alert(event.target.tagName)
-      }
+      // Y this.tabMode += 10
+      // Y this.$myStore.state.tabMode += 100
+      console.log('this.tabMode: ' + this.tabMode)
+      console.log('this.$myStore.state.tabMode: ' + this.$myStore.state.tabMode)
+      console.log('')
+      // Y  // `event` is the native DOM event
+      // if (event) {
+      //   alert(event.target.tagName)
+      // }
     }
-
   }
 }
 </script>
@@ -73,6 +71,10 @@ export default {
     + a {
       margin-left: 16px;
     }
+  }
+  b {
+    font-weight: bold;
+    color:blue;
   }
 }
 </style>

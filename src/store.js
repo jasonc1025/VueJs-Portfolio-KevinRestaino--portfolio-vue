@@ -4,14 +4,23 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
+  getters: {
+    tabModeGet: state => {
+      return state.tabMode
+    }
+  },
   mutations: {
     increment (state) {
       // mutate state
       state.tabMode++
+    },
+    tabModeSet (state, value) {
+      // mutate state
+      state.tabMode = value
     }
   },
   state: {
-    tabMode: 1,
+    tabMode: 0, // Default
     jobs: [
       {
         title: 'Lead Instructor and Curriculum Developer',
@@ -21,8 +30,9 @@ export default new Vuex.Store({
         skills_01_body: 'Apollo, Axios, Enzyme, Express, Gatsby, GraphQL, Jest, MongoDB, Particles.js, Redux',
         skills_01_link: 'projects-react/',
         // --
+        // -- Archive: Vuetify
         skills_02_head: 'Vue.js',
-        skills_02_body: 'Apollo, GraphQL, Express, MongoDB, Nuxt, Stripe, SVG Grapics, TweenJs, Vuex',
+        skills_02_body: 'Apollo, Axios, Express, GraphQL, MongoDB, Nuxt, Stripe, SVG Grapics, TweenJs, Vuex',
         skills_02_link: 'projects-vue-js/',
         // --
         skills_03_head: 'Node.js',
@@ -38,7 +48,7 @@ export default new Vuex.Store({
         skills_05_link: '',
         // --
         skills_06_head: 'Others',
-        skills_06_body: 'Python ~ Bottle, Flask; JavaScript ~ Bootstrap, CSS, Highcharts, HTML, JQuery, SQL, Webpack',
+        skills_06_body: 'Python: Bottle, Flask -- JavaScript: Bootstrap, CSS, Highcharts, HTML, JQuery, SQL, Webpack',
         skills_06_link: '',
         // --
         skills_07_head: '',
@@ -192,7 +202,7 @@ export default new Vuex.Store({
         imageListLength: 1,
         slug: '11h-ArduBlockly-EandE',
         title: 'ArduBlockly-EandE',
-        headLine00: '* AWARD WINNING * Arduino Visual/Textual Coder: ArduBlockly-EandE',
+        headLine00: '* AWARD WINNING * Arduino-Robotics Visual/Textual Coder: ArduBlockly-EandE',
         headLine01: 'Node, Google-Blockly, Electron',
         headLine02: 'Python Bottle & Digital Ocean ~ Ubuntu',
         url: 'http://138.68.57.214:8001/ardublockly/index.html',
