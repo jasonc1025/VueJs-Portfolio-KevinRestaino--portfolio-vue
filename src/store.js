@@ -26,34 +26,65 @@ export default new Vuex.Store({
         title: 'Lead Instructor and Curriculum Developer',
         company: 'Encourage and Empower',
         // --
-        skills_01_head: 'React',
-        skills_01_body: 'Apollo, Axios, Enzyme, Express, Gatsby, GraphQL, Jest, MongoDB, Particles.js, Redux',
-        skills_01_link: 'projects-react/',
+        skills_00_head: 'React',
+        skills_00_body: 'Apollo, Axios, Enzyme, Express, Gatsby, GraphQL, Jest, MongoDB, Particles.js, Redux',
+        skills_00_link: 'projects-react/',
         // --
         // -- Archive: Vuetify
-        skills_02_head: 'Vue.js',
-        skills_02_body: 'Apollo, Axios, Express, GraphQL, MongoDB, Nuxt, Stripe, SVG Grapics, TweenJs, Vuex',
-        skills_02_link: 'projects-vue-js/',
+        skills_01_head: 'Vue.js',
+        skills_01_body: 'Apollo, Axios, Express, GraphQL, MongoDB, Nuxt, Stripe, SVG Grapics, TweenJs, Vuex',
+        skills_01_link: 'projects-vue-js/',
         // --
-        skills_03_head: 'Node.js',
-        skills_03_body: 'Axios, Express, MongoDB, Mongoose, Passport, Socket.io, WebSocket',
-        skills_03_link: 'projects-node-js/',
+        skills_02_body: 'Axios, Express, MongoDB, Mongoose, Passport, Socket.io, WebSocket',
+        skills_02_head: 'Node.js',
+        skills_02_link: 'projects-node-js/',
         // --
-        skills_04_head: 'Robotics',
-        skills_04_body: 'Arduino, Lego EV3/Next2, Rasberry Pi, BeagleBone',
-        skills_04_link: 'projects-javascript-python/',
+        skills_03_head: 'Robotics',
+        skills_03_body: 'Arduino, Lego EV3/Next2, Rasberry Pi, BeagleBone',
+        skills_03_link: 'projects-javascript-python/',
         // --
-        skills_05_head: 'Backend',
-        skills_05_body: 'Amazon AWS/EB, Digital Ocean NginX/Apache, Google-Firebase, Heroku, Netlify, Zeit-Now',
-        skills_05_link: '',
+        skills_04_head: 'Backend',
+        skills_04_body: 'Amazon AWS/EB, Digital Ocean NginX/Apache, Google-Firebase, Heroku, Netlify, Zeit-Now',
+        skills_04_link: null,
         // --
-        skills_06_head: 'Others',
-        skills_06_body: 'Python: Bottle, Flask -- JavaScript: Bootstrap, CSS, Highcharts, HTML, JQuery, SQL, Webpack',
-        skills_06_link: '',
+        skills_05_head: 'Others',
+        skills_05_body: 'Python: Bottle, Flask -- JavaScript: Bootstrap, CSS, Highcharts, HTML, JQuery, SQL, Webpack',
+        skills_05_link: null,
         // --
-        skills_07_head: '',
-        skills_07_body: '',
-        skills_07_link: '',
+
+        location: 'Milpitas, CA',
+        timePeriod: {
+          from: 'September 2006',
+          to: 'Present'
+        }
+      },
+      {
+        title: 'Lead Instructor and Curriculum Developer',
+        company: 'Encourage and Empower',
+        // --
+        skills_00_head: 'React',
+        skills_00_body: 'Apollo, Axios, Enzyme, Express, Gatsby, GraphQL, Jest, MongoDB, Particles.js, Redux',
+        skills_00_link: null,
+        // --
+        skills_01_head: 'Vue.js',
+        skills_01_body: 'Apollo, Axios, Express, GraphQL, MongoDB, Nuxt, Stripe, SVG Grapics, TweenJs, Vuex',
+        skills_01_link: null,
+        // --
+        skills_02_body: 'Axios, Express, MongoDB, Mongoose, Passport, Socket.io, WebSocket',
+        skills_02_head: 'Node.js',
+        skills_02_link: null,
+        // --
+        skills_03_head: 'Robotics',
+        skills_03_body: 'Arduino, Lego EV3/Next2, Rasberry Pi, BeagleBone',
+        skills_03_link: null,
+        // --
+        skills_04_head: 'Backend',
+        skills_04_body: 'Amazon AWS/EB, Digital Ocean NginX/Apache, Google-Firebase, Heroku, Netlify, Zeit-Now',
+        skills_04_link: null,
+        // --
+        skills_05_head: 'Others',
+        skills_05_body: 'Python: Bottle, Flask -- JavaScript: Bootstrap, CSS, Highcharts, HTML, JQuery, SQL, Webpack',
+        skills_05_link: null,
         // --
 
         location: 'Milpitas, CA',
@@ -62,6 +93,7 @@ export default new Vuex.Store({
           to: 'Present'
         }
       }
+
     ],
     projects: [
       {
