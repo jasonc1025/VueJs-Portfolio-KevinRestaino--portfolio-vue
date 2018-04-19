@@ -8,6 +8,7 @@ import router from './router'
 import VueLazyload from 'vue-lazyload'
 import Vuex from 'vuex'
 import storePlugin from './storePlugin'
+import VueCarousel from 'vue-carousel'
 
 Vue.use(VueLazyload, {
   preLoad: 1.3,
@@ -29,6 +30,8 @@ Vue.use(VueLazyload, {
 Vue.use(Vuex)
 Vue.use(storePlugin)
 Vue.config.productionTip = false
+
+Vue.use(VueCarousel)
 
 /* eslint-disable no-new */
 new Vue({
