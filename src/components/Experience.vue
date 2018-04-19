@@ -9,7 +9,7 @@
     <!-- YY <carousel :perPage=1 :autoplay=true :autoplayTimeout=5000 :loop=false :navigationEnabled=true :mouseDrag=false paginationActiveColor="#42b983" paginationColor="#b2ebd1" paginationSize=20 paginationPadding=20 easing="ease" speed=1000> -->
     <carousel :perPage=1 :autoplay=true :autoplayTimeout=5000 :loop=true :navigationEnabled=true :mouseDrag=false paginationActiveColor="#42b983" paginationColor="#b2ebd1" paginationSize=10 paginationPadding=10 easing="ease" speed=1000>
       <slide>
-        <h2>Based on GitHub's Past 3-Year Star Ratings, Vue.js Gaining Faster Momentum vs. React</h2>
+        <h2>Based on GitHub's 3-Year Star-Ratings of Top 3 JS Frameworks,<br>Vue.js #1 in Greatest Momentum (React #2)</h2>
         <!-- <img :src="/static/work/${project.category}/${project.slug}/${project.slug}_thumb.png"> -->
         <!-- <img :src="/static/work/javascript-python-dir/11h-ArduBlockly-EandE/11h-ArduBlockly-EandE_thumb.png"> -->
         <!-- <img :src="http\://image.iqing.in/recommend/613890e9-3e5d-4acd-afae-003201e1d86d.jpg-cover"> -->
@@ -19,11 +19,11 @@
         <img src="/static/work/mystory-dir/BestOfJsDotOrg-UiFramework-GithubStars.png">
       </slide>
       <slide>
-        <h2>Based on Worldwide 2017 Poll of 28,000 Developers, Vue.js #1 in Potential Market for Training</h2>
+        <h2>Based on Worldwide 2017 Poll of 28,000 JS Developers,<br>Vue.js #1 in Potential Market for Training (React #2)</h2>
         <img src="/static/work/mystory-dir/VueVsReact-StateOfJsDotCom.png">
       </slide>
       <slide>
-        <h2>Based on GitHub's 2017 Star Ratings, Vue.js #1 vs. React</h2>
+        <h2>Based on GitHub's 2017 Star-Ratings of All JS Projects,<br>Vue.js #1 in Popularity (React #2)</h2>
         <img src="/static/work/mystory-dir/VueVsReact-RisingStarsDotJsDotOrg.png">
       </slide>
     </carousel>
