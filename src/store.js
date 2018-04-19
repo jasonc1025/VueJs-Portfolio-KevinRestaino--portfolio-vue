@@ -234,7 +234,7 @@ export default new Vuex.Store({
         imageListLength: 1,
         slug: '11h-ArduBlockly-EandE',
         title: 'ArduBlockly-EandE',
-        headLine00: '* AWARD WINNING * Arduino-Robotics Visual/Textual Coder: ArduBlockly-EandE',
+        headLine00: '* AWARD-WINNING ROBOTICS IDE * Arduino-Robotics Visual/Textual Coder: ArduBlockly-EandE',
         headLine01: 'Node, Google-Blockly, Electron',
         headLine02: 'Python Bottle & Digital Ocean ~ Ubuntu',
         url: 'http://138.68.57.214:8001/ardublockly/index.html',
@@ -244,12 +244,27 @@ export default new Vuex.Store({
         category: 'javascript-python-dir',
         id: 0,
         imageListLength: 1,
+        slug: 'Siemens-PTI-PSSE',
+        title: 'SMART-GRID SIMULATION',
+        headLine00: '* SMART-GRID SIMULATION * Siemens User-Experience (UX) Prototype: Power System Simulator',
+        headLine01: 'JavaScript, jQuery, jQWidgets, HTML, CSS',
+        headLine02: 'Python-SocketServer.TCPServer, Python-SimpleHTTPServer',
+        // For Viewing Only, No Live Demo to Interact With
+        url: '',
+        description: 'Description'
+      },
+      {
+        category: 'javascript-python-dir',
+        id: 0,
+        imageListLength: 1,
         slug: 'Siemens-CIPortal-ThreeAmigoes',
-        title: 'Energy IP ~ CI Portal',
-        headLine00: '* NEXT GEN UI/UX * Siemens User-Experience (UX) Prototype: Energy IP ~ C&I Portal',
+        title: 'SMART-GRID UI/UX',
+        headLine00: '* SMART-GRID UI/UX * Siemens User-Experience (UX) Prototype: Energy IP ~ C&I Portal',
         headLine01: 'JavaScript, Highcharts, HTML, CSS',
         headLine02: 'Netlify',
-        url: 'https://siemens-cipportal-trunk.netlify.com',
+        // url: 'https://siemens-cipportal-trunk.netlify.com',
+        // For Viewing Only, No Live Demo to Interact With
+        url: '',
         description: 'Description'
       },
       {
@@ -257,7 +272,7 @@ export default new Vuex.Store({
         id: 0,
         imageListLength: 1,
         slug: 'Siemens-EnergyIP-SDPAnalyzer-DemsPortal',
-        title: 'Energy IP ~ DEMS Portal',
+        title: 'BIG DATA - ANALYTICS',
         headLine00: '* BIG DATA - ANALYTICS * Siemens User-Experience (UX) Prototype: Energy IP ~ DEMS Portal',
         headLine01: 'JavaScript, Highcharts, HTML, CSS',
         headLine02: 'Netlify',
