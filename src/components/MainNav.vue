@@ -2,26 +2,32 @@
   <!-- Y <div class="mainNav" @click="store.commit('increment')"> -->
   <div class="mainNav">
 
-    <router-link v-if="store.getters.tabModeGet==0" tag="a" to="/projects-react" @click.native="store.commit('tabModeSet','0')"><b>React</b></router-link>
-    <router-link v-else tag="a" to="/projects-react" @click.native="store.commit('tabModeSet','0')">React</router-link>
+    <router-link v-if="store.getters.tabModeGet==0" tag="a" to="/resume" @click.native="store.commit('tabModeSet','0')"><b>My Story</b></router-link>
+    <router-link v-else tag="a" to="/resume" @click.native="store.commit('tabModeSet','0')">My Story</router-link>
+
+    <router-link v-if="store.getters.tabModeGet==1" tag="a" to="/projects-react" @click.native="store.commit('tabModeSet','1')"><b>React</b></router-link>
+    <router-link v-else tag="a" to="/projects-react" @click.native="store.commit('tabModeSet','1')">React</router-link>
     
-    <router-link v-if="store.getters.tabModeGet==1" tag="a" to="/projects-vue-js" @click.native="store.commit('tabModeSet','1')"><b>Vue.js</b></router-link>
-    <router-link v-else tag="a" to="/projects-vue-js" @click.native="store.commit('tabModeSet','1')">Vue.js</router-link>
+    <router-link v-if="store.getters.tabModeGet==2" tag="a" to="/projects-vue-js" @click.native="store.commit('tabModeSet','2')"><b>Vue.js</b></router-link>
+    <router-link v-else tag="a" to="/projects-vue-js" @click.native="store.commit('tabModeSet','2')">Vue.js</router-link>
 
     <!--Y <router-link tag="a" to="/projects-node-js" @click.native="store.commit('increment')">Node.js</router-link> -->
     <!--Y <router-link tag="a" to="/projects-javascript-python" @click.native="store.commit('tabModeSet', 100)">Industry-Leading</router-link> -->
 
-    <router-link v-if="store.getters.tabModeGet==2" tag="a" to="/projects-node-js" @click.native="store.commit('tabModeSet','2')"><b>Node.js</b></router-link>
-    <router-link v-else tag="a" to="/projects-node-js" @click.native="store.commit('tabModeSet','2')">Node.js</router-link>
+    <router-link v-if="store.getters.tabModeGet==3" tag="a" to="/projects-node-js" @click.native="store.commit('tabModeSet','3')"><b>Node.js</b></router-link>
+    <router-link v-else tag="a" to="/projects-node-js" @click.native="store.commit('tabModeSet','3')">Node.js</router-link>
 
-    <router-link v-if="store.getters.tabModeGet==3" tag="a" to="/projects-javascript-python" @click.native="store.commit('tabModeSet','3')"><b>Industry-Leading</b></router-link>
-    <router-link v-else tag="a" to="/projects-javascript-python" @click.native="store.commit('tabModeSet','3')">Industry-Leading</router-link>
+    <router-link v-if="store.getters.tabModeGet==4" tag="a" to="/projects-javascript-python" @click.native="store.commit('tabModeSet','4')"><b>Robotics</b></router-link>
+    <router-link v-else tag="a" to="/projects-javascript-python" @click.native="store.commit('tabModeSet','4')">Robotics</router-link>
 
-    <router-link v-if="store.getters.tabModeGet==4" tag="a" to="/resume" @click.native="store.commit('tabModeSet','4')"><b>Resume</b></router-link>
-    <router-link v-else tag="a" to="/resume" @click.native="store.commit('tabModeSet','4')">Resume</router-link>
+    <router-link v-if="store.getters.tabModeGet==5" tag="a" to="/projects-industry" @click.native="store.commit('tabModeSet','5')"><b>Industry:Siemens</b></router-link>
+    <router-link v-else tag="a" to="/projects-industry" @click.native="store.commit('tabModeSet','5')">Industry:Siemens</router-link>
+
+    <router-link v-if="store.getters.tabModeGet==6" tag="a" to="/resume" @click.native="store.commit('tabModeSet','6')"><b>Resum&eacute;</b></router-link>
+    <router-link v-else tag="a" to="/resume" @click.native="store.commit('tabModeSet','6')">Resum&eacute;</router-link>
 
     <!-- [jwc] <a href="https://github.com/krestaino" target="_blank">GitHub</a> -->
-    <a href="https://www.linkedin.com/in/jasonwchan1025/" target="_blank">LinkedIn</a>
+    <!-- <a href="https://www.linkedin.com/in/jasonwchan1025/" target="_blank">LinkedIn</a> -->
 
   </div>
 </template>
