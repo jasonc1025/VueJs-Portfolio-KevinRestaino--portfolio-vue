@@ -3,6 +3,7 @@
     <header class="header">
       <h1>Jason W Chan</h1>
       <h2>Web Full-Stack & Open-Source Robotics Instructor (/Developer)</h2>
+      <h3>Middle School, High School, College & Beyond</h3>
       <mainNavComponent></mainNavComponent>
     </header>
     <section class="route">
@@ -70,6 +71,12 @@ h1 {
 }
 
 h2 {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+h3 {
   font-size: 18px;
   font-weight: 500;
   text-align: center;
