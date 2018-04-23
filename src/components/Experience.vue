@@ -124,7 +124,12 @@ export default {
         {
           title: 'How are you?',
           // msg: 'Test for fun! asjdf kasjfd;l \n\n\n a;skdfja;sljdfksadj ;fljas lk;fj sak;lfj las;kj f;klasdj f;kasjdkfl;ajs dfjsa akdsf<br>Line2abc<br />Line3'
-          msg: 'Test for fun! asjdf kasjfd;l a;skdfja;sljdfksadj ;fljas lk;fj sak;lfj las;kj f;klasdj f;kasjdkfl;ajs dfjsa akdsf<br>Line2abc<br>Line3'
+          msg: 'Test for fun! asjdf kasjfd;l a;skdfja;sljdfksadj ;fljas lk;fj sak;lfj las;kj f;klasdj f;kasjdkfl;ajs dfjsa akdsf<br>Line2abc<br>Line3',
+          sub: [
+            {test: 'test1<br>test1.1<br>test1.2'},
+            {test: 'test2<br>test2.1<br>test2.2'},
+            {test: 'test3<br>test3.1<br>test3.2'}
+          ]
         },
         {
           title: 'Who let the dog out?',
