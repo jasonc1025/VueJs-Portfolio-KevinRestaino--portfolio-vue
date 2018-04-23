@@ -15,7 +15,7 @@
 
   <!-- <accordion :items="items" :id="mandatory-id" :collapseAll="false"></accordion> -->
 
-  <AccordionMenu :contents="contents"></AccordionMenu>
+  <AccordionMenu :items_Stage01="items_Stage00"></AccordionMenu>
 
     <!-- NOTE: ':mouseDrag=false' NOT appear to work -->
     <!-- NOTE:  "paginationPadding" "paginationSize" "speed": 'Expected Number, got String.' Warning Yet Code is Correct and Working. Therefore ignore warning. -->
@@ -120,28 +120,43 @@ export default {
       tabMode: this.$myStore.state.tabMode,
       store: this.$myStore,
       // * '\n' does not work.  Yet '<br>' works.
-      contents: [
+      items_Stage00: [
         {
           title: 'How are you?',
           // msg: 'Test for fun! asjdf kasjfd;l \n\n\n a;skdfja;sljdfksadj ;fljas lk;fj sak;lfj las;kj f;klasdj f;kasjdkfl;ajs dfjsa akdsf<br>Line2abc<br />Line3'
           msg: 'Test for fun! asjdf kasjfd;l a;skdfja;sljdfksadj ;fljas lk;fj sak;lfj las;kj f;klasdj f;kasjdkfl;ajs dfjsa akdsf<br>Line2abc<br>Line3',
-          sub: [
-            {test: 'test1<br>test1.1<br>test1.2'},
-            {test: 'test2<br>test2.1<br>test2.2'},
-            {test: 'test3<br>test3.1<br>test3.2'}
+          itemsSub: [
+            {text: 'test1<br>test1.1<br>test1.2'},
+            {text: 'test2<br>test2.1<br>test2.2'},
+            {text: 'test3<br>test3.1<br>test3.2'}
           ]
         },
         {
           title: 'Who let the dog out?',
-          msg: 'I do not know, dude.'
+          msg: 'I do not know, dude.',
+          itemsSub: [
+            {text: 'test1a<br>test1.1<br>test1.2'},
+            {text: 'test2a<br>test2.1<br>test2.2'},
+            {text: 'test3a<br>test3.1<br>test3.2'}
+          ]
         },
         {
           title: '肚子好餓?',
-          msg: '吃芭樂啦！'
+          msg: '吃芭樂啦！',
+          itemsSub: [
+            {text: 'test1b<br>test1.1<br>test1.2'},
+            {text: 'test2b<br>test2.1<br>test2.2'},
+            {text: 'test3b<br>test3.1<br>test3.2'}
+          ]
         },
         {
           title: 'Find hotels?',
-          msg: 'Trivago！'
+          msg: 'Trivago！',
+          itemsSub: [
+            {text: 'test1c<br>test1.1<br>test1.2'},
+            {text: 'test2c<br>test2.1<br>test2.2'},
+            {text: 'test3c<br>test3.1<br>test3.2'}
+          ]
         }
       ]
     }
