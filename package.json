@@ -14,6 +14,7 @@
     "es6-promise": "^4.1.0",
     "in-view": "^0.6.1",
     "vue": "^2.2.6",
+    "vue-accordion-menu": "^0.1.46",
     "vue-carousel": "^0.7.1",
     "vue-lazyload": "^1.0.3",
     "vue-router": "^2.3.1",

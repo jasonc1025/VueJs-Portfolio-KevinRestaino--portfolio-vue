@@ -1,5 +1,21 @@
 <template>
   <div class="resumeStyle">
+    <!-- <alert v-model="showRight" placement="top-right" duration="3000" type="success" width="400px" dismissable>
+      <span class="icon-ok-circled alert-icon-float-left"></span>
+      <strong>Well Done!</strong>
+      <p>You successfully read this important alert message.</p>
+    </alert> -->
+
+  <!-- <vue-accordion 
+      :items="items" 
+      :accordionClass="acClass" 
+      :styles="styles"
+      >
+  </vue-accordion> -->
+
+  <!-- <accordion :items="items" :id="mandatory-id" :collapseAll="false"></accordion> -->
+
+  <AccordionMenu :contents="contents"></AccordionMenu>
 
     <!-- NOTE: ':mouseDrag=false' NOT appear to work -->
     <!-- NOTE:  "paginationPadding" "paginationSize" "speed": 'Expected Number, got String.' Warning Yet Code is Correct and Working. Therefore ignore warning. -->
@@ -102,7 +118,27 @@ export default {
     return {
       jobs: this.$myStore.state.jobs,
       tabMode: this.$myStore.state.tabMode,
-      store: this.$myStore
+      store: this.$myStore,
+      // * '\n' does not work.  Yet '<br>' works.
+      contents: [
+        {
+          title: 'How are you?',
+          // msg: 'Test for fun! asjdf kasjfd;l \n\n\n a;skdfja;sljdfksadj ;fljas lk;fj sak;lfj las;kj f;klasdj f;kasjdkfl;ajs dfjsa akdsf<br>Line2abc<br />Line3'
+          msg: 'Test for fun! asjdf kasjfd;l a;skdfja;sljdfksadj ;fljas lk;fj sak;lfj las;kj f;klasdj f;kasjdkfl;ajs dfjsa akdsf<br>Line2abc<br>Line3'
+        },
+        {
+          title: 'Who let the dog out?',
+          msg: 'I do not know, dude.'
+        },
+        {
+          title: '肚子好餓?',
+          msg: '吃芭樂啦！'
+        },
+        {
+          title: 'Find hotels?',
+          msg: 'Trivago！'
+        }
+      ]
     }
   }
 }
