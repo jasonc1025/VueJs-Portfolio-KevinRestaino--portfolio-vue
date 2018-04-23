@@ -6,6 +6,6 @@ yarn-debug.log*
 yarn-error.log*
 Thumbs.db
 
-package-lock\.json
+# [jwc]orig: package-lock\.json
 
 static/work/mystory-dir/99Z-ARCHIVE/
