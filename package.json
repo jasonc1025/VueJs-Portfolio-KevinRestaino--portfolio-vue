@@ -14,7 +14,7 @@
     "es6-promise": "^4.1.0",
     "in-view": "^0.6.1",
     "vue": "^2.2.6",
-    "vue-accordion-menu": "github:jasonc1025/VueJs--vue-accordion-menu--WeiChiaChang",
+    "vue-accordion-menu": "https://github.com/jasonc1025/VueJs--vue-accordion-menu--WeiChiaChang.git",
     "vue-carousel": "^0.7.1",
     "vue-lazyload": "^1.0.3",
     "vue-router": "^2.3.1",
