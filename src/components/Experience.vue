@@ -66,7 +66,14 @@
             <span class="jobLocation">{{ job_.job_location }}</span>
           </li>
         </ul>
-        
+
+        <div class="skillSub" v-for="(job_sub, index_job_sub) in job_.job_subs">
+          <!-- Y <p><span class="fade-in" v-html="'&bull; '+ skill_sub.text"></span></p> -->
+          <!-- Y <p><span v-html="skill_sub.text"></span></p> -->
+          <p><span v-html="job_sub.text"></span></p>
+        </div>
+
+
         <div class="skillsGroup" v-for="(skills_group, index_skills_group) in job_.skills_groups">
 
           <div class="skillsGroupGroup_Class">
