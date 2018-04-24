@@ -35,6 +35,7 @@ export default new Vuex.Store({
         [
           {
             skills_group_name: 'Front End',
+            skills_group_text: '&bull; Web Full-Stack: Client-Side kaJSDLAj dljakdjaKDJAkj dlkAJDLKAjdlkjaKDJ alkdjaLK JDKLajdlkaJDLKAJSLKD JASLKDJ ASJKLJD Akj dl;kaJ DL;AJ SDL',
 
             skills:
             [
@@ -45,9 +46,10 @@ export default new Vuex.Store({
 
                 skill_subs:
                 [
-                  {text: 'skills00_1<br>skills00_1.1<br>skills00_1.2'},
-                  {text: 'skills00_2<br>skills00_2.1<br>skills00_2.2'},
-                  {text: 'skills00_3<br>skills00_3.1<br>skills00_3.2'}
+                  {text: '&bull; skills00_1<br>skills00_1.1<br>skills00_1.2'},
+                  {text: '&bull; skills00_1 aksfj as;jf lasj fasj f;lasjflsajf;lj sal;fj salfj asl;f jkjsadlf asjf;lasj flskajflkasjdl;fasjdlfjsadlk;f jasjf saljflasjflsdaj lf;sdajfjd sl;<br>&bull; skills00_1.1 kasjd fl;asj fl;s j;lf jsa; alsfj alskjf ajsjl;faj sflkjsal;kfj salkf asjf;l asdlf as;fj sajfsajfsaldj fals jlsfj <br>skills00_1.2'},
+                  {text: '&bull; skills00_2<br>skills00_2.1<br>skills00_2.2'},
+                  {text: '&bull; skills00_3<br>skills00_3.1<br>skills00_3.2'}
                 ]
               },
               {
@@ -91,13 +93,14 @@ export default new Vuex.Store({
           },
           {
             skills_group_name: 'Back End',
+            skills_group_text: 'Web Full-Stack: Server-Side',
 
             skills:
             [
               {
                 skill_head: 'React',
                 skill_body: 'Apollo, Axios, Enzyme, Express, Gatsby, GraphQL, Jest, MongoDB, Particles.js, Redux',
-                skill_link: 'projects-react/',
+                skill_link: null,
 
                 skill_subs:
                 [
@@ -110,7 +113,7 @@ export default new Vuex.Store({
                 // -- Archive: Vuetify
                 skill_head: 'Vue.js',
                 skill_body: 'Apollo, Axios, Express, GraphQL, MongoDB, Nuxt, Stripe, SVG Grapics, TweenJs, Vuex',
-                skill_link: 'projects-vue-js/',
+                skill_link: null,
 
                 skill_subs:
                 [

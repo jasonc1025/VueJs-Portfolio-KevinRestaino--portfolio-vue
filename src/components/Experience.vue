@@ -60,24 +60,40 @@
 
         <!-- <router-link class="button" tag="a" :to="`${ job.routerLink }`">{{ job.skill_01_head }}Jesus</router-link> -->
         
-        <div class="skills" v-for="(skills_group, index) in job.skills_groups">
+        <div class="group" v-for="(skills_group, index) in job.skills_groups">
 
-          <b class="skills">{{ skills_group.skills_group_name }}: </b>
+          <b class="groupHead">{{ skills_group.skills_group_name }}</b>
+          <!-- Y <p class="groupBody">&bull; {{ skills_group.skills_group_text }}</p> -->
+          <p class="groupBody" v-html="skills_group.skills_group_text"></p>
 
-          <div class="skills" v-for="(skill, index) in skills_group.skills">
+          <div class="skill" v-for="(skill, index) in skills_group.skills">
 
-            <div class="skills" v-if="skill.skill_head != null && skill.skill_link != null">
+            <div v-if="skill.skill_head != null && skill.skill_link != null">
 
-              <router-link class="button skillsHead" tag="a" :to="`${ skill.skill_link }`" @click.native="store.commit('tabModeSet','00')">{{ skill.skill_head }}:</router-link>{{ skill.skill_body }}
+              <div class="buttonGroup">
+                <router-link class="button skillHead" tag="a" :to="`${ skill.skill_link }`" @click.native="store.commit('tabModeSet','00')">{{ skill.skill_head }}:</router-link>
+                <span class="skillBody">{{ skill.skill_body }}</span>
+              </div>
 
-              <div class="skills" v-for="(skill_sub, index_Sub) in skill.skill_subs">
-                <p><span class="fade-in" v-html="'&bull; '+ skill_sub.text"></span></p>
+              <div class="skillSub" v-for="(skill_sub, index_Sub) in skill.skill_subs">
+                <!-- Y <p><span class="fade-in" v-html="'&bull; '+ skill_sub.text"></span></p> -->
+                <p><span v-html="skill_sub.text"></span></p>
               </div>
 
             </div>
 
-            <div class="skills" v-else-if="skill.skill_head != null && skill.skill_link == null">  
-              <b class="skillsHead">{{ skill.skill_head }}: </b>{{ skill.skill_body }}
+            <div v-else-if="skill.skill_head != null && skill.skill_link == null">
+
+              <div>
+                <b class="skillHead">{{ skill.skill_head }}: </b>
+                <span class="skillBody">{{ skill.skill_body }}</span>
+              </div>
+
+              <div class="skillSub" v-for="(skill_sub, index_Sub) in skill.skill_subs">
+                <!-- Y <p><span class="fade-in" v-html="'&bull; '+ skill_sub.text"></span></p> -->
+                <p><span v-html="skill_sub.text"></span></p>
+              </div>
+            
             </div>
 
           </div>
@@ -152,7 +168,7 @@ ul {
     .button{      
       padding: 0.5em 2em 0.5em 2em;
       background-color: #ccc;  // was #ddd (too light on large screen)
-      margin-right: 0.5em;
+      // margin-right: 0em;  // was 0.5em
       // width: 30em;   // [jwc] not seem to work
     }
     .button:hover {
@@ -183,38 +199,74 @@ ul {
     font-weight: 400;
   }
   .company{
-    font-weight: 400;
-  }
-
-  // Overall for each 'skills' row
-  .skills{
     font-weight: 300;
-    font-size: small;
-    margin: 1em 1em 1em 1em;  // [jwc] change margin-left: 2em;
   }
-  // Enough to provide margin-left for 'skills-non-button' row to left-indent up to 'skills-button' row
-  .skillsHead{
-    font-weight: 400;
-    margin-left: 1em;
-    margin-right: 0.5em;
-  }
-  // Allow 'skills-button' row to have their label left-indent with 'skills-non-button' row
-  .button.skillsHead{
-    margin-left:-1em;
-  }
-  
   // Left-Indent flush with above text
   .timePeriod {
     font-size: smaller;
-    color: #aaa;
-    margin-left: 3em;
-    margin-bottom: -0.5em;
+    color: #aaa;  // [jwc] better ligher shading vs. 'font-weight'
+    margin-left: 3.5em;
+    // margin-bottom: -0.5em;
   }
   .location {
     font-size: smaller;
     color: #aaa;
-    margin-left: 3em;
-    margin-top: -0.5em;
+    margin-left: 3.5em;
+    // margin-top: -0.5em;
+    margin-bottom: -0.5em;
+  }
+
+  .group{
+    font-weight: 300;
+    font-size: medium;
+    margin: 1em 1em 1em 1.5em;  // [jwc] change margin-left: 2em;
+  }
+  // Enough to provide margin-left for 'skillBody-non-button' row to left-indent up to 'skillBody-button' row
+  .groupHead{
+    font-weight: 400;
+    // margin-left: 1em;
+    margin-right: 0.5em;
+    font-size: large;
+  }
+  .groupBody{
+    font-weight: 300;
+    font-size: medium;
+    margin: 0.25em 1em 0.25em 1.5em;  // [jwc] change margin-left: 2em;
+  }
+
+  .skill{
+    font-weight: 300;
+    font-size: medium;
+    margin: 0.5em 1em 0.5em 1.5em;  // [jwc] change margin-left: 2em;
+  }
+  // Enough to provide margin-left for 'skillBody-non-button' row to left-indent up to 'skillBody-button' row
+  .skillHead{
+    font-weight: 400;
+    // margin-left: 1em;
+    // margin-right: 0em;   // was 0.5em
+  }
+  // Allow 'skillBody-button' row to have their label left-indent with 'skillBody-non-button' row
+  .button.skillHead{
+    // margin-left: 0em;  // was -1em
+    margin-right: 0.5em;
+  }
+  // Overall for each 'skillBody' row
+  .skillBody{
+    font-weight: 300;
+    font-size: medium;
+    // margin: 1em 1em 1em 0.5em;  // [jwc] change margin-left: 2em;
+    font-size: smaller;  // keep in mind word-wrap if side-margins shrink due to window-shrink
+  }
+
+  .skillSub{
+    font-weight: 300;
+    font-size: medium;
+    // margin: 0.5em 1em 0.5em 1.5em;  // [jwc] change margin-left: 2em;
+    margin-left: 1.5em;
+  }
+
+  .buttonGroup {
+    margin-bottom: 1em;
   }
 
 }
