@@ -23,7 +23,8 @@ export default new Vuex.Store({
     tabMode: 0, // Default
     jobs: [
       {
-        job_group: 'Academic Degrees',
+        job_group_name: 'Academic Degrees',
+        job_group_text: null,
         job_title: 'Master of Arts, General Ministry',
         job_company: 'Western Seminary',
         job_location: 'San Jose, CA',
@@ -31,7 +32,7 @@ export default new Vuex.Store({
           from: 'Fall 1196',
           to: 'Spring 2000'
         },
-        job_subs:
+        job_childs:
         [
           {text: '&bull; skills00_1<br>skills00_1.1<br>skills00_1.2'},
           {text: '&bull; skills00_1 <span style="color:red"> aksfj as;jf lasj </span> fasj f;lasj <span style="font-weight:bold"> flsajf;lj </span> sdgf d  sgdfdg d <span style="font-weight:bold;color:red"> aksfj as;jf lasj </span> sal;fj salfj asl;f jkjsadlf asjf;lasj flskajflkasjdl;fasjdlfjsadlk;f jasjf saljflasjflsdaj lf;sdajfjd sl;<br>&bull; skills00_1.1 kasjd fl;asj fl;s j;lf jsa; alsfj alskjf ajsjl;faj sflkjsal;kfj salkf asjf;l asdlf as;fj sajfsajfsaldj fals jlsfj <br>skills00_1.2'},
@@ -42,7 +43,7 @@ export default new Vuex.Store({
         skills_groups:
         [
           {
-            skills_group_group: 'Curriculum Developed',
+            skills_group_group_name: 'Curriculum Developed',
             skills_group_group_text: 'Curriculum Development Text',
             skills_group_name: 'Front End',
             skills_group_text: '&bull; Web Full-Stack: Client-Side kaJSDLAj dljakdjaKDJAkj dlkAJDLKAjdlkjaKDJ alkdjaLK JDKLajdlkaJDLKAJSLKD JASLKDJ ASJKLJD Akj dl;kaJ DL;AJ SDL',
@@ -54,7 +55,7 @@ export default new Vuex.Store({
                 skill_body: 'Apollo, Axios, Enzyme, Express, Gatsby, GraphQL, Jest, MongoDB, Particles.js, Redux',
                 skill_link: 'projects-react/',
 
-                skill_subs:
+                skill_childs:
                 [
                   {text: '&bull; skills00_1<br>skills00_1.1<br>skills00_1.2'},
                   {text: '&bull; skills00_1 <span style="color:red"> aksfj as;jf lasj </span> fasj f;lasj <span style="font-weight:bold"> flsajf;lj </span> sdgf d  sgdfdg d <span style="font-weight:bold;color:red"> aksfj as;jf lasj </span> sal;fj salfj asl;f jkjsadlf asjf;lasj flskajflkasjdl;fasjdlfjsadlk;f jasjf saljflasjflsdaj lf;sdajfjd sl;<br>&bull; skills00_1.1 kasjd fl;asj fl;s j;lf jsa; alsfj alskjf ajsjl;faj sflkjsal;kfj salkf asjf;l asdlf as;fj sajfsajfsaldj fals jlsfj <br>skills00_1.2'},
@@ -68,7 +69,7 @@ export default new Vuex.Store({
                 skill_body: 'Apollo, Axios, Express, GraphQL, MongoDB, Nuxt, Stripe, SVG Grapics, TweenJs, Vuex',
                 skill_link: 'projects-vue-js/',
 
-                skill_subs:
+                skill_childs:
                 [
                   {text: 'skills01_1<br>skills01_1.1<br>skills01_1.2'},
                   {text: 'skills01_2<br>skills01_2.1<br>skills01_2.2'},
@@ -102,11 +103,11 @@ export default new Vuex.Store({
             ]
           },
           {
-            skills_group_group: 'Test',
+            skills_group_group_name: 'Test',
             skills_group_group_text: 'Test Test',
             skills_group_name: 'Back End',
             skills_group_text: 'Web Full-Stack: Server-Side',
-            // skills_group_group: null,
+            // skills_group_group_name: null,
 
             skills:
             [
@@ -115,7 +116,7 @@ export default new Vuex.Store({
                 skill_body: 'Apollo, Axios, Enzyme, Express, Gatsby, GraphQL, Jest, MongoDB, Particles.js, Redux',
                 skill_link: null,
 
-                skill_subs:
+                skill_childs:
                 [
                   {text: 'skills00_1<br>skills00_1.1<br>skills00_1.2'},
                   {text: 'skills00_2<br>skills00_2.1<br>skills00_2.2'},
@@ -128,7 +129,7 @@ export default new Vuex.Store({
                 skill_body: 'Apollo, Axios, Express, GraphQL, MongoDB, Nuxt, Stripe, SVG Grapics, TweenJs, Vuex',
                 skill_link: null,
 
-                skill_subs:
+                skill_childs:
                 [
                   {text: 'skills01_1<br>skills01_1.1<br>skills01_1.2'},
                   {text: 'skills01_2<br>skills01_2.1<br>skills01_2.2'},
@@ -162,7 +163,7 @@ export default new Vuex.Store({
             ]
           },
           {
-            skills_group_group: 'Insructor',
+            skills_group_group_name: 'Insructor',
             skills_group_group_text: 'Curriculum Development Text',
             skills_group_name: 'Instructor',
             skills_group_text: '&bull; Web Full-Stack: Client-Side kaJSDLAj dljakdjaKDJAkj dlkAJDLKAjdlkjaKDJ alkdjaLK JDKLajdlkaJDLKAJSLKD JASLKDJ ASJKLJD Akj dl;kaJ DL;AJ SDL',
@@ -174,7 +175,7 @@ export default new Vuex.Store({
                 skill_body: 'Apollo, Axios, Enzyme, Express, Gatsby, GraphQL, Jest, MongoDB, Particles.js, Redux',
                 skill_link: 'projects-react/',
 
-                skill_subs:
+                skill_childs:
                 [
                   {text: '&bull; skills00_1<br>skills00_1.1<br>skills00_1.2'},
                   {text: '&bull; skills00_1 <span style="color:red"> aksfj as;jf lasj </span> fasj f;lasj <span style="font-weight:bold"> flsajf;lj </span> sdgf d  sgdfdg d <span style="font-weight:bold;color:red"> aksfj as;jf lasj </span> sal;fj salfj asl;f jkjsadlf asjf;lasj flskajflkasjdl;fasjdlfjsadlk;f jasjf saljflasjflsdaj lf;sdajfjd sl;<br>&bull; skills00_1.1 kasjd fl;asj fl;s j;lf jsa; alsfj alskjf ajsjl;faj sflkjsal;kfj salkf asjf;l asdlf as;fj sajfsajfsaldj fals jlsfj <br>skills00_1.2'},
@@ -188,7 +189,7 @@ export default new Vuex.Store({
                 skill_body: 'Apollo, Axios, Express, GraphQL, MongoDB, Nuxt, Stripe, SVG Grapics, TweenJs, Vuex',
                 skill_link: 'projects-vue-js/',
 
-                skill_subs:
+                skill_childs:
                 [
                   {text: 'skills01_1<br>skills01_1.1<br>skills01_1.2'},
                   {text: 'skills01_2<br>skills01_2.1<br>skills01_2.2'},

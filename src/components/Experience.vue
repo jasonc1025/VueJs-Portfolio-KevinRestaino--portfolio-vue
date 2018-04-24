@@ -53,10 +53,12 @@
     <ul>
       <li v-for="(job_, index_job) in jobs">
 
+        <div class="jobGroup">
+          <p class="jobGroupName">{{ job_.job_group_name }}</p>
+          <p class="jobGroupText">{{ job_.job_group_text }}</p>
+        </div>
+
         <ul>
-          <li>
-            <p class="jobGroup">{{ job_.job_group }}</p>
-          </li>
           <li class="jobHead">
             <span class="jobTitle">{{ job_.job_title }}</span>
             <span class="jobTimePeriod">{{ job_.job_timePeriod.from }} – {{ job_.job_timePeriod.to }}</span>
@@ -67,17 +69,17 @@
           </li>
         </ul>
 
-        <div class="skillSub" v-for="(job_sub, index_job_sub) in job_.job_subs">
-          <!-- Y <p><span class="fade-in" v-html="'&bull; '+ skill_sub.text"></span></p> -->
-          <!-- Y <p><span v-html="skill_sub.text"></span></p> -->
-          <p><span v-html="job_sub.text"></span></p>
+        <div class="skillSub" v-for="(job_child, index_job_child) in job_.job_childs">
+          <!-- Y <p><span class="fade-in" v-html="'&bull; '+ skill_child.text"></span></p> -->
+          <!-- Y <p><span v-html="skill_child.text"></span></p> -->
+          <p><span v-html="job_child.text"></span></p>
         </div>
 
 
         <div class="skillsGroup" v-for="(skills_group, index_skills_group) in job_.skills_groups">
 
-          <div class="skillsGroupGroup_Class">
-            <p class="skillsGroupGroup">{{ skills_group.skills_group_group }}</p>
+          <div class="skillsGroupGroup">
+            <p class="skillsGroupGroupName">{{ skills_group.skills_group_group_name }}</p>
             <p class="skillsGroupGroupText">{{ skills_group.skills_group_group_text }}</p>
           </div>
           <p class="skillsGroupHead">{{ skills_group.skills_group_name }}</p>
@@ -93,10 +95,10 @@
                 <span class="skillBody">{{ skill_.skill_body }}</span>
               </div>
 
-              <div class="skillSub" v-for="(skill_sub, index_skill_sub) in skill_.skill_subs">
-                <!-- Y <p><span class="fade-in" v-html="'&bull; '+ skill_sub.text"></span></p> -->
-                <!-- Y <p><span v-html="skill_sub.text"></span></p> -->
-                <p><span v-html="skill_sub.text"></span></p>
+              <div class="skillSub" v-for="(skill_child, index_skill_child) in skill_.skill_childs">
+                <!-- Y <p><span class="fade-in" v-html="'&bull; '+ skill_child.text"></span></p> -->
+                <!-- Y <p><span v-html="skill_child.text"></span></p> -->
+                <p><span v-html="skill_child.text"></span></p>
               </div>
 
             </div>
@@ -108,9 +110,9 @@
                 <span class="skillBody">{{ skill_.skill_body }}</span>
               </div>
 
-              <div class="skillSub" v-for="(skill_sub, index_Sub) in skill_.skill_subs">
-                <!-- Y <p><span class="fade-in" v-html="'&bull; '+ skill_sub.text"></span></p> -->
-                <p><span v-html="skill_sub.text"></span></p>
+              <div class="skillSub" v-for="(skill_child, index_child) in skill_.skill_childs">
+                <!-- Y <p><span class="fade-in" v-html="'&bull; '+ skill_child.text"></span></p> -->
+                <p><span v-html="skill_child.text"></span></p>
               </div>
             
             </div>
@@ -221,9 +223,6 @@ ul {
   .jobCompany{
     font-weight: 300;
   }
-  .jobGroup {
-    font-weight: 400;
-  }
   // Left-Indent flush with above text
   .jobTimePeriod {
     font-size: smaller;
@@ -248,13 +247,39 @@ ul {
   .jobBody{
     display: inline-block;
   }
+
   .jobGroup{
+    background-color: #ccc;  // light-grey
+    padding: 2em;
+  }
+  .jobGroupName{
     font-weight: 400;
     font-size: larger;
     display: flex;
     justify-content: center;
-    background-color: #ccc;  // light-grey
-    padding: 2em;
+  }
+  .jobGroupText{
+    font-weight: 300;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+  }
+
+  .skillsGroupGroup{
+    padding: 0.5em;
+    background-color: #d9d9d9;  // light-grey
+  }
+  .skillsGroupGroupName{
+    font-weight: 400;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+  }
+  .skillsGroupGroupText{
+    font-weight: 300;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
   }
 
   .skillsGroup{
@@ -274,22 +299,6 @@ ul {
     font-size: medium;
     margin: 0.25em 1em 0.25em 1.5em;  // [jwc] change margin-left: 2em;
   }
-  .skillsGroupGroup{
-    font-weight: 400;
-    font-size: larger;
-    display: flex;
-    justify-content: center;
-  }
-  .skillsGroupGroupText{
-    font-weight: 300;
-    font-size: medium;
-    display: flex;
-    justify-content: center;
-  }
-  .skillsGroupGroup_Class{
-    padding: 0.5em;
-    background-color: #d9d9d9;  // light-grey
-}
 
   .skill{
     font-weight: 300;
