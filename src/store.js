@@ -153,7 +153,68 @@ export default new Vuex.Store({
                 skill_link: null
               }
             ]
+          },
+          {
+            skills_group_name: 'Instructor',
+            skills_group_text: '&bull; Web Full-Stack: Client-Side kaJSDLAj dljakdjaKDJAkj dlkAJDLKAjdlkjaKDJ alkdjaLK JDKLajdlkaJDLKAJSLKD JASLKDJ ASJKLJD Akj dl;kaJ DL;AJ SDL',
+            skills_group_group: 'Insructor',
+            skills_group_group_text: 'Curriculum Development Text',
+
+            skills:
+            [
+              {
+                skill_head: 'React',
+                skill_body: 'Apollo, Axios, Enzyme, Express, Gatsby, GraphQL, Jest, MongoDB, Particles.js, Redux',
+                skill_link: 'projects-react/',
+
+                skill_subs:
+                [
+                  {text: '&bull; skills00_1<br>skills00_1.1<br>skills00_1.2'},
+                  {text: '&bull; skills00_1 <span style="color:red"> aksfj as;jf lasj </span> fasj f;lasj <span style="font-weight:bold"> flsajf;lj </span> sdgf d  sgdfdg d <span style="font-weight:bold;color:red"> aksfj as;jf lasj </span> sal;fj salfj asl;f jkjsadlf asjf;lasj flskajflkasjdl;fasjdlfjsadlk;f jasjf saljflasjflsdaj lf;sdajfjd sl;<br>&bull; skills00_1.1 kasjd fl;asj fl;s j;lf jsa; alsfj alskjf ajsjl;faj sflkjsal;kfj salkf asjf;l asdlf as;fj sajfsajfsaldj fals jlsfj <br>skills00_1.2'},
+                  {text: '&bull; skills00_2<br>skills00_2.1<br>skills00_2.2'},
+                  {text: '&bull; skills00_3<br>skills00_3.1<br>skills00_3.2'}
+                ]
+              },
+              {
+                // -- Archive: Vuetify
+                skill_head: 'Vue.js',
+                skill_body: 'Apollo, Axios, Express, GraphQL, MongoDB, Nuxt, Stripe, SVG Grapics, TweenJs, Vuex',
+                skill_link: 'projects-vue-js/',
+
+                skill_subs:
+                [
+                  {text: 'skills01_1<br>skills01_1.1<br>skills01_1.2'},
+                  {text: 'skills01_2<br>skills01_2.1<br>skills01_2.2'},
+                  {text: 'skills01_3<br>skills01_3.1<br>skills01_3.2'}
+                ]
+              },
+              {
+                  // --
+                skill_body: 'Axios, Express, MongoDB, Mongoose, Passport, Socket.io, WebSocket',
+                skill_head: 'Node.js',
+                skill_link: 'projects-node-js/'
+              },
+              {
+                // --
+                skill_head: 'Robotics',
+                skill_body: 'Arduino, Lego EV3/Next2, Rasberry Pi, BeagleBone',
+                skill_link: 'projects-javascript-python/'
+              },
+              {
+                // --
+                skill_head: 'Backend',
+                skill_body: 'Amazon AWS/EB, Digital Ocean NginX/Apache, Google-Firebase, Heroku, Netlify, Zeit-Now',
+                skill_link: null
+              },
+              {
+                // --
+                skill_head: 'Others',
+                skill_body: 'Python: Bottle, Flask -- JavaScript: Bootstrap, CSS, Highcharts, HTML, JQuery, SQL, Webpack',
+                skill_link: null
+              }
+            ]
           }
+
         ]
 
       }
