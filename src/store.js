@@ -23,6 +23,7 @@ export default new Vuex.Store({
     tabMode: 0, // Default
     jobs: [
       {
+        job_group: 'Work Experience',
         job_title: 'Senior Instructor and Curriculum Developer',
         job_company: 'Encourage and Empower',
         job_location: 'Milpitas, CA',
@@ -30,15 +31,14 @@ export default new Vuex.Store({
           from: 'September 2006',
           to: 'Present'
         },
-        job_group: 'Work Experience',
 
         skills_groups:
         [
           {
-            skills_group_name: 'Front End',
-            skills_group_text: '&bull; Web Full-Stack: Client-Side kaJSDLAj dljakdjaKDJAkj dlkAJDLKAjdlkjaKDJ alkdjaLK JDKLajdlkaJDLKAJSLKD JASLKDJ ASJKLJD Akj dl;kaJ DL;AJ SDL',
             skills_group_group: 'Curriculum Developed',
             skills_group_group_text: 'Curriculum Development Text',
+            skills_group_name: 'Front End',
+            skills_group_text: '&bull; Web Full-Stack: Client-Side kaJSDLAj dljakdjaKDJAkj dlkAJDLKAjdlkjaKDJ alkdjaLK JDKLajdlkaJDLKAJSLKD JASLKDJ ASJKLJD Akj dl;kaJ DL;AJ SDL',
 
             skills:
             [
@@ -95,11 +95,11 @@ export default new Vuex.Store({
             ]
           },
           {
+            skills_group_group: 'Test',
+            skills_group_group_text: 'Test Test',
             skills_group_name: 'Back End',
             skills_group_text: 'Web Full-Stack: Server-Side',
             // skills_group_group: null,
-            skills_group_group: 'Test',
-            skills_group_group_text: 'Test Test',
 
             skills:
             [
@@ -155,10 +155,10 @@ export default new Vuex.Store({
             ]
           },
           {
-            skills_group_name: 'Instructor',
-            skills_group_text: '&bull; Web Full-Stack: Client-Side kaJSDLAj dljakdjaKDJAkj dlkAJDLKAjdlkjaKDJ alkdjaLK JDKLajdlkaJDLKAJSLKD JASLKDJ ASJKLJD Akj dl;kaJ DL;AJ SDL',
             skills_group_group: 'Insructor',
             skills_group_group_text: 'Curriculum Development Text',
+            skills_group_name: 'Instructor',
+            skills_group_text: '&bull; Web Full-Stack: Client-Side kaJSDLAj dljakdjaKDJAkj dlkAJDLKAjdlkjaKDJ alkdjaLK JDKLajdlkaJDLKAJSLKD JASLKDJ ASJKLJD Akj dl;kaJ DL;AJ SDL',
 
             skills:
             [
