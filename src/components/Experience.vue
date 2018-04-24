@@ -61,6 +61,11 @@
         
         <div class="skills" v-if="job.skills_00_head != null && job.skills_00_link != null">
           <router-link class="button skillsHead" tag="a" :to="`${ job.skills_00_link }`" @click.native="store.commit('tabModeSet','00')">{{ job.skills_00_head }}:</router-link>{{ job.skills_00_body }}
+
+          <div class="skills" v-for="(skill_00_Sub, indexSub) in job.skills_00_Sub">
+            <p><span class="fade-in" v-html="'&bull; '+ skill_00_Sub.text"></span></p>
+          </div>
+
         </div>
         <div class="skills" v-else-if="job.skills_00_head != null && job.skills_00_link == null">  
           <b class="skillsHead">{{ job.skills_00_head }}: </b>{{ job.skills_00_body }}
@@ -109,6 +114,10 @@
         </div>
         
         <div class="location">{{ job.location }}</div>
+
+        <div class="skills" v-for="(itemSub, indexSub) in job.itemsSub">
+          <p><span class="fade-in" v-html="'&bull; '+ itemSub.text"></span></p>
+        </div>
 
       </li>
     </ul>
@@ -184,6 +193,23 @@ ul {
     .button:hover {
     background-color: #bbb;  // was #bbb (too light on large screen)
     color: #666;
+    }
+
+    .fade-in {
+      opacity: 1;
+      animation-name: fadeInOpacity;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-out;
+      animation-duration: 1s;
+    }
+
+    @keyframes fadeInOpacity {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
     }
 
   }

@@ -29,6 +29,12 @@ export default new Vuex.Store({
         skills_00_head: 'React',
         skills_00_body: 'Apollo, Axios, Enzyme, Express, Gatsby, GraphQL, Jest, MongoDB, Particles.js, Redux',
         skills_00_link: 'projects-react/',
+
+        skills_00_Sub: [
+          {text: 'skills00_1<br>skills00_1.1<br>skills00_1.2'},
+          {text: 'skills00_2<br>skills00_2.1<br>skills00_2.2'},
+          {text: 'skills00_3<br>skills00_3.1<br>skills00_3.2'}
+        ],
         // --
         // -- Archive: Vuetify
         skills_01_head: 'Vue.js',
@@ -56,7 +62,12 @@ export default new Vuex.Store({
         timePeriod: {
           from: 'September 2006',
           to: 'Present'
-        }
+        },
+        itemsSub: [
+          {text: 'test11<br>test11.1<br>test11.2'},
+          {text: 'test12<br>test12.1<br>test12.2'},
+          {text: 'test13<br>test13.1<br>test13.2'}
+        ]
       },
       {
         title: 'Lead Instructor and Curriculum Developer',
