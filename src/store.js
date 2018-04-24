@@ -23,86 +23,107 @@ export default new Vuex.Store({
     tabMode: 0, // Default
     jobs: [
       {
-        title: 'Lead Instructor and Curriculum Developer',
+        title: 'Senior Instructor and Curriculum Developer',
         company: 'Encourage and Empower',
-        // --
-        skills_00_head: 'React',
-        skills_00_body: 'Apollo, Axios, Enzyme, Express, Gatsby, GraphQL, Jest, MongoDB, Particles.js, Redux',
-        skills_00_link: 'projects-react/',
-
-        skills_00_Sub: [
-          {text: 'skills00_1<br>skills00_1.1<br>skills00_1.2'},
-          {text: 'skills00_2<br>skills00_2.1<br>skills00_2.2'},
-          {text: 'skills00_3<br>skills00_3.1<br>skills00_3.2'}
-        ],
-        // --
-        // -- Archive: Vuetify
-        skills_01_head: 'Vue.js',
-        skills_01_body: 'Apollo, Axios, Express, GraphQL, MongoDB, Nuxt, Stripe, SVG Grapics, TweenJs, Vuex',
-        skills_01_link: 'projects-vue-js/',
-        // --
-        skills_02_body: 'Axios, Express, MongoDB, Mongoose, Passport, Socket.io, WebSocket',
-        skills_02_head: 'Node.js',
-        skills_02_link: 'projects-node-js/',
-        // --
-        skills_03_head: 'Robotics',
-        skills_03_body: 'Arduino, Lego EV3/Next2, Rasberry Pi, BeagleBone',
-        skills_03_link: 'projects-javascript-python/',
-        // --
-        skills_04_head: 'Backend',
-        skills_04_body: 'Amazon AWS/EB, Digital Ocean NginX/Apache, Google-Firebase, Heroku, Netlify, Zeit-Now',
-        skills_04_link: null,
-        // --
-        skills_05_head: 'Others',
-        skills_05_body: 'Python: Bottle, Flask -- JavaScript: Bootstrap, CSS, Highcharts, HTML, JQuery, SQL, Webpack',
-        skills_05_link: null,
-        // --
-
         location: 'Milpitas, CA',
         timePeriod: {
           from: 'September 2006',
           to: 'Present'
         },
-        itemsSub: [
-          {text: 'test11<br>test11.1<br>test11.2'},
-          {text: 'test12<br>test12.1<br>test12.2'},
-          {text: 'test13<br>test13.1<br>test13.2'}
-        ]
-      },
-      {
-        title: 'Lead Instructor and Curriculum Developer',
-        company: 'Encourage and Empower',
-        // --
-        skills_00_head: 'React',
-        skills_00_body: 'Apollo, Axios, Enzyme, Express, Gatsby, GraphQL, Jest, MongoDB, Particles.js, Redux',
-        skills_00_link: null,
-        // --
-        skills_01_head: 'Vue.js',
-        skills_01_body: 'Apollo, Axios, Express, GraphQL, MongoDB, Nuxt, Stripe, SVG Grapics, TweenJs, Vuex',
-        skills_01_link: null,
-        // --
-        skills_02_body: 'Axios, Express, MongoDB, Mongoose, Passport, Socket.io, WebSocket',
-        skills_02_head: 'Node.js',
-        skills_02_link: null,
-        // --
-        skills_03_head: 'Robotics',
-        skills_03_body: 'Arduino, Lego EV3/Next2, Rasberry Pi, BeagleBone',
-        skills_03_link: null,
-        // --
-        skills_04_head: 'Backend',
-        skills_04_body: 'Amazon AWS/EB, Digital Ocean NginX/Apache, Google-Firebase, Heroku, Netlify, Zeit-Now',
-        skills_04_link: null,
-        // --
-        skills_05_head: 'Others',
-        skills_05_body: 'Python: Bottle, Flask -- JavaScript: Bootstrap, CSS, Highcharts, HTML, JQuery, SQL, Webpack',
-        skills_05_link: null,
-        // --
 
-        location: 'Milpitas, CA',
-        timePeriod: {
-          from: 'September 2006',
-          to: 'Present'
-        }
+        skills:
+        [
+          {
+            skill_head: 'React',
+            skill_body: 'Apollo, Axios, Enzyme, Express, Gatsby, GraphQL, Jest, MongoDB, Particles.js, Redux',
+            skill_link: 'projects-react/',
+
+            skill_subs:
+            [
+              {text: 'skills00_1<br>skills00_1.1<br>skills00_1.2'},
+              {text: 'skills00_2<br>skills00_2.1<br>skills00_2.2'},
+              {text: 'skills00_3<br>skills00_3.1<br>skills00_3.2'}
+            ]
+          },
+          {
+            // -- Archive: Vuetify
+            skill_head: 'Vue.js',
+            skill_body: 'Apollo, Axios, Express, GraphQL, MongoDB, Nuxt, Stripe, SVG Grapics, TweenJs, Vuex',
+            skill_link: 'projects-vue-js/',
+
+            skill_subs:
+            [
+              {text: 'skills01_1<br>skills01_1.1<br>skills01_1.2'},
+              {text: 'skills01_2<br>skills01_2.1<br>skills01_2.2'},
+              {text: 'skills01_3<br>skills01_3.1<br>skills01_3.2'}
+            ]
+          },
+          {
+              // --
+            skill_body: 'Axios, Express, MongoDB, Mongoose, Passport, Socket.io, WebSocket',
+            skill_head: 'Node.js',
+            skill_link: 'projects-node-js/'
+          },
+          {
+            // --
+            skill_head: 'Robotics',
+            skill_body: 'Arduino, Lego EV3/Next2, Rasberry Pi, BeagleBone',
+            skill_link: 'projects-javascript-python/'
+          },
+          {
+            // --
+            skill_head: 'Backend',
+            skill_body: 'Amazon AWS/EB, Digital Ocean NginX/Apache, Google-Firebase, Heroku, Netlify, Zeit-Now',
+            skill_link: null
+          },
+          {
+            // --
+            skill_head: 'Others',
+            skill_body: 'Python: Bottle, Flask -- JavaScript: Bootstrap, CSS, Highcharts, HTML, JQuery, SQL, Webpack',
+            skill_link: null
+          }
+        ]
+
+        // Y  itemsSub: [
+        //   {text: 'test11<br>test11.1<br>test11.2'},
+        //   {text: 'test12<br>test12.1<br>test12.2'},
+        //   {text: 'test13<br>test13.1<br>test13.2'}
+        // ]
+      // },
+      // {
+      //   title: 'Lead Instructor and Curriculum Developer',
+      //   company: 'Encourage and Empower',
+      //   // --
+      //   skill_00_head: 'React',
+      //   skill_00_body: 'Apollo, Axios, Enzyme, Express, Gatsby, GraphQL, Jest, MongoDB, Particles.js, Redux',
+      //   skill_00_link: null,
+      //   // --
+      //   skill_01_head: 'Vue.js',
+      //   skill_01_body: 'Apollo, Axios, Express, GraphQL, MongoDB, Nuxt, Stripe, SVG Grapics, TweenJs, Vuex',
+      //   skill_01_link: null,
+      //   // --
+      //   skill_02_body: 'Axios, Express, MongoDB, Mongoose, Passport, Socket.io, WebSocket',
+      //   skill_02_head: 'Node.js',
+      //   skill_02_link: null,
+      //   // --
+      //   skill_03_head: 'Robotics',
+      //   skill_03_body: 'Arduino, Lego EV3/Next2, Rasberry Pi, BeagleBone',
+      //   skill_03_link: null,
+      //   // --
+      //   skill_04_head: 'Backend',
+      //   skill_04_body: 'Amazon AWS/EB, Digital Ocean NginX/Apache, Google-Firebase, Heroku, Netlify, Zeit-Now',
+      //   skill_04_link: null,
+      //   // --
+      //   skill_05_head: 'Others',
+      //   skill_05_body: 'Python: Bottle, Flask -- JavaScript: Bootstrap, CSS, Highcharts, HTML, JQuery, SQL, Webpack',
+      //   skill_05_link: null,
+      //   // --
+
+      //   location: 'Milpitas, CA',
+      //   timePeriod: {
+      //     from: 'September 2006',
+      //     to: 'Present'
+      //   }
       }
 
     ],

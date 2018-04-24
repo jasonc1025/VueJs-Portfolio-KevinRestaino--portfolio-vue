@@ -56,68 +56,73 @@
         <div class="title">{{ job.title }}</div>
         <div class="company">{{ job.company }}</div>
         <div class="timePeriod">{{ job.timePeriod.from }} – {{ job.timePeriod.to }}</div>
+        <div class="location">{{ job.location }}</div>
 
-        <!-- <router-link class="button" tag="a" :to="`${ job.routerLink }`">{{ job.skills_01_head }}Jesus</router-link> -->
+        <!-- <router-link class="button" tag="a" :to="`${ job.routerLink }`">{{ job.skill_01_head }}Jesus</router-link> -->
         
-        <div class="skills" v-if="job.skills_00_head != null && job.skills_00_link != null">
-          <router-link class="button skillsHead" tag="a" :to="`${ job.skills_00_link }`" @click.native="store.commit('tabModeSet','00')">{{ job.skills_00_head }}:</router-link>{{ job.skills_00_body }}
+        <div class="skills" v-for="(skill, index) in job.skills">
 
-          <div class="skills" v-for="(skill_00_Sub, indexSub) in job.skills_00_Sub">
-            <p><span class="fade-in" v-html="'&bull; '+ skill_00_Sub.text"></span></p>
+          <div class="skills" v-if="skill.skill_head != null && skill.skill_link != null">
+
+            <router-link class="button skillsHead" tag="a" :to="`${ skill.skill_link }`" @click.native="store.commit('tabModeSet','00')">{{ skill.skill_head }}:</router-link>{{ skill.skill_body }}
+
+            <div class="skills" v-for="(skill_sub, index_Sub) in skill.skill_subs">
+              <p><span class="fade-in" v-html="'&bull; '+ skill_sub.text"></span></p>
+            </div>
+
+          </div>
+
+          <div class="skills" v-else-if="skill.skill_head != null && skill.skill_link == null">  
+            <b class="skillsHead">{{ skill.skill_head }}: </b>{{ skill.skill_body }}
           </div>
 
         </div>
-        <div class="skills" v-else-if="job.skills_00_head != null && job.skills_00_link == null">  
-          <b class="skillsHead">{{ job.skills_00_head }}: </b>{{ job.skills_00_body }}
-        </div>
-
-        <div class="skills" v-if="job.skills_01_head != null && job.skills_01_link != null">
-          <router-link class="button skillsHead" tag="a" :to="`${ job.skills_01_link }`" @click.native="store.commit('tabModeSet','01')">{{ job.skills_01_head }}:</router-link>{{ job.skills_01_body }}
-        </div>
-        <div class="skills" v-else-if="job.skills_01_head != null && job.skills_01_link == null">  
-          <b class="skillsHead">{{ job.skills_01_head }}: </b>{{ job.skills_01_body }}
-        </div>
-
-        <div class="skills" v-if="job.skills_02_head != null && job.skills_02_link != null">
-          <router-link class="button skillsHead" tag="a" :to="`${ job.skills_02_link }`" @click.native="store.commit('tabModeSet','02')">{{ job.skills_02_head }}:</router-link>{{ job.skills_02_body }}
-        </div>
-        <div class="skills" v-else-if="job.skills_02_head != null && job.skills_02_link == null">  
-          <b class="skillsHead">{{ job.skills_02_head }}: </b>{{ job.skills_02_body }}
-        </div>
-
-        <div class="skills" v-if="job.skills_03_head != null && job.skills_03_link != null">
-          <router-link class="button skillsHead" tag="a" :to="`${ job.skills_03_link }`" @click.native="store.commit('tabModeSet','03')">{{ job.skills_03_head }}:</router-link>{{ job.skills_03_body }}
-        </div>
-        <div class="skills" v-else-if="job.skills_03_head != null && job.skills_03_link == null">  
-          <b class="skillsHead">{{ job.skills_03_head }}: </b>{{ job.skills_03_body }}
-        </div>
-
-        <div class="skills" v-if="job.skills_04_head != null && job.skills_04_link != null">
-          <router-link class="button skillsHead" tag="a" :to="`${ job.skills_04_link }`" @click.native="store.commit('tabModeSet','04')">{{ job.skills_04_head }}:</router-link>{{ job.skills_04_body }}
-        </div>
-        <div class="skills" v-else-if="job.skills_04_head != null && job.skills_04_link == null">  
-          <b class="skillsHead">{{ job.skills_04_head }}: </b>{{ job.skills_04_body }}
-        </div>
-
-        <div class="skills" v-if="job.skills_05_head != null && job.skills_05_link != null">
-          <router-link class="button skillsHead" tag="a" :to="`${ job.skills_05_link }`" @click.native="store.commit('tabModeSet','05')">{{ job.skills_05_head }}:</router-link>{{ job.skills_05_body }}
-        </div>
-        <div class="skills" v-else-if="job.skills_05_head != null && job.skills_05_link == null">  
-          <b class="skillsHead">{{ job.skills_05_head }}: </b>{{ job.skills_05_body }}
-        </div>
-
-        <div class="skills" v-if="job.skills_06_head != null && job.skills_06_link != null">
-          <router-link class="button skillsHead" tag="a" :to="`${ job.skills_06_link }`" @click.native="store.commit('tabModeSet','06')">{{ job.skills_06_head }}:6</router-link>{{ job.skills_06_body }}
-        </div>
-        <div class="skills" v-else-if="job.skills_06_head != null && job.skills_06_link == null">  
-          <b class="skillsHead">{{ job.skills_06_head }}:66 </b>{{ job.skills_06_body }}
-        </div>
         
-        <div class="location">{{ job.location }}</div>
-
-        <div class="skills" v-for="(itemSub, indexSub) in job.itemsSub">
-          <p><span class="fade-in" v-html="'&bull; '+ itemSub.text"></span></p>
+        <!-- <div class="skills" v-if="job.skill_01_head != null && job.skill_01_link != null">
+          <router-link class="button skillsHead" tag="a" :to="`${ job.skill_01_link }`" @click.native="store.commit('tabModeSet','01')">{{ job.skill_01_head }}:</router-link>{{ job.skill_01_body }}
         </div>
+        <div class="skills" v-else-if="job.skill_01_head != null && job.skill_01_link == null">  
+          <b class="skillsHead">{{ job.skill_01_head }}: </b>{{ job.skill_01_body }}
+        </div>
+
+        <div class="skills" v-if="job.skill_02_head != null && job.skill_02_link != null">
+          <router-link class="button skillsHead" tag="a" :to="`${ job.skill_02_link }`" @click.native="store.commit('tabModeSet','02')">{{ job.skill_02_head }}:</router-link>{{ job.skill_02_body }}
+        </div>
+        <div class="skills" v-else-if="job.skill_02_head != null && job.skill_02_link == null">  
+          <b class="skillsHead">{{ job.skill_02_head }}: </b>{{ job.skill_02_body }}
+        </div>
+
+        <div class="skills" v-if="job.skill_03_head != null && job.skill_03_link != null">
+          <router-link class="button skillsHead" tag="a" :to="`${ job.skill_03_link }`" @click.native="store.commit('tabModeSet','03')">{{ job.skill_03_head }}:</router-link>{{ job.skill_03_body }}
+        </div>
+        <div class="skills" v-else-if="job.skill_03_head != null && job.skill_03_link == null">  
+          <b class="skillsHead">{{ job.skill_03_head }}: </b>{{ job.skill_03_body }}
+        </div>
+
+        <div class="skills" v-if="job.skill_04_head != null && job.skill_04_link != null">
+          <router-link class="button skillsHead" tag="a" :to="`${ job.skill_04_link }`" @click.native="store.commit('tabModeSet','04')">{{ job.skill_04_head }}:</router-link>{{ job.skill_04_body }}
+        </div>
+        <div class="skills" v-else-if="job.skill_04_head != null && job.skill_04_link == null">  
+          <b class="skillsHead">{{ job.skill_04_head }}: </b>{{ job.skill_04_body }}
+        </div>
+
+        <div class="skills" v-if="job.skill_05_head != null && job.skill_05_link != null">
+          <router-link class="button skillsHead" tag="a" :to="`${ job.skill_05_link }`" @click.native="store.commit('tabModeSet','05')">{{ job.skill_05_head }}:</router-link>{{ job.skill_05_body }}
+        </div>
+        <div class="skills" v-else-if="job.skill_05_head != null && job.skill_05_link == null">  
+          <b class="skillsHead">{{ job.skill_05_head }}: </b>{{ job.skill_05_body }}
+        </div>
+
+        <div class="skills" v-if="job.skill_06_head != null && job.skill_06_link != null">
+          <router-link class="button skillsHead" tag="a" :to="`${ job.skill_06_link }`" @click.native="store.commit('tabModeSet','06')">{{ job.skill_06_head }}:6</router-link>{{ job.skill_06_body }}
+        </div>
+        <div class="skills" v-else-if="job.skill_06_head != null && job.skill_06_link == null">  
+          <b class="skillsHead">{{ job.skill_06_head }}:66 </b>{{ job.skill_06_body }}
+        </div> -->
+        
+        <!-- Y  <div class="skills" v-for="(itemSub, indexSub) in job.itemsSub">
+          <p><span class="fade-in" v-html="'&bull; '+ itemSub.text"></span></p>
+        </div> -->
 
       </li>
     </ul>
