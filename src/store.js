@@ -37,8 +37,8 @@ export default new Vuex.Store({
           {
             skills_group_name: 'Front End',
             skills_group_text: '&bull; Web Full-Stack: Client-Side kaJSDLAj dljakdjaKDJAkj dlkAJDLKAjdlkjaKDJ alkdjaLK JDKLajdlkaJDLKAJSLKD JASLKDJ ASJKLJD Akj dl;kaJ DL;AJ SDL',
-            skills_group_group: 'Curriculum Development',
-            skills_group_group_text: 'Curriculum Development Tex',
+            skills_group_group: 'Curriculum Developed',
+            skills_group_group_text: 'Curriculum Development Text',
 
             skills:
             [
