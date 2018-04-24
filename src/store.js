@@ -47,7 +47,7 @@ export default new Vuex.Store({
                 skill_subs:
                 [
                   {text: '&bull; skills00_1<br>skills00_1.1<br>skills00_1.2'},
-                  {text: '&bull; skills00_1 aksfj as;jf lasj fasj f;lasjflsajf;lj sal;fj salfj asl;f jkjsadlf asjf;lasj flskajflkasjdl;fasjdlfjsadlk;f jasjf saljflasjflsdaj lf;sdajfjd sl;<br>&bull; skills00_1.1 kasjd fl;asj fl;s j;lf jsa; alsfj alskjf ajsjl;faj sflkjsal;kfj salkf asjf;l asdlf as;fj sajfsajfsaldj fals jlsfj <br>skills00_1.2'},
+                  {text: '&bull; skills00_1 <span style="color:red"> aksfj as;jf lasj </span> fasj f;lasj <span style="font-weight:bold"> flsajf;lj </span> sdgf d  sgdfdg d <span style="font-weight:bold;color:red"> aksfj as;jf lasj </span> sal;fj salfj asl;f jkjsadlf asjf;lasj flskajflkasjdl;fasjdlfjsadlk;f jasjf saljflasjflsdaj lf;sdajfjd sl;<br>&bull; skills00_1.1 kasjd fl;asj fl;s j;lf jsa; alsfj alskjf ajsjl;faj sflkjsal;kfj salkf asjf;l asdlf as;fj sajfsajfsaldj fals jlsfj <br>skills00_1.2'},
                   {text: '&bull; skills00_2<br>skills00_2.1<br>skills00_2.2'},
                   {text: '&bull; skills00_3<br>skills00_3.1<br>skills00_3.2'}
                 ]

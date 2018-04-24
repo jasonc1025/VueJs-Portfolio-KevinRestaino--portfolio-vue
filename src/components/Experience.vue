@@ -77,6 +77,7 @@
 
               <div class="skillSub" v-for="(skill_sub, index_Sub) in skill.skill_subs">
                 <!-- Y <p><span class="fade-in" v-html="'&bull; '+ skill_sub.text"></span></p> -->
+                <!-- Y <p><span v-html="skill_sub.text"></span></p> -->
                 <p><span v-html="skill_sub.text"></span></p>
               </div>
 
