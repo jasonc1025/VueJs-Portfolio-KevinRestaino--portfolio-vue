@@ -53,18 +53,22 @@
     <ul>
       <li v-for="job in jobs">
 
-        <div class="title">{{ job.title }}</div>
-        <div class="company">{{ job.company }}</div>
-        <div class="timePeriod">{{ job.timePeriod.from }} – {{ job.timePeriod.to }}</div>
-        <div class="location">{{ job.location }}</div>
-
-        <!-- <router-link class="button" tag="a" :to="`${ job.routerLink }`">{{ job.skill_01_head }}Jesus</router-link> -->
+        <ul>
+          <li class="jobHead">
+            <span class="title">{{ job.title }}</span>
+            <span class="timePeriod">{{ job.timePeriod.from }} – {{ job.timePeriod.to }}</span>
+          </li>
+          <li class="jobBody">
+            <span class="company">{{ job.company }},</span>
+            <span class="location">{{ job.location }}</span>
+          </li>
+        </ul>
         
-        <div class="group" v-for="(skills_group, index) in job.skills_groups">
+        <div class="skillsGroup" v-for="(skills_group, index) in job.skills_groups">
 
-          <b class="groupHead">{{ skills_group.skills_group_name }}</b>
-          <!-- Y <p class="groupBody">&bull; {{ skills_group.skills_group_text }}</p> -->
-          <p class="groupBody" v-html="skills_group.skills_group_text"></p>
+          <b class="skillsGroupHead">{{ skills_group.skills_group_name }}</b>
+          <!-- Y <p class="skillsGroupBody">&bull; {{ skills_group.skills_group_text }}</p> -->
+          <p class="skillsGroupBody" v-html="skills_group.skills_group_text"></p>
 
           <div class="skill" v-for="(skill, index) in skills_group.skills">
 
@@ -164,7 +168,7 @@ ul {
   text-align: left;  // was 'center'
   
   li {
-    margin-top: 1em;  // 30px orig
+    // margin-top: 1em;  // 30px orig
 
     .button{      
       padding: 0.5em 2em 0.5em 2em;
@@ -206,30 +210,39 @@ ul {
   .timePeriod {
     font-size: smaller;
     color: #aaa;  // [jwc] better ligher shading vs. 'font-weight'
-    margin-left: 3.5em;
+    // Y margin-left: 3.5em;
     // margin-bottom: -0.5em;
+    // text-align: right;
   }
   .location {
     font-size: smaller;
     color: #aaa;
-    margin-left: 3.5em;
+    // Y margin-left: 3.5em;
     // margin-top: -0.5em;
-    margin-bottom: -0.5em;
+    // margin-bottom: -0.5em;
+    // text-align: right;
   }
 
-  .group{
+  .jobHead{
+    display: flex;
+    justify-content: space-between;
+  }
+  .jobBody{
+    display: inline-block;
+  }
+  .skillsGroup{
     font-weight: 300;
     font-size: medium;
     margin: 1em 1em 1em 1.5em;  // [jwc] change margin-left: 2em;
   }
   // Enough to provide margin-left for 'skillBody-non-button' row to left-indent up to 'skillBody-button' row
-  .groupHead{
+  .skillsGroupHead{
     font-weight: 400;
     // margin-left: 1em;
     margin-right: 0.5em;
     font-size: large;
   }
-  .groupBody{
+  .skillsGroupBody{
     font-weight: 300;
     font-size: medium;
     margin: 0.25em 1em 0.25em 1.5em;  // [jwc] change margin-left: 2em;
