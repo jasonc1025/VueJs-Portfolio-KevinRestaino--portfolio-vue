@@ -101,6 +101,12 @@ var webpackConfig = merge(baseWebpackConfig, {
         from: path.resolve(__dirname, '../static'),
         to: config.build.assetsSubDirectory,
         ignore: ['.*']
+      },
+      // [jwc] Following added to use '../root/_redirect' for 'netlify' to avoid 404 error
+      {
+        from: path.resolve(__dirname, '../root'),
+        to: config.build.assetsRoot,
+        ignore: ['.*']
       }
     ])
   ]
