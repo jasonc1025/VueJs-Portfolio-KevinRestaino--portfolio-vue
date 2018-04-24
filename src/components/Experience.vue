@@ -51,35 +51,42 @@
 
 
     <ul>
-      <li v-for="job in jobs">
+      <li v-for="(job_, index_job) in jobs">
 
         <ul>
+          <li>
+            <p class="jobGroup">{{ job_.job_group }}</p>
+          </li>
           <li class="jobHead">
-            <span class="title">{{ job.title }}</span>
-            <span class="timePeriod">{{ job.timePeriod.from }} – {{ job.timePeriod.to }}</span>
+            <span class="jobTitle">{{ job_.job_title }}</span>
+            <span class="jobTimePeriod">{{ job_.job_timePeriod.from }} – {{ job_.job_timePeriod.to }}</span>
           </li>
           <li class="jobBody">
-            <span class="company">{{ job.company }},</span>
-            <span class="location">{{ job.location }}</span>
+            <span class="jobCompany">{{ job_.job_company }},</span>
+            <span class="jobLocation">{{ job_.job_location }}</span>
           </li>
         </ul>
         
-        <div class="skillsGroup" v-for="(skills_group, index) in job.skills_groups">
+        <div class="skillsGroup" v-for="(skills_group, index_skills_group) in job_.skills_groups">
 
-          <b class="skillsGroupHead">{{ skills_group.skills_group_name }}</b>
+          <div class="skillsGroupGroup_Class">
+            <p class="skillsGroupGroup">{{ skills_group.skills_group_group }}</p>
+            <p class="skillsGroupGroupText">{{ skills_group.skills_group_group_text }}</p>
+          </div>
+          <p class="skillsGroupHead">{{ skills_group.skills_group_name }}</p>
           <!-- Y <p class="skillsGroupBody">&bull; {{ skills_group.skills_group_text }}</p> -->
           <p class="skillsGroupBody" v-html="skills_group.skills_group_text"></p>
 
-          <div class="skill" v-for="(skill, index) in skills_group.skills">
+          <div class="skill" v-for="(skill_, index_skill) in skills_group.skills">
 
-            <div v-if="skill.skill_head != null && skill.skill_link != null">
+            <div v-if="skill_.skill_head != null && skill_.skill_link != null">
 
               <div class="buttonGroup">
-                <router-link class="button skillHead" tag="a" :to="`${ skill.skill_link }`" @click.native="store.commit('tabModeSet','00')">{{ skill.skill_head }}:</router-link>
-                <span class="skillBody">{{ skill.skill_body }}</span>
+                <router-link class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','00')">{{ skill_.skill_head }}:</router-link>
+                <span class="skillBody">{{ skill_.skill_body }}</span>
               </div>
 
-              <div class="skillSub" v-for="(skill_sub, index_Sub) in skill.skill_subs">
+              <div class="skillSub" v-for="(skill_sub, index_skill_sub) in skill_.skill_subs">
                 <!-- Y <p><span class="fade-in" v-html="'&bull; '+ skill_sub.text"></span></p> -->
                 <!-- Y <p><span v-html="skill_sub.text"></span></p> -->
                 <p><span v-html="skill_sub.text"></span></p>
@@ -87,14 +94,14 @@
 
             </div>
 
-            <div v-else-if="skill.skill_head != null && skill.skill_link == null">
+            <div v-else-if="skill_.skill_head != null && skill_.skill_link == null">
 
               <div>
-                <b class="skillHead">{{ skill.skill_head }}: </b>
-                <span class="skillBody">{{ skill.skill_body }}</span>
+                <b class="skillHead">{{ skill_.skill_head }}: </b>
+                <span class="skillBody">{{ skill_.skill_body }}</span>
               </div>
 
-              <div class="skillSub" v-for="(skill_sub, index_Sub) in skill.skill_subs">
+              <div class="skillSub" v-for="(skill_sub, index_Sub) in skill_.skill_subs">
                 <!-- Y <p><span class="fade-in" v-html="'&bull; '+ skill_sub.text"></span></p> -->
                 <p><span v-html="skill_sub.text"></span></p>
               </div>
@@ -200,21 +207,25 @@ ul {
 
   }
 
-  .title {
+  .jobTitle {
     font-weight: 400;
+    font-size: larger;
   }
-  .company{
+  .jobCompany{
     font-weight: 300;
   }
+  .jobGroup {
+    font-weight: 400;
+  }
   // Left-Indent flush with above text
-  .timePeriod {
+  .jobTimePeriod {
     font-size: smaller;
     color: #aaa;  // [jwc] better ligher shading vs. 'font-weight'
     // Y margin-left: 3.5em;
     // margin-bottom: -0.5em;
     // text-align: right;
   }
-  .location {
+  .jobLocation {
     font-size: smaller;
     color: #aaa;
     // Y margin-left: 3.5em;
@@ -230,6 +241,15 @@ ul {
   .jobBody{
     display: inline-block;
   }
+  .jobGroup{
+    font-weight: 400;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    background-color: #ccc;  // light-grey
+    padding: 2em;
+  }
+
   .skillsGroup{
     font-weight: 300;
     font-size: medium;
@@ -240,13 +260,29 @@ ul {
     font-weight: 400;
     // margin-left: 1em;
     margin-right: 0.5em;
-    font-size: large;
+    font-size: larger;
   }
   .skillsGroupBody{
     font-weight: 300;
     font-size: medium;
     margin: 0.25em 1em 0.25em 1.5em;  // [jwc] change margin-left: 2em;
   }
+  .skillsGroupGroup{
+    font-weight: 400;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+  }
+  .skillsGroupGroupText{
+    font-weight: 300;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+  }
+  .skillsGroupGroup_Class{
+    padding: 0.5em;
+    background-color: #d9d9d9;  // light-grey
+}
 
   .skill{
     font-weight: 300;

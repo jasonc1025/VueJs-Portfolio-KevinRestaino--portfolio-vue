@@ -23,19 +23,22 @@ export default new Vuex.Store({
     tabMode: 0, // Default
     jobs: [
       {
-        title: 'Senior Instructor and Curriculum Developer',
-        company: 'Encourage and Empower',
-        location: 'Milpitas, CA',
-        timePeriod: {
+        job_title: 'Senior Instructor and Curriculum Developer',
+        job_company: 'Encourage and Empower',
+        job_location: 'Milpitas, CA',
+        job_timePeriod: {
           from: 'September 2006',
           to: 'Present'
         },
+        job_group: 'Work Experience',
 
         skills_groups:
         [
           {
             skills_group_name: 'Front End',
             skills_group_text: '&bull; Web Full-Stack: Client-Side kaJSDLAj dljakdjaKDJAkj dlkAJDLKAjdlkjaKDJ alkdjaLK JDKLajdlkaJDLKAJSLKD JASLKDJ ASJKLJD Akj dl;kaJ DL;AJ SDL',
+            skills_group_group: 'Curriculum Development',
+            skills_group_group_text: 'Curriculum Development Tex',
 
             skills:
             [
@@ -94,6 +97,9 @@ export default new Vuex.Store({
           {
             skills_group_name: 'Back End',
             skills_group_text: 'Web Full-Stack: Server-Side',
+            // skills_group_group: null,
+            skills_group_group: 'Test',
+            skills_group_group_text: 'Test Test',
 
             skills:
             [
