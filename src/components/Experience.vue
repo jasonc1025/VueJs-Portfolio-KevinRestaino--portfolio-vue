@@ -51,9 +51,9 @@
 
 
     <ul>
-      <li v-for="(job_, index_job) in jobs">
+      <li v-for="(job_, index_job) in jobs" :key='index_job'>
 
-        <div class="jobGroup">
+        <div v-if="job_.job_group_name!=null" class="jobGroup">
           <p class="jobGroupName">{{ job_.job_group_name }}</p>
           <p class="jobGroupText">{{ job_.job_group_text }}</p>
         </div>
@@ -66,36 +66,45 @@
           <li class="jobBody">
             <span class="jobCompany">{{ job_.job_company }},</span>
             <span class="jobLocation">{{ job_.job_location }}</span>
+            <span v-if="job_.job_url!=null"><a class="jobUrl" v-bind:href="job_.job_url"><u>{{job_.job_url}}</u></a></span>
           </li>
         </ul>
 
-        <div class="skillSub" v-for="(job_child, index_job_child) in job_.job_childs">
+        <div class="jobChild" v-for="(job_child, index_job_child) in job_.job_childs" :key='index_job_child'>
           <!-- Y <p><span class="fade-in" v-html="'&bull; '+ skill_child.text"></span></p> -->
           <!-- Y <p><span v-html="skill_child.text"></span></p> -->
           <p><span v-html="job_child.text"></span></p>
         </div>
 
 
-        <div class="skillsGroup" v-for="(skills_group, index_skills_group) in job_.skills_groups">
+        <div class="skillsGroup" v-for="(skills_group, index_skills_group) in job_.skills_groups" :key='index_skills_group'>
 
-          <div class="skillsGroupGroup">
+          <div v-if="skills_group.skills_group_group_name!=null" class="skillsGroupGroup">
             <p class="skillsGroupGroupName">{{ skills_group.skills_group_group_name }}</p>
-            <p class="skillsGroupGroupText">{{ skills_group.skills_group_group_text }}</p>
+            <!-- Y <p class="skillsGroupGroupText">{{ skills_group.skills_group_group_text }}</p> -->
+            <p class="skillsGroupGroupText" v-html="skills_group.skills_group_group_text"></p>
           </div>
           <p class="skillsGroupHead">{{ skills_group.skills_group_name }}</p>
           <!-- Y <p class="skillsGroupBody">&bull; {{ skills_group.skills_group_text }}</p> -->
           <p class="skillsGroupBody" v-html="skills_group.skills_group_text"></p>
 
-          <div class="skill" v-for="(skill_, index_skill) in skills_group.skills">
+          <div class="skill" v-for="(skill_, index_skill) in skills_group.skills" :key='index_skill'>
 
             <div v-if="skill_.skill_head != null && skill_.skill_link != null">
 
               <div class="buttonGroup">
-                <router-link class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','00')">{{ skill_.skill_head }}:</router-link>
+                <!-- Y <router-link class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','00')">{{ skill_.skill_head }}:</router-link> -->
+                <!-- ? <router-link class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','`${ skill_.skill_link_tab_num }`')">{{ skill_.skill_head }}:</router-link> -->
+                <router-link v-if="skill_.skill_link_tab_index==='0'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','00')">{{ skill_.skill_head }}:</router-link>
+                <router-link v-if="skill_.skill_link_tab_index==='1'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','01')">{{ skill_.skill_head }}:</router-link>
+                <router-link v-if="skill_.skill_link_tab_index==='2'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','02')">{{ skill_.skill_head }}:</router-link>
+                <router-link v-if="skill_.skill_link_tab_index==='3'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','03')">{{ skill_.skill_head }}:</router-link>
+                <router-link v-if="skill_.skill_link_tab_index==='4'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','04')">{{ skill_.skill_head }}:</router-link>
+                <router-link v-if="skill_.skill_link_tab_index==='5'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','05')">{{ skill_.skill_head }}:</router-link>
                 <span class="skillBody">{{ skill_.skill_body }}</span>
               </div>
 
-              <div class="skillSub" v-for="(skill_child, index_skill_child) in skill_.skill_childs">
+              <div class="skillChild" v-for="(skill_child, index_skill_child) in skill_.skill_childs" :key='index_skill_child'>
                 <!-- Y <p><span class="fade-in" v-html="'&bull; '+ skill_child.text"></span></p> -->
                 <!-- Y <p><span v-html="skill_child.text"></span></p> -->
                 <p><span v-html="skill_child.text"></span></p>
@@ -110,7 +119,7 @@
                 <span class="skillBody">{{ skill_.skill_body }}</span>
               </div>
 
-              <div class="skillSub" v-for="(skill_child, index_child) in skill_.skill_childs">
+              <div class="skillChild" v-for="(skill_child, index_child) in skill_.skill_childs" :key='index_child'>
                 <!-- Y <p><span class="fade-in" v-html="'&bull; '+ skill_child.text"></span></p> -->
                 <p><span v-html="skill_child.text"></span></p>
               </div>
@@ -239,6 +248,15 @@ ul {
     // margin-bottom: -0.5em;
     // text-align: right;
   }
+  .jobUrl {
+    font-size: smaller;
+    color: blue;
+    // Y margin-left: 3.5em;
+    // margin-top: -0.5em;
+    // margin-bottom: -0.5em;
+    // text-align: right;
+    margin-left: 0.5em;
+  }
 
   .jobHead{
     display: flex;
@@ -324,7 +342,7 @@ ul {
     font-size: smaller;  // keep in mind word-wrap if side-margins shrink due to window-shrink
   }
 
-  .skillSub{
+  .jobChild, .skillChild {
     font-weight: 300;
     font-size: medium;
     // margin: 0.5em 1em 0.5em 1.5em;  // [jwc] change margin-left: 2em;
