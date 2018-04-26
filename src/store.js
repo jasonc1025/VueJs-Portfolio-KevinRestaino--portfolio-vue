@@ -76,7 +76,7 @@ export default new Vuex.Store({
       {
         job_group_name: 'Teaching Experience',
         job_group_text: null,
-        job_title: 'Web Full-Stack & Robotics ~ Sr. Instructor & Curriculum Developer',
+        job_title: 'Co-Founder, Instructor & Curriculum Developer: Web Full-Stack & Robotics',
         job_company: 'Encourage and Empower (EandE)',
         job_location: 'Milpitas, CA',
         job_url: 'http://www.EandE.world',
@@ -86,17 +86,17 @@ export default new Vuex.Store({
         },
         job_childs:
         [
-          { text: '&#9656; By specializing in Open-Source Technologies, I\'ve co-founded EandE as a \'home-garage\' R&D with a mission to democratize Education-Tech across age & socio-economic barriers.' },
-          { text: '&#9656; Over these past 10 years, I\'ve enjoyed coding and teaching Java, C#, C++ and C.' },
-          { text: '&#9656; And with the Web & Robotics revolution upon us, I\'ve developed curricula that focus on industry-leading JavaScript and Python -- the top two languages for these past several years as recognized by Stack Overflow\'s 2018 Global Survey of 100K Developers [https://insights.stackoverflow.com/survey/2018].' },
-          { text: '&#9656; Buttons below link to live demo sites.' }
+          { text: '&#9656; Traditionally, I\'ve enjoyed coding and teaching Java, C#, and C++ -- among many other Linux-based tools.' },
+          { text: '&#9656; Yet due to the global pervasiveness of Web/Cloud-Services and Robotics/IOT-Devices, Stack Overflow\'s 2018 Global Survey of 100K Developers have concluded that two Open-Source languages -- JavaScript and Python -- have taken the world by storm, at least for these past several years <a href="https://insights.stackoverflow.com/survey/2018" class="skillUrl" target="_blank"><span class="skillUrl" style="color:blue;font-size:small"><u>[https://insights.stackoverflow.com/survey/2018]</u></span>.</a>' },
+          { text: '&#9656; Thus from EandE\'s Instructional R&D Lab (still based at my home/garage since 2004), I wish to present a portfolio of commerical-grade educational projects that feature JavaScript and/or Python, along with their respective key libraries as noted below.  Below, the blue buttons link to live demo sites.' }
         ],
 
         skills_groups:
         [
           {
             skills_group_group_name: 'EandE\'s Industry-Based Curricula',
-            skills_group_group_text: '<span style="text-align:center;">As Inpsired from Strategic Corporate and College Experiences:<br>Web Full-Stack Developer at Siemens-eMeter -&- Adjunct Professor at Cogswell College</span>',
+            // skills_group_group_text: '<span style="text-align:center;">As Inspired from Strategic Corporate and College Experiences:<br>Web Full-Stack Developer at Siemens-eMeter -&- Adjunct Professor at Cogswell College</span>',
+            skills_group_group_text: null,
             skills_group_name: 'Web Full-Stack: JavaScript (JS) and Python Ecosystem',
             skills_group_text: '&#9656; Following Showcasing Project-Based Core Technologies:',
 
@@ -146,10 +146,10 @@ export default new Vuex.Store({
           {
             skills_group_group_name: null,
             skills_group_group_text: null,
-            skills_group_name: 'Silicon Valley\'s 1st D.I.Y.-Alternative to LEGO®, TETRIX® & VEX® Robotics',
+            skills_group_name: 'Silicon Valley\'s 1st Lower-Cost D.I.Y.-Alternative to LEGO®, TETRIX® & VEX® Robotics',
             skills_group_text: '&#9656; As Showcased at Tech Museum, San Jose -&- Maker Faire\'s Premiere Showroom, Bay Area (twice)...<br>' +
-                               '&#9656; <span style="font-weight:400">T.A.C.H.nology® Robotics w/ Arduino</span><br>' +
-                               '&#9656; Combining "<span style="font-weight:400">T.</span>echnology, <span style="font-weight:400">A.</span>rts & <span style="font-weight:400">C.</span>rafts... <span style="font-weight:400">H.</span>olistically" for Middle School, High School & College',
+                               '&#9656; <span style="font-weight:400"><u>T</u>.<u>A</u>.<u>C</u>.<u>H</u>.nology® Robotics w/ Arduino</span><br>' +
+                               '&#9656; Combining "<span style="font-weight:400"><u>T</u>.</span>echnology, <span style="font-weight:400"><u>A</u>.</span>rts & <span style="font-weight:400"><u>C</u>.</span>rafts... <span style="font-weight:400"><u>H</u>.</span>olistically" for Middle School, High School & College',
 
             skills:
             [

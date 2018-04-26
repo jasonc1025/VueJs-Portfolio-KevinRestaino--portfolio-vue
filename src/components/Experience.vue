@@ -278,8 +278,8 @@ ul {
     background-color: #ccc;  // light-grey
     // color:lightgray;
     padding: 1em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
   .jobHead{
     display: flex;
@@ -294,7 +294,7 @@ ul {
     background-color: rgba(0, 0, 0, 1);
     color:lightgray;
     padding: 2em;
-    margin-top: 0.5em;
+    margin-top: 1em;
     margin-bottom: 0.5em;
   }
   .jobGroupName{
@@ -312,6 +312,7 @@ ul {
 
   .skillsGroupGroup{
     // padding: 0.5em;
+    margin-bottom: 1em;
     // [jwc]reserve shading for major sections, this minor section use grey-line: background-color: #d9d9d9;  // light-grey 
   }
   .skillsGroupGroupName{
@@ -422,5 +423,56 @@ ul {
   .buttonGroup {
     margin-bottom: 1em;
   }
+
+  // Y ul li div div div div.buttonGroup:last-of-type {
+  //     margin-bottom: 0.25em;
+  // }
+  // Y div div.buttonGroup:last-of-type {
+  //     margin-bottom: 0.25em;
+  // }
+  // .button.skillHead:last-of-type {
+  //     background-color: yellow;
+  // }
+    // .button:last-of-type {
+    //     background-color: yellow;
+    // }
+  // .skill>div>.buttonGroup:only-of-type{
+  //     background-color: yellow;
+  // }
+  // .skill div .buttonGroup a:only-of-type{
+  //     background-color: blue;
+  // }
+  // .skill div .button:last-of-type{
+  //     background-color: green;
+  // }
+
+  // Y .buttonGroup:last-child {
+  //     margin-bottom: 0.25em;
+  // }
+  // * Prefer vs. '.buttonGroup:last-child' since latter not as accurately descriptive
+  // .buttonGroup:last-of-type {
+  //     margin-bottom: 0.25em;
+  // }
+  // .buttonGroup:only-of-type {
+  //     margin-bottom: 0.25em;
+  // }
+  // div.buttonGroup:only-of-type {
+  //     margin-bottom: 0.25em;
+  // }
+  // .buttonGroup:only-child {
+  //     margin-bottom: 0.25em;
+  // }
+  // Y span:only-child{
+  //     background-color: yellow;
+  // }
+  // Y .button:only-of-type {
+  //     background-color: yellow;
+  // }
+  // .buttonGroup:only-of-type {
+  //     background-color: yellow;
+  // }
+  // .button.skillHead:only-of-type {
+  //     background-color: yellow;
+  // }
 
 </style>
