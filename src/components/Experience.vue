@@ -81,10 +81,10 @@
 
         <div class="skillsGroup" v-for="(skills_group, index_skills_group) in job_.skills_groups" :key='index_skills_group'>
 
-          <div v-if="skills_group.skills_group_group_name!=null" class="skillsGroupGroup">
-            <p class="skillsGroupGroupName">{{ skills_group.skills_group_group_name }}</p>
+          <div v-if="skills_group.skills_group_group_name!=null || skills_group.skills_group_group_text!=null" class="skillsGroupGroup">
+            <p v-if="skills_group.skills_group_group_name!=null" class="skillsGroupGroupName">{{ skills_group.skills_group_group_name }}</p>
             <!-- Y <p class="skillsGroupGroupText">{{ skills_group.skills_group_group_text }}</p> -->
-            <p class="skillsGroupGroupText" v-html="skills_group.skills_group_group_text"></p>
+            <p v-if="skills_group.skills_group_group_text!=null" class="skillsGroupGroupText" v-html="skills_group.skills_group_group_text"></p>
           </div>
 
           <div class="skillsGroupName">
@@ -93,7 +93,7 @@
           </div>
           <div class="skillsGroupText">
             <!-- Y <p class="skillsGroupBody">&bull; {{ skills_group.skills_group_text }}</p> -->
-            <span class="skillsGroupBody" v-html="skills_group.skills_group_text"></span>
+            <span v-if="skills_group.skills_group_text!=null" class="skillsGroupBody" v-html="skills_group.skills_group_text"></span>
             <span v-if="skills_group.skills_group_ageRange!=null" class="skillsGroupAgeRange">{{skills_group.skills_group_ageRange}}</span>
           </div>
 
@@ -202,6 +202,10 @@ export default {
 
 <style scoped lang="scss">
 
+$fontSizeBullet: small;
+$fontSizeHeader: large;
+$fontSizeUrl: small;
+
 ul {
   text-align: left;  // was 'center'
   
@@ -222,21 +226,21 @@ ul {
 
   .jobTitle {
     font-weight: 400;
-    font-size: large;
+    // font-size: large;
   }
   .jobCompany{
     font-weight: 400;
   }
   // Left-Indent flush with above text
   .jobTimePeriod {
-    font-size: smaller;
+    font-size: $fontSizeBullet;
     // color: #aaa;  // [jwc] better ligher shading vs. 'font-weight'
     // Y margin-left: 3.5em;
     // margin-bottom: -0.5em;
     // text-align: right;
   }
   .jobLocation {
-    font-size: smaller;
+    font-size: $fontSizeBullet;
     // color: #aaa;
     // Y margin-left: 3.5em;
     // margin-top: -0.5em;
@@ -244,13 +248,14 @@ ul {
     // text-align: right;
   }
   .jobUrl {
-    font-size: smaller;
+    font-size: $fontSizeUrl;
     color: blue;
     // Y margin-left: 3.5em;
     // margin-top: -0.5em;
     // margin-bottom: -0.5em;
     // text-align: right;
     margin-left: 0.5em;
+    text-decoration-line: underline;
   }
 
 
@@ -275,7 +280,8 @@ ul {
 }
   .job{
     // [jwc] to major of a group for such a light color; use darkest background since most major group: background-color: #ccc;  // light-grey
-    background-color: #ccc;  // light-grey
+    // background-color: #ccc;  // light-grey
+    background-color: #bbb;  // light-grey
     // color:lightgray;
     padding: 1em;
     margin-top: 1em;
@@ -288,6 +294,13 @@ ul {
   .jobBody{
     display: inline-block;
   }
+  .jobChild {
+    font-weight: 300;
+    // font-size: medium;
+    font-size: $fontSizeBullet;
+    // margin: 0.5em 1em 0.5em 1.5em;  // [jwc] change margin-left: 2em;
+    margin-left: 1.5em;
+  }
 
   .jobGroup{
     // [jwc] too major of a group for such a light color; use darkest background since most major group: background-color: #ccc;  // light-grey
@@ -299,13 +312,13 @@ ul {
   }
   .jobGroupName{
     font-weight: 400;
-    font-size: larger;
+    font-size: $fontSizeHeader;
     display: flex;
     justify-content: center;
   }
   .jobGroupText{
     font-weight: 300;
-    font-size: medium;
+    font-size: $fontSizeBullet;
     display: flex;
     justify-content: center;
   }
@@ -314,17 +327,19 @@ ul {
     // padding: 0.5em;
     margin-bottom: 1em;
     // [jwc]reserve shading for major sections, this minor section use grey-line: background-color: #d9d9d9;  // light-grey 
-  }
+    // background-color: #ccc;  // light-grey 
+    background-color: #d9d9d9;  // lighter-grey 
+    padding: 0.5em;
+    // margin-left: 1em;
+    // margin-right: 1em;
+}
   .skillsGroupGroupName{
     font-weight: 400;
-    font-size: large;
+    // font-size: large;
     display: flex;
     justify-content: center;
     // background-color: #d9d9d9;  // light-grey 
-    background-color: #ccc;  // light-grey 
-    padding: 0.5em;
-    margin-left: 1em;
-    margin-right: 1em;
+    // background-color: #ccc;  // light-grey 
   }
   .skillsGroupGroupName:before {
     display: inline-block;
@@ -346,14 +361,15 @@ ul {
   }
   .skillsGroupGroupText{
     font-weight: 300;
-    font-size: medium;
+    // font-size: medium;
+    font-size: $fontSizeBullet;
     display: flex;
     justify-content: center;
   }
 
   .skillsGroup{
     font-weight: 300;
-    font-size: medium;
+    // font-size: medium;
     margin: 1em 1em 1em 1.5em;  // [jwc] change margin-left: 2em;
   }
   // Enough to provide margin-left for 'skillBody-non-button' row to left-indent up to 'skillBody-button' row
@@ -361,11 +377,11 @@ ul {
     font-weight: 400;
     // margin-left: 1em;
     margin-right: 0.5em;
-    font-size: large;
+    // font-size: large;
   }
   .skillsGroupBody{
     font-weight: 300;
-    font-size: medium;
+    font-size: $fontSizeBullet;
     margin: 0.25em 1em 0.25em 1.5em;  // [jwc] change margin-left: 2em;
   }
 
@@ -374,13 +390,13 @@ ul {
     justify-content: space-between;
   }
   .skillsGroupTimePeriod, .skillsGroupAgeRange{
-    font-size: smaller;
+    font-size: $fontSizeBullet;
     color: #aaa;  // [jwc] better ligher shading vs. 'font-weight'
   }
 
   .skill{
     font-weight: 300;
-    font-size: medium;
+    // font-size: medium;
     margin: 0.5em 1em 0.5em 1.5em;  // [jwc] change margin-left: 2em;
   }
   // Enough to provide margin-left for 'skillBody-non-button' row to left-indent up to 'skillBody-button' row
@@ -398,26 +414,26 @@ ul {
   // Overall for each 'skillBody' row
   .skillBody{
     font-weight: 300;
-    font-size: medium;
+    // font-size: medium;
     // margin: 1em 1em 1em 0.5em;  // [jwc] change margin-left: 2em;
-    font-size: smaller;  // keep in mind word-wrap if side-margins shrink due to window-shrink
+    font-size: $fontSizeBullet;  // keep in mind word-wrap if side-margins shrink due to window-shrink
     margin-left: 0.25em
   }
-
-  .jobChild, .skillChild {
+  .skillChild {
     font-weight: 300;
-    font-size: medium;
+    font-size: $fontSizeBullet;
     // margin: 0.5em 1em 0.5em 1.5em;  // [jwc] change margin-left: 2em;
     margin-left: 1.5em;
   }
   .skillUrl {
-    font-size: medium;
+    font-size: $fontSizeUrl;
     color: blue;
     // Y margin-left: 3.5em;
     // margin-top: -0.5em;
     // margin-bottom: -0.5em;
     // text-align: right;
     margin-left: 0.5em;
+    text-decoration-line: underline;
   }
 
   .buttonGroup {
@@ -474,5 +490,15 @@ ul {
   // .button.skillHead:only-of-type {
   //     background-color: yellow;
   // }
+  .urlLink {
+    font-size: $fontSizeUrl;
+    color: blue;
+    // Y margin-left: 3.5em;
+    // margin-top: -0.5em;
+    // margin-bottom: -0.5em;
+    // text-align: right;
+    // margin-left: 0.5em;
+    text-decoration-line: underline;
+  }
 
 </style>

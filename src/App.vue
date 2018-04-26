@@ -43,12 +43,15 @@ html {
   box-sizing: inherit;
 }
 
+// * The Default Settings for <body> :)+ 
 body {
   color: #666;
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  // [jwc]+1 font-size: 18px;
+  font-size: medium;
   font-weight: 300;
-  padding: 36px;
+  // [jwc]+1 padding: 36px;
+  padding: 32px;  // assuming default font size 16px
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

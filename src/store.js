@@ -1,5 +1,8 @@
-// * Legend
+// * Important
 // $bullet_point: &#9656;;
+
+// * Both 'class="skillUrl"' not seem to work, weird.  There do inline-style.
+// {text: '&#9656; More info on T.A.C.H.nology® Robotics at EandE\'s Main Site: <a href="http://www.eande.world" class="skillUrl" target="_blank"><span class="skillUrl" style="color:blue"><u> http://www.EandE.world </u></span></a>'}
 
 import Vue from 'vue'
 import Vuex from 'vuex'
@@ -39,6 +42,31 @@ export default new Vuex.Store({
         [
           {text: '&#9656; Highest Honor for PTS 514: Expository Sermons.'},
           {text: '&#9656; Middle & High School Youth and Family Ministry Practicum.'}
+        ],
+
+        skills_groups:
+        [
+          {
+            skills_group_group_name: 'Teaching: Soft Skills',
+            skills_group_group_text: '<span style="text-align:center;">At Western Seminary, I\'ve learned the missionary way of \'service & sacrafice\' to build both trust and respect, <br> in order to positively engage & stimulate the affective/emotive side of learning <br> (right-side of \'Integrated-Brain\' Pedagogy).</span>',
+            skills_group_name: null,
+            skills_group_text: null,
+
+            skills:
+            [
+              {
+                skill_head: null,
+                skill_body: null,
+                skill_link: null,
+                skill_link_tab_index: null,
+
+                skill_childs:
+                [
+                  {text: null}
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -54,7 +82,32 @@ export default new Vuex.Store({
         job_childs:
         [
           {text: '&#9656; California Mathematics Single-Subject Professional Clear Credentialed.'},
-          {text: '&#9656; “Mid-Career Math & Science (Biology, Chem., Physics) Teacher Preparation” Specialty w/ Stanford University.'}
+          {text: '&#9656; “Mid-Career Math & Science (Biology, Chem., Physics) Teacher Preparation” Specialty w/ Stanford University.'},
+          {text: '&#9656; Priviledged Intership with Mentorship from Stanford University\'s Alumni.'}
+        ],
+        skills_groups:
+        [
+          {
+            skills_group_group_name: 'Teaching: Pedagogy',
+            skills_group_group_text: '<span style="text-align:center;">Regarding even the complex, abstract concepts of Computer Science & Robotics, <br> Mills College trained me in crafting concrete examples to engage & feed the cognitive/analytical side of learning <br> (left-side of \'Integrated-Brain\' Pedagogy).<br><br>For example, our casual-game <a href="http://www.eande.world/courses.html#Courses-ComputerScience" class="urlLink" target="_blank" style="color:blue;text-decoration-line: underline;">Itty Bitty Jr</a> -- as showcased at S.J.\'s Tech Museum and S.F.\'s Exploratorium -- <br> serves as a visually-interactive framework from which we concretely apply and explain how \'pointer and arrays\' work <br> (by keeping track of the \'friendly planets\' to visit).</span>',
+            skills_group_name: null,
+            skills_group_text: null,
+
+            skills:
+            [
+              {
+                skill_head: null,
+                skill_body: null,
+                skill_link: null,
+                skill_link_tab_index: null,
+
+                skill_childs:
+                [
+                  {text: null}
+                ]
+              }
+            ]
+          }
         ]
       },
       {
@@ -70,6 +123,31 @@ export default new Vuex.Store({
         job_childs:
         [
           {text: '&#9656; Dean\'s Honor List & Westinghouse Science Honors.'}
+        ],
+
+        skills_groups:
+        [
+          {
+            skills_group_group_name: 'Teaching: Subject Scope',
+            skills_group_group_text: '<span style="text-align:center;">At UC Davis, under the mentorship of Professor Matloff and Professor Lin, <br> I\'ve realized my passion for Computer Science and Robotics, respectively.</span>',
+            skills_group_name: null,
+            skills_group_text: null,
+
+            skills:
+            [
+              {
+                skill_head: null,
+                skill_body: null,
+                skill_link: null,
+                skill_link_tab_index: null,
+
+                skill_childs:
+                [
+                  {text: null}
+                ]
+              }
+            ]
+          }
         ]
       },
 
@@ -87,7 +165,7 @@ export default new Vuex.Store({
         job_childs:
         [
           { text: '&#9656; Traditionally, I\'ve enjoyed coding and teaching Java, C#, and C++ -- among many other Linux-based tools.' },
-          { text: '&#9656; Yet due to the global pervasiveness of Web/Cloud-Services and Robotics/IOT-Devices, Stack Overflow\'s 2018 Global Survey of 100K Developers have concluded that two Open-Source languages -- JavaScript and Python -- have taken the world by storm, at least for these past several years <a href="https://insights.stackoverflow.com/survey/2018" class="skillUrl" target="_blank"><span class="skillUrl" style="color:blue;font-size:small"><u>[https://insights.stackoverflow.com/survey/2018]</u></span>.</a>' },
+          { text: '&#9656; Yet due to the global pervasiveness of Web/Cloud-Services and Robotics/IOT-Devices, Stack Overflow\'s 2018 Global Survey of 100K Developers have concluded that two Open-Source languages -- JavaScript and Python -- have taken the world by storm, at least for these past several years <a href="https://insights.stackoverflow.com/survey/2018" class="skillUrl" target="_blank" style="color:blue;text-decoration-line:underline;font-size:small">[https://insights.stackoverflow.com/survey/2018]</a>.' },
           { text: '&#9656; Thus from EandE\'s Instructional R&D Lab (still based at my home/garage since 2004), I wish to present a portfolio of commerical-grade educational projects that feature JavaScript and/or Python, along with their respective key libraries as noted below.  Below, the blue buttons link to live demo sites.' }
         ],
 
@@ -166,7 +244,7 @@ export default new Vuex.Store({
                   {text: '&#9656; Designed for low-cost M.assively E.ngaged C.o-op C.ompetition (M.E.C.C.®) Events'},
                   {text: '&#9656; Open-Source Robotics Kit at less than "Half the Cost" of other systems'},
                   {text: '&#9656; Web Full-Stack Remote-Control System using Rasberry Pi (JS, Python)'},
-                  {text: '&#9656; More info on T.A.C.H.nology® Robotics at EandE\'s Main Site: <a href="http://www.eande.world" class="skillUrl" target="_blank"><span class="skillUrl" style="color:blue"><u> http://www.EandE.world </u></span></a>'}
+                  {text: '&#9656; More info on T.A.C.H.nology® Robotics at EandE\'s Main Site: <a href="http://www.eande.world" class="skillUrl" target="_blank" style="color:blue;text-decoration-line:underline;font-size:small">http://www.EandE.world</a>'}
                 ]
               }
             ]
@@ -181,24 +259,24 @@ export default new Vuex.Store({
             [
               {
                 skill_head: 'Lego EV3/NXT2:',
-                skill_body: 'Integrated Development Environemnt (IDE) "Drag-n-Drop" Real-time Translation to C/C++',
+                skill_body: null,
                 skill_link: null,
                 skill_link_tab_index: null,
 
                 skill_childs:
                 [
-                  {text: '&#9656; Test'}
+                  {text: '&#9656; 1st Place & Top 5 Overall: Single-Sonar Line-Tracking at RoboGame\'s Jr-League, Lead Coach (EandE Team, 2012 & 2013)'}
                 ]
               },
               {
                 skill_head: 'FTC Tetrix:',
-                skill_body: 'Integrated Development Environemnt (IDE) "Drag-n-Drop" Real-time Translation to C/C++',
+                skill_body: null,
                 skill_link: null,
                 skill_link_tab_index: null,
 
                 skill_childs:
                 [
-                  {text: '&#9656; Test'}
+                  {text: '&#9656; 1st Place: First Tech Challenge (FTC) Regionals, Lead Software Coach (King\'s Academy Robotics Team, Sunnyvale, 2016)'}
                 ]
               }
             ]
@@ -250,7 +328,7 @@ export default new Vuex.Store({
 
                 skill_childs:
                 [
-                  { text: '&#9656; Teaching Opporunity represents a "baby first-step" for EandE establishing Collegiate Alliances for Open-Source R&D Collaboration.' }
+                  { text: '&#9656; Though for only one semester, this teaching opportunity serves as a "baby first-step" for EandE establishing Collegiate Alliances for Open-Source R&D Collaboration among Staff & Students.' }
                 ]
               }
             ]
