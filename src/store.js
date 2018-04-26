@@ -26,9 +26,7 @@ export default new Vuex.Store({
     tabMode: 0, // Default
     jobs: [
       {
-        job_group_group_name: 'Education',
-        job_group_group_text: null,
-        job_group_name: null,
+        job_group_name: 'Education',
         job_group_text: null,
         job_title: 'Master of Arts, General Ministry',
         job_company: 'Western Seminary',
@@ -76,9 +74,7 @@ export default new Vuex.Store({
       },
 
       {
-        job_group_group_name: 'Experience',
-        job_group_group_text: null,
-        job_group_name: 'Teaching #1',
+        job_group_name: 'Teaching Experience',
         job_group_text: null,
         job_title: 'Web Full-Stack & Robotics ~ Sr. Instructor & Curriculum Developer',
         job_company: 'Encourage and Empower (EandE)',
@@ -99,7 +95,7 @@ export default new Vuex.Store({
         skills_groups:
         [
           {
-            skills_group_group_name: 'EandE\'s Industry-Leading College-Prepatory Curricula',
+            skills_group_group_name: 'EandE\'s Industry-Based Curricula',
             skills_group_group_text: '<span style="text-align:center;">As Inpsired from Strategic Corporate and College Experiences:<br>Web Full-Stack Developer at Siemens-eMeter -&- Adjunct Professor at Cogswell College</span>',
             skills_group_name: 'Web Full-Stack: JavaScript (JS) and Python Ecosystem',
             skills_group_text: '&#9656; Following Showcasing Project-Based Core Technologies:',
@@ -151,7 +147,7 @@ export default new Vuex.Store({
             skills_group_group_name: null,
             skills_group_group_text: null,
             skills_group_name: 'Silicon Valley\'s 1st D.I.Y.-Alternative to LEGO®, TETRIX® & VEX® Robotics',
-            skills_group_text: '&#9656; As Showcased at Tech Museum of Innovation, San Jose -&- Maker Faire\'s Premiere Showroom, Bay Area (2-years in a row)...<br>' +
+            skills_group_text: '&#9656; As Showcased at Tech Museum, San Jose -&- Maker Faire\'s Premiere Showroom, Bay Area (twice)...<br>' +
                                '&#9656; <span style="font-weight:400">T.A.C.H.nology® Robotics w/ Arduino</span><br>' +
                                '&#9656; Combining "<span style="font-weight:400">T.</span>echnology, <span style="font-weight:400">A.</span>rts & <span style="font-weight:400">C.</span>rafts... <span style="font-weight:400">H.</span>olistically" for Middle School, High School & College',
 

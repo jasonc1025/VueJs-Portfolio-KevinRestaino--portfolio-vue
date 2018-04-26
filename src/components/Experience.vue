@@ -53,11 +53,6 @@
     <ul>
       <li v-for="(job_, index_job) in jobs" :key='index_job'>
 
-        <div v-if="job_.job_group_group_name!=null" class="jobGroupGroup">
-          <p class="jobGroupGroupName">{{ job_.job_group_group_name }}</p>
-          <p class="jobGroupGroupText">{{ job_.job_group_group_text }}</p>
-        </div>
-
         <div v-if="job_.job_group_name!=null" class="jobGroup">
           <p class="jobGroupName">{{ job_.job_group_name }}</p>
           <p class="jobGroupText">{{ job_.job_group_text }}</p>
@@ -294,32 +289,11 @@ ul {
     display: inline-block;
   }
 
-  .jobGroupGroup{
-    // [jwc] to major of a group for such a light color; use darkest background since most major group: background-color: #ccc;  // light-grey
+  .jobGroup{
+    // [jwc] too major of a group for such a light color; use darkest background since most major group: background-color: #ccc;  // light-grey
     background-color: rgba(0, 0, 0, 1);
     color:lightgray;
     padding: 2em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-  }
-  .jobGroupGroupName{
-    font-weight: 400;
-    font-size: larger;
-    display: flex;
-    justify-content: center;
-  }
-  .jobGroupGroupText{
-    font-weight: 300;
-    font-size: medium;
-    display: flex;
-    justify-content: center;
-  }
-
-  .jobGroup{
-    // [jwc] to major of a group for such a light color; use darkest background since most major group: background-color: #ccc;  // light-grey
-    background-color: #ccc;  // light-grey
-    // color:lightgray;
-    padding: 1em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
   }
