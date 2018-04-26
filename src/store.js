@@ -204,7 +204,7 @@ export default new Vuex.Store({
             ]
           },
           {
-            skills_group_group_name: 'EandE Instructor',
+            skills_group_group_name: 'EandE\'s Industry-Based Teaching',
             skills_group_group_text: null,
             skills_group_name: '"Paid Teaching-Sabbatical" as Interim Web Full-Stack Developer',
             skills_group_text: 'Siemens-eMeter, Foster City CA',
@@ -400,7 +400,7 @@ export default new Vuex.Store({
         imageListLength: 1,
         slug: '11h-ArduBlockly-EandE',
         title: 'ArduBlockly-EandE',
-        headLine00: '* AWARD-WINNING ROBOTICS IDE * Arduino-Robotics Visual/Textual Coder: ArduBlockly-EandE',
+        headLine00: '* x2 AWARD-WINNING \'2016 Code for the Kingdom\' Robotics IDE * Arduino-Robotics Visual/Textual Coder',
         headLine01: 'Node, Google-Blockly, Electron',
         headLine02: 'Python Bottle & Digital Ocean ~ Ubuntu',
         url: 'http://138.68.57.214:8001/ardublockly/index.html',
