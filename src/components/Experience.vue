@@ -53,22 +53,29 @@
     <ul>
       <li v-for="(job_, index_job) in jobs" :key='index_job'>
 
+        <div v-if="job_.job_group_group_name!=null" class="jobGroupGroup">
+          <p class="jobGroupGroupName">{{ job_.job_group_group_name }}</p>
+          <p class="jobGroupGroupText">{{ job_.job_group_group_text }}</p>
+        </div>
+
         <div v-if="job_.job_group_name!=null" class="jobGroup">
           <p class="jobGroupName">{{ job_.job_group_name }}</p>
           <p class="jobGroupText">{{ job_.job_group_text }}</p>
         </div>
 
-        <ul>
-          <li class="jobHead">
-            <span class="jobTitle">{{ job_.job_title }}</span>
-            <span class="jobTimePeriod">{{ job_.job_timePeriod.from }} – {{ job_.job_timePeriod.to }}</span>
-          </li>
-          <li class="jobBody">
-            <span class="jobCompany">{{ job_.job_company }},</span>
-            <span class="jobLocation">{{ job_.job_location }}</span>
-            <span v-if="job_.job_url!=null"><a class="jobUrl" v-bind:href="job_.job_url"><u>{{job_.job_url}}</u></a></span>
-          </li>
-        </ul>
+        <div class="job">
+          <ul>
+            <li class="jobHead">
+              <span class="jobTitle">{{ job_.job_title }}</span>
+              <span class="jobTimePeriod">{{ job_.job_timePeriod.from }} – {{ job_.job_timePeriod.to }}</span>
+            </li>
+            <li class="jobBody">
+              <span class="jobCompany">{{ job_.job_company }},</span>
+              <span class="jobLocation">{{ job_.job_location }}</span>
+              <span v-if="job_.job_url!=null"><a class="jobUrl" v-bind:href="job_.job_url"><u>{{job_.job_url}}</u></a></span>
+            </li>
+          </ul>
+        </div>
 
         <div class="jobChild" v-for="(job_child, index_job_child) in job_.job_childs" :key='index_job_child'>
           <!-- Y <p><span class="fade-in" v-html="'&bull; '+ skill_child.text"></span></p> -->
@@ -84,9 +91,16 @@
             <!-- Y <p class="skillsGroupGroupText">{{ skills_group.skills_group_group_text }}</p> -->
             <p class="skillsGroupGroupText" v-html="skills_group.skills_group_group_text"></p>
           </div>
-          <p class="skillsGroupHead">{{ skills_group.skills_group_name }}</p>
-          <!-- Y <p class="skillsGroupBody">&bull; {{ skills_group.skills_group_text }}</p> -->
-          <p class="skillsGroupBody" v-html="skills_group.skills_group_text"></p>
+
+          <div class="skillsGroupName">
+            <span class="skillsGroupHead">{{ skills_group.skills_group_name }}</span>
+            <span v-if="skills_group.skills_group_timePeriod!=null" class="skillsGroupTimePeriod">{{ skills_group.skills_group_timePeriod.from }} – {{ skills_group.skills_group_timePeriod.to }}</span>            
+          </div>
+          <div class="skillsGroupText">
+            <!-- Y <p class="skillsGroupBody">&bull; {{ skills_group.skills_group_text }}</p> -->
+            <span class="skillsGroupBody" v-html="skills_group.skills_group_text"></span>
+            <span v-if="skills_group.skills_group_ageRange!=null" class="skillsGroupAgeRange">{{skills_group.skills_group_ageRange}}</span>
+          </div>
 
           <div class="skill" v-for="(skill_, index_skill) in skills_group.skills" :key='index_skill'>
 
@@ -95,18 +109,21 @@
               <div class="buttonGroup">
                 <!-- Y <router-link class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','00')">{{ skill_.skill_head }}:</router-link> -->
                 <!-- ? <router-link class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','`${ skill_.skill_link_tab_num }`')">{{ skill_.skill_head }}:</router-link> -->
-                <router-link v-if="skill_.skill_link_tab_index==='0'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','00')">{{ skill_.skill_head }}:</router-link>
-                <router-link v-if="skill_.skill_link_tab_index==='1'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','01')">{{ skill_.skill_head }}:</router-link>
-                <router-link v-if="skill_.skill_link_tab_index==='2'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','02')">{{ skill_.skill_head }}:</router-link>
-                <router-link v-if="skill_.skill_link_tab_index==='3'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','03')">{{ skill_.skill_head }}:</router-link>
-                <router-link v-if="skill_.skill_link_tab_index==='4'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','04')">{{ skill_.skill_head }}:</router-link>
-                <router-link v-if="skill_.skill_link_tab_index==='5'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','05')">{{ skill_.skill_head }}:</router-link>
+                <router-link v-if="skill_.skill_link_tab_index==='0'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','00')">{{ skill_.skill_head }}</router-link>
+                <router-link v-if="skill_.skill_link_tab_index==='1'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','01')">{{ skill_.skill_head }}</router-link>
+                <router-link v-if="skill_.skill_link_tab_index==='2'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','02')">{{ skill_.skill_head }}</router-link>
+                <router-link v-if="skill_.skill_link_tab_index==='3'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','03')">{{ skill_.skill_head }}</router-link>
+                <router-link v-if="skill_.skill_link_tab_index==='4'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','04')">{{ skill_.skill_head }}</router-link>
+                <!-- Y <a v-if="skill_.skill_link_tab_index==='5'"  class="button skillHead" href="http://www.eande.world">{{ skill_.skill_head }}:</a> -->
+                <!-- <a N v-if="skill_.skill_link_tab_index==='5'"  class="button skillHead" :href="`$(skill_.skill_link)`">{{ skill_.skill_link }}:</a> -->
+                <a v-if="skill_.skill_link_tab_index==='5'"  class="button skillHead" href="http://www.eande.world" target="_blank">{{ skill_.skill_head }}:</a>
                 <span class="skillBody">{{ skill_.skill_body }}</span>
               </div>
 
               <div class="skillChild" v-for="(skill_child, index_skill_child) in skill_.skill_childs" :key='index_skill_child'>
                 <!-- Y <p><span class="fade-in" v-html="'&bull; '+ skill_child.text"></span></p> -->
                 <!-- Y <p><span v-html="skill_child.text"></span></p> -->
+                <!-- Y/N this 'class="skillUrl"' does work but not w/i v-html: <p><span class="skillUrl" v-html="skill_child.text"></span></p> -->
                 <p><span v-html="skill_child.text"></span></p>
               </div>
 
@@ -115,7 +132,7 @@
             <div v-else-if="skill_.skill_head != null && skill_.skill_link == null">
 
               <div>
-                <b class="skillHead">{{ skill_.skill_head }}: </b>
+                <b class="skillHead">{{ skill_.skill_head }}</b>
                 <span class="skillBody">{{ skill_.skill_body }}</span>
               </div>
 
@@ -189,14 +206,16 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 ul {
   text-align: left;  // was 'center'
   
   li {
     // margin-top: 1em;  // 30px orig
+    // Y list-style-type: disc; 
 
     .button{      
-      padding: 0.5em 2em 0.5em 2em;
+      padding: 0.5em 1em 0.5em 1em;
       background-color: #ccc;  // was #ddd (too light on large screen)
       // margin-right: 0em;  // was 0.5em
       // width: 30em;   // [jwc] not seem to work
@@ -205,6 +224,40 @@ ul {
     background-color: #bbb;  // was #bbb (too light on large screen)
     color: #666;
     }
+
+  .jobTitle {
+    font-weight: 400;
+    font-size: large;
+  }
+  .jobCompany{
+    font-weight: 400;
+  }
+  // Left-Indent flush with above text
+  .jobTimePeriod {
+    font-size: smaller;
+    // color: #aaa;  // [jwc] better ligher shading vs. 'font-weight'
+    // Y margin-left: 3.5em;
+    // margin-bottom: -0.5em;
+    // text-align: right;
+  }
+  .jobLocation {
+    font-size: smaller;
+    // color: #aaa;
+    // Y margin-left: 3.5em;
+    // margin-top: -0.5em;
+    // margin-bottom: -0.5em;
+    // text-align: right;
+  }
+  .jobUrl {
+    font-size: smaller;
+    color: blue;
+    // Y margin-left: 3.5em;
+    // margin-top: -0.5em;
+    // margin-bottom: -0.5em;
+    // text-align: right;
+    margin-left: 0.5em;
+  }
+
 
     .fade-in {
       opacity: 1;
@@ -224,40 +277,15 @@ ul {
     }
 
   }
-
-  .jobTitle {
-    font-weight: 400;
-    font-size: larger;
+}
+  .job{
+    // [jwc] to major of a group for such a light color; use darkest background since most major group: background-color: #ccc;  // light-grey
+    background-color: #ccc;  // light-grey
+    // color:lightgray;
+    padding: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
   }
-  .jobCompany{
-    font-weight: 300;
-  }
-  // Left-Indent flush with above text
-  .jobTimePeriod {
-    font-size: smaller;
-    color: #aaa;  // [jwc] better ligher shading vs. 'font-weight'
-    // Y margin-left: 3.5em;
-    // margin-bottom: -0.5em;
-    // text-align: right;
-  }
-  .jobLocation {
-    font-size: smaller;
-    color: #aaa;
-    // Y margin-left: 3.5em;
-    // margin-top: -0.5em;
-    // margin-bottom: -0.5em;
-    // text-align: right;
-  }
-  .jobUrl {
-    font-size: smaller;
-    color: blue;
-    // Y margin-left: 3.5em;
-    // margin-top: -0.5em;
-    // margin-bottom: -0.5em;
-    // text-align: right;
-    margin-left: 0.5em;
-  }
-
   .jobHead{
     display: flex;
     justify-content: space-between;
@@ -266,9 +294,34 @@ ul {
     display: inline-block;
   }
 
-  .jobGroup{
-    background-color: #ccc;  // light-grey
+  .jobGroupGroup{
+    // [jwc] to major of a group for such a light color; use darkest background since most major group: background-color: #ccc;  // light-grey
+    background-color: rgba(0, 0, 0, 1);
+    color:lightgray;
     padding: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  .jobGroupGroupName{
+    font-weight: 400;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+  }
+  .jobGroupGroupText{
+    font-weight: 300;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+  }
+
+  .jobGroup{
+    // [jwc] to major of a group for such a light color; use darkest background since most major group: background-color: #ccc;  // light-grey
+    background-color: #ccc;  // light-grey
+    // color:lightgray;
+    padding: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
   }
   .jobGroupName{
     font-weight: 400;
@@ -284,14 +337,37 @@ ul {
   }
 
   .skillsGroupGroup{
-    padding: 0.5em;
-    background-color: #d9d9d9;  // light-grey
+    // padding: 0.5em;
+    // [jwc]reserve shading for major sections, this minor section use grey-line: background-color: #d9d9d9;  // light-grey 
   }
   .skillsGroupGroupName{
     font-weight: 400;
-    font-size: larger;
+    font-size: large;
     display: flex;
     justify-content: center;
+    // background-color: #d9d9d9;  // light-grey 
+    background-color: #ccc;  // light-grey 
+    padding: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .skillsGroupGroupName:before {
+    display: inline-block;
+    margin: 0.5em 0.5em 0em 0em;
+    height: 3px;
+    content: "";
+    text-shadow: none;
+    // [jwc] disable for now: background-color: #999;
+    width: 5em;  // like 5-stars width
+  }
+  .skillsGroupGroupName:after{
+    display: inline-block;
+    margin: 0.5em 0em 0em 0.5em;
+    height: 3px;
+    content: "";
+    text-shadow: none;
+    // [jwc] disable for now: background-color: #999;
+    width: 5em;  // like 5-stars width
   }
   .skillsGroupGroupText{
     font-weight: 300;
@@ -310,12 +386,21 @@ ul {
     font-weight: 400;
     // margin-left: 1em;
     margin-right: 0.5em;
-    font-size: larger;
+    font-size: large;
   }
   .skillsGroupBody{
     font-weight: 300;
     font-size: medium;
     margin: 0.25em 1em 0.25em 1.5em;  // [jwc] change margin-left: 2em;
+  }
+
+  .skillsGroupName, .skillsGroupText{
+    display: flex;
+    justify-content: space-between;
+  }
+  .skillsGroupTimePeriod, .skillsGroupAgeRange{
+    font-size: smaller;
+    color: #aaa;  // [jwc] better ligher shading vs. 'font-weight'
   }
 
   .skill{
@@ -332,7 +417,8 @@ ul {
   // Allow 'skillBody-button' row to have their label left-indent with 'skillBody-non-button' row
   .button.skillHead{
     // margin-left: 0em;  // was -1em
-    margin-right: 0.5em;
+    // margin-right: 0.5em;
+    background-color: cyan;
   }
   // Overall for each 'skillBody' row
   .skillBody{
@@ -340,6 +426,7 @@ ul {
     font-size: medium;
     // margin: 1em 1em 1em 0.5em;  // [jwc] change margin-left: 2em;
     font-size: smaller;  // keep in mind word-wrap if side-margins shrink due to window-shrink
+    margin-left: 0.25em
   }
 
   .jobChild, .skillChild {
@@ -348,10 +435,18 @@ ul {
     // margin: 0.5em 1em 0.5em 1.5em;  // [jwc] change margin-left: 2em;
     margin-left: 1.5em;
   }
+  .skillUrl {
+    font-size: medium;
+    color: blue;
+    // Y margin-left: 3.5em;
+    // margin-top: -0.5em;
+    // margin-bottom: -0.5em;
+    // text-align: right;
+    margin-left: 0.5em;
+  }
 
   .buttonGroup {
     margin-bottom: 1em;
   }
 
-}
 </style>

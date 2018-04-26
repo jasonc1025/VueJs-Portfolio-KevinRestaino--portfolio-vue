@@ -1,3 +1,6 @@
+// * Legend
+// $bullet_point: &#9656;;
+
 import Vue from 'vue'
 import Vuex from 'vuex'
 
@@ -23,7 +26,9 @@ export default new Vuex.Store({
     tabMode: 0, // Default
     jobs: [
       {
-        job_group_name: 'Academic Degrees',
+        job_group_group_name: 'Education',
+        job_group_group_text: null,
+        job_group_name: null,
         job_group_text: null,
         job_title: 'Master of Arts, General Ministry',
         job_company: 'Western Seminary',
@@ -34,8 +39,8 @@ export default new Vuex.Store({
         },
         job_childs:
         [
-          {text: '&bull; Highest Honor for PTS 514: Expository Sermons.'},
-          {text: '&bull; Middle & High School Youth and Family Ministry Practicum.'}
+          {text: '&#9656; Highest Honor for PTS 514: Expository Sermons.'},
+          {text: '&#9656; Middle & High School Youth and Family Ministry Practicum.'}
         ]
       },
       {
@@ -50,8 +55,8 @@ export default new Vuex.Store({
         },
         job_childs:
         [
-          {text: '&bull; California Mathematics Single-Subject Professional Clear Credentialed.'},
-          {text: '&bull; “Mid-Career Math & Science (Biology, Chem., Physics) Teacher Preparation” Specialty w/ Stanford University.'}
+          {text: '&#9656; California Mathematics Single-Subject Professional Clear Credentialed.'},
+          {text: '&#9656; “Mid-Career Math & Science (Biology, Chem., Physics) Teacher Preparation” Specialty w/ Stanford University.'}
         ]
       },
       {
@@ -66,15 +71,17 @@ export default new Vuex.Store({
         },
         job_childs:
         [
-          {text: '&bull; Dean\'s Honor List & Westinghouse Science Honors.'}
+          {text: '&#9656; Dean\'s Honor List & Westinghouse Science Honors.'}
         ]
       },
 
       {
-        job_group_name: 'Teaching & Engineering Experience',
+        job_group_group_name: 'Experience',
+        job_group_group_text: null,
+        job_group_name: 'Teaching #1',
         job_group_text: null,
-        job_title: 'Web Full-Stack and Open-Source Robotics Instructor & Developer',
-        job_company: 'Encourage and Empower',
+        job_title: 'Web Full-Stack & Robotics ~ Sr. Instructor & Curriculum Developer',
+        job_company: 'Encourage and Empower (EandE)',
         job_location: 'Milpitas, CA',
         job_url: 'http://www.EandE.world',
         job_timePeriod: {
@@ -83,23 +90,25 @@ export default new Vuex.Store({
         },
         job_childs:
         [
-          { text: '&bull; Though I\'ve enjoyed coding and teaching Java, C#, C++ and C for over the past 10 years, I\'m very excited with the future of JavaScript & Python, current de-facto standards for Web Development & Robotics, respectively. [Stack Overflow 2018 Global Survey of 100K Developers]' },
-          { text: '&bull; After recently completeing a 1) One-Year Paid-Sabbatical to support Siemens:eMeter Energy Smart-Grid systems with my web full-stack JavaScript & Python experience, and 2) One-Semester as Adjunct Professor for CS110 C-Programming at Cogswell College, I\'ve developed a best-of-breed curriculum portfolio showcasing leading technologies for Web Development & Robotics for College-Preparatory & Career-Advancement.' }
+          { text: '&#9656; By specializing in Open-Source Technologies, I\'ve co-founded EandE as a \'home-garage\' R&D with a mission to democratize Education-Tech across age & socio-economic barriers.' },
+          { text: '&#9656; Over these past 10 years, I\'ve enjoyed coding and teaching Java, C#, C++ and C.' },
+          { text: '&#9656; And with the Web & Robotics revolution upon us, I\'ve developed curricula that focus on industry-leading JavaScript and Python -- the top two languages for these past several years as recognized by Stack Overflow\'s 2018 Global Survey of 100K Developers [https://insights.stackoverflow.com/survey/2018].' },
+          { text: '&#9656; Buttons below link to live demo sites.' }
         ],
 
         skills_groups:
         [
           {
-            skills_group_group_name: 'Tech Curriculum for College-Preparatory & Career-Advancement',
-            skills_group_group_text: null,
-            skills_group_name: 'Web Full-Stack',
-            skills_group_text: '&bull; Buttons below link to live demo sites.',
+            skills_group_group_name: 'EandE\'s Industry-Leading College-Prepatory Curricula',
+            skills_group_group_text: '<span style="text-align:center;">As Inpsired from Strategic Corporate and College Experiences:<br>Web Full-Stack Developer at Siemens-eMeter -&- Adjunct Professor at Cogswell College</span>',
+            skills_group_name: 'Web Full-Stack: JavaScript (JS) and Python Ecosystem',
+            skills_group_text: '&#9656; Following Showcasing Project-Based Core Technologies:',
 
             skills:
             [
               {
-                skill_head: 'Front-End UI: React',
-                skill_body: 'Apollo, Axios, Enzyme, Express, Gatsby, GraphQL, Jest, MongoDB, Particles.js, Redux',
+                skill_head: 'React:',
+                skill_body: 'JS Frontend: Apollo, Axios, Enzyme, Express, Gatsby, GraphQL, Jest, MongoDB, Particles.js, Redux',
                 skill_link: 'projects-react/',
                 skill_link_tab_index: '1',
 
@@ -110,8 +119,8 @@ export default new Vuex.Store({
               },
               {
                 // -- Archive: Vuetify
-                skill_head: 'Front-End UI: Vue.js',
-                skill_body: 'Apollo, Axios, Express, GraphQL, MongoDB, Nuxt, Stripe, SVG Grapics, TweenJs, Vuex',
+                skill_head: 'Vue.js:',
+                skill_body: 'JS Frontend: Apollo, Axios, Express, GraphQL, MongoDB, Nuxt, Stripe, SVG Grapics, TweenJs, Vuex',
                 skill_link: 'projects-vue-js/',
                 skill_link_tab_index: '2',
 
@@ -121,18 +130,18 @@ export default new Vuex.Store({
                 ]
               },
               {
-                skill_head: 'Back-End Server: Node.js',
-                skill_body: 'Axios, Express, MongoDB, Mongoose, Passport, Socket.io, WebSocket',
+                skill_head: 'Node.js:',
+                skill_body: 'JS Backend: Axios, Express, MongoDB, Mongoose, Passport, Socket.io, WebSocket',
                 skill_link: 'projects-node-js/',
                 skill_link_tab_index: '3'
               },
               {
-                skill_head: 'Backend',
-                skill_body: 'Amazon AWS/EB, Digital Ocean NginX/Apache, Google-Firebase, Heroku, Netlify, Zeit-Now',
+                skill_head: 'Cloud/Servers:',
+                skill_body: 'Backend: Amazon AWS/EB, Digital Ocean NginX/Apache, Google-Firebase, Heroku, Netlify, Zeit-Now',
                 skill_link: null
               },
               {
-                skill_head: 'Others',
+                skill_head: 'Others:',
                 skill_body: 'Python: Bottle, Flask -- JavaScript: Bootstrap, CSS, Highcharts, HTML, JQuery, SQL, Webpack',
                 skill_link: null
               }
@@ -141,92 +150,112 @@ export default new Vuex.Store({
           {
             skills_group_group_name: null,
             skills_group_group_text: null,
-            skills_group_name: 'IOT and Embedded Engineering',
-            skills_group_text: '&bull; Buttons below link to live demo sites.',
+            skills_group_name: 'Silicon Valley\'s 1st D.I.Y.-Alternative to LEGO®, TETRIX® & VEX® Robotics',
+            skills_group_text: '&#9656; As Showcased at Tech Museum of Innovation, San Jose -&- Maker Faire\'s Premiere Showroom, Bay Area (2-years in a row)...<br>' +
+                               '&#9656; <span style="font-weight:400">T.A.C.H.nology® Robotics w/ Arduino</span><br>' +
+                               '&#9656; Combining "<span style="font-weight:400">T.</span>echnology, <span style="font-weight:400">A.</span>rts & <span style="font-weight:400">C.</span>rafts... <span style="font-weight:400">H.</span>olistically" for Middle School, High School & College',
 
             skills:
             [
               {
-                skill_head: 'Robotics Software',
-                skill_body: 'Arduino, Lego EV3, Rasberry Pi, BeagleBone',
+                skill_head: 'Award-Winning IDE:',
+                skill_body: 'Integrated Development Environemnt (IDE) "Drag-n-Drop" Real-time Translation to C/C++',
                 skill_link: 'projects-javascript-python/',
                 skill_link_tab_index: '4',
 
                 skill_childs:
                 [
-                  {text: null}
-                ]
-              },
-              {
-                skill_head: 'Robotics Educational/Competition Kit',
-                skill_body: 'Arduino, Lego EV3/Next2, Rasberry Pi, BeagleBone',
-                skill_link: 'http://www.Eande.world',
-                skill_link_tab_index: '5',
-
-                skill_childs:
-                [
-                  {text: 'Text'}
+                  // * Both 'class="skillUrl"' not seem to work, weird.  There do inline-style.
+                  {text: '&#9656; S.T.E.A.M. (Science, Tech, Engineering, Arts & Math) Curriculum'},
+                  {text: '&#9656; Designed for low-cost M.assively E.ngaged C.o-op C.ompetition (M.E.C.C.®) Events'},
+                  {text: '&#9656; Open-Source Robotics Kit at less than "Half the Cost" of other systems'},
+                  {text: '&#9656; Web Full-Stack Remote-Control System using Rasberry Pi (JS, Python)'},
+                  {text: '&#9656; More info on T.A.C.H.nology® Robotics at EandE\'s Main Site: <a href="http://www.eande.world" class="skillUrl" target="_blank"><span class="skillUrl" style="color:blue"><u> http://www.EandE.world </u></span></a>'}
                 ]
               }
             ]
           },
           {
-            skills_group_group_name: 'Insructor',
-            skills_group_group_text: 'Curriculum Development Text',
-            skills_group_name: 'Instructor',
-            skills_group_text: '&bull; Web Full-Stack: Client-Side kaJSDLAj dljakdjaKDJAkj dlkAJDLKAjdlkjaKDJ alkdjaLK JDKLajdlkaJDLKAJSLKD JASLKDJ ASJKLJD Akj dl;kaJ DL;AJ SDL',
+            skills_group_group_name: null,
+            skills_group_group_text: null,
+            skills_group_name: 'Other Robotics Taught:',
+            skills_group_text: null,
 
             skills:
             [
               {
-                skill_head: 'React',
-                skill_body: 'Apollo, Axios, Enzyme, Express, Gatsby, GraphQL, Jest, MongoDB, Particles.js, Redux',
-                skill_link: 'projects-react/',
+                skill_head: 'Lego EV3/NXT2:',
+                skill_body: 'Integrated Development Environemnt (IDE) "Drag-n-Drop" Real-time Translation to C/C++',
+                skill_link: null,
+                skill_link_tab_index: null,
 
                 skill_childs:
                 [
-                  {text: '&bull; skills00_1<br>skills00_1.1<br>skills00_1.2'},
-                  {text: '&bull; skills00_1 <span style="color:red"> aksfj as;jf lasj </span> fasj f;lasj <span style="font-weight:bold"> flsajf;lj </span> sdgf d  sgdfdg d <span style="font-weight:bold;color:red"> aksfj as;jf lasj </span> sal;fj salfj asl;f jkjsadlf asjf;lasj flskajflkasjdl;fasjdlfjsadlk;f jasjf saljflasjflsdaj lf;sdajfjd sl;<br>&bull; skills00_1.1 kasjd fl;asj fl;s j;lf jsa; alsfj alskjf ajsjl;faj sflkjsal;kfj salkf asjf;l asdlf as;fj sajfsajfsaldj fals jlsfj <br>skills00_1.2'},
-                  {text: '&bull; skills00_2<br>skills00_2.1<br>skills00_2.2'},
-                  {text: '&bull; skills00_3<br>skills00_3.1<br>skills00_3.2'}
+                  {text: '&#9656; Test'}
                 ]
               },
               {
-                // -- Archive: Vuetify
-                skill_head: 'Vue.js',
-                skill_body: 'Apollo, Axios, Express, GraphQL, MongoDB, Nuxt, Stripe, SVG Grapics, TweenJs, Vuex',
-                skill_link: 'projects-vue-js/',
+                skill_head: 'FTC Tetrix:',
+                skill_body: 'Integrated Development Environemnt (IDE) "Drag-n-Drop" Real-time Translation to C/C++',
+                skill_link: null,
+                skill_link_tab_index: null,
 
                 skill_childs:
                 [
-                  {text: 'skills01_1<br>skills01_1.1<br>skills01_1.2'},
-                  {text: 'skills01_2<br>skills01_2.1<br>skills01_2.2'},
-                  {text: 'skills01_3<br>skills01_3.1<br>skills01_3.2'}
+                  {text: '&#9656; Test'}
                 ]
-              },
+              }
+            ]
+          },
+          {
+            skills_group_group_name: 'EandE Instructor',
+            skills_group_group_text: null,
+            skills_group_name: '"Paid Teaching-Sabbatical" as Interim Web Full-Stack Developer',
+            skills_group_text: 'Siemens-eMeter, Foster City CA',
+            skills_group_timePeriod: {
+              from: 'Jan 2017',
+              to: 'Dec 2017'
+            },
+            skills_group_ageRange: 'Industry',
+
+            skills:
+            [
               {
-                  // --
-                skill_body: 'Axios, Express, MongoDB, Mongoose, Passport, Socket.io, WebSocket',
-                skill_head: 'Node.js',
-                skill_link: 'projects-node-js/'
-              },
+                skill_head: 'Full-Stack Web Demo:',
+                skill_body: 'JavaScript & Python Server/Client Programming for their Energy Smart-Grid Prototype',
+                skill_link: 'projects-javascript-python/',
+                skill_link_tab_index: '4',
+
+                skill_childs:
+                [
+                  { text: '&#9656; 1-Year Contract to provide EandE\'s Web Full-Stack T.A.C.H.nology® for their Cloud-based System' }
+                ]
+              }
+            ]
+          },
+          {
+            skills_group_group_name: null,
+            skills_group_group_text: null,
+            skills_group_name: 'Adjunct Professor, Computer Science and Engineering',
+            skills_group_text: 'Cogswell Polytechnical College, San Jose CA',
+            skills_group_timePeriod: {
+              from: 'Jan 2017',
+              to: 'Apr 2017'
+            },
+            skills_group_ageRange: 'College',
+
+            skills:
+            [
               {
-                // --
-                skill_head: 'Robotics',
-                skill_body: 'Arduino, Lego EV3/Next2, Rasberry Pi, BeagleBone',
-                skill_link: 'projects-javascript-python/'
-              },
-              {
-                // --
-                skill_head: 'Backend',
-                skill_body: 'Amazon AWS/EB, Digital Ocean NginX/Apache, Google-Firebase, Heroku, Netlify, Zeit-Now',
-                skill_link: null
-              },
-              {
-                // --
-                skill_head: 'Others',
-                skill_body: 'Python: Bottle, Flask -- JavaScript: Bootstrap, CSS, Highcharts, HTML, JQuery, SQL, Webpack',
-                skill_link: null
+                skill_head: 'CS 110: C Programming:',
+                skill_body: 'A Fundamental Prerequisite Course',
+                skill_link: null,
+                skill_link_tab_index: null,
+
+                skill_childs:
+                [
+                  { text: '&#9656; Teaching Opporunity represents a "baby first-step" for EandE establishing Collegiate Alliances for Open-Source R&D Collaboration.' }
+                ]
               }
             ]
           }
