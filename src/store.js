@@ -82,7 +82,7 @@ export default new Vuex.Store({
         job_location: 'Oakland, CA',
         job_timePeriod: {
           from: 'Fall 1994',
-          to: 'Sumer 1995'
+          to: 'Summer 1995'
         },
         job_childs:
         [
@@ -165,14 +165,14 @@ export default new Vuex.Store({
       },
 
       {
-        job_group_name: 'Teaching Experience',
+        job_group_name: 'Teaching Experience #1 of 5',
         job_group_text: null,
         job_title: 'Co-Founder, Instructor & Curriculum Developer: Web Full-Stack & Robotics',
         job_company: 'Encourage and Empower (EandE)',
         job_location: 'Milpitas, CA',
         job_url: 'http://www.EandE.world',
         job_timePeriod: {
-          from: 'Sept. 2006',
+          from: 'Sep 2006',
           to: 'Current'
         },
         job_childs:
@@ -310,7 +310,7 @@ export default new Vuex.Store({
             skills_group_group_name: 'EandE\'s Industry-Based Teaching',
             skills_group_group_text: null,
             skills_group_name: '&#9656; "Paid Teaching-Sabbatical" as Interim Web Full-Stack Developer',
-            skills_group_text: 'Siemens-eMeter, Foster City CA',
+            skills_group_text: 'Siemens-eMeter, Foster City, CA',
             skills_group_timePeriod: {
               from: 'Jan 2017',
               to: 'Dec 2017'
@@ -336,7 +336,7 @@ export default new Vuex.Store({
             skills_group_group_name: null,
             skills_group_group_text: null,
             skills_group_name: '&#9656; Adjunct Professor, Computer Science and Engineering',
-            skills_group_text: 'Cogswell Polytechnical College, San Jose CA',
+            skills_group_text: 'Cogswell Polytechnical College, San Jose, CA',
             skills_group_timePeriod: {
               from: 'Jan 2017',
               to: 'Apr 2017'
@@ -363,7 +363,7 @@ export default new Vuex.Store({
             skills_group_group_name: null,
             skills_group_group_text: null,
             skills_group_name: '&#9656; Computer Science & Robotics Instructor',
-            skills_group_text: 'Heart Academy Home-School Co-op, San Jose CA',
+            skills_group_text: 'Heart Academy Home-School Co-op, San Jose, CA',
             skills_group_timePeriod: {
               from: 'Aug 2011',
               to: 'May 2017'
@@ -405,7 +405,7 @@ export default new Vuex.Store({
             skills_group_group_name: null,
             skills_group_group_text: null,
             skills_group_name: '&#9656; Summer Tech Coordinator & Lead Instructor',
-            skills_group_text: 'Bayshore Christian Ministries, East Palo Alto CA',
+            skills_group_text: 'Bayshore Christian Ministries, East Palo Alto, CA',
             skills_group_timePeriod: {
               from: 'Summer 2014 & 2016',
               to: null
@@ -433,10 +433,10 @@ export default new Vuex.Store({
             skills_group_group_name: null,
             skills_group_group_text: null,
             skills_group_name: '&#9656; Private Tutor',
-            skills_group_text: 'EandE, Milpitas CA',
+            skills_group_text: 'EandE, Milpitas, CA',
             skills_group_timePeriod: {
               from: 'Fall 2006',
-              to: 'July 2011'
+              to: 'Jul 2011'
             },
             skills_group_ageRange: 'Middle & High School',
 
@@ -457,7 +457,204 @@ export default new Vuex.Store({
           }
 
         ]
+      },
+      {
+        job_group_name: 'Teaching Experience #2 of 5',
+        job_group_text: null,
+        job_title: 'Associate Pastor of Youth/Family Ministries',
+        job_company: 'South Bay Chinese Gospel Church',
+        job_location: 'Fremont, CA',
+        job_url: null,
+        job_timePeriod: {
+          from: 'Aug 2004',
+          to: 'Sep 2014'
+        },
+        job_childs:
+        [
+          { text: '&#9656; Teach Sunday School and Sunday Messages for Youth.' },
+          { text: '&#9656; Conducted Workshops to help Immigrant Asian Parents Bridge the Generation & Cultural Gap between Them and their Americanized Children.' }
+        ]
+      },
+      {
+        job_group_name: 'Teaching Experience #3 of 5',
+        job_group_text: null,
+        job_title: 'Multiple-Subject Instructor',
+        job_company: 'Sylvan Learning Center',
+        job_location: 'Fremont, CA',
+        job_url: null,
+        job_timePeriod: {
+          from: 'Apr 2003 ',
+          to: 'May 2008'
+        },
+        job_childs:
+        [
+          { text: '&#9656; Instructor for Reading, Writing & Math for Elementary to High School students, achieving the highest recognition of “Preferred Status” with Students & Parents.' },
+          { text: '&#9656; SAT Prep in Mathematics for High School Students. ' }
+        ]
+      },
+      {
+        job_group_name: 'Teaching Experience #4 of 5',
+        job_group_text: null,
+        job_title: 'Intern Pastoral Ministries ',
+        job_company: 'Grace Community Covenant Church (Asian-American Focus)',
+        job_location: 'Los Altos, CA',
+        job_url: null,
+        job_timePeriod: {
+          from: 'Mar 2003 ',
+          to: 'Apr 2004'
+        },
+        job_childs:
+        [
+          { text: '&#9656; Communicated vision, recruited and trained staff, and researched curriculum tools for the implementation of an Inter-Generational Sunday Worship Service.' }
+        ]
+      },
+      {
+        job_group_name: 'Teaching Experience #5 of 5',
+        job_group_text: null,
+        job_title: 'California-Credentialed Math Teacher',
+        job_company: 'John Muir Middle School',
+        job_location: 'San Leandro, CA',
+        job_url: null,
+        job_timePeriod: {
+          from: 'Sep 1995',
+          to: 'Jun 1996'
+        },
+        job_childs:
+        [
+          { text: '&#9656; Five classes totaling over 125 students/day: three mainstream 7th grades, one sheltered 7th grade, and one mainstream 6th grade using Prentice Hall Middle Grade Courses 1 & 2.' }
+        ],
+        skills_groups:
+        [
+          {
+            skills_group_group_name: null,
+            skills_group_group_text: '<span style="text-align:center;">Though approved for renewal to continue teaching at John Muir Middle, personally felt the need for higher training to be better equipped to serve our local community.  Thus enrolled into Western Seminary Masters program (see \'Education\' above).</span>',
+            skills_group_name: null,
+            skills_group_text: null,
+            skills_group_timePeriod: {
+              from: null,
+              to: null
+            },
 
+            skills:
+            [
+              {
+                skill_head: null,
+                skill_body: null,
+                skill_link: null,
+                skill_link_tab_index: null,
+
+                skill_childs:
+                [
+                  {text: null}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        job_group_name: 'Industry Experience #1 of 2',
+        job_group_text: null,
+        job_title: 'Firmware Engineer for Embedded x86 Linux',
+        job_company: 'San Valley Systems',
+        job_location: 'San Jose, CA',
+        job_url: null,
+        job_timePeriod: {
+          from: 'Jan 2001 ',
+          to: 'Sep 2002'
+        },
+        job_childs:
+        [
+          { text: '&#9656; Network TCP/IP Traffic & Route Diagnostics for Fibre Channel FCIP; Firmware & ASIC Co-Simulation Verification; Brocade and Ancor FC-Switch Systems Analysis.' }
+        ],
+        skills_groups:
+        [
+          {
+            skills_group_group_name: null,
+            skills_group_group_text: '<span style="text-align:center;">This was an interim position to afford time to find a teaching position at an appropriate place, that being an Internship at Grace Community Covenant Church. (see \'Teaching Experience\' above).</span>',
+            skills_group_name: null,
+            skills_group_text: null,
+            skills_group_timePeriod: {
+              from: null,
+              to: null
+            },
+
+            skills:
+            [
+              {
+                skill_head: null,
+                skill_body: null,
+                skill_link: null,
+                skill_link_tab_index: null,
+
+                skill_childs:
+                [
+                  {text: null}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        job_group_name: 'Industry Experience #2 of 2',
+        job_group_text: null,
+        job_title: 'Software Engineer',
+        job_company: 'Loral Space & Range Systems',
+        job_location: 'Sunnyvale, CA',
+        job_url: null,
+        job_timePeriod: {
+          from: 'Aug 1988',
+          to: 'Jun 1994'
+        },
+        job_childs:
+        [
+          { text: '&#9656; Implemented FoxPro Relational Database for Satellite Tracking Operations; Integrated C and C++ modules for Database Manipulation.' }
+        ],
+        skills_groups:
+        [
+          {
+            skills_group_group_name: null,
+            skills_group_group_text: '<span style="text-align:center;">Though work was satisfying, personally felt inspired to work more directly with people -- especially after volunteering over 6 years teaching and mentoring youths in my local community.  Thus, enrolled into Mills College for the Teacher Credentialing program. (see \'Education\' above).</span>',
+            skills_group_name: null,
+            skills_group_text: null,
+            skills_group_timePeriod: {
+              from: null,
+              to: null
+            },
+
+            skills:
+            [
+              {
+                skill_head: null,
+                skill_body: null,
+                skill_link: null,
+                skill_link_tab_index: null,
+
+                skill_childs:
+                [
+                  {text: null}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        job_group_name: 'References Available Upon Request',
+        job_group_text: null,
+        job_title: null,
+        job_company: null,
+        job_location: null,
+        job_url: null,
+        job_timePeriod: {
+          from: null,
+          to: null
+        },
+        job_childs:
+        [
+          { text: null }
+        ]
       }
 
     ],

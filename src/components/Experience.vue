@@ -58,7 +58,7 @@
           <p class="jobGroupText">{{ job_.job_group_text }}</p>
         </div>
 
-        <div class="job">
+        <div v-if="job_.job_title!=null" class="job">
           <ul>
             <li class="jobHead">
               <span class="jobTitle">{{ job_.job_title }}</span>
@@ -314,7 +314,7 @@ ul {
     // [jwc] too major of a group for such a light color; use darkest background since most major group: background-color: #ccc;  // light-grey
     background-color: $backgroundColor_Black;
     color:lightgray;
-    padding: 2em;
+    padding: 1.5em;  // was 2.0em
     margin-top: 1em;
     margin-bottom: 0.5em;
   }
