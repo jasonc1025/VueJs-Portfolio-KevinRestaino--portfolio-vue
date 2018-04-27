@@ -1,21 +1,24 @@
 <template>
   <div class="resumeStyle">
+
+  
     <!-- <alert v-model="showRight" placement="top-right" duration="3000" type="success" width="400px" dismissable>
       <span class="icon-ok-circled alert-icon-float-left"></span>
       <strong>Well Done!</strong>
       <p>You successfully read this important alert message.</p>
     </alert> -->
 
-  <!-- <vue-accordion 
-      :items="items" 
-      :accordionClass="acClass" 
-      :styles="styles"
-      >
-  </vue-accordion> -->
+    <!-- <vue-accordion 
+        :items="items" 
+        :accordionClass="acClass" 
+        :styles="styles"
+        >
+    </vue-accordion> -->
 
-  <!-- <accordion :items="items" :id="mandatory-id" :collapseAll="false"></accordion> -->
+    <!-- <accordion :items="items" :id="mandatory-id" :collapseAll="false"></accordion> -->
 
-  <AccordionMenu :items_Stage01="items_Stage00"></AccordionMenu>
+    <AccordionMenu :items_Stage01="items_Stage00"></AccordionMenu>
+
 
     <!-- NOTE: ':mouseDrag=false' NOT appear to work -->
     <!-- NOTE:  "paginationPadding" "paginationSize" "speed": 'Expected Number, got String.' Warning Yet Code is Correct and Working. Therefore ignore warning. -->

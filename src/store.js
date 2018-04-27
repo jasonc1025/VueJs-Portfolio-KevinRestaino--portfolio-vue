@@ -1,8 +1,21 @@
+//
+// ----- -----
+//
 // * Important
+//
+
 // $bullet_point: &#9656;;
 
 // * Both 'class="skillUrl"' not seem to work, weird.  There do inline-style.
 // {text: '&#9656; More info on T.A.C.H.nology® Robotics at EandE\'s Main Site: <a href="http://www.eande.world" class="skillUrl" target="_blank"><span class="skillUrl" style="color:blue"><u> http://www.EandE.world </u></span></a>'}
+
+// Variable Naming
+//    'skills_group_timePeriod' : Vue variables between 'store.js' and 'Experience.vue': Have min of one '_' underscore with inverse caps between each '_'
+//    '.skillsGroupTimePeriod' : Classes do inverse caps with no '_'
+
+//
+// ----- -----
+//
 
 import Vue from 'vue'
 import Vuex from 'vuex'
