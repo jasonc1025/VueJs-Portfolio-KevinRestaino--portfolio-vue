@@ -270,7 +270,8 @@ ul {
     // font-size: medium;
     // font-size: $fontSize_Bullet;
     // [test]
-    font-size: 13px;
+    // font-size: 13px;
+    font-size: medium;
     // margin: 0.5em 1em 0.5em 1.5em;  // [jwc] change margin-left: 2em;
     margin-left: 1.5em;
   }
@@ -336,7 +337,8 @@ ul {
     font-weight: 300;
     // font-size: medium;
     // [test]font-size: $fontSize_Bullet;
-    font-size: 13px;
+    // font-size: 13px;
+    font-size: large;
     display: flex;
     justify-content: center;
   }
