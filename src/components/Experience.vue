@@ -168,9 +168,11 @@ export default {
 // $fontSize_Bullet: small;
 // $fontSize_Header: large;
 // $fontSize_Url: small;
-$fontSize_Bullet: 20px;
-$fontSize_Header: 40px;
-$fontSize_Url: 20px;
+$fontSize_Bullet: smaller;  // 20px;
+$fontSize_Header: larger;  // 40px;
+$fontSize_Url: smaller;  // 20px;
+
+
 
 $backgroundColor_LightGrey: #d9d9d9;  // rgb(217, 217, 217);
 $backgroundColor_DarkGrey: #bbb;  // rgb(187, 187, 187);
@@ -347,7 +349,7 @@ ul {
     font-size: $fontSize_Bullet;
     // font-size: 13px;
     // font-size: large;
-    
+
     display: flex;
     justify-content: center;
   }
