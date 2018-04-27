@@ -32,7 +32,7 @@
         <div class="jobChild" v-for="(job_child, index_job_child) in job_.job_childs" :key='index_job_child'>
           <!-- Y <p><span class="fade-in" v-html="'&bull; '+ skill_child.text"></span></p> -->
           <!-- Y <p><span v-html="skill_child.text"></span></p> -->
-          <p><span v-html="job_child.text"></span></p>
+          <p><span class="jobChild" v-html="job_child.text"></span></p>
         </div>
 
 
