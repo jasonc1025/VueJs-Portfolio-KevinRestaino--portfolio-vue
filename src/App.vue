@@ -37,7 +37,7 @@ html {
   background-color: #f1f1f1;
   box-sizing: border-box;
   overflow-y: scroll;
-  // font-size: 40px;  //[test]
+  // [jwc] NOT NEEDED, AS SETTING AT <BODY> IS SUFFICIENT:  font-size: 40px;  //[test]
 
 }
 
@@ -56,7 +56,7 @@ body {
   
   // [jwc]+1 font-size: 18px;
   // font-size: medium;
-  font-size: 80px; // xx-small; 9px // x-small; 10px // small; 13px // medium; 16px // large; 18px // x-large; 24px //  xx-large; 32px // 80px;  //[test]
+  font-size: medium;  // 80px; // xx-small; 9px // x-small; 10px // small; 13px // medium; 16px // large; 18px // x-large; 24px //  xx-large; 32px // 80px;  //[test]
 
   font-weight: 300;
   // [jwc]+1 padding: 36px;
