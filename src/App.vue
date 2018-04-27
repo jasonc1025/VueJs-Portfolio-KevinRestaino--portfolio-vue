@@ -37,7 +37,7 @@ html {
   background-color: #f1f1f1;
   box-sizing: border-box;
   overflow-y: scroll;
-  font-size: 40px;  //[test]
+  // font-size: 40px;  //[test]
 
 }
 
