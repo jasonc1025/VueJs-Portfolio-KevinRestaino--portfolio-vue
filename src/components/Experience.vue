@@ -12,7 +12,10 @@
         <div v-if="job_.job_title!=null" class="job">
           <ul>
             <li class="jobHead">
-              <span class="jobTitle">{{ job_.job_title }}</span>
+              <!-- Y <span class="jobTitle" v-html="job_.job_title">{{ job_.job_title }}</span> -->
+              <!-- <span class="jobTitle" style="font-size:30px" v-html="job_.job_title"></span> -->
+              <!-- <span class="jobTitle" v-html="job_.job_title"></span> -->
+              <span class="jobTitle" v-html="job_.job_title">{{ job_.job_title }}</span>
               <span class="jobTimePeriod">{{ job_.job_timePeriod.from }} – {{ job_.job_timePeriod.to }}</span>
             </li>
             <li class="jobBody">
@@ -29,9 +32,21 @@
           </ul>
         </div>
 
-        <div class="jobChild" v-for="(job_child, index_job_child) in job_.job_childs" :key='index_job_child'>
+        <!-- Y <div class="jobChild" v-for="(job_child, index_job_child) in job_.job_childs" :key='index_job_child'> -->
+        <div v-for="(job_child, index_job_child) in job_.job_childs" :key='index_job_child'>
+
           <!-- Y <p><span class="fade-in" v-html="'&bull; '+ skill_child.text"></span></p> -->
           <!-- Y <p><span v-html="skill_child.text"></span></p> -->
+          <!-- YY <p><span class="jobChild" v-html="job_child.text"></span></p> -->
+          <!-- YY <p><span class="jobChild" v-html="job_child.text"></span></p> -->
+          <!-- YY <p><span class="jobChild" style="font-size:16px" v-html="job_child.text"></span></p> -->
+          <!-- N <p><span class="jobChild" style="font-size:$fontSize_Standard" v-html="job_child.text"></span></p> -->
+          <!-- YY desktop and mobile AHG: <p><span class="jobChild" style="font-size:medium" v-html="job_child.text"></span></p> -->
+          <!-- Y <p><span class="jobChild" v-html="job_child.text"></span></p> -->
+          <!-- <p><span class="jobChild" {{job_child.text}}></span></p> -->
+          <!-- YY desktop and mobile AHG: <p><span class="jobChild" style="font-size:medium" v-html="job_child.text"></span></p> -->
+          <!-- Y <p><span class="jobChild" style="font-size:medium" v-html="job_child.text"></span></p> -->
+          <!-- <p><span class="jobChild" style="font-size:16px" v-html="job_child.text"></span></p> -->
           <p><span class="jobChild" v-html="job_child.text"></span></p>
         </div>
 
@@ -168,7 +183,8 @@ export default {
 // $fontSize_Bullet: small;
 // $fontSize_Header: large;
 // $fontSize_Url: small;
-$fontSize_Bullet: 80%;  // smaller;  // 20px;
+$fontSize_Bullet: smaller; // 80%; // 40%; // 80%;  // smaller;  // 20px;
+$fontSize_Standard: medium; 
 $fontSize_Header: larger;  // 40px;
 $fontSize_Url: smaller;  // 20px;
 
@@ -197,43 +213,6 @@ ul {
     color: #666;
     }
 
-    .jobTitle {
-      font-weight: 400;
-      // font-size: large;
-    }
-    .jobCompany{
-      font-weight: 400;
-    }
-    // Left-Indent flush with above text
-    .jobTimePeriod {
-      font-size: $fontSize_Bullet;
-      // color: #aaa;  // [jwc] better ligher shading vs. 'font-weight'
-      // Y margin-left: 3.5em;
-      // margin-bottom: -0.5em;
-      // text-align: right;
-    }
-    .jobLocation {
-      font-size: $fontSize_Bullet;
-      // color: #aaa;
-      // Y margin-left: 3.5em;
-      // margin-top: -0.5em;
-      // margin-bottom: -0.5em;
-      // text-align: right;
-    }
-    .jobUrl {
-      font-size: $fontSize_Url;
-      color: blue;
-      // Y margin-left: 3.5em;
-      // margin-top: -0.5em;
-      // margin-bottom: -0.5em;
-      // text-align: right;
-      margin-left: 0.5em;
-      text-decoration-line: underline;
-    }
-    .jobAgeRange{
-      font-size: $fontSize_Bullet;
-      // color: #aaa;  // [jwc] better ligher shading vs. 'font-weight'
-    }
 
     .fade-in {
       opacity: 1;
@@ -263,10 +242,12 @@ ul {
     margin-top: 1em;
     margin-bottom: 1em;
     // font-size:16px; // [test]
+    // font-size: 100%;// $fontSize_Standard; // [test2]
   }
   .jobHead{
     display: flex;
     justify-content: space-between;
+    // font-size: 16px;// $fontSize_Standard; // [test2]
   }
   .jobBody{
     display: inline-block;
@@ -276,13 +257,52 @@ ul {
   .jobChild {
     font-weight: 300;
     // font-size: medium;
-    font-size: $fontSize_Bullet;
+    // font-size: $fontSize_Standard;  // AHG YN for Desktop and Mobile
     // [test]
     // font-size: 13px;
     // font-size: medium;
 
     // margin: 0.5em 1em 0.5em 1.5em;  // [jwc] change margin-left: 2em;
     margin-left: 1.5em;
+  }
+
+  .jobTitle {
+    font-weight: 400;
+    // font-size: large;
+    // font-size: // YN 32px; on mobile fakes a 16px in looks/screen //24px  // $fontSize_Standard; /// Y 32px;// $fontSize_Standard; // [test2]
+  }
+  .jobCompany{
+    font-weight: 400;
+  }
+  // Left-Indent flush with above text
+  .jobTimePeriod {
+    font-size: $fontSize_Bullet;
+    // color: #aaa;  // [jwc] better ligher shading vs. 'font-weight'
+    // Y margin-left: 3.5em;
+    // margin-bottom: -0.5em;
+    // text-align: right;
+  }
+  .jobLocation {
+    font-size: $fontSize_Bullet;
+    // color: #aaa;
+    // Y margin-left: 3.5em;
+    // margin-top: -0.5em;
+    // margin-bottom: -0.5em;
+    // text-align: right;
+  }
+  .jobUrl {
+    font-size: $fontSize_Url;
+    color: blue;
+    // Y margin-left: 3.5em;
+    // margin-top: -0.5em;
+    // margin-bottom: -0.5em;
+    // text-align: right;
+    margin-left: 0.5em;
+    text-decoration-line: underline;
+  }
+  .jobAgeRange{
+    font-size: $fontSize_Bullet;
+    // color: #aaa;  // [jwc] better ligher shading vs. 'font-weight'
   }
 
   .jobGroup{
@@ -319,6 +339,7 @@ ul {
   .skillsGroupGroupName{
     font-weight: 400;
     // font-size: large;
+    font-size: $fontSize_Standard;  //[test]
     display: flex;
     justify-content: center;
     // background-color: #d9d9d9;  // light-grey 
