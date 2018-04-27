@@ -2,7 +2,9 @@
   <div class="resumeStyle">
 
     <ul>
-      <li v-for="(job_, index_job) in jobs" :key='index_job'>
+      <!-- <li v-for="(job_, index_job) in jobs" :key='index_job'> -->
+      <!-- YN seems to fixed duplicate key, yet still elint warn:  <li v-for="(job_, index_job) in jobs" :key='job_.id'> -->
+      <li v-for="(job_) in jobs" :key='job_.id'>
 
         <div v-if="job_.job_group_name!=null" class="jobGroup">
           <p class="jobGroupName">{{ job_.job_group_name }}</p>
@@ -33,7 +35,9 @@
         </div>
 
         <!-- Y <div class="jobChild" v-for="(job_child, index_job_child) in job_.job_childs" :key='index_job_child'> -->
-        <div v-for="(job_child, index_job_child) in job_.job_childs" :key='index_job_child'>
+        <!-- <div v-for="(job_child, index_job_child) in job_.job_childs" :key='index_job_child'> -->
+        <!-- YN seems to fixed duplicate key, yet still elint warn: <div v-for="(job_child, index_job_child) in job_.job_childs" :key='job_child.id'> -->
+        <div v-for="(job_child) in job_.job_childs" :key='job_child.id'>
 
           <!-- Y <p><span class="fade-in" v-html="'&bull; '+ skill_child.text"></span></p> -->
           <!-- Y <p><span v-html="skill_child.text"></span></p> -->
@@ -50,8 +54,8 @@
           <p><span class="jobChild" v-html="job_child.text"></span></p>
         </div>
 
-
-        <div class="skillsGroup" v-for="(skills_group, index_skills_group) in job_.skills_groups" :key='index_skills_group'>
+        <!-- YN seems to fixed duplicate key, yet still elint warn: <div class="skillsGroup" v-for="(skills_group, index_skills_group) in job_.skills_groups" :key='index_skills_group'> -->
+        <div class="skillsGroup" v-for="(skills_group) in job_.skills_groups" :key='skills_group.id'>
 
           <div v-if="skills_group.skills_group_group_name!=null || skills_group.skills_group_group_text!=null" class="skillsGroupGroup">
             <p v-if="skills_group.skills_group_group_name!=null" class="skillsGroupGroupName">{{ skills_group.skills_group_group_name }}</p>
@@ -74,7 +78,8 @@
             <span v-if="skills_group.skills_group_ageRange!=null" class="skillsGroupAgeRange">{{skills_group.skills_group_ageRange}}</span>
           </div>
 
-          <div class="skill" v-for="(skill_, index_skill) in skills_group.skills" :key='index_skill'>
+          <!-- YN seems to fixed duplicate key, yet still elint warn: <div class="skill" v-for="(skill_, index_skill) in skills_group.skills" :key='index_skill'> -->
+          <div class="skill" v-for="(skill_) in skills_group.skills" :key='skill_.id'>
 
             <div v-if="skill_.skill_head != null && skill_.skill_link != null">
 
@@ -92,7 +97,9 @@
                 <span class="skillBody">{{ skill_.skill_body }}</span>
               </div>
 
-              <div class="skillChild" v-for="(skill_child, index_skill_child) in skill_.skill_childs" :key='index_skill_child'>
+              <!-- YN seems to fixed duplicate key, yet still elint warn: <div class="skillChild" v-for="(skill_child, index_skill_child) in skill_.skill_childs" :key='index_skill_child'> -->
+              <div class="skillChild" v-for="(skill_child) in skill_.skill_childs" :key='skill_child.id'>
+
                 <!-- Y <p><span class="fade-in" v-html="'&bull; '+ skill_child.text"></span></p> -->
                 <!-- Y <p><span v-html="skill_child.text"></span></p> -->
                 <!-- Y/N this 'class="skillUrl"' does work but not w/i v-html: <p><span class="skillUrl" v-html="skill_child.text"></span></p> -->
@@ -108,7 +115,8 @@
                 <span class="skillBody">{{ skill_.skill_body }}</span>
               </div>
 
-              <div class="skillChild" v-for="(skill_child, index_child) in skill_.skill_childs" :key='index_child'>
+              <!-- YN seems to fixed duplicate key, yet still elint warn: <div class="skillChild" v-for="(skill_child, index_child) in skill_.skill_childs" :key='index_child'> -->
+              <div class="skillChild" v-for="(skill_child) in skill_.skill_childs" :key='skill_child.id'>
                 <!-- Y <p><span class="fade-in" v-html="'&bull; '+ skill_child.text"></span></p> -->
                 <p><span v-html="skill_child.text"></span></p>
               </div>
