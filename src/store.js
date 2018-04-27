@@ -194,7 +194,7 @@ export default new Vuex.Store({
         job_childs:
         [
           { text: '&#9656; Traditionally, I\'ve enjoyed coding and teaching Java, C#, and C++ -- among many other Linux-based tools.' },
-          { text: '&#9656; Yet due to the global pervasiveness of Web/Cloud-Services and Robotics/IOT-Devices, Stack Overflow\'s 2018 Global Survey of 100K Developers have concluded that two Open-Source languages -- JavaScript and Python -- have taken the world by storm, at least for these past several years <a href="https://insights.stackoverflow.com/survey/2018" class="skillUrl" target="_blank" style="color:blue;text-decoration-line:underline;font-size:small">[https://insights.stackoverflow.com/survey/2018]</a>.' },
+          { text: '&#9656; Yet due to the global pervasiveness of Web/Cloud-Services and Robotics/IOT-Devices, Stack Overflow\'s 2018 Global Survey of 100K Developers have concluded that two Open-Source languages -- JavaScript and Python -- have taken the world by storm, at least for these past several years <a href="https://insights.stackoverflow.com/survey/2018" class="skillUrl" target="_blank" style="color:blue;text-decoration-line:underline;font-size:75%">[https://insights.stackoverflow.com/survey/2018]</a>.' },
           { text: '&#9656; Thus from EandE\'s Instructional R&D Lab (still based at my home/garage since 2004), I wish to present a portfolio of commerical-grade educational projects that feature JavaScript and/or Python, along with their respective key libraries as noted below.  Below, the blue buttons link to live demo sites.' }
         ],
 
@@ -281,7 +281,7 @@ export default new Vuex.Store({
                   {text: '&#9656; Designed for low-cost M.assively E.ngaged C.o-op C.ompetition (M.E.C.C.®) Events'},
                   {text: '&#9656; Open-Source Robotics Kit at less than "Half the Cost" of other systems'},
                   {text: '&#9656; Web Full-Stack Remote-Control System using Rasberry Pi (JS, Python)'},
-                  {text: '&#9656; More info on T.A.C.H.nology® Robotics at EandE\'s Main Site: <a href="http://www.eande.world" class="skillUrl" target="_blank" style="color:blue;text-decoration-line:underline;font-size:small">http://www.EandE.world</a>'}
+                  {text: '&#9656; More info on T.A.C.H.nology® Robotics at EandE\'s Main Site: <a href="http://www.eande.world" class="skillUrl" target="_blank" style="color:blue;text-decoration-line:underline;font-size:75%">http://www.EandE.world</a>'}
                 ]
               }
             ]

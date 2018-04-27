@@ -98,7 +98,7 @@ h3 {
   background-color: #ddd;
   border-radius: 3px;
   padding: 8px 16px;
-  font-size: 16px;
+  font-size: 100%; // switch from absolute to relative: 16px;
   transition: 0.3s;
 
   &:hover {
