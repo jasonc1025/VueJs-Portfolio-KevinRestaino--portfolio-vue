@@ -2,8 +2,8 @@
   <!-- Y <div class="mainNav" @click="store.commit('increment')"> -->
   <div class="mainNav">
 
-    <router-link v-if="store.getters.tabModeGet==0" tag="a" to="/resume" @click.native="store.commit('tabModeSet','0')"><b>My Story</b></router-link>
-    <router-link v-else tag="a" to="/resume" @click.native="store.commit('tabModeSet','0')">My Story</router-link>
+    <router-link v-if="store.getters.tabModeGet==0" tag="a" to="/home" @click.native="store.commit('tabModeSet','0')"><b>Home</b></router-link>
+    <router-link v-else tag="a" to="/home" @click.native="store.commit('tabModeSet','0')">Home</router-link>
 
     <router-link v-if="store.getters.tabModeGet==1" tag="a" to="/projects-react" @click.native="store.commit('tabModeSet','1')"><b>React</b></router-link>
     <router-link v-else tag="a" to="/projects-react" @click.native="store.commit('tabModeSet','1')">React</router-link>

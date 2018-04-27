@@ -2,7 +2,7 @@
   <div id="app">
     <header class="header">
       <h1>Jason W Chan</h1>
-      <h2>Web Full-Stack & Open-Source Robotics Instructor (/Developer)</h2>
+      <h2>Web Full-Stack & Robotics Sr. Instructor & Curriculum Developer</h2>
       <h3>Middle School, High School, College & Beyond</h3>
       <mainNavComponent></mainNavComponent>
     </header>

@@ -6,6 +6,7 @@ import WorkVueJs from '@/components/WorkVueJs'
 import WorkNodeJs from '@/components/WorkNodeJs'
 import WorkJavascriptPython from '@/components/WorkJavascriptPython'
 import Project from '@/components/Project.vue'
+import Home from '@/components/Home'
 import Experience from '@/components/Experience'
 import Error from '@/components/Error'
 
@@ -16,8 +17,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'React',
-      component: WorkReact
+      name: 'Home',
+      component: Home
+    },
+    {
+      path: '/home',
+      name: 'Home',
+      component: Home
     },
     {
       path: '/projects-react',

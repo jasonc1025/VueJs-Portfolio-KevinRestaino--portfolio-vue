@@ -41,100 +41,10 @@ export default new Vuex.Store({
   state: {
     tabMode: 0, // Default
     jobs: [
+
       {
         job_group_name: 'Education',
-        job_group_text: null,
-        job_title: 'Master of Arts, General Ministry',
-        job_company: 'Western Seminary',
-        job_location: 'San Jose, CA',
-        job_timePeriod: {
-          from: 'Fall 1996',
-          to: 'Spring 2000'
-        },
-        job_childs:
-        [
-          {text: '&#9656; Highest Honor for PTS 514: Expository Sermons.'},
-          {text: '&#9656; Middle & High School Youth and Family Ministry Practicum.'}
-        ],
-
-        skills_groups:
-        [
-          {
-            skills_group_group_name: 'Teaching: Soft Skills',
-            skills_group_group_text: '<span style="text-align:center;">At Western Seminary, I\'ve learned the missionary way of \'service & sacrafice\' to build both trust and respect, <br> in order to positively engage & stimulate the affective/emotive side of learning <br> (right-side of \'Integrated-Brain\' Pedagogy).</span>',
-            skills_group_name: null,
-            skills_group_text: null,
-            skills_group_timePeriod: {
-              from: null,
-              to: null
-            },
-
-            // skills: null  // will need to replace below if wish to truly trigger as 'true': 'v-if="skills_group.skills!=null"'
-            skills:
-            [
-              {
-                skill_head: null,
-                skill_body: null,
-                skill_link: null,
-                skill_link_tab_index: null,
-
-                skill_childs:
-                [
-                  {text: null}
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        job_group_name: null,
-        job_group_text: null,
-        job_title: 'Math Single Subject Teacher Credential',
-        job_company: 'Mills College',
-        job_location: 'Oakland, CA',
-        job_timePeriod: {
-          from: 'Fall 1994',
-          to: 'Summer 1995'
-        },
-        job_childs:
-        [
-          {text: '&#9656; California Mathematics Single-Subject Professional Clear Credentialed.'},
-          {text: '&#9656; “Mid-Career Math & Science (Biology, Chem., Physics) Teacher Preparation” Specialty w/ Stanford University.'},
-          {text: '&#9656; Priviledged Intership with Mentorship from Stanford University\'s Alumni.'}
-        ],
-        skills_groups:
-        [
-          {
-            skills_group_group_name: 'Teaching: Pedagogy',
-            skills_group_group_text: '<span style="text-align:center;">Regarding even the complex, abstract concepts of Computer Science & Robotics, <br> Mills College trained me in crafting concrete examples to engage & feed the cognitive/analytical side of learning <br> (left-side of \'Integrated-Brain\' Pedagogy).<br><br>For example, our casual-game <a href="http://www.eande.world/courses.html#Courses-ComputerScience" class="urlLink" target="_blank" style="color:blue;text-decoration-line: underline;">Itty Bitty Jr</a> -- as showcased at S.J.\'s Tech Museum and S.F.\'s Exploratorium -- <br> serves as a visually-interactive framework from which we concretely apply and explain how \'pointer and arrays\' work <br> (by keeping track of the \'friendly planets\' to visit).</span>',
-            skills_group_name: null,
-            skills_group_text: null,
-            skills_group_timePeriod: {
-              from: null,
-              to: null
-            },
-
-            skills:
-            [
-              {
-                skill_head: null,
-                skill_body: null,
-                skill_link: null,
-                skill_link_tab_index: null,
-
-                skill_childs:
-                [
-                  {text: null}
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        job_group_name: null,
-        job_group_text: null,
+        job_group_text: '(Ascending Order)',
         job_title: 'B.S. Electrical and Computer Engineering',
         job_company: 'University of California',
         job_location: 'Davis, CA',
@@ -178,8 +88,101 @@ export default new Vuex.Store({
       },
 
       {
-        job_group_name: 'Teaching Experience #1 of 5',
+        job_group_name: null,
         job_group_text: null,
+        job_title: 'Math Single Subject Teacher Credential',
+        job_company: 'Mills College',
+        job_location: 'Oakland, CA',
+        job_timePeriod: {
+          from: 'Fall 1994',
+          to: 'Summer 1995'
+        },
+        job_childs:
+        [
+          {text: '&#9656; California Mathematics Single-Subject Professional Clear Credentialed.'},
+          {text: '&#9656; “Mid-Career Math & Science (Biology, Chem., Physics) Teacher Preparation” Specialty w/ Stanford University.'},
+          {text: '&#9656; Priviledged Intership with Mentorship from Stanford University\'s Alumni.'}
+        ],
+        skills_groups:
+        [
+          {
+            skills_group_group_name: 'Teaching: Pedagogy',
+            skills_group_group_text: '<span style="text-align:center;">Especially with the complex, abstract concepts of Computer Science & Robotics, <br> Mills College trained me in crafting concrete examples to engage & feed the cognitive/analytical side of learning <br> (The Left-Hemisphere of \'Integrated-Brain\' Pedagogy).<br><br>For example, our casual-game <a href="http://www.eande.world/courses.html#Courses-ComputerScience" class="urlLink" target="_blank" style="color:blue;text-decoration-line: underline;">Itty Bitty Jr</a> -- as showcased at S.J.\'s Tech Museum and S.F.\'s Exploratorium -- <br> serves as a visually-interactive framework from which we concretely apply and explain how \'pointer and arrays\' work <br> (by keeping track of the \'friendly planets\' to visit).</span>',
+            skills_group_name: null,
+            skills_group_text: null,
+            skills_group_timePeriod: {
+              from: null,
+              to: null
+            },
+
+            skills:
+            [
+              {
+                skill_head: null,
+                skill_body: null,
+                skill_link: null,
+                skill_link_tab_index: null,
+
+                skill_childs:
+                [
+                  {text: null}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        job_group_name: null,
+        job_group_text: null,
+        job_title: 'Master of Arts, General Ministry',
+        job_company: 'Western Seminary',
+        job_location: 'San Jose, CA',
+        job_timePeriod: {
+          from: 'Fall 1996',
+          to: 'Spring 2000'
+        },
+        job_childs:
+        [
+          {text: '&#9656; Highest Honor for PTS 514: Expository Sermons.'},
+          {text: '&#9656; Middle & High School Youth and Family Ministry Practicum.'}
+        ],
+
+        skills_groups:
+        [
+          {
+            skills_group_group_name: 'Teaching: Soft Skills',
+            skills_group_group_text: '<span style="text-align:center;">At Western Seminary, I\'ve learned the missionary way of \'service & sacrafice\' for building trust and respect, <br> to positively engage & stimulate the affective/emotive side of learning <br> (The Right-Hemisphere of \'Integrated-Brain\' Pedagogy).</span>',
+            skills_group_name: null,
+            skills_group_text: null,
+            skills_group_timePeriod: {
+              from: null,
+              to: null
+            },
+
+            // skills: null  // will need to replace below if wish to truly trigger as 'true': 'v-if="skills_group.skills!=null"'
+            skills:
+            [
+              {
+                skill_head: null,
+                skill_body: null,
+                skill_link: null,
+                skill_link_tab_index: null,
+
+                skill_childs:
+                [
+                  {text: null}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        job_group_name: 'Teaching Experience #1 of 5',
+        job_group_text: '(Descending Order)',
         job_title: 'Co-Founder, Instructor & Curriculum Developer: Web Full-Stack & Robotics',
         job_company: 'Encourage and Empower (EandE)',
         job_location: 'Milpitas, CA',
@@ -504,7 +507,7 @@ export default new Vuex.Store({
         job_ageRange: 'Middle & High School',
         job_childs:
         [
-          { text: '&#9656; Instructor for Reading, Writing & Math for Elementary to High School students, achieving the highest recognition of “Preferred Status” with Students & Parents.' },
+          { text: '&#9656; Instructor for Reading, Writing & Math, achieving the highest recognition of “Preferred Status” with Students & Parents.' },
           { text: '&#9656; SAT Prep in Mathematics for High School Students. ' }
         ]
       },
@@ -633,7 +636,7 @@ export default new Vuex.Store({
         [
           {
             skills_group_group_name: null,
-            skills_group_group_text: '<span style="text-align:center;">Though work was satisfying, personally felt inspired to work more directly with people -- especially after volunteering over 6 years teaching and mentoring youths in my local community.  Thus, enrolled into Mills College for the Teacher Credentialing program. (see \'Education\' above).</span>',
+            skills_group_group_text: '<span style="text-align:center;">Though work has been an extremely positive experience, personally felt inspired to work more directly with people -- especially after volunteering over 6 years teaching and mentoring youths in my local community.  Thus, enrolled into Mills College for the Teacher Credentialing program. (see \'Education\' above).</span>',
             skills_group_name: null,
             skills_group_text: null,
             skills_group_timePeriod: {

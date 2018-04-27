@@ -1,6 +1,58 @@
 <template>
   <div class="resumeStyle">
 
+  
+    <!-- <alert v-model="showRight" placement="top-right" duration="3000" type="success" width="400px" dismissable>
+      <span class="icon-ok-circled alert-icon-float-left"></span>
+      <strong>Well Done!</strong>
+      <p>You successfully read this important alert message.</p>
+    </alert> -->
+
+    <!-- <vue-accordion 
+        :items="items" 
+        :accordionClass="acClass" 
+        :styles="styles"
+        >
+    </vue-accordion> -->
+
+    <!-- <accordion :items="items" :id="mandatory-id" :collapseAll="false"></accordion> -->
+
+    <AccordionMenu :items_Stage01="items_Stage00"></AccordionMenu>
+
+
+    <!-- NOTE: ':mouseDrag=false' NOT appear to work -->
+    <!-- NOTE:  "paginationPadding" "paginationSize" "speed": 'Expected Number, got String.' Warning Yet Code is Correct and Working. Therefore ignore warning. -->
+    <!-- <carousel :per-page="1" :autoplay="true" :navigationEnabled="true" :navigate-to="someLocalProperty" :mouse-drag="true"> -->
+    <!-- Y <carousel :perPage="1" :autoplay="true" :loop="true" :navigationEnabled="true" :mouseDrag="false" paginationActiveColor="#42b983" paginationColor="#b2ebd1" paginationSize="5" easing="ease" speed="1000"> -->
+    <!-- Y <carousel :perPage="1" :autoplay="true" :loop="true" :navigationEnabled="true" :mouseDrag="false" paginationActiveColor="#42b983" paginationColor="#b2ebd1" paginationSize="5" easing="linear" speed="1000"> -->
+    <!-- YY <carousel :perPage=1 :autoplay=true :autoplayTimeout=5000 :loop=false :navigationEnabled=true :mouseDrag=false paginationActiveColor="#42b983" paginationColor="#b2ebd1" paginationSize=20 paginationPadding=20 easing="ease" speed=1000> -->
+    <carousel :perPage=1 :autoplay=true :autoplayTimeout=5000 :loop=true :navigationEnabled=true :mouseDrag=false paginationActiveColor="#42b983" paginationColor="#b2ebd1" paginationSize=20 paginationPadding=10 easing="ease" speed=1000>
+      <slide>
+        <h2>Based on Stack Overflow's Worldwide 2018 Poll of 100,000 Developers,<br>JavaScript, CSS, HTML (All Web-Based Tools) are Top 3 in Popularity</h2>
+        <!-- <img :src="/static/work/${project.category}/${project.slug}/${project.slug}_thumb.png"> -->
+        <!-- <img :src="/static/work/javascript-python-dir/11h-ArduBlockly-EandE/11h-ArduBlockly-EandE_thumb.png"> -->
+        <!-- <img :src="http\://image.iqing.in/recommend/613890e9-3e5d-4acd-afae-003201e1d86d.jpg-cover"> -->
+        <!-- Y src="\static\work\javascript-python-dir\11h-ArduBlockly-EandE\11h-ArduBlockly-EandE_thumb.png"> -->
+        <!-- NOTE: ':src' not work, possibly in a non-vue '<img>' -->
+        <!-- Y <img src="/static/work/javascript-python-dir/11h-ArduBlockly-EandE/11h-ArduBlockly-EandE_thumb.png"> -->
+        <img src="/static/work/mystory-dir/Stackoverflow-MostPopularTech-JavaScript.png">
+      </slide>
+      <slide>
+        <h2>Based on GitHub's 3-Year Star-Ratings of Top 3 JS Frameworks,<br>Vue.js #1 in Greatest Momentum (React #2)</h2>
+        <img src="/static/work/mystory-dir/BestOfJsDotOrg-UiFramework-GithubStars.png">
+      </slide>
+      <slide>
+        <h2>Based on Worldwide 2017 Poll of 28,000 JS Developers,<br>Vue.js #1 in Potential Market for Training (React #2)</h2>
+        <img src="/static/work/mystory-dir/VueVsReact-StateOfJsDotCom.png">
+      </slide>
+      <slide>
+        <h2>Based on GitHub's 2017 Star-Ratings of All JS Projects,<br>Vue.js #1 in Popularity (React #2)</h2>
+        <img src="/static/work/mystory-dir/VueVsReact-RisingStarsDotJsDotOrg.png">
+      </slide>
+    </carousel>
+
+
+
     <ul>
       <li v-for="(job_, index_job) in jobs" :key='index_job'>
 
@@ -111,7 +163,7 @@
 
 <script>
 export default {
-  name: 'ResumeComponent',
+  name: 'HomeComponent',
   data () {
     return {
       jobs: this.$myStore.state.jobs,
