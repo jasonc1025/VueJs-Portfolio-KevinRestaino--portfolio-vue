@@ -168,7 +168,7 @@ export default {
 // $fontSize_Bullet: small;
 // $fontSize_Header: large;
 // $fontSize_Url: small;
-$fontSize_Bullet: smaller;  // 20px;
+$fontSize_Bullet: 80%;  // smaller;  // 20px;
 $fontSize_Header: larger;  // 40px;
 $fontSize_Url: smaller;  // 20px;
 
