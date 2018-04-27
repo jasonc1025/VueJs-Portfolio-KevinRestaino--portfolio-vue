@@ -68,7 +68,7 @@ body {
 
 #app {
   margin: auto;
-  max-width: 800px;
+  max-width: 932px;  // orig 800px, max it given 'padding: 32px'
 }
 
 a {
