@@ -469,10 +469,12 @@ export default new Vuex.Store({
           from: 'Aug 2004',
           to: 'Sep 2014'
         },
+        job_ageRange: 'Middle & High School',
+
         job_childs:
         [
           { text: '&#9656; Teach Sunday School and Sunday Messages for Youth.' },
-          { text: '&#9656; Conducted Workshops to help Immigrant Asian Parents Bridge the Generation & Cultural Gap between Them and their Americanized Children.' }
+          { text: '&#9656; Conducted Workshops to help Immigrant Asian-Parents Bridge the Generation & Cultural Gap with their Americanized Children.' }
         ]
       },
       {
@@ -486,6 +488,7 @@ export default new Vuex.Store({
           from: 'Apr 2003 ',
           to: 'May 2008'
         },
+        job_ageRange: 'Middle & High School',
         job_childs:
         [
           { text: '&#9656; Instructor for Reading, Writing & Math for Elementary to High School students, achieving the highest recognition of “Preferred Status” with Students & Parents.' },
@@ -503,6 +506,7 @@ export default new Vuex.Store({
           from: 'Mar 2003 ',
           to: 'Apr 2004'
         },
+        job_ageRange: 'Children & Families',
         job_childs:
         [
           { text: '&#9656; Communicated vision, recruited and trained staff, and researched curriculum tools for the implementation of an Inter-Generational Sunday Worship Service.' }
@@ -519,6 +523,7 @@ export default new Vuex.Store({
           from: 'Sep 1995',
           to: 'Jun 1996'
         },
+        job_ageRange: 'Middle School',
         job_childs:
         [
           { text: '&#9656; Five classes totaling over 125 students/day: three mainstream 7th grades, one sheltered 7th grade, and one mainstream 6th grade using Prentice Hall Middle Grade Courses 1 & 2.' }
@@ -571,7 +576,7 @@ export default new Vuex.Store({
         [
           {
             skills_group_group_name: null,
-            skills_group_group_text: '<span style="text-align:center;">This was an interim position to afford time to find a teaching position at an appropriate place, that being an Internship at Grace Community Covenant Church. (see \'Teaching Experience\' above).</span>',
+            skills_group_group_text: '<span style="text-align:center;">This was an interim position to afford time to find a teaching position at an appropriate place, that being an Intern position at Grace Community Covenant Church. (see \'Teaching Experience\' above).</span>',
             skills_group_name: null,
             skills_group_text: null,
             skills_group_timePeriod: {

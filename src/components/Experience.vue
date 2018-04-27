@@ -65,9 +65,15 @@
               <span class="jobTimePeriod">{{ job_.job_timePeriod.from }} – {{ job_.job_timePeriod.to }}</span>
             </li>
             <li class="jobBody">
-              <span class="jobCompany">{{ job_.job_company }},</span>
-              <span class="jobLocation">{{ job_.job_location }}</span>
-              <span v-if="job_.job_url!=null"><a class="jobUrl" v-bind:href="job_.job_url"><u>{{job_.job_url}}</u></a></span>
+              <span>
+                <span class="jobCompany">{{ job_.job_company }},</span>
+                <span class="jobLocation">{{ job_.job_location }}</span>
+                <span v-if="job_.job_url!=null"><a class="jobUrl" v-bind:href="job_.job_url"><u>{{job_.job_url}}</u></a></span>
+              </span>
+              <span>
+                <span v-if="job_.job_ageRange!=null" class="jobAgeRange">{{job_.job_ageRange}}</span>
+              </span>
+
             </li>
           </ul>
         </div>
@@ -266,6 +272,10 @@ ul {
       margin-left: 0.5em;
       text-decoration-line: underline;
     }
+    .jobAgeRange{
+      font-size: $fontSize_Bullet;
+      // color: #aaa;  // [jwc] better ligher shading vs. 'font-weight'
+    }
 
     .fade-in {
       opacity: 1;
@@ -301,6 +311,8 @@ ul {
   }
   .jobBody{
     display: inline-block;
+    display: flex;
+    justify-content: space-between;
   }
   .jobChild {
     font-weight: 300;
