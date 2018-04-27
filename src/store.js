@@ -475,7 +475,7 @@ export default new Vuex.Store({
         ]
       },
       {
-        job_group_name: 'Teaching Experience #2 of 5',
+        job_group_name: 'Teaching Experiences #2 to #5',
         job_group_text: null,
         job_title: 'Associate Pastor of Youth/Family Ministries',
         job_company: 'South Bay Chinese Gospel Church',
@@ -494,7 +494,7 @@ export default new Vuex.Store({
         ]
       },
       {
-        job_group_name: 'Teaching Experience #3 of 5',
+        job_group_name: null,
         job_group_text: null,
         job_title: 'Multiple-Subject Instructor',
         job_company: 'Sylvan Learning Center',
@@ -512,7 +512,7 @@ export default new Vuex.Store({
         ]
       },
       {
-        job_group_name: 'Teaching Experience #4 of 5',
+        job_group_name: null,
         job_group_text: null,
         job_title: 'Intern Pastoral Ministries ',
         job_company: 'Grace Community Covenant Church (Asian-American Focus)',
@@ -529,7 +529,7 @@ export default new Vuex.Store({
         ]
       },
       {
-        job_group_name: 'Teaching Experience #5 of 5',
+        job_group_name: null,
         job_group_text: null,
         job_title: 'California-Credentialed Math Teacher',
         job_company: 'John Muir Middle School',
@@ -574,7 +574,7 @@ export default new Vuex.Store({
         ]
       },
       {
-        job_group_name: 'Industry Experience #1 of 2',
+        job_group_name: 'Industry Experience #1 to #2',
         job_group_text: null,
         job_title: 'Firmware Engineer for Embedded x86 Linux',
         job_company: 'San Valley Systems',
@@ -592,7 +592,7 @@ export default new Vuex.Store({
         [
           {
             skills_group_group_name: null,
-            skills_group_group_text: '<span style="text-align:center;">This was an interim position to afford time to find a teaching position at an appropriate place, that being an Intern position at Grace Community Covenant Church. (see \'Teaching Experience\' above).</span>',
+            skills_group_group_text: '<span style="text-align:center;">This served as an interim position, while seekeing a teaching position -- that later being an Intern position at Grace Community Covenant Church. (see \'Teaching Experience\' above).</span>',
             skills_group_name: null,
             skills_group_text: null,
             skills_group_timePeriod: {
@@ -618,7 +618,7 @@ export default new Vuex.Store({
         ]
       },
       {
-        job_group_name: 'Industry Experience #2 of 2',
+        job_group_name: null,
         job_group_text: null,
         job_title: 'Software Engineer',
         job_company: 'Loral Space & Range Systems',
