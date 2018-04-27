@@ -37,6 +37,8 @@ html {
   background-color: #f1f1f1;
   box-sizing: border-box;
   overflow-y: scroll;
+  font-size: 40px;  //[test]
+
 }
 
 *, *:before, *:after {
@@ -48,12 +50,14 @@ body {
   // prefer darkest black: color: #666;
   color: rgb(0, 0, 0);
   // +1 font-family: 'Roboto', sans-serif;
-  font-family: Arial, Helvetica, sans-serif;  //[test]
-  // font-family: 'Roboto', sans-serif;
+  // font-family: Arial, Helvetica, sans-serif;  //[test]
+  font-family: 'Roboto', sans-serif;
 
   
   // [jwc]+1 font-size: 18px;
-  font-size: medium;
+  // font-size: medium;
+  font-size: 40px;  //[test]
+
   font-weight: 300;
   // [jwc]+1 padding: 36px;
   padding: 32px;  // assuming default font size 16px

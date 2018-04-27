@@ -164,9 +164,14 @@ export default {
 
 <style scoped lang="scss">
 
-$fontSize_Bullet: small;
-$fontSize_Header: large;
-$fontSize_Url: small;
+// [test]
+// $fontSize_Bullet: small;
+// $fontSize_Header: large;
+// $fontSize_Url: small;
+$fontSize_Bullet: 20px;
+$fontSize_Header: 40px;
+$fontSize_Url: 20px;
+
 $backgroundColor_LightGrey: #d9d9d9;  // rgb(217, 217, 217);
 $backgroundColor_DarkGrey: #bbb;  // rgb(187, 187, 187);
 $backgroundColor_Black: #000000 ;  // rgba(0, 0, 0, 1)
@@ -255,7 +260,7 @@ ul {
     padding: 1em;
     margin-top: 1em;
     margin-bottom: 1em;
-    font-size:16px; // [test]
+    // font-size:16px; // [test]
   }
   .jobHead{
     display: flex;
@@ -269,10 +274,11 @@ ul {
   .jobChild {
     font-weight: 300;
     // font-size: medium;
-    // font-size: $fontSize_Bullet;
+    font-size: $fontSize_Bullet;
     // [test]
-    font-size: 13px;
+    // font-size: 13px;
     // font-size: medium;
+
     // margin: 0.5em 1em 0.5em 1.5em;  // [jwc] change margin-left: 2em;
     margin-left: 1.5em;
   }
@@ -337,9 +343,11 @@ ul {
   .skillsGroupGroupText{
     font-weight: 300;
     // font-size: medium;
-    // [test]font-size: $fontSize_Bullet;
-    font-size: 13px;
+    // [test]
+    font-size: $fontSize_Bullet;
+    // font-size: 13px;
     // font-size: large;
+    
     display: flex;
     justify-content: center;
   }
