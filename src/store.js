@@ -51,7 +51,12 @@ export default new Vuex.Store({
             skills_group_group_text: '<span style="text-align:center;">At Western Seminary, I\'ve learned the missionary way of \'service & sacrafice\' to build both trust and respect, <br> in order to positively engage & stimulate the affective/emotive side of learning <br> (right-side of \'Integrated-Brain\' Pedagogy).</span>',
             skills_group_name: null,
             skills_group_text: null,
+            skills_group_timePeriod: {
+              from: null,
+              to: null
+            },
 
+            // skills: null  // will need to replace below if wish to truly trigger as 'true': 'v-if="skills_group.skills!=null"'
             skills:
             [
               {
@@ -92,6 +97,10 @@ export default new Vuex.Store({
             skills_group_group_text: '<span style="text-align:center;">Regarding even the complex, abstract concepts of Computer Science & Robotics, <br> Mills College trained me in crafting concrete examples to engage & feed the cognitive/analytical side of learning <br> (left-side of \'Integrated-Brain\' Pedagogy).<br><br>For example, our casual-game <a href="http://www.eande.world/courses.html#Courses-ComputerScience" class="urlLink" target="_blank" style="color:blue;text-decoration-line: underline;">Itty Bitty Jr</a> -- as showcased at S.J.\'s Tech Museum and S.F.\'s Exploratorium -- <br> serves as a visually-interactive framework from which we concretely apply and explain how \'pointer and arrays\' work <br> (by keeping track of the \'friendly planets\' to visit).</span>',
             skills_group_name: null,
             skills_group_text: null,
+            skills_group_timePeriod: {
+              from: null,
+              to: null
+            },
 
             skills:
             [
@@ -132,6 +141,10 @@ export default new Vuex.Store({
             skills_group_group_text: '<span style="text-align:center;">At UC Davis, under the mentorship of Professor Matloff and Professor Lin, <br> I\'ve realized my passion for Computer Science and Robotics, respectively.</span>',
             skills_group_name: null,
             skills_group_text: null,
+            skills_group_timePeriod: {
+              from: null,
+              to: null
+            },
 
             skills:
             [
@@ -175,8 +188,12 @@ export default new Vuex.Store({
             skills_group_group_name: 'EandE\'s Industry-Based Curricula',
             // skills_group_group_text: '<span style="text-align:center;">As Inspired from Strategic Corporate and College Experiences:<br>Web Full-Stack Developer at Siemens-eMeter -&- Adjunct Professor at Cogswell College</span>',
             skills_group_group_text: null,
-            skills_group_name: 'Web Full-Stack: JavaScript (JS) and Python Ecosystem',
+            skills_group_name: '&#9656; Web Full-Stack: JavaScript (JS) and Python Ecosystem',
             skills_group_text: '&#9656; Following Showcasing Project-Based Core Technologies:',
+            skills_group_timePeriod: {
+              from: null,
+              to: null
+            },
 
             skills:
             [
@@ -224,10 +241,14 @@ export default new Vuex.Store({
           {
             skills_group_group_name: null,
             skills_group_group_text: null,
-            skills_group_name: 'Silicon Valley\'s 1st Lower-Cost D.I.Y.-Alternative to LEGO®, TETRIX® & VEX® Robotics',
+            skills_group_name: '&#9656; Silicon Valley\'s 1st Lower-Cost D.I.Y.-Alternative to LEGO®, TETRIX® & VEX® Robotics',
             skills_group_text: '&#9656; As Showcased at Tech Museum, San Jose -&- Maker Faire\'s Premiere Showroom, Bay Area (twice)...<br>' +
                                '&#9656; <span style="font-weight:400"><u>T</u>.<u>A</u>.<u>C</u>.<u>H</u>.nology® Robotics w/ Arduino</span><br>' +
                                '&#9656; Combining "<span style="font-weight:400"><u>T</u>.</span>echnology, <span style="font-weight:400"><u>A</u>.</span>rts & <span style="font-weight:400"><u>C</u>.</span>rafts... <span style="font-weight:400"><u>H</u>.</span>olistically" for Middle School, High School & College',
+            skills_group_timePeriod: {
+              from: null,
+              to: null
+            },
 
             skills:
             [
@@ -252,8 +273,12 @@ export default new Vuex.Store({
           {
             skills_group_group_name: null,
             skills_group_group_text: null,
-            skills_group_name: 'Other Robotics Taught:',
+            skills_group_name: '&#9656; Other Robotics Taught:',
             skills_group_text: null,
+            skills_group_timePeriod: {
+              from: null,
+              to: null
+            },
 
             skills:
             [
@@ -284,7 +309,7 @@ export default new Vuex.Store({
           {
             skills_group_group_name: 'EandE\'s Industry-Based Teaching',
             skills_group_group_text: null,
-            skills_group_name: '"Paid Teaching-Sabbatical" as Interim Web Full-Stack Developer',
+            skills_group_name: '&#9656; "Paid Teaching-Sabbatical" as Interim Web Full-Stack Developer',
             skills_group_text: 'Siemens-eMeter, Foster City CA',
             skills_group_timePeriod: {
               from: 'Jan 2017',
@@ -310,7 +335,7 @@ export default new Vuex.Store({
           {
             skills_group_group_name: null,
             skills_group_group_text: null,
-            skills_group_name: 'Adjunct Professor, Computer Science and Engineering',
+            skills_group_name: '&#9656; Adjunct Professor, Computer Science and Engineering',
             skills_group_text: 'Cogswell Polytechnical College, San Jose CA',
             skills_group_timePeriod: {
               from: 'Jan 2017',
@@ -322,13 +347,110 @@ export default new Vuex.Store({
             [
               {
                 skill_head: 'CS 110: C Programming:',
-                skill_body: 'A Fundamental Prerequisite Course',
+                skill_body: null,
                 skill_link: null,
                 skill_link_tab_index: null,
 
                 skill_childs:
                 [
+                  { text: '&#9656; A Fundamental Prerequisite Course.' },
                   { text: '&#9656; Though for only one semester, this teaching opportunity serves as a "baby first-step" for EandE establishing Collegiate Alliances for Open-Source R&D Collaboration among Staff & Students.' }
+                ]
+              }
+            ]
+          },
+          {
+            skills_group_group_name: null,
+            skills_group_group_text: null,
+            skills_group_name: '&#9656; Computer Science & Robotics Instructor',
+            skills_group_text: 'Heart Academy Home-School Co-op, San Jose CA',
+            skills_group_timePeriod: {
+              from: 'Aug 2011',
+              to: 'May 2017'
+            },
+            skills_group_ageRange: 'Middle & High School',
+
+            skills:
+            [
+              {
+                skill_head: 'T.A.C.H.nology® Robotics w/ Arduino:',
+                skill_body: null,
+                skill_link: null,
+                skill_link_tab_index: null,
+
+                skill_childs:
+                [
+                  { text: '&#9656; Students showcased at Maker Faire\'s Premiere Showroom (2015-2016) and Robotics Showroom (2017), drawing over 10k spectators during the 2-day event.' },
+                  { text: '&#9656; Further details of curriculum as explained above.' }
+                ]
+              },
+              {
+                skill_head: 'Computer Science: “Game-ON Programming-2-Publishing”:',
+                skill_body: null,
+                skill_link: null,
+                skill_link_tab_index: null,
+
+                skill_childs:
+                [
+                  { text: '&#9656; Python for 3D Minecraft , Roblox Lua Coding  & Construct 2.' },
+                  { text: '&#9656; Flagship Class-Project “Itty Bitty Jr in Mutant Madness" Published on 2 Major App Stores:' },
+                  { text: '&nbsp; &nbsp; &#9656; <a href="https://itunes.apple.com/ee/app/itty-bitty-jr-in-mutant-madness/id946673546?mt=8" class="urlLink" target="_blank" style="color:blue;text-decoration-line: underline;">Apple App Store (iOS)</a>' },
+                  { text: '&nbsp; &nbsp; &#9656; <a href="https://play.google.com/store/apps/details?id=org.EncourageAndEmpower.IttyBittyJrInMutantMadness" class="urlLink" target="_blank" style="color:blue;text-decoration-line: underline;">Google Play (Android)</a>' },
+                  { text: '&#9656; Above Project also Showcased at Maker Faire\'s Young Makers Regionals at S.J.\'s The Tech Museum and S.F.\'s Exploratoriuim.' }
+                ]
+              }
+            ]
+          },
+          {
+            skills_group_group_name: null,
+            skills_group_group_text: null,
+            skills_group_name: '&#9656; Summer Tech Coordinator & Lead Instructor',
+            skills_group_text: 'Bayshore Christian Ministries, East Palo Alto CA',
+            skills_group_timePeriod: {
+              from: 'Summer 2014 & 2016',
+              to: null
+            },
+            skills_group_ageRange: 'Middle School',
+
+            skills:
+            [
+              {
+                skill_head: 'Programming & Robotics:',
+                skill_body: null,
+                skill_link: null,
+                skill_link_tab_index: null,
+
+                skill_childs:
+                [
+                  { text: '&#9656; Programming: Visual-Coding in Scratch 2.0 by M.I.T. -&- Code Studio by Code.org.' },
+                  { text: '&#9656; Robotics: Lego NXT2 Robotics.' },
+                  { text: '&#9656; Managed Team of Assistants and Lead-Teach 4-Week Summer Camp for Inner-City Kids.' }
+                ]
+              }
+            ]
+          },
+          {
+            skills_group_group_name: null,
+            skills_group_group_text: null,
+            skills_group_name: '&#9656; Private Tutor',
+            skills_group_text: 'EandE, Milpitas CA',
+            skills_group_timePeriod: {
+              from: 'Fall 2006',
+              to: 'July 2011'
+            },
+            skills_group_ageRange: 'Middle & High School',
+
+            skills:
+            [
+              {
+                skill_head: 'SAT Math, AP Calculus AB, Algebra 1 & 2, Geometry, Trigonometry & Middle School Math',
+                skill_body: null,
+                skill_link: null,
+                skill_link_tab_index: null,
+
+                skill_childs:
+                [
+                  { text: null }
                 ]
               }
             ]
