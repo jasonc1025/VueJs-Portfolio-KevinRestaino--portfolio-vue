@@ -56,7 +56,7 @@ body {
   
   // [jwc]+1 font-size: 18px;
   // font-size: medium;
-  font-size: medium;  // 80px; // xx-small; 9px // x-small; 10px // small; 13px // medium; 16px // large; 18px // x-large; 24px //  xx-large; 32px // 80px;  //[test]
+  // font-size: 16pt; //  N Too small on android: medium; // Y now working: 16pt;  // medium;  // 80px; // xx-small; 9px // x-small; 10px // small; 13px // medium; 16px // large; 18px // x-large; 24px //  xx-large; 32px // 80px;  //[test]
 
   font-weight: 300;
   // [jwc]+1 padding: 36px;
@@ -65,6 +65,70 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+// /* If screen size is more than 600px wide, set the font-size of <div> to 80px */
+// @media screen and (min-width: 1100px) {
+//   body {
+//     font-size: medium;// medium;  // should be 16pt
+//   }
+// }
+
+// /* If screen size is 600px wide, or less, set the font-size of <div> to 30px */
+// @media screen and (min-width: 600px) and (max-width: 1099px)  {
+//   body {
+//     font-size: 20px // 16px;
+//   }
+// }
+
+
+
+// /* Extra small devices (phones, 600px and down) */
+// @media only screen and (max-width: 600px) {
+  
+
+// } 
+
+//
+// * Cascading Rule for Screen Size
+//
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: 20px; // 16px;
+  }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+// Android portrait Jason (18px: any less screen font toos small,  any more screen width shrinks)
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 18px; // Y 24px; // 16px;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+//  Android Landscape Jason
+
+// @media only screen and (min-width: 992px) {
+// Y @media only screen and (min-width: 900px) {
+// @media only screen and (min-width: 990px) {
+// Y @media only screen and (min-width: 980px) {
+// @media only screen and (min-width: 990px) {
+@media only screen and (min-width: 985px) {
+  body {
+    font-size: 24px; // 16px;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: medium;// medium;  // should be 16pt
+  }
+}
+
 
 #app {
   margin: auto;
