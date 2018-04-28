@@ -194,8 +194,8 @@ export default new Vuex.Store({
         job_childs:
         [
           { text: '&#9656; Traditionally, I\'ve enjoyed coding and teaching Java, C#, and C++ -- among many other Linux-based tools.' },
-          { text: '&#9656; Yet due to the global pervasiveness of Web/Cloud-Services and Robotics/IOT-Devices, Stack Overflow\'s 2018 Global Survey of 100K Developers have concluded that two Open-Source languages -- JavaScript and Python -- have taken the world by storm, at least for these past several years <a href="https://insights.stackoverflow.com/survey/2018" class="skillUrl" target="_blank" style="color:blue;text-decoration-line:underline;font-size:75%">[https://insights.stackoverflow.com/survey/2018]</a>.' },
-          { text: '&#9656; Thus from EandE\'s Instructional R&D Lab (still based at my home/garage since 2004), I wish to present a portfolio of commerical-grade educational projects that feature JavaScript and/or Python, along with their respective key libraries as noted below.  Below, the blue buttons link to live demo sites.' }
+          { text: '&#9656; Yet due to the global pervasiveness of Web/Cloud-Services and Robotics/IOT-Devices, Stack Overflow\'s 2018 Global Survey of 100K Developers concludes that two Open-Source languages -- JavaScript and Python -- have taken the world by storm, at least for these past several years <a href="https://insights.stackoverflow.com/survey/2018" class="skillUrl" target="_blank" style="color:blue;text-decoration-line:underline;font-size:75%">[https://insights.stackoverflow.com/survey/2018]</a>.' },
+          { text: '&#9656; Thus from EandE\'s Instructional R&D Lab (as based at my home/garage since 2004), I wish to present a portfolio of various commerical-grade, educational-based projects that feature JavaScript and/or Python, along with their respective core API libraries (as noted below).  Below, the blue buttons link to live demo sites.' }
         ],
 
         skills_groups:
@@ -204,7 +204,7 @@ export default new Vuex.Store({
             skills_group_group_name: 'EandE\'s Industry-Based Curricula',
             // skills_group_group_text: '<span style="text-align:center;">As Inspired from Strategic Corporate and College Experiences:<br>Web Full-Stack Developer at Siemens-eMeter -&- Adjunct Professor at Cogswell College</span>',
             skills_group_group_text: null,
-            skills_group_name: '&#9656; Web Full-Stack: JavaScript (JS) and Python Ecosystem',
+            skills_group_name: '&#9656; Web Full-Stack: JavaScript (JS), Python and Their Ecosystem',
             skills_group_text: '&#9656; Following Showcasing Project-Based Core Technologies:',
             skills_group_timePeriod: {
               from: null,
