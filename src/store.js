@@ -10,7 +10,7 @@
 // {text: '&#9656; More info on T.A.C.H.nology® Robotics at EandE\'s Main Site: <a href="http://www.eande.world" class="skillUrl" target="_blank"><span class="skillUrl" style="color:blue"><u> http://www.EandE.world </u></span></a>'}
 
 // Variable Naming
-//    'skills_group_timePeriod' : Vue variables between 'store.js' and 'Experience.vue': Have min of one '_' underscore with inverse caps between each '_'
+//    'skills_group_timePeriod' : Vue variables between 'store.js' and 'Resume.vue': Have min of one '_' underscore with inverse caps between each '_'
 //    '.skillsGroupTimePeriod' : Classes do inverse caps with no '_'
 
 //
@@ -44,7 +44,7 @@ export default new Vuex.Store({
 
       {
         job_group_name: 'Education',
-        job_group_text: '(Ascending Order)',
+        job_group_text: '(Ascending Order to Tell My Story)',
         job_title: 'B.S. Electrical and Computer Engineering',
         job_company: 'University of California',
         job_location: 'Davis, CA',
@@ -54,14 +54,16 @@ export default new Vuex.Store({
         },
         job_childs:
         [
-          {text: '&#9656; Dean\'s Honor List & Westinghouse Science Honors.'}
+          {text: '&#9656; Dean\'s Honor List & Westinghouse Science Honors.'},
+          {text: '&#9656; Upper-Division Research Project on Fibre-Optics Digital Networks as sponsored by Hewlett-Packard (E&C 199).'},
+          {text: '&#9656; Upper-Division Final Project on Embedded-MicroController for Robotics (E&C 172).'}
         ],
 
         skills_groups:
         [
           {
-            skills_group_group_name: 'Teaching: Subject Scope',
-            skills_group_group_text: '<span style="text-align:center;">At UC Davis, under the mentorship of Professor Matloff and Professor Lin, <br> I\'ve realized my passion for Computer Science and Robotics, respectively.</span>',
+            skills_group_group_name: 'Teaching Subject Matter',
+            skills_group_group_text: '<span style="text-align:center;">The above two Upper-Divsion Projects -- Networks and MicoControllers -- nurtured my passsion for <br>Web Full-Stack and Robotics, respectively.</span>',
             skills_group_name: null,
             skills_group_text: null,
             skills_group_timePeriod: {
@@ -100,14 +102,14 @@ export default new Vuex.Store({
         job_childs:
         [
           {text: '&#9656; California Mathematics Single-Subject Professional Clear Credentialed.'},
-          {text: '&#9656; “Mid-Career Math & Science (Biology, Chem., Physics) Teacher Preparation” Specialty w/ Stanford University.'},
-          {text: '&#9656; Priviledged Intership with Mentorship from Stanford University\'s Alumni.'}
+          {text: '&#9656; “Mid-Career Math & Science Teacher Preparation” Specialized Track.'},
+          {text: '&#9656; Special Intership in Partnership with Stanford University\'s Resources & Research.'}
         ],
         skills_groups:
         [
           {
-            skills_group_group_name: 'Teaching: Pedagogy',
-            skills_group_group_text: '<span style="text-align:center;">Especially with the complex, abstract concepts of Computer Science & Robotics, <br> Mills College trained me in crafting concrete examples to engage & feed the cognitive/analytical side of learning <br> (The Left-Hemisphere of \'Integrated-Brain\' Pedagogy).<br><br>For example, our casual-game <a href="http://www.eande.world/courses.html#Courses-ComputerScience" class="urlLink" target="_blank" style="color:blue;text-decoration-line: underline;">Itty Bitty Jr</a> -- as showcased at S.J.\'s Tech Museum and S.F.\'s Exploratorium -- <br> serves as a visually-interactive framework from which we concretely apply and explain how \'pointer and arrays\' work <br> (by keeping track of the \'friendly planets\' to visit).</span>',
+            skills_group_group_name: 'Teaching Pedagogy & Classroom Management:',
+            skills_group_group_text: '<span style="text-align:center;">Mills College\'s relationship with Stanford University equiped me to teach over a decade in settings <br>from a San Leandro public school\'s 120+ students/day to East Palo Alto inner-city youth projects.</span>',
             skills_group_name: null,
             skills_group_text: null,
             skills_group_timePeriod: {
@@ -152,8 +154,8 @@ export default new Vuex.Store({
         skills_groups:
         [
           {
-            skills_group_group_name: 'Teaching: Soft Skills',
-            skills_group_group_text: '<span style="text-align:center;">At Western Seminary, I\'ve learned the missionary way of \'service & sacrafice\' for building trust and respect, <br> to positively engage & stimulate the affective/emotive side of learning <br> (The Right-Hemisphere of \'Integrated-Brain\' Pedagogy).</span>',
+            skills_group_group_name: 'Teaching Pedagogy II & Higher Purpose',
+            skills_group_group_text: '<span style="text-align:center;">Western Seminary\'s program empowered me further regarding Teaching, Speaking & Communications.<br>Also their Missionary values helped me to Envision Teaching Technology as a Platform from which to Build Community, one Individual at a time.</span>',
             skills_group_name: null,
             skills_group_text: null,
             skills_group_timePeriod: {
@@ -182,7 +184,7 @@ export default new Vuex.Store({
 
       {
         job_group_name: 'Teaching Experience #1 of 5',
-        job_group_text: '(Descending Order)',
+        job_group_text: '(Descending Order with Most Current First)',
         job_title: 'Co-Founder, Instructor & Curriculum Developer: Web Full-Stack & Robotics',
         job_company: 'Encourage and Empower (EandE)',
         job_location: 'Milpitas, CA',
@@ -438,9 +440,10 @@ export default new Vuex.Store({
 
                 skill_childs:
                 [
-                  { text: '&#9656; Programming: Visual-Coding in Scratch 2.0 by M.I.T. -&- Code Studio by Code.org.' },
-                  { text: '&#9656; Robotics: Lego NXT2 Robotics.' },
-                  { text: '&#9656; Managed Team of Assistants and Lead-Teach 4-Week Summer Camp for Inner-City Kids.' }
+                  { text: '&#9656; After Volunteer-Teaching for 6 Summers in their Youth Programs, Served as Technology Director for 4-Week Summer Camps serving Inner-City Kids regarding:' },
+                  { text: '&#9656;&#9656; Programming: Visual-Coding in Scratch 2.0 by M.I.T. -&- Code Studio by Code.org.' },
+                  { text: '&#9656;&#9656; Robotics: Lego NXT2 Robotics.' },
+                  { text: '&#9656; Trained and Supervised a Team of Instructors and Assistants.' }
                 ]
               }
             ]

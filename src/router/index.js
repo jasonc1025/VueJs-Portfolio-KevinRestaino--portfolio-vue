@@ -7,7 +7,7 @@ import WorkNodeJs from '@/components/WorkNodeJs'
 import WorkJavascriptPython from '@/components/WorkJavascriptPython'
 import Project from '@/components/Project.vue'
 import Home from '@/components/Home'
-import Experience from '@/components/Experience'
+import Resume from '@/components/Resume'
 import Error from '@/components/Error'
 
 Vue.use(Router)
@@ -52,8 +52,8 @@ export default new Router({
     },
     {
       path: '/Resume',
-      name: 'Experience',
-      component: Experience
+      name: 'Resume',
+      component: Resume
     },
     {
       path: '/work/:category/:slug',
