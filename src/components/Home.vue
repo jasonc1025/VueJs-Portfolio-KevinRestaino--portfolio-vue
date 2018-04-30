@@ -5,13 +5,13 @@
     <br>
 
     <ul style="list-style:disc;">
-      <li>As <scanBold>Open-Source Technology</scanBold> matures and becomes more mainstreamed into industy, students in Computer Science  -- especially for Colleges and Secondary Schools with limited resources -- are more freed from the previous struggle of playing 'catch-up' to a once 'closed-source, limited-access & high-cost' technology-space of the past.</li>
-      <li>And by properly harnessing this 'amazing yet overwhelming' <scanBold>Open-Source Revolution</scanBold>, students can 1) be empowered to actualy innovate with the 'best-of-the-best'… world-wide -- irregardless of age or socio-economic background -- and subsequently 2) be encouraged to give back to society through <scanBold>Open-Source Collaboration</scanBold>.</li>
+      <li>As <scanBold>Open-Source Technology</scanBold> matures and becomes more mainstreamed into industy, students in Computer Science  -- especially for Colleges and Secondary Schools with limited resources -- are more freed from the previous struggle of playing 'catch-up' to a once 'closed-source, limited-access & high-cost' hi-tech field of the past.</li>
+      <li>And by properly harnessing this world-wide <scanBold>Open-Source Revolution</scanBold>, students can 1) be empowered to actually innovate with the 'best-of-the-best'… world-wide -- irregardless of age or socio-economic background -- and subsequently 2) be encouraged to give back to society through <scanBold>Open-Source Collaboration</scanBold>.</li>
       <li>Thus the student learns the benefits and responsibilities of a productive community… in real life.</li>
       <br>
       <li>Traditionally, I've enjoyed coding and teaching <scanBold>Java, C#, C++ & C</scanBold> -- among many other Linux-based languages/toolsets.</li>
       <li>Yet due to the global pervasiveness of Web/Cloud-Services and Robotics/IOT-Devices, Stack Overflow's 2018 Global Survey of 100K Developers concludes that two Open-Source Languages -- <scanBold>JavaScript</scanBold> and <scanBold>Python</scanBold> -- have taken our world by 'storm', at least for these past several years <scanSlideRef>(Slides #1 & #2)</scanSlideRef>.</li>
-      <li>Thus from our <a href="http://www.eande.world/" class="urlLink" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">Encourage and Empower's (EandE) Instructional R&D Lab</a>  (as based at my home/garage since 2004), I wish to present a portfolio of various commerical-grade, educational-based projects that feature <scanBold>JavaScript</scanBold> and/or <scanBold>Python</scanBold>, along with their respective core API libraries.</li>
+      <li>Thus from our <a href="http://www.eande.world/" class="urlLink" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">Encourage and Empower's (EandE) Instructional R&D Lab</a>  (as based at my home/garage since 2004), I wish to present a portfolio of various commerical-grade, educational-based projects that feature <scanBold>JavaScript</scanBold> as well as <scanBold>Python</scanBold>, along with their respective core API libraries.</li>
       <br>
       
       <!-- <li style="margin-left:2em;">And within the popular JavaScript Ecosystem, the following Leading Technologies are showcased:
