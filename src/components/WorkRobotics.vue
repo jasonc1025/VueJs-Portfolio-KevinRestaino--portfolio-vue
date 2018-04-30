@@ -38,12 +38,12 @@
 
 <script>
 export default {
-  name: 'WorkJavascriptPythonComponent',
+  name: 'WorkRoboticsComponent',
   data () {
     return {
       // projects: this.$myStore.state.projectsJavascriptPython
       projects: this.$myStore.state.projects,
-      projectCategory: 'javascript-python-dir'
+      projectCategory: 'robotics-dir'
     }
   }
 }

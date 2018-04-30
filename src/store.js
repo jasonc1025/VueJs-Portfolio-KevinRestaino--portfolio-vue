@@ -185,7 +185,7 @@ export default new Vuex.Store({
       {
         job_group_name: 'Teaching Experience #1 of 5',
         job_group_text: '(Descending Order with Most Current First)',
-        job_title: 'Co-Founder, Instructor & Curriculum Developer: Web Full-Stack & Robotics',
+        job_title: 'Co-Founder, Instructor & Curriculum Engineer: Web Full-Stack & Robotics/Electronics',
         job_company: 'Encourage and Empower (EandE)',
         job_location: 'Milpitas, CA',
         job_url: 'http://www.EandE.world',
@@ -195,8 +195,8 @@ export default new Vuex.Store({
         },
         job_childs:
         [
-          { text: '&#9656; Traditionally, I\'ve enjoyed coding and teaching Java, C#, and C++ -- among many other Linux-based tools.' },
-          { text: '&#9656; Yet due to the global pervasiveness of Web/Cloud-Services and Robotics/IOT-Devices, Stack Overflow\'s 2018 Global Survey of 100K Developers concludes that two Open-Source languages -- JavaScript and Python -- have taken the world by storm, at least for these past several years <a href="https://insights.stackoverflow.com/survey/2018" class="skillUrl" target="_blank" style="color:blue;text-decoration-line:underline;font-size:75%">[https://insights.stackoverflow.com/survey/2018]</a>.' },
+          { text: '&#9656; Traditionally, I\'ve enjoyed coding and teaching Java, C#, and C++ -- among many other Linux-Based tools.' },
+          { text: '&#9656; Yet due to the global pervasiveness of Web/Cloud-Services and Robotics/Electronics-Devices, Stack Overflow\'s 2018 Global Survey of 100K Developers concludes that two Open-Source languages -- JavaScript and Python -- have taken the world by storm, at least for these past several years <a href="https://insights.stackoverflow.com/survey/2018" class="skillUrl" target="_blank" style="color:blue;text-decoration-line:underline;font-size:75%">[https://insights.stackoverflow.com/survey/2018]</a>.' },
           { text: '&#9656; Thus from EandE\'s Instructional R&D Lab (as based at my home/garage since 2004), I wish to present a portfolio of various commerical-grade, educational-based projects that feature JavaScript and/or Python, along with their respective core API libraries (as noted below).  Below, the blue buttons link to live demo sites.' }
         ],
 
@@ -260,8 +260,8 @@ export default new Vuex.Store({
             skills_group_group_name: null,
             skills_group_group_text: null,
             skills_group_name: '&#9656; Silicon Valley\'s 1st Lower-Cost D.I.Y.-Alternative to LEGO®, TETRIX® & VEX® Robotics',
-            skills_group_text: '&#9656; As Showcased at Tech Museum, San Jose -&- Maker Faire\'s Premiere Showroom, Bay Area (twice)...<br>' +
-                               '&#9656; <span style="font-weight:400"><u>T</u>.<u>A</u>.<u>C</u>.<u>H</u>.nology® Robotics w/ Arduino</span><br>' +
+            skills_group_text: '&#9656; As Showcased at Tech Museum, San Jose -&- Maker Faire\'s Premiere Showroom, Bay Area...<br>' +
+                               '&#9656; <span style="font-weight:400"><u>T</u>.<u>A</u>.<u>C</u>.<u>H</u>.nology® Robotics w/ Arduino & Raspberry Pi</span><br>' +
                                '&#9656; Combining "<span style="font-weight:400"><u>T</u>.</span>echnology, <span style="font-weight:400"><u>A</u>.</span>rts & <span style="font-weight:400"><u>C</u>.</span>rafts... <span style="font-weight:400"><u>H</u>.</span>olistically" for Middle School, High School & College',
             skills_group_timePeriod: {
               from: null,
@@ -271,9 +271,9 @@ export default new Vuex.Store({
             skills:
             [
               {
-                skill_head: 'Award-Winning IDE:',
-                skill_body: 'Integrated Development Environemnt (IDE) "Drag-n-Drop" Real-time Translation to C/C++',
-                skill_link: 'projects-javascript-python/',
+                skill_head: 'Award-Winning Coding Editor:',
+                skill_body: 'Google\'s \'Blockly Drag-n-Drop\' Programmer (2016 \'Code for the Kingdom\' 2 Innovative Awards)',
+                skill_link: 'projects-robotics/',
                 skill_link_tab_index: '4',
 
                 skill_childs:
@@ -340,12 +340,12 @@ export default new Vuex.Store({
               {
                 skill_head: 'Full-Stack Web Demo:',
                 skill_body: 'JavaScript & Python Server/Client Programming for their Energy Smart-Grid Prototype',
-                skill_link: 'projects-javascript-python/',
+                skill_link: 'projects-robotics/',
                 skill_link_tab_index: '4',
 
                 skill_childs:
                 [
-                  { text: '&#9656; 1-Year Contract to provide EandE\'s Web Full-Stack T.A.C.H.nology® for their Cloud-based System' }
+                  { text: '&#9656; 1-Year Contract to provide EandE\'s Web Full-Stack T.A.C.H.nology® for their Cloud-Based System' }
                 ]
               }
             ]
@@ -761,7 +761,7 @@ export default new Vuex.Store({
         imageListLength: 1,
         slug: '73c-03f-CooperaPlus',
         title: 'Coopera Plus',
-        headLine00: 'Multi-Player Web-based Game: Coopera Plus',
+        headLine00: 'Multi-Player Web-Based Game: Coopera Plus',
         headLine01: 'Vue, Socket.io, WebSocket',
         headLine02: 'Digital Ocean ~ Linux Ubuntu',
         url: 'http://138.68.57.214:8082/',
@@ -809,26 +809,26 @@ export default new Vuex.Store({
         imageListLength: 1,
         slug: '17-10g-ObsidioPlus',
         title: 'Obsidio Plus',
-        headLine00: 'Multi-Player Web-based Game: Obsidio Plus',
+        headLine00: 'Multi-Player Web-Based Game: Obsidio Plus',
         headLine01: 'Node, Express, Socket.io',
         headLine02: 'Heroku',
         url: 'https://obsidio-alvin-l.herokuapp.com/',
         description: 'Description'
       },
       {
-        category: 'javascript-python-dir',
+        category: 'robotics-dir',
         id: 0,
         imageListLength: 1,
         slug: '11h-ArduBlockly-EandE',
         title: 'ArduBlockly-EandE',
-        headLine00: '* x2 AWARD-WINNING \'2016 Code for the Kingdom\' Robotics IDE * Arduino-Robotics Visual/Textual Coder',
+        headLine00: '* x2 AWARD-WINNING Coding Editor * Google\'s \'Drag-n-Drop\' w/ C++ Visual-Translation for our T.A.C.H.nology® Robotics',
         headLine01: 'Node, Google-Blockly, Electron',
         headLine02: 'Python Bottle & Digital Ocean ~ Ubuntu',
         url: 'http://138.68.57.214:8001/ardublockly/index.html',
         description: 'Description'
       },
       {
-        category: 'javascript-python-dir',
+        category: 'industry-siemens-dir',
         id: 0,
         imageListLength: 1,
         slug: 'Siemens-PTI-PSSE',
@@ -841,7 +841,7 @@ export default new Vuex.Store({
         description: 'Description'
       },
       {
-        category: 'javascript-python-dir',
+        category: 'industry-siemens-dir',
         id: 0,
         imageListLength: 1,
         slug: 'Siemens-CIPortal-ThreeAmigoes',
@@ -855,7 +855,7 @@ export default new Vuex.Store({
         description: 'Description'
       },
       {
-        category: 'javascript-python-dir',
+        category: 'industry-siemens-dir',
         id: 0,
         imageListLength: 1,
         slug: 'Siemens-EnergyIP-SDPAnalyzer-DemsPortal',

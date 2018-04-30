@@ -4,7 +4,8 @@ import Work from '@/components/Work'
 import WorkReact from '@/components/WorkReact'
 import WorkVueJs from '@/components/WorkVueJs'
 import WorkNodeJs from '@/components/WorkNodeJs'
-import WorkJavascriptPython from '@/components/WorkJavascriptPython'
+import WorkRobotics from '@/components/WorkRobotics'
+import WorkIndustrySiemens from '@/components/WorkIndustrySiemens'
 import Project from '@/components/Project.vue'
 import Home from '@/components/Home'
 import Resume from '@/components/Resume'
@@ -41,9 +42,14 @@ export default new Router({
       component: WorkNodeJs
     },
     {
-      path: '/projects-javascript-python',
-      name: 'JavaScript/Python',
-      component: WorkJavascriptPython
+      path: '/projects-robotics',
+      name: 'Robotics',
+      component: WorkRobotics
+    },
+    {
+      path: '/projects-industry-siemens',
+      name: 'Industry-Siemens',
+      component: WorkIndustrySiemens
     },
     {
       path: '/projects',
