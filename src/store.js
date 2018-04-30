@@ -260,7 +260,7 @@ export default new Vuex.Store({
             skills_group_group_name: null,
             skills_group_group_text: null,
             skills_group_name: '&#9656; Silicon Valley\'s 1st Open-Source, Lower-Cost Alternative to LEGO®, TETRIX® & VEX® Robotics',
-            skills_group_text: '&#9656; As Showcased at Tech Museum, San Jose -&- Maker Faire\'s Premiere Showroom, Bay Area...<br>' +
+            skills_group_text: '&#9656; As Showcased at Tech Museum (2014), San Jose -&- Maker Faire\'s Premiere Showroom, Bay Area (2015-2017)...<br>' +
                                '&#9656; <span style="font-weight:400"><u>T</u>.<u>A</u>.<u>C</u>.<u>H</u>.nology® Robotics w/ Arduino & Raspberry Pi</span><br>' +
                                '&#9656; Combining "<span style="font-weight:400"><u>T</u>.</span>echnology, <span style="font-weight:400"><u>A</u>.</span>rts & <span style="font-weight:400"><u>C</u>.</span>rafts... <span style="font-weight:400"><u>H</u>.</span>olistically" for Middle School, High School & College',
             skills_group_timePeriod: {
