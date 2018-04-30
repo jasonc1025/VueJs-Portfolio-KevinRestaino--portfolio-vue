@@ -13,8 +13,8 @@
           <!-- [jwc] not work, will overlay prior <h3>{{ project.title02 }}</h3> -->
           <!-- <h3> Hello2 {{ project.title }} </h3> -->
           <h1> {{ project.headLine00 }} </h1>
-          <h2> &bull; Front-End: <b> {{ project.headLine01 }} </b> </h2>
-          <h2> &bull; Back-End: <b> {{ project.headLine02 }} </b> </h2>
+          <h2 v-if="project.headLine01 !==''"> &bull; Front-End: <b> {{ project.headLine01 }} </b> </h2>
+          <h2 v-if="project.headLine02 !==''"> &bull; Back-End: <b> {{ project.headLine02 }} </b> </h2>
           <!-- <p> Hello2 {{ project.title }} </p> -->
 
           <!-- Y <a class="button" target="_blank" :href="project.url">Live Site</a> -->

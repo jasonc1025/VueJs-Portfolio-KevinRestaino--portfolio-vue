@@ -12,9 +12,6 @@
     <router-link v-if="store.getters.tabModeGet==2" tag="a" to="/projects-vue-js" @click.native="store.commit('tabModeSet','2')"><b>Vue.js</b></router-link>
     <router-link v-else tag="a" to="/projects-vue-js" @click.native="store.commit('tabModeSet','2')">Vue.js</router-link>
 
-    <!--Y <router-link tag="a" to="/projects-node-js" @click.native="store.commit('increment')">Node.js</router-link> -->
-    <!--Y <router-link tag="a" to="/projects-robotics" @click.native="store.commit('tabModeSet', 100)">Industry-Leading</router-link> -->
-
     <router-link v-if="store.getters.tabModeGet==3" tag="a" to="/projects-node-js" @click.native="store.commit('tabModeSet','3')"><b>Node.js</b></router-link>
     <router-link v-else tag="a" to="/projects-node-js" @click.native="store.commit('tabModeSet','3')">Node.js</router-link>
 

@@ -259,7 +259,7 @@ export default new Vuex.Store({
           {
             skills_group_group_name: null,
             skills_group_group_text: null,
-            skills_group_name: '&#9656; Silicon Valley\'s 1st Lower-Cost D.I.Y.-Alternative to LEGO®, TETRIX® & VEX® Robotics',
+            skills_group_name: '&#9656; Silicon Valley\'s 1st Open-Source, Lower-Cost Alternative to LEGO®, TETRIX® & VEX® Robotics',
             skills_group_text: '&#9656; As Showcased at Tech Museum, San Jose -&- Maker Faire\'s Premiere Showroom, Bay Area...<br>' +
                                '&#9656; <span style="font-weight:400"><u>T</u>.<u>A</u>.<u>C</u>.<u>H</u>.nology® Robotics w/ Arduino & Raspberry Pi</span><br>' +
                                '&#9656; Combining "<span style="font-weight:400"><u>T</u>.</span>echnology, <span style="font-weight:400"><u>A</u>.</span>rts & <span style="font-weight:400"><u>C</u>.</span>rafts... <span style="font-weight:400"><u>H</u>.</span>olistically" for Middle School, High School & College',
@@ -825,6 +825,18 @@ export default new Vuex.Store({
         headLine01: 'Node, Google-Blockly, Electron',
         headLine02: 'Python Bottle & Digital Ocean ~ Ubuntu',
         url: 'http://138.68.57.214:8001/ardublockly/index.html',
+        description: 'Description'
+      },
+      {
+        category: 'robotics-dir',
+        id: 0,
+        imageListLength: 1,
+        slug: 'EandE-TACHnology-Website',
+        title: 'T.A.C.H.nology® Robotics',
+        headLine00: 'T.A.C.H.nology® Robotics: Silicon Valley\'s 1st Open-Source, Lower-Cost Alternative to LEGO®, TETRIX® & VEX® Systems',
+        headLine01: '',
+        headLine02: '',
+        url: 'http://www.eande.world/',
         description: 'Description'
       },
       {
