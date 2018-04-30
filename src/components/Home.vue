@@ -1,24 +1,39 @@
 <template>
   <div class="resumeStyle">
 
+    <h1>Vision</h1>
+    <br>
+
+    <ul style="list-style:disc;">
+      <li>As <scanBold>Open-Source Technology</scanBold> matures and becomes more mainstreamed into industy, students in Computer Science  -- especially for Colleges and Secondary Schools with limited resources -- are more freed from the previous struggle of playing 'catch-up' to a once 'closed-source, limited-access & high-cost' technology-space of the past.</li>
+      <li>And by properly harnessing this 'amazing yet overwhelming' <scanBold>Open-Source Revolution</scanBold>, students can 1) be empowered to actualy innovate with the 'best-of-the-best'… world-wide -- irregardless of age or socio-economic background -- and subsequently 2) be encouraged to give back to society through <scanBold>Open-Source Collaboration</scanBold>.</li>
+      <li>Thus the student learns the benefits and responsibilities of a productive community… in real life.</li>
+      <br>
+      <li>Traditionally, I've enjoyed coding and teaching <scanBold>Java, C#, C++ & C</scanBold> -- among many other Linux-based languages/toolsets.</li>
+      <li>Yet due to the global pervasiveness of Web/Cloud-Services and Robotics/IOT-Devices, Stack Overflow's 2018 Global Survey of 100K Developers concludes that two Open-Source Languages -- <scanBold>JavaScript</scanBold> and <scanBold>Python</scanBold> -- have taken our world by 'storm', at least for these past several years <scanSlideRef>(Slides #1 & #2)</scanSlideRef>.</li>
+      <li>Thus from our <a href="http://www.eande.world/" class="urlLink" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">Encourage and Empower's (EandE) Instructional R&D Lab</a>  (as based at my home/garage since 2004), I wish to present a portfolio of various commerical-grade, educational-based projects that feature <scanBold>JavaScript</scanBold> and/or <scanBold>Python</scanBold>, along with their respective core API libraries.</li>
+      <br>
+      
+      <!-- <li style="margin-left:2em;">And within the popular JavaScript Ecosystem, the following Leading Technologies are showcased:
+        <ul style="list-style:disc; margin-left:2em;">
+          <li>For Web Front-end Development: React and Vue.js as Top 2 Frameworks in Popularity (Slides #3, #4 & #5.)</li>
+          <li>For Web Back-end Development: Node.js as Industry's #1 De Facto Standard (Slide #6).</li>          
+        </ul>
+      </li> -->
+
+      <li>And within the popular <scanBold>JavaScript Ecosystem</scanBold>, the following Web Development Technologies are showcased:
+        <ul style="list-style:disc; margin-left:2em;">
+          <li>Front-end: <scanBold>React</scanBold> and <scanBold>Vue.js</scanBold> as Top 2 Frameworks in Popularity <scanSlideRef>(Slides #3, #4 & #5).</scanSlideRef></li>
+          <li>Back-end: <scanBold>Node.js</scanBold> as Industry's #1 De Facto Standard <scanSlideRef>(Slide #6)</scanSlideRef>.</li>          
+        </ul>
+      </li>
+
+    </ul>
+    <br><br>
+
   
-    <!-- <alert v-model="showRight" placement="top-right" duration="3000" type="success" width="400px" dismissable>
-      <span class="icon-ok-circled alert-icon-float-left"></span>
-      <strong>Well Done!</strong>
-      <p>You successfully read this important alert message.</p>
-    </alert> -->
-
-    <!-- <vue-accordion 
-        :items="items" 
-        :accordionClass="acClass" 
-        :styles="styles"
-        >
-    </vue-accordion> -->
-
-    <!-- <accordion :items="items" :id="mandatory-id" :collapseAll="false"></accordion> -->
-
-    <AccordionMenu :items_Stage01="items_Stage00"></AccordionMenu>
-
+    <h1>World-Wide Software Development Trends</h1>
+    <br>
 
     <!-- NOTE: ':mouseDrag=false' NOT appear to work -->
     <!-- NOTE:  "paginationPadding" "paginationSize" "speed": 'Expected Number, got String.' Warning Yet Code is Correct and Working. Therefore ignore warning. -->
@@ -28,28 +43,64 @@
     <!-- YY <carousel :perPage=1 :autoplay=true :autoplayTimeout=5000 :loop=false :navigationEnabled=true :mouseDrag=false paginationActiveColor="#42b983" paginationColor="#b2ebd1" paginationSize=20 paginationPadding=20 easing="ease" speed=1000> -->
     <carousel :perPage=1 :autoplay=true :autoplayTimeout=5000 :loop=true :navigationEnabled=true :mouseDrag=false paginationActiveColor="#42b983" paginationColor="#b2ebd1" paginationSize=20 paginationPadding=10 easing="ease" speed=1000>
       <slide>
-        <h2>Based on Stack Overflow's Worldwide 2018 Poll of 100,000 Developers,<br>JavaScript, CSS, HTML (All Web-Based Tools) are Top 3 in Popularity</h2>
+        <div class="carouselHeader">
+          <h2>Slide #1:<br>Based on Stack Overflow's Worldwide 2018 Poll of 100,000 Developers,<br>Top 3 Developer-Types Share Only One Common Language: JavaScript</h2>
+          <a href="https://insights.stackoverflow.com/survey/2018#developer-roles" class="urlLink-CarrouselHeader" target="_blank">[https://insights.stackoverflow.com/survey/2018#developer-roles]</a>
+        </div>
         <!-- <img :src="/static/work/${project.category}/${project.slug}/${project.slug}_thumb.png"> -->
         <!-- <img :src="/static/work/javascript-python-dir/11h-ArduBlockly-EandE/11h-ArduBlockly-EandE_thumb.png"> -->
         <!-- <img :src="http\://image.iqing.in/recommend/613890e9-3e5d-4acd-afae-003201e1d86d.jpg-cover"> -->
         <!-- Y src="\static\work\javascript-python-dir\11h-ArduBlockly-EandE\11h-ArduBlockly-EandE_thumb.png"> -->
         <!-- NOTE: ':src' not work, possibly in a non-vue '<img>' -->
         <!-- Y <img src="/static/work/javascript-python-dir/11h-ArduBlockly-EandE/11h-ArduBlockly-EandE_thumb.png"> -->
-        <img src="/static/work/mystory-dir/Stackoverflow-MostPopularTech-JavaScript.png">
+        <img src="/static/work/home-dir/Stackoverflow-DeveloperType-Survey.png">
       </slide>
       <slide>
-        <h2>Based on GitHub's 3-Year Star-Ratings of Top 3 JS Frameworks,<br>Vue.js #1 in Greatest Momentum (React #2)</h2>
-        <img src="/static/work/mystory-dir/BestOfJsDotOrg-UiFramework-GithubStars.png">
+        <div class="carouselHeader">
+          <h2>Slide #2:<br>Based on Stack Overflow's Worldwide 2018 Poll of 100,000 Developers,<br>JavaScript, CSS, HTML (All Web-Based Tools) are Top 3 in Popularity</h2>
+          <a href="https://insights.stackoverflow.com/survey/2018#most-popular-technologies" class="urlLink-CarrouselHeader" target="_blank">[https://insights.stackoverflow.com/survey/2018#most-popular-technologies]</a>
+        </div>
+          <img src="/static/work/home-dir/Stackoverflow-MostPopularTech-JavaScript.png">
       </slide>
       <slide>
-        <h2>Based on Worldwide 2017 Poll of 28,000 JS Developers,<br>Vue.js #1 in Potential Market for Training (React #2)</h2>
-        <img src="/static/work/mystory-dir/VueVsReact-StateOfJsDotCom.png">
+        <div class="carouselHeader">
+          <h2>Slide #3:<br>Based on GitHub's 3-Year Star-Ratings of Top 3 JS Frameworks,<br>Vue.js #1 in Greatest Momentum (React #2)</h2>
+          <a href="http://www.timqian.com/star-history/#facebook/react&angular/angular&vuejs/vue" class="urlLink-CarrouselHeader" target="_blank">[http://www.timqian.com/star-history/#facebook/react&angular/angular&vuejs/vue]</a>
+          <br>
+          <a href="https://bestof.js.org/tags/framework/trending/last-12-months" class="urlLink-CarrouselHeader" target="_blank">[https://bestof.js.org/tags/framework/trending/last-12-months]</a>
+        </div>
+          <img src="/static/work/home-dir/BestOfJsDotOrg-UiFramework-GithubStars.png">
       </slide>
       <slide>
-        <h2>Based on GitHub's 2017 Star-Ratings of All JS Projects,<br>Vue.js #1 in Popularity (React #2)</h2>
-        <img src="/static/work/mystory-dir/VueVsReact-RisingStarsDotJsDotOrg.png">
+        <div class="carouselHeader">
+          <h2>Slide #4:<br>Based on Worldwide 2017 Poll of 28,000 JS Developers,<br>Vue.js #1 in Potential Market for Training (React #2)</h2>
+          <a href="https://stateofjs.com/2017/front-end/results/" class="urlLink-CarrouselHeader" target="_blank">[https://stateofjs.com/2017/front-end/results/]</a>
+        </div>
+          <img src="/static/work/home-dir/VueVsReact-StateOfJsDotCom.png">
       </slide>
+      <slide>
+        <div class="carouselHeader">
+          <h2>Slide #5:<br>Based on GitHub's 2017 Star-Ratings of All JS Projects,<br>Vue.js #1 in Popularity (React #2)</h2>
+          <a href="https://risingstars.js.org/2017/en/#section-all" class="urlLink-CarrouselHeader" target="_blank">[https://risingstars.js.org/2017/en/#section-all]</a>
+        </div>
+          <img src="/static/work/home-dir/VueVsReact-RisingStarsDotJsDotOrg.png">
+      </slide>
+      <slide>
+        <div class="carouselHeader">
+          <h2>Slide #6:<br>Based on Stack Overflow's Worldwide 2018 Poll of 100,000 Developers,<br>Node.js #1 in Framework Popularity</h2>
+          <a href="https://insights.stackoverflow.com/survey/2018#technology-frameworks-libraries-and-tools" class="urlLink-CarrouselHeader" target="_blank">[https://insights.stackoverflow.com/survey/2018#technology-frameworks-libraries-and-tools]</a>
+        </div>
+        <img src="/static/work/home-dir/Stackoverflow-Framework-Node-Survey.png">
+      </slide>
+
+      
     </carousel>
+
+    <br><br>
+    <br><br>
+
+    <AccordionMenu :items_Stage01="items_Stage00"></AccordionMenu>
+
 
   </div>
 </template>
@@ -117,298 +168,6 @@ $backgroundColor_DarkGrey: #bbb;  // rgb(187, 187, 187);
 $backgroundColor_Black: #000000 ;  // rgba(0, 0, 0, 1)
 
 
-ul {
-  text-align: left;  // was 'center'
-  
-  li {
-    // margin-top: 1em;  // 30px orig
-    // Y list-style-type: disc; 
-
-    .button{      
-      padding: 0.5em 1em 0.5em 1em;
-      background-color: #ccc;  // was #ddd (too light on large screen)
-      // margin-right: 0em;  // was 0.5em
-      // width: 30em;   // [jwc] not seem to work
-    }
-    .button:hover {
-    background-color: #bbb;  // was #bbb (too light on large screen)
-    color: #666;
-    }
-
-    .jobTitle {
-      font-weight: 400;
-      // font-size: large;
-    }
-    .jobCompany{
-      font-weight: 400;
-    }
-    // Left-Indent flush with above text
-    .jobTimePeriod {
-      font-size: $fontSize_Bullet;
-      // color: #aaa;  // [jwc] better ligher shading vs. 'font-weight'
-      // Y margin-left: 3.5em;
-      // margin-bottom: -0.5em;
-      // text-align: right;
-    }
-    .jobLocation {
-      font-size: $fontSize_Bullet;
-      // color: #aaa;
-      // Y margin-left: 3.5em;
-      // margin-top: -0.5em;
-      // margin-bottom: -0.5em;
-      // text-align: right;
-    }
-    .jobUrl {
-      font-size: $fontSize_Url;
-      color: blue;
-      // Y margin-left: 3.5em;
-      // margin-top: -0.5em;
-      // margin-bottom: -0.5em;
-      // text-align: right;
-      margin-left: 0.5em;
-      text-decoration-line: underline;
-    }
-    .jobAgeRange{
-      font-size: $fontSize_Bullet;
-      // color: #aaa;  // [jwc] better ligher shading vs. 'font-weight'
-    }
-
-    .fade-in {
-      opacity: 1;
-      animation-name: fadeInOpacity;
-      animation-iteration-count: 1;
-      animation-timing-function: ease-out;
-      animation-duration: 1s;
-    }
-
-    @keyframes fadeInOpacity {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-
-  }
-}
-  .job{
-    // [jwc] to major of a group for such a light color; use darkest background since most major group: background-color: #ccc;  // light-grey
-    // background-color: #ccc;  // light-grey
-    background-color: $backgroundColor_DarkGrey;  // dark-grey
-    // color:lightgray;
-    padding: 1em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-  .jobHead{
-    display: flex;
-    justify-content: space-between;
-  }
-  .jobBody{
-    display: inline-block;
-    display: flex;
-    justify-content: space-between;
-  }
-  .jobChild {
-    font-weight: 300;
-    // font-size: medium;
-    font-size: $fontSize_Bullet;
-    // margin: 0.5em 1em 0.5em 1.5em;  // [jwc] change margin-left: 2em;
-    margin-left: 1.5em;
-  }
-
-  .jobGroup{
-    // [jwc] too major of a group for such a light color; use darkest background since most major group: background-color: #ccc;  // light-grey
-    background-color: $backgroundColor_Black;
-    color:lightgray;
-    padding: 1.5em;  // was 2.0em
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-  }
-  .jobGroupName{
-    font-weight: 400;
-    font-size: $fontSize_Header;
-    display: flex;
-    justify-content: center;
-  }
-  .jobGroupText{
-    font-weight: 300;
-    font-size: $fontSize_Bullet;
-    display: flex;
-    justify-content: center;
-  }
-
-  .skillsGroupGroup{
-    // padding: 0.5em;
-    margin-bottom: 1em;
-    // [jwc]reserve shading for major sections, this minor section use grey-line: background-color: #d9d9d9;  // light-grey 
-    // background-color: #ccc;  // light-grey 
-    background-color: $backgroundColor_LightGrey;  // lighter-grey 
-    padding: 0.5em;
-    // margin-left: 1em;
-    // margin-right: 1em;
-}
-  .skillsGroupGroupName{
-    font-weight: 400;
-    // font-size: large;
-    display: flex;
-    justify-content: center;
-    // background-color: #d9d9d9;  // light-grey 
-    // background-color: #ccc;  // light-grey 
-  }
-  .skillsGroupGroupName:before {
-    display: inline-block;
-    margin: 0.5em 0.5em 0em 0em;
-    height: 3px;
-    content: "";
-    text-shadow: none;
-    // [jwc] disable for now: background-color: #999;
-    width: 5em;  // like 5-stars width
-  }
-  .skillsGroupGroupName:after{
-    display: inline-block;
-    margin: 0.5em 0em 0em 0.5em;
-    height: 3px;
-    content: "";
-    text-shadow: none;
-    // [jwc] disable for now: background-color: #999;
-    width: 5em;  // like 5-stars width
-  }
-  .skillsGroupGroupText{
-    font-weight: 300;
-    // font-size: medium;
-    font-size: $fontSize_Bullet;
-    display: flex;
-    justify-content: center;
-  }
-
-  .skillsGroup{
-    font-weight: 300;
-    // font-size: medium;
-    margin: 1em 1em 1em 1.5em;  // [jwc] change margin-left: 2em;
-  }
-  // Enough to provide margin-left for 'skillBody-non-button' row to left-indent up to 'skillBody-button' row
-  .skillsGroupHead{
-    font-weight: 400;
-    // margin-left: 1em;
-    margin-right: 0.5em;
-    // font-size: large;
-    // background-color: yellow;  // to help highlight important positions
-    background-color: $backgroundColor_LightGrey;  // to help highlight important positions,  #d9d9d9
-    padding: 0.50em 1em 0.50em 0.50em;
-  }
-  .skillsGroupBody{
-    font-weight: 300;
-    font-size: $fontSize_Bullet;
-    margin: 0.25em 1em 0.25em 1.5em;  // [jwc] change margin-left: 2em;
-  }
-
-  .skillsGroupName, .skillsGroupText{
-    display: flex;
-    justify-content: space-between;
-  }
-  .skillsGroupTimePeriod, .skillsGroupAgeRange{
-    font-size: $fontSize_Bullet;
-    color: #aaa;  // [jwc] better ligher shading vs. 'font-weight'
-  }
-
-  .skill{
-    font-weight: 300;
-    // font-size: medium;
-    margin: 0.5em 1em 0.5em 1.5em;  // [jwc] change margin-left: 2em;
-  }
-  // Enough to provide margin-left for 'skillBody-non-button' row to left-indent up to 'skillBody-button' row
-  .skillHead{
-    font-weight: 400;
-    // margin-left: 1em;
-    // margin-right: 0em;   // was 0.5em
-  }
-  // Allow 'skillBody-button' row to have their label left-indent with 'skillBody-non-button' row
-  .button.skillHead{
-    // margin-left: 0em;  // was -1em
-    // margin-right: 0.5em;
-    background-color: cyan;
-  }
-  // Overall for each 'skillBody' row
-  .skillBody{
-    font-weight: 300;
-    // font-size: medium;
-    // margin: 1em 1em 1em 0.5em;  // [jwc] change margin-left: 2em;
-    font-size: $fontSize_Bullet;  // keep in mind word-wrap if side-margins shrink due to window-shrink
-    margin-left: 0.25em
-  }
-  .skillChild {
-    font-weight: 300;
-    font-size: $fontSize_Bullet;
-    // margin: 0.5em 1em 0.5em 1.5em;  // [jwc] change margin-left: 2em;
-    margin-left: 1.5em;
-  }
-  .skillUrl {
-    font-size: $fontSize_Url;
-    color: blue;
-    // Y margin-left: 3.5em;
-    // margin-top: -0.5em;
-    // margin-bottom: -0.5em;
-    // text-align: right;
-    margin-left: 0.5em;
-    text-decoration-line: underline;
-  }
-
-  .buttonGroup {
-    margin-bottom: 1em;
-  }
-
-  // Y ul li div div div div.buttonGroup:last-of-type {
-  //     margin-bottom: 0.25em;
-  // }
-  // Y div div.buttonGroup:last-of-type {
-  //     margin-bottom: 0.25em;
-  // }
-  // .button.skillHead:last-of-type {
-  //     background-color: yellow;
-  // }
-    // .button:last-of-type {
-    //     background-color: yellow;
-    // }
-  // .skill>div>.buttonGroup:only-of-type{
-  //     background-color: yellow;
-  // }
-  // .skill div .buttonGroup a:only-of-type{
-  //     background-color: blue;
-  // }
-  // .skill div .button:last-of-type{
-  //     background-color: green;
-  // }
-
-  // Y .buttonGroup:last-child {
-  //     margin-bottom: 0.25em;
-  // }
-  // * Prefer vs. '.buttonGroup:last-child' since latter not as accurately descriptive
-  // .buttonGroup:last-of-type {
-  //     margin-bottom: 0.25em;
-  // }
-  // .buttonGroup:only-of-type {
-  //     margin-bottom: 0.25em;
-  // }
-  // div.buttonGroup:only-of-type {
-  //     margin-bottom: 0.25em;
-  // }
-  // .buttonGroup:only-child {
-  //     margin-bottom: 0.25em;
-  // }
-  // Y span:only-child{
-  //     background-color: yellow;
-  // }
-  // Y .button:only-of-type {
-  //     background-color: yellow;
-  // }
-  // .buttonGroup:only-of-type {
-  //     background-color: yellow;
-  // }
-  // .button.skillHead:only-of-type {
-  //     background-color: yellow;
-  // }
   .urlLink {
     font-size: $fontSize_Url;
     color: blue;
@@ -419,5 +178,44 @@ ul {
     // margin-left: 0.5em;
     text-decoration-line: underline;
   }
+  .urlLink-CarrouselHeader {
+    font-size: $fontSize_Url;
+    color: blue;
+    // Y margin-left: 3.5em;
+    // margin-top: -0.5em;
+    // margin-bottom: -0.5em;
+    text-align: center;  // NOT APPEAR TO WORK, THUS NEED '.carouselHeader' maybe because <a> not work in this situation
+    // margin-left: 0.5em;
+    text-decoration-line: underline;
+  }
+  
+  .carouselHeader{
+    text-align: center;    
+  }
+
+  .fade-in {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+  }
+
+  @keyframes fadeInOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+ scanBold {
+   font-weight:500;
+ }
+ scanSlideRef {
+   color: red;
+   font-weight:500;
+ }
 
 </style>
