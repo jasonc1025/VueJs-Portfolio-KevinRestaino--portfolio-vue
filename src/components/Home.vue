@@ -3,7 +3,7 @@
 
     <h1>A Vision for Silicon Valley's <br>1st Open-Source, Competition-Ready & Lower-Cost Robotics Kit<br>Inspires... </h1>
 
-    <br>
+    <!-- <br> -->
     <ul style="list-style:disc;">
       <li>Since <scanBold>Co-Founding</scanBold> an <scanBold>Educational-Tech R&D Center</scanBold> -- <a href="http://www.eande.world/" class="urlLink" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">Encourage and Empower (EandE)</a> -- in 2004 at my home/garage, I've enjoyed serving as <scanBold>Sr. Instructor and Curriculum-Engineer</scanBold> where we developed <scanBold>"T.A.C.H.nology® Robotics w/ Arduino & Raspberry Pi"</scanBold> as Silicon Valley's 1st Open-Source, Competition-Ready & Lower-Cost Alternative to LEGO®, TETRIX® & VEX® Robotics.</li>
 
@@ -14,14 +14,14 @@
           <li>Award-Winning Google-Based 'Blockly Drag-n-Drop' C++ Coding Editor (JavaScript & Python) that opened an opportunity to serve as <scanBold>Adjunct Professor for CS110 'C 'Programming at Cogswell Polytechnical College in San Jose</scanBold>.</li>
         </ul>
       </li>
-      <li>These above experiences have inspired my R&D efforts at EandE to form the following <scanBold>Vision to Encourage and Empower</scanBold> our students regarding the <scanBold>#1 Hi-Tech Career Path… Web Development <scanSlideRef>(see below for Slide #1)</scanSlideRef></scanBold>.</li>          
+      <li>These above experiences have inspired my R&D efforts at EandE to form the following <scanBold>Vision to Encourage and Empower</scanBold> our students regarding the <scanBold>#1 Hi-Tech Career Path… Web Development <scanSlideRef>(refer below to Slide #1)</scanSlideRef></scanBold>.</li>          
 
     </ul>
-    <br><br>
+    <!-- <br> -->
 
 
     <h1>...A Progressive Vision for an <br>'Industry-Innovation' Computer Science Movement</h1>
-    <br>
+    <!-- <br> -->
 
     <ul style="list-style:disc;">
       <li>As <scanBold>Open-Source Technology</scanBold> matures and becomes more mainstreamed into industy, students in Computer Science  -- especially for Colleges and Secondary Schools with limited resources -- are more freed from the previous struggle of playing 'catch-up' to a once 'closed-source, limited-access & high-cost' Hi-Tech field of the past.</li>
@@ -30,7 +30,7 @@
       <br>
       <li>Traditionally, I've enjoyed coding and teaching <scanBold>Java, C#, C++ & C</scanBold> -- among many other Linux-Based languages/toolsets.</li>
       <li>Yet due to the global pervasiveness of Web/Cloud-Services and Robotics/Electronics, Stack Overflow's 2018 Global Survey of 100K Developers concludes that two Open-Source Languages -- <scanBold>JavaScript</scanBold> and <scanBold>Python</scanBold> -- have taken our world by 'storm', at least for these past several years <scanSlideRef>(Slide #2)</scanSlideRef>.</li>
-      <li>Thus from our <a href="http://www.eande.world/" class="urlLink" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">Encourage and Empower's (EandE) Instructional R&D Lab</a>  (as based at my home/garage since 2004), I wish to present this <scanBold>Online Portfolio</scanBold> of <scanBold>JavaScript & Python Industry-Inspired Apps</scanBold> to spark <scanBold>Student-Based Innovation</scanBold> within our <scanBold>Open-Source Ecosystem... World-Wide</scanBold>.</li>
+      <li>Thus from our <a href="http://www.eande.world/" class="urlLink" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">Encourage and Empower's (EandE) Instructional R&D Lab</a>  (as based at my home/garage since 2004), I wish to present this <scanBold>Online Portfolio</scanBold> of <scanBold>JavaScript & Python Curriculum-Based Projects</scanBold> to spark our <scanBold>Student's Innovation</scanBold> within the <scanBold>Open-Source Ecosystem.</scanBold>.</li>
       <br>
       
       <!-- <li style="margin-left:2em;">And within the popular JavaScript Ecosystem, the following Leading Technologies are showcased:
@@ -40,7 +40,7 @@
         </ul>
       </li> -->
 
-      <li>And within the popular <scanBold>JavaScript Ecosystem</scanBold>, the following Web Development Technologies are showcased:
+      <li>And with regards to the <scanBold>Most Popular Ecosystem: JavaScript</scanBold> <scanSlideRef>(Slide #2)</scanSlideRef>, the following Web Technologies are Showcased:
         <ul style="list-style:disc; margin-left:2em;">
           <li>Front-end: <scanBold>React</scanBold> and <scanBold>Vue.js</scanBold> as Top 2 Frameworks in Popularity <scanSlideRef>(Slides #3, #4 & #5).</scanSlideRef></li>
           <li>Back-end: <scanBold>Node.js</scanBold> as Industry's #1 De Facto Standard <scanSlideRef>(Slide #6)</scanSlideRef>.</li>          
@@ -48,11 +48,11 @@
       </li>
 
     </ul>
-    <br><br>
+    <!-- <br> -->
 
   
-    <h1>World-Wide Software Development Trends</h1>
-    <br>
+    <h1>World-Wide Software Development Trends:</h1>
+    <!-- <br> -->
 
     <!-- NOTE: ':mouseDrag=false' NOT appear to work -->
     <!-- NOTE:  "paginationPadding" "paginationSize" "speed": 'Expected Number, got String.' Warning Yet Code is Correct and Working. Therefore ignore warning. -->
@@ -64,7 +64,7 @@
 
       <slide>
         <div class="carouselHeader">
-          <h2><scanSlideRef>Slide #1:</scanSlideRef><br>Based on Stack Overflow's Worldwide 2018 Poll of 100,000 Developers,<br>Top 3 Developer-Types Share Only One Common Language: JavaScript</h2>
+          <h2><scanSlideRef>Slide #1</scanSlideRef><br>Based on Stack Overflow's Worldwide 2018 Poll of 100,000 Developers,<br>Top 3 Developer-Types Share Only One Common Language: JavaScript</h2>
           <a href="https://insights.stackoverflow.com/survey/2018#developer-roles" class="urlLink-CarrouselHeader" target="_blank">[https://insights.stackoverflow.com/survey/2018#developer-roles]</a>
         </div>
         <!-- <img :src="/static/work/${project.category}/${project.slug}/${project.slug}_thumb.png"> -->
@@ -77,14 +77,14 @@
       </slide>
       <slide>
         <div class="carouselHeader">
-          <h2><scanSlideRef>Slide #2:</scanSlideRef><br>Based on Stack Overflow's Worldwide 2018 Poll of 100,000 Developers,<br>JavaScript, CSS, HTML (All Web-Based Tools) are Top 3 in Popularity</h2>
+          <h2><scanSlideRef>Slide #2</scanSlideRef><br>Based on Stack Overflow's Worldwide 2018 Poll of 100,000 Developers,<br>JavaScript, CSS, HTML (All Web-Based Tools) are Top 3 in Popularity</h2>
           <a href="https://insights.stackoverflow.com/survey/2018#most-popular-technologies" class="urlLink-CarrouselHeader" target="_blank">[https://insights.stackoverflow.com/survey/2018#most-popular-technologies]</a>
         </div>
           <img src="/static/work/home-dir/Stackoverflow-MostPopularTech-JavaScript.png">
       </slide>
       <slide>
         <div class="carouselHeader">
-          <h2><scanSlideRef>Slide #3:</scanSlideRef><br>Based on GitHub's 3-Year Star-Ratings of Top 3 JS Frameworks,<br>Vue.js #1 in Greatest Momentum (React #2)</h2>
+          <h2><scanSlideRef>Slide #3</scanSlideRef><br>Based on GitHub's 3-Year Star-Ratings of Top 3 JS Frameworks,<br>Vue.js #1 in Greatest Momentum (React #2)</h2>
           <a href="http://www.timqian.com/star-history/#facebook/react&angular/angular&vuejs/vue" class="urlLink-CarrouselHeader" target="_blank">[http://www.timqian.com/star-history/#facebook/react&angular/angular&vuejs/vue]</a>
           <br>
           <a href="https://bestof.js.org/tags/framework/trending/last-12-months" class="urlLink-CarrouselHeader" target="_blank">[https://bestof.js.org/tags/framework/trending/last-12-months]</a>
@@ -93,21 +93,21 @@
       </slide>
       <slide>
         <div class="carouselHeader">
-          <h2><scanSlideRef>Slide #4:</scanSlideRef><br>Based on Worldwide 2017 Poll of 28,000 JS Developers,<br>Vue.js #1 in Potential Market for Training (React #2)</h2>
+          <h2><scanSlideRef>Slide #4</scanSlideRef><br>Based on Worldwide 2017 Poll of 28,000 JS Developers,<br>Vue.js #1 in Potential Market for Training (React #2)</h2>
           <a href="https://stateofjs.com/2017/front-end/results/" class="urlLink-CarrouselHeader" target="_blank">[https://stateofjs.com/2017/front-end/results/]</a>
         </div>
           <img src="/static/work/home-dir/VueVsReact-StateOfJsDotCom.png">
       </slide>
       <slide>
         <div class="carouselHeader">
-          <h2><scanSlideRef>Slide #5:</scanSlideRef><br>Based on GitHub's 2017 Star-Ratings of All JS Projects,<br>Vue.js #1 in Popularity (React #2)</h2>
+          <h2><scanSlideRef>Slide #5</scanSlideRef><br>Based on GitHub's 2017 Star-Ratings of All JS Projects,<br>Vue.js #1 in Popularity (React #2)</h2>
           <a href="https://risingstars.js.org/2017/en/#section-all" class="urlLink-CarrouselHeader" target="_blank">[https://risingstars.js.org/2017/en/#section-all]</a>
         </div>
           <img src="/static/work/home-dir/VueVsReact-RisingStarsDotJsDotOrg.png">
       </slide>
       <slide>
         <div class="carouselHeader">
-          <h2><scanSlideRef>Slide #6:</scanSlideRef><br>Based on Stack Overflow's Worldwide 2018 Poll of 100,000 Developers,<br>Node.js #1 in Framework Popularity</h2>
+          <h2><scanSlideRef>Slide #6</scanSlideRef><br>Based on Stack Overflow's Worldwide 2018 Poll of 100,000 Developers,<br>Node.js #1 in Framework Popularity</h2>
           <a href="https://insights.stackoverflow.com/survey/2018#technology-frameworks-libraries-and-tools" class="urlLink-CarrouselHeader" target="_blank">[https://insights.stackoverflow.com/survey/2018#technology-frameworks-libraries-and-tools]</a>
         </div>
         <img src="/static/work/home-dir/Stackoverflow-Framework-Node-Survey.png">

@@ -1,10 +1,16 @@
 <template>
   <div id="app">
     <header class="header">
-      <h1>Jason W Chan</h1>
-      <h2>Web Full-Stack & Robotics/Electronics Sr. Instructor & Curriculum Engineer</h2>
-      <h3>Middle School, High School, College & Beyond</h3>
+      <div class=headerUpper>
+        <h1>Jason W Chan</h1>
+        <h2>Web Full-Stack and Robotics/Electronics Sr. Instructor & Curriculum Engineer</h2>
+        <h2>Middle School, High School & Higher Ed</h2>
+        <h4>jasonc@eande.world, mobile/text 408-828-5131, <a href="https://www.linkedin.com/in/jasonwchan1025/" class="urlLink" target="_blank">www.linkedin.com/in/jasonwchan1025/</a></h4>
+      </div>
+      
+      <h2>Portfolio of JavaScript & Python Industy-Inspired, Student-Based Projects</h2>
       <mainNavComponent></mainNavComponent>
+    
     </header>
     <section class="route">
       <router-view></router-view>
@@ -141,23 +147,40 @@ a {
   text-decoration: none;
 }
 
-h1 {
+h1:not(:only-of-type) {
   font-size: 28px;
   font-weight: 500;
   text-align: center;
+  margin-bottom: 0.25em;
+  margin-top: 1em;
 }
-
+h1:only-of-type {  // For 'headerUpper'
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  // margin-bottom: 0.25em;
+}
 h2 {
   font-size: 18px;
   font-weight: 500;
   text-align: center;
+  // margin-bottom: 0.25em;
 }
-
 h3 {
   font-size: 18px;
-  font-weight: 500;
+  // font-weight: 500;
   text-align: center;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em
 }
+h4 {
+  font-size: 14px;
+  // font-weight: 500;
+  text-align: center;
+  margin-bottom: 1em;
+  // margin-top: 0.5em
+}
+
 
 .button {
   background-color: #ddd;
@@ -231,7 +254,13 @@ h3 {
 
 .header {
   border-bottom: 1px solid #ddd;
-  margin-bottom: 24px;
+  margin-bottom: 1em; // 24px;
+}
+.headerUpper {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1em; // 24px;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 .footer {
@@ -250,6 +279,16 @@ h3 {
     font-size: 14px;
     text-align: center;
   }
+}
+.urlLink {
+  // font-size: $fontSize_Url;
+  color: blue;
+  // Y margin-left: 3.5em;
+  // margin-top: -0.5em;
+  // margin-bottom: -0.5em;
+  // text-align: right;
+  // margin-left: 0.5em;
+  text-decoration-line: underline;
 }
 
 @import 'scss/_ie11.scss'
