@@ -64,6 +64,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin:2em;  // margin needed for mobile, and still good for desktop
 }
 
 // /* If screen size is more than 600px wide, set the font-size of <div> to 80px */

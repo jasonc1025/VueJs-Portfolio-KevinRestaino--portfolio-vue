@@ -1,5 +1,5 @@
 <template>
-  <div class="resumeStyle">
+  <div class="homeStyle">
 
     <h1>How a Vision for an <br>Open-Source, Eductional Robotics Kit... </h1>
 
