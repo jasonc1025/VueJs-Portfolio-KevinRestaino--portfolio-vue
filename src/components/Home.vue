@@ -5,12 +5,12 @@
 
     <br>
     <ul style="list-style:disc;">
-      <li>Since <scanBold>Co-Founding</scanBold> with my Wife an <scanBold>Educational-Tech R&D Center</scanBold> -- <a href="http://www.eande.world/" class="urlLink" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">Encourage and Empower (EandE)</a> -- in 2004 at my home/garage, I've enjoyed serving as <scanBold>Sr. Instructor and Curriculum-Engineer</scanBold> where we developed <scanBold>"T.A.C.H.nology® Robotics w/ Arduino & Raspberry Pi"</scanBold> as Silicon Valley's 1st Open-Source, Competition-Ready & Lower-Cost Alternative to LEGO®, TETRIX® & VEX® Robotics.</li>
+      <li>Since <scanBold>Co-Founding</scanBold> an <scanBold>Educational-Tech R&D Center</scanBold> -- <a href="http://www.eande.world/" class="urlLink" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">Encourage and Empower (EandE)</a> -- in 2004 at my home/garage, I've enjoyed serving as <scanBold>Sr. Instructor and Curriculum-Engineer</scanBold> where we developed <scanBold>"T.A.C.H.nology® Robotics w/ Arduino & Raspberry Pi"</scanBold> as Silicon Valley's 1st Open-Source, Competition-Ready & Lower-Cost Alternative to LEGO®, TETRIX® & VEX® Robotics.</li>
 
       <li><scanBold>Innovations</scanBold> behind our Educational Robotics System include:
         <ul style="list-style:disc; margin-left:2em;">
           <li>Creative S.T.E.A.M.-Based Hardware-Chassis that integrates "T.echnology, A.rts & C.rafts... H.olistically" to inspire Industry-Grade Robotics to even Middle School students, as showcased at <scanBold>San Jose's Tech Museum and Bay Area's Maker Faire Premier Showroom</scanBold> (campus attracted 100k+ spectators),</li>
-          <li>Industry-Leading Cloud-Based Raspbery-Pi Remote-Control System (Python & C++) that helped lead to a 1-year alliance with <scanBold>Siemens-eMeter in Foster City</scanBold> to collaborate on Web Full-Stack Technologies (JavaScript & Python) to supplement their Cloud-Based Energy Smart-Grid Systems, and</li>
+          <li>Industry-Leading Cloud-Based Raspbery-Pi Remote-Control System (Python & C++) that helped lead to a <scanBold>1-year alliance with Siemens-eMeter in Foster City</scanBold> to collaborate on Web Full-Stack Technologies (JavaScript & Python) for their Cloud-Based Energy Smart-Grids, and</li>
           <li>Award-Winning Google-Based 'Blockly Drag-n-Drop' C++ Coding Editor (JavaScript & Python) that opened an opportunity to serve as <scanBold>Adjunct Professor for CS110 'C 'Programming at Cogswell Polytechnical College in San Jose</scanBold>.</li>
         </ul>
       </li>
