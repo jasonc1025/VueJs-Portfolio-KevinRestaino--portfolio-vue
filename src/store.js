@@ -413,7 +413,8 @@ export default new Vuex.Store({
 
                 skill_childs:
                 [
-                  { text: '&#9656; Python for 3D Minecraft , Roblox Lua Coding  & Construct 2.' },
+                  { text: '&#9656; Using Game Engine Technology to Teach Computer Science Principles.' },
+                  { text: '&#9656; Python for 3D Minecraft , Lua for Roblox and JavaScript for Construct 2.' },
                   { text: '&#9656; Flagship Class-Project “Itty Bitty Jr in Mutant Madness" Published on 2 Major App Stores:' },
                   { text: '&nbsp; &nbsp; &#9656; <a href="https://itunes.apple.com/ee/app/itty-bitty-jr-in-mutant-madness/id946673546?mt=8" class="urlLink" target="_blank" style="color:blue;text-decoration-line: underline;">Apple App Store (iOS)</a>' },
                   { text: '&nbsp; &nbsp; &#9656; <a href="https://play.google.com/store/apps/details?id=org.EncourageAndEmpower.IttyBittyJrInMutantMadness" class="urlLink" target="_blank" style="color:blue;text-decoration-line: underline;">Google Play (Android)</a>' },
