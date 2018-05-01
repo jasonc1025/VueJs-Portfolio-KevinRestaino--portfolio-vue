@@ -1,7 +1,7 @@
 <template>
   <div class="homeStyle">
 
-    <h1>A Vision for Silicon Valley's First <br>Open-Source, Competition-Ready & Lower-Cost Robotics Kit...</h1>
+    <h1>A Vision for Silicon Valley's First <br>Open-Source, Competition-Ready & Lower-Cost Robotics System...</h1>
 
     <!-- <br> -->
     <ul style="list-style:disc;">
