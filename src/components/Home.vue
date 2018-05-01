@@ -1,7 +1,7 @@
 <template>
   <div class="homeStyle">
 
-    <h1>How a Vision for an <br>Open-Source, Eductional Robotics Kit... </h1>
+    <h1>How a Vision for Silicon Valley's <br>1st Open-Source, Competition-Ready & Lower-Cost Robotics Kit... </h1>
 
     <br>
     <ul style="list-style:disc;">
@@ -20,7 +20,7 @@
     <br><br>
 
 
-    <h1>...Inspires a Progressive Vision for an <br>Industry-Innovative Computer Science Curriculum</h1>
+    <h1>...Inspired a Progressive Vision for an <br>'Industry-Innovation' Computer Science Movement</h1>
     <br>
 
     <ul style="list-style:disc;">
@@ -30,7 +30,7 @@
       <br>
       <li>Traditionally, I've enjoyed coding and teaching <scanBold>Java, C#, C++ & C</scanBold> -- among many other Linux-Based languages/toolsets.</li>
       <li>Yet due to the global pervasiveness of Web/Cloud-Services and Robotics/Electronics, Stack Overflow's 2018 Global Survey of 100K Developers concludes that two Open-Source Languages -- <scanBold>JavaScript</scanBold> and <scanBold>Python</scanBold> -- have taken our world by 'storm', at least for these past several years <scanSlideRef>(see below for Slides #1 & #2)</scanSlideRef>.</li>
-      <li>Thus from our <a href="http://www.eande.world/" class="urlLink" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">Encourage and Empower's (EandE) Instructional R&D Lab</a>  (as based at my home/garage since 2004), I wish to present a portfolio of commerical-grade <scanBold>JavaScript</scanBold> & <scanBold>Python</scanBold> apps for a project-based Computer Science curriculum.</li>
+      <li>Thus from our <a href="http://www.eande.world/" class="urlLink" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">Encourage and Empower's (EandE) Instructional R&D Lab</a>  (as based at my home/garage since 2004), I wish to present this <scanBold>Online Portfolio</scanBold> of <scanBold>JavaScript & Python Industry-Inspired Apps</scanBold> to spark <scanBold>Student-Based Innovation</scanBold> within our <scanBold>Open-Source Ecosystem... World-Wide</scanBold>.</li>
       <br>
       
       <!-- <li style="margin-left:2em;">And within the popular JavaScript Ecosystem, the following Leading Technologies are showcased:
