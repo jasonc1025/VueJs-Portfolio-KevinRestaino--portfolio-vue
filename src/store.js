@@ -286,7 +286,7 @@ export default new Vuex.Store({
                   {text: '&#9656; S.T.E.A.M. (Science, Tech, Engineering, Arts & Math) Curriculum'},
                   {text: '&#9656; Web Full-Stack Remote-Control System using Rasberry Pi (JS, Python)'},
                   {text: '&#9656; Designed for M.assively E.ngaged C.o-op C.ompetition (M.E.C.C.®) Events'},
-                  {text: '&#9656; More info on T.A.C.H.nology® Robotics at <scan style="color:red;font-weight:500;">EandE</scan>\'s Main Site: <a href="http://www.eande.world" class="skillUrl" target="_blank" style="color:blue;text-decoration-line:underline;font-size:75%">http://www.EandE.world</a>'}
+                  {text: '&#9656; More info on T.A.C.H.nology® Robotics at <scan style="color:red;font-weight:500;">EandE</scan>\'s Main Site: <a href="http://www.eande.world" class="skillUrl" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">http://www.EandE.world</a>'}
                 ]
               }
             ]
