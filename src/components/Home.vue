@@ -5,16 +5,16 @@
 
     <br>
     <ul style="list-style:disc;">
-      <li>Since co-founding with my wife an Educational-Tech R&D Center -- <a href="http://www.eande.world/" class="urlLink" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">Encourage and Empower (EandE)</a> -- in 2004 at my home/garage, I've enjoyed serving as Sr. Instructor and Curriculum-Engineer where we developed "T.A.C.H.nology® Robotics w/ Arduino & Raspberry Pi" as Silicon Valley's 1st Open-Source, Competition-Ready & Lower-Cost Alternative to LEGO®, TETRIX® & VEX® Robotics.</li>
+      <li>Since <scanBold>Co-Founding</scanBold> with my Wife an <scanBold>Educational-Tech R&D Center</scanBold> -- <a href="http://www.eande.world/" class="urlLink" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">Encourage and Empower (EandE)</a> -- in 2004 at my home/garage, I've enjoyed serving as <scanBold>Sr. Instructor and Curriculum-Engineer</scanBold> where we developed <scanBold>"T.A.C.H.nology® Robotics w/ Arduino & Raspberry Pi"</scanBold> as Silicon Valley's 1st Open-Source, Competition-Ready & Lower-Cost Alternative to LEGO®, TETRIX® & VEX® Robotics.</li>
 
-      <li>Innovations behind our Educational Robotics System include:
+      <li><scanBold>Innovations</scanBold> behind our Educational Robotics System include:
         <ul style="list-style:disc; margin-left:2em;">
-          <li>Creative S.T.E.A.M.-Based Hardware-Chassis that integrates "T.echnology, A.rts & C.rafts... H.olistically" to inspire Industry-Grade Robotics to even Middle School students, as showcased at San Jose's Tech Museum and Bay Area's Maker Faire Premier Showroom (campus attracted 100k+ spectators),</li>
-          <li>Industry-Leading Cloud-Based Raspbery-Pi Remote-Control System (Python & C++) that helped me to receive a 1-year alliance with Siemens-eMeter in Foster City to collaborate on Web Full-Stack Technologies (JavaScript & Python) to supplement their Cloud-Based Energy Smart-Grid Systems, and</li>
-          <li>Award-Winning Google-Based 'Blockly Drag-n-Drop' C++ Coding Editor (JavaScript & Python) that assisted me in serving as Adjunct Professor for CS110 'C 'Programming at Cogswell Polytechnical College in San Jose.</li>
+          <li>Creative S.T.E.A.M.-Based Hardware-Chassis that integrates "T.echnology, A.rts & C.rafts... H.olistically" to inspire Industry-Grade Robotics to even Middle School students, as showcased at <scanBold>San Jose's Tech Museum and Bay Area's Maker Faire Premier Showroom</scanBold> (campus attracted 100k+ spectators),</li>
+          <li>Industry-Leading Cloud-Based Raspbery-Pi Remote-Control System (Python & C++) that helped lead to a 1-year alliance with <scanBold>Siemens-eMeter in Foster City</scanBold> to collaborate on Web Full-Stack Technologies (JavaScript & Python) to supplement their Cloud-Based Energy Smart-Grid Systems, and</li>
+          <li>Award-Winning Google-Based 'Blockly Drag-n-Drop' C++ Coding Editor (JavaScript & Python) that opened an opportunity to serve as <scanBold>Adjunct Professor for CS110 'C 'Programming at Cogswell Polytechnical College in San Jose</scanBold>.</li>
         </ul>
       </li>
-      <li>These above experiences have inspired my R&D efforts at EandE to form another Vision to Encourage and Empower our students regarding the #1 Hi-Tech Career Path… Web Development, as noted below.</li>          
+      <li>These above experiences have inspired my R&D efforts at EandE to form the following <scanBold>Vision to Encourage and Empower</scanBold> our students regarding the <scanBold>#1 Hi-Tech Career Path… Web Development <scanSlideRef>(see below for Slide #1)</scanSlideRef></scanBold>.</li>          
 
     </ul>
     <br><br>
@@ -29,7 +29,7 @@
       <li>Thus our students do not passively-settle as 'industry-learners' -- but rather -- actively-contribute as 'industry-innovators' in responsibly building a stronger community... for life.</li>
       <br>
       <li>Traditionally, I've enjoyed coding and teaching <scanBold>Java, C#, C++ & C</scanBold> -- among many other Linux-Based languages/toolsets.</li>
-      <li>Yet due to the global pervasiveness of Web/Cloud-Services and Robotics/Electronics, Stack Overflow's 2018 Global Survey of 100K Developers concludes that two Open-Source Languages -- <scanBold>JavaScript</scanBold> and <scanBold>Python</scanBold> -- have taken our world by 'storm', at least for these past several years <scanSlideRef>(see below for Slides #1 & #2)</scanSlideRef>.</li>
+      <li>Yet due to the global pervasiveness of Web/Cloud-Services and Robotics/Electronics, Stack Overflow's 2018 Global Survey of 100K Developers concludes that two Open-Source Languages -- <scanBold>JavaScript</scanBold> and <scanBold>Python</scanBold> -- have taken our world by 'storm', at least for these past several years <scanSlideRef>(Slide #2)</scanSlideRef>.</li>
       <li>Thus from our <a href="http://www.eande.world/" class="urlLink" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">Encourage and Empower's (EandE) Instructional R&D Lab</a>  (as based at my home/garage since 2004), I wish to present this <scanBold>Online Portfolio</scanBold> of <scanBold>JavaScript & Python Industry-Inspired Apps</scanBold> to spark <scanBold>Student-Based Innovation</scanBold> within our <scanBold>Open-Source Ecosystem... World-Wide</scanBold>.</li>
       <br>
       
