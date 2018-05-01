@@ -1,7 +1,7 @@
 <template>
   <div class="homeStyle">
 
-    <h1>How a Vision for Silicon Valley's <br>1st Open-Source, Competition-Ready & Lower-Cost Robotics Kit... </h1>
+    <h1>A Vision for Silicon Valley's <br>1st Open-Source, Competition-Ready & Lower-Cost Robotics Kit<br>Inspires... </h1>
 
     <br>
     <ul style="list-style:disc;">
@@ -20,7 +20,7 @@
     <br><br>
 
 
-    <h1>...Inspired a Progressive Vision for an <br>'Industry-Innovation' Computer Science Movement</h1>
+    <h1>...A Progressive Vision for an <br>'Industry-Innovation' Computer Science Movement</h1>
     <br>
 
     <ul style="list-style:disc;">
