@@ -20,7 +20,7 @@
     <!-- <br> -->
 
 
-    <h1>...A Progressive Vision for an <br>'Industry-Innovation' Computer Science Movement</h1>
+    <h1>...Inspires a Progressive Vision for<br>Student-Based 'Industry-Innovation' through Computer Science</h1>
     <!-- <br> -->
 
     <ul style="list-style:disc;">
