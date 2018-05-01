@@ -5,7 +5,7 @@
 
     <br>
     <ul style="list-style:disc;">
-      <li>Since co-founding with my wife an Educational-Tech R&D Center -- <a href="http://www.eande.world/" class="urlLink" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">Encourage and Empower (EandE)</a> -- in 2004 at my home/garage, I've enjoyed serving as Sr. Instructor and Curriculum-Engineer where we developed "T.A.C.H.nology® Robotics w/ Arduino & Raspberry Pi" as Silicon Valley's 1st Open-Source, Lower-Cost Alternative to LEGO®, TETRIX® & VEX® Robotics.</li>
+      <li>Since co-founding with my wife an Educational-Tech R&D Center -- <a href="http://www.eande.world/" class="urlLink" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">Encourage and Empower (EandE)</a> -- in 2004 at my home/garage, I've enjoyed serving as Sr. Instructor and Curriculum-Engineer where we developed "T.A.C.H.nology® Robotics w/ Arduino & Raspberry Pi" as Silicon Valley's 1st Open-Source, Competition-Ready & Lower-Cost Alternative to LEGO®, TETRIX® & VEX® Robotics.</li>
 
       <li>Innovations behind our Educational Robotics System include:
         <ul style="list-style:disc; margin-left:2em;">
