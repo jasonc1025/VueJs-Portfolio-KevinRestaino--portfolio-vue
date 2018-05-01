@@ -22,7 +22,8 @@
             </li>
             <li class="jobBody">
               <span>
-                <span class="jobCompany">{{ job_.job_company }},</span>
+                <!-- <span class="jobCompany">{{ job_.job_company }},</span> -->
+                <span class="jobCompany" v-html="job_.job_company">,</span>
                 <span class="jobLocation">{{ job_.job_location }}</span>
                 <span v-if="job_.job_url!=null"><a class="jobUrl" v-bind:href="job_.job_url"><u>{{job_.job_url}}</u></a></span>
               </span>
@@ -58,7 +59,7 @@
         <div class="skillsGroup" v-for="(skills_group) in job_.skills_groups" :key='skills_group.id'>
 
           <div v-if="skills_group.skills_group_group_name!=null || skills_group.skills_group_group_text!=null" class="skillsGroupGroup">
-            <p v-if="skills_group.skills_group_group_name!=null" class="skillsGroupGroupName">{{ skills_group.skills_group_group_name }}</p>
+            <p v-if="skills_group.skills_group_group_name!=null" class="skillsGroupGroupName" v-html="skills_group.skills_group_group_name"></p>
             <!-- Y <p class="skillsGroupGroupText">{{ skills_group.skills_group_group_text }}</p> -->
             <p v-if="skills_group.skills_group_group_text!=null" class="skillsGroupGroupText" v-html="skills_group.skills_group_group_text"></p>
           </div>
@@ -196,12 +197,9 @@ $fontSize_Standard: medium;
 $fontSize_Header: larger;  // 40px;
 $fontSize_Url: smaller;  // 20px;
 
-
-
 $backgroundColor_LightGrey: #d9d9d9;  // rgb(217, 217, 217);
 $backgroundColor_DarkGrey: #bbb;  // rgb(187, 187, 187);
 $backgroundColor_Black: #000000 ;  // rgba(0, 0, 0, 1)
-
 
 ul {
   text-align: left;  // was 'center'
@@ -519,5 +517,23 @@ ul {
     // margin-left: 0.5em;
     text-decoration-line: underline;
   }
+
+// [jwc]+x NOT WORK
+//   scanEande {
+//     color: green;
+//     font-weight: 500;
+//     // text-decoration-line: underline;
+//   }
+//   .eandeStyle {
+//     color: red;
+//     font-weight: 500;
+//     // text-decoration-line: underline;
+//   }
+//   scan.eandeStyle {
+//       color: red;
+//   }
+//   scaneande {
+//     color: red;
+// }
 
 </style>
