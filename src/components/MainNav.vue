@@ -2,27 +2,27 @@
   <!-- Y <div class="mainNav" @click="store.commit('increment')"> -->
   <div class="mainNav">
 
-    <router-link v-if="store.getters.tabModeGet==0" tag="a" to="/home" @click.native="store.commit('tabModeSet','0')"><b>Home</b></router-link>
+    <router-link v-if="store.getters.tabModeGet==0" tag="a" to="/home" @click.native="store.commit('tabModeSet','0')"><linkActive>Home</linkActive></router-link>
     <router-link v-else tag="a" to="/home" @click.native="store.commit('tabModeSet','0')">Home</router-link>
 
-    <router-link v-if="store.getters.tabModeGet==1" tag="a" to="/projects-react" @click.native="store.commit('tabModeSet','1')" ><b>React</b></router-link>
+    <router-link v-if="store.getters.tabModeGet==1" tag="a" to="/projects-react" @click.native="store.commit('tabModeSet','1')" ><linkActive>React</linkActive></router-link>
     <!-- YN causes desktop to be 32px but mobile 16px (not 32px): <router-link v-else tag="a" to="/projects-react" @click.native="store.commit('tabModeSet','1')" style="font-size:32px;">2React</router-link> -->
     <router-link v-else tag="a" to="/projects-react" @click.native="store.commit('tabModeSet','1')">Web FrontEnd:<br>JavaScript React</router-link>
     
-    <router-link v-if="store.getters.tabModeGet==2" tag="a" to="/projects-vue-js" @click.native="store.commit('tabModeSet','2')"><b>Vue.js</b></router-link>
+    <router-link v-if="store.getters.tabModeGet==2" tag="a" to="/projects-vue-js" @click.native="store.commit('tabModeSet','2')"><linkActive>Vue.js</linkActive></router-link>
     <router-link v-else tag="a" to="/projects-vue-js" @click.native="store.commit('tabModeSet','2')">Web FrontEnd:<br>JavaScript Vue.js</router-link>
 
-    <router-link v-if="store.getters.tabModeGet==3" tag="a" to="/projects-node-js" @click.native="store.commit('tabModeSet','3')"><b>Node.js</b></router-link>
+    <router-link v-if="store.getters.tabModeGet==3" tag="a" to="/projects-node-js" @click.native="store.commit('tabModeSet','3')"><linkActive>Node.js</linkActive></router-link>
     <router-link v-else tag="a" to="/projects-node-js" @click.native="store.commit('tabModeSet','3')">Web BackEnd:<br>JavaScript Node.js</router-link>
 
-    <router-link v-if="store.getters.tabModeGet==4" tag="a" to="/projects-robotics" @click.native="store.commit('tabModeSet','4')"><b>Robotics</b></router-link>
+    <router-link v-if="store.getters.tabModeGet==4" tag="a" to="/projects-robotics" @click.native="store.commit('tabModeSet','4')"><linkActive>Robotics</linkActive></router-link>
     <!-- <router-link v-else tag="a" to="/projects-robotics" @click.native="store.commit('tabModeSet','4')" style="text-align:center;"><scan style="text-align:center;">JavaScript/Python:<br>Robotics</scan></router-link> -->
     <router-link v-else tag="a" to="/projects-robotics" @click.native="store.commit('tabModeSet','4')">JavaScript/Python:<br>Robotics</router-link>
 
-    <router-link v-if="store.getters.tabModeGet==5" tag="a" to="/projects-industry-siemens" @click.native="store.commit('tabModeSet','5')"><b>Industry:Siemens</b></router-link>
+    <router-link v-if="store.getters.tabModeGet==5" tag="a" to="/projects-industry-siemens" @click.native="store.commit('tabModeSet','5')"><linkActive>Industry:Siemens</linkActive></router-link>
     <router-link v-else tag="a" to="/projects-industry-siemens" @click.native="store.commit('tabModeSet','5')">JavaScript/Python:<br>Industry:Siemens</router-link>
 
-    <router-link v-if="store.getters.tabModeGet==6" tag="a" to="/resume" @click.native="store.commit('tabModeSet','6')"><b>Resum&eacute;</b></router-link>
+    <router-link v-if="store.getters.tabModeGet==6" tag="a" to="/resume" @click.native="store.commit('tabModeSet','6')"><linkActive>Resum&eacute;</linkActive></router-link>
     <router-link v-else tag="a" to="/resume" @click.native="store.commit('tabModeSet','6')">Resum&eacute;</router-link>
 
     <!-- [jwc] <a href="https://github.com/krestaino" target="_blank">GitHub</a> -->
@@ -78,7 +78,7 @@ export default {
       margin-left: 16px;
     }
   }
-  b {
+  linkActive {
     font-weight: bold;
     color:blue;
   }
