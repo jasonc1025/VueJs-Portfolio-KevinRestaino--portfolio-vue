@@ -186,7 +186,11 @@ export default new Vuex.Store({
         job_group_name: 'Teaching Experience #1 of 5',
         job_group_text: '(Descending Order with Most Current First)',
         job_title: 'Co-Founder, Instructor & Curriculum Engineer: Web Full-Stack & Robotics/Electronics',
-        job_company: 'Encourage and Empower (EandE)',
+        // N job_company: 'Encourage and Empower (<scanEandE>EandE</scanEandE>)',
+        // N job_company: 'Encourage and Empower (<scan class="eandeStyle">EandE</scan>)',
+        // Y job_company: 'Encourage and Empower (<scan style="color: red;font-weight:500;">EandE</scan>)',
+        // Y job_company: 'Encourage and Empower (<scan style="color: red;font-weight:500;">EandE</scan>)',
+        job_company: 'Encourage and Empower (<scan style="color:red;font-weight:500;">EandE</scan>)',
         job_location: 'Milpitas, CA',
         job_url: 'http://www.EandE.world',
         job_timePeriod: {
@@ -197,13 +201,13 @@ export default new Vuex.Store({
         [
           { text: '&#9656; Traditionally, I\'ve enjoyed coding and teaching Java, C#, and C++ -- among many other Linux-Based tools.' },
           { text: '&#9656; Yet due to the global pervasiveness of Web/Cloud-Services and Robotics/Electronics-Devices, Stack Overflow\'s 2018 Global Survey of 100K Developers concludes that two Open-Source languages -- JavaScript and Python -- have taken the world by storm, at least for these past several years <a href="https://insights.stackoverflow.com/survey/2018" class="skillUrl" target="_blank" style="color:blue;text-decoration-line:underline;font-size:75%">[https://insights.stackoverflow.com/survey/2018]</a>.' },
-          { text: '&#9656; Thus from EandE\'s Instructional R&D Lab (as based at my home/garage since 2004), I wish to present a portfolio of various commerical-grade, educational-based projects that feature JavaScript and/or Python, along with their respective core API libraries (as noted below).  Below, the blue buttons link to live demo sites.' }
+          { text: '&#9656; Thus from <scan style="color:red;font-weight:500;">EandE</scan>\'s Instructional R&D Lab (as based at my home/garage since 2004), I wish to present a portfolio of various commerical-grade, educational-based projects that feature JavaScript and/or Python, along with their respective core API libraries (as noted below).  Below, the blue buttons link to live demo sites.' }
         ],
 
         skills_groups:
         [
           {
-            skills_group_group_name: 'EandE\'s Industry-Based Curricula',
+            skills_group_group_name: '<scan style="color:red;font-weight:500;">EandE</scan>\'s Industry-Based Curricula',
             // skills_group_group_text: '<span style="text-align:center;">As Inspired from Strategic Corporate and College Experiences:<br>Web Full-Stack Developer at Siemens-eMeter -&- Adjunct Professor at Cogswell College</span>',
             skills_group_group_text: null,
             skills_group_name: '&#9656; Web Full-Stack: JavaScript (JS), Python and Their Ecosystem',
@@ -280,10 +284,9 @@ export default new Vuex.Store({
                 [
                   // * Both 'class="skillUrl"' not seem to work, weird.  There do inline-style.
                   {text: '&#9656; S.T.E.A.M. (Science, Tech, Engineering, Arts & Math) Curriculum'},
-                  {text: '&#9656; Designed for M.assively E.ngaged C.o-op C.ompetition (M.E.C.C.®) Events'},
-                  {text: '&#9656; Open-Source Robotics Kit that\'s more Cost-Effective than other Systems'},
                   {text: '&#9656; Web Full-Stack Remote-Control System using Rasberry Pi (JS, Python)'},
-                  {text: '&#9656; More info on T.A.C.H.nology® Robotics at EandE\'s Main Site: <a href="http://www.eande.world" class="skillUrl" target="_blank" style="color:blue;text-decoration-line:underline;font-size:75%">http://www.EandE.world</a>'}
+                  {text: '&#9656; Designed for M.assively E.ngaged C.o-op C.ompetition (M.E.C.C.®) Events'},
+                  {text: '&#9656; More info on T.A.C.H.nology® Robotics at <scan style="color:red;font-weight:500;">EandE</scan>\'s Main Site: <a href="http://www.eande.world" class="skillUrl" target="_blank" style="color:blue;text-decoration-line:underline;font-size:75%">http://www.EandE.world</a>'}
                 ]
               }
             ]
@@ -308,7 +311,7 @@ export default new Vuex.Store({
 
                 skill_childs:
                 [
-                  {text: '&#9656; 1st Place & Top 5 Overall: Single-Sonar Line-Tracking at RoboGame\'s Jr-League, Lead Coach (EandE Team, 2012 & 2013)'}
+                  {text: '&#9656; 1st Place & Top 5 Overall: Single-Sonar Line-Tracking at RoboGame\'s Jr-League, Lead Coach (<scan style="color:red;font-weight:500;">EandE</scan> Team, 2012 & 2013)'}
                 ]
               },
               {
@@ -325,7 +328,7 @@ export default new Vuex.Store({
             ]
           },
           {
-            skills_group_group_name: 'EandE\'s Industry-Based Teaching',
+            skills_group_group_name: '<scan style="color:red;font-weight:500;">EandE</scan>\'s Industry-Based Teaching',
             skills_group_group_text: null,
             skills_group_name: '&#9656; "Paid Teaching-Sabbatical" as Interim Web Full-Stack Developer',
             skills_group_text: 'Siemens-eMeter, Foster City, CA',
@@ -345,7 +348,7 @@ export default new Vuex.Store({
 
                 skill_childs:
                 [
-                  { text: '&#9656; 1-Year Contract to provide EandE\'s Web Full-Stack T.A.C.H.nology® for their Cloud-Based System' }
+                  { text: '&#9656; 1-Year Contract to provide <scan style="color:red;font-weight:500;">EandE</scan>\'s Web Full-Stack T.A.C.H.nology® for their Cloud-Based System' }
                 ]
               }
             ]
@@ -372,7 +375,7 @@ export default new Vuex.Store({
                 skill_childs:
                 [
                   { text: '&#9656; A Fundamental Prerequisite Course.' },
-                  { text: '&#9656; Though for only one semester, this teaching opportunity serves as a "baby first-step" for EandE establishing Collegiate Alliances for Open-Source R&D Collaboration among Staff & Students.' }
+                  { text: '&#9656; Though for only one semester, this teaching opportunity serves as a "baby first-step" for <scan style="color:red;font-weight:500;">EandE</scan> establishing Collegiate Alliances for Open-Source R&D Collaboration among Staff & Students.' }
                 ]
               }
             ]
@@ -452,7 +455,7 @@ export default new Vuex.Store({
             skills_group_group_name: null,
             skills_group_group_text: null,
             skills_group_name: '&#9656; Private Tutor',
-            skills_group_text: 'EandE, Milpitas, CA',
+            skills_group_text: '<scan style="color:red;font-weight:500;">EandE</scan>, Milpitas, CA',
             skills_group_timePeriod: {
               from: 'Fall 2006',
               to: 'Jul 2011'
