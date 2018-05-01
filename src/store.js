@@ -63,7 +63,7 @@ export default new Vuex.Store({
         [
           {
             skills_group_group_name: 'Teaching Subject Matter',
-            skills_group_group_text: '<span style="text-align:center;">The above two Upper-Divsion Projects -- Networks and MicoControllers -- nurtured my passsion for <br>Web Full-Stack and Robotics, respectively.</span>',
+            skills_group_group_text: '<span style="text-align:center;">The above two Upper-Divsion Projects -- Networks and MicoControllers -- nurtured my passsion for <br>Web Full-Stack and Robotics/Electronics, respectively.</span>',
             skills_group_name: null,
             skills_group_text: null,
             skills_group_timePeriod: {
@@ -259,8 +259,8 @@ export default new Vuex.Store({
           {
             skills_group_group_name: null,
             skills_group_group_text: null,
-            skills_group_name: '&#9656; Silicon Valley\'s 1st Open-Source, Lower-Cost Alternative to LEGO®, TETRIX® & VEX® Robotics',
-            skills_group_text: '&#9656; As Showcased at Tech Museum (2014), San Jose -&- Maker Faire\'s Premiere Showroom, Bay Area (2015-2017)...<br>' +
+            skills_group_name: '&#9656; Silicon Valley\'s 1st Open-Source, Competition-Ready & Lower-Cost Alternative to LEGO®, TETRIX® & VEX® Robotics',
+            skills_group_text: '&#9656; As Showcased at Tech Museum (2014), San Jose -&- Maker Faire\'s Premiere Showroom, Bay Area (2015-2016)...<br>' +
                                '&#9656; <span style="font-weight:400"><u>T</u>.<u>A</u>.<u>C</u>.<u>H</u>.nology® Robotics w/ Arduino & Raspberry Pi</span><br>' +
                                '&#9656; Combining "<span style="font-weight:400"><u>T</u>.</span>echnology, <span style="font-weight:400"><u>A</u>.</span>rts & <span style="font-weight:400"><u>C</u>.</span>rafts... <span style="font-weight:400"><u>H</u>.</span>olistically" for Middle School, High School & College',
             skills_group_timePeriod: {
@@ -280,8 +280,8 @@ export default new Vuex.Store({
                 [
                   // * Both 'class="skillUrl"' not seem to work, weird.  There do inline-style.
                   {text: '&#9656; S.T.E.A.M. (Science, Tech, Engineering, Arts & Math) Curriculum'},
-                  {text: '&#9656; Designed for low-cost M.assively E.ngaged C.o-op C.ompetition (M.E.C.C.®) Events'},
-                  {text: '&#9656; Open-Source Robotics Kit at less than "Half the Cost" of other systems'},
+                  {text: '&#9656; Designed for M.assively E.ngaged C.o-op C.ompetition (M.E.C.C.®) Events'},
+                  {text: '&#9656; Open-Source Robotics Kit that\'s more Cost-Effective than other Systems'},
                   {text: '&#9656; Web Full-Stack Remote-Control System using Rasberry Pi (JS, Python)'},
                   {text: '&#9656; More info on T.A.C.H.nology® Robotics at EandE\'s Main Site: <a href="http://www.eande.world" class="skillUrl" target="_blank" style="color:blue;text-decoration-line:underline;font-size:75%">http://www.EandE.world</a>'}
                 ]
@@ -391,14 +391,14 @@ export default new Vuex.Store({
             skills:
             [
               {
-                skill_head: 'T.A.C.H.nology® Robotics w/ Arduino:',
+                skill_head: 'T.A.C.H.nology® Robotics w/ Arduino & Raspberry Pi:',
                 skill_body: null,
                 skill_link: null,
                 skill_link_tab_index: null,
 
                 skill_childs:
                 [
-                  { text: '&#9656; Students showcased at Maker Faire\'s Premiere Showroom (2015-2016) and Robotics Showroom (2017), drawing over 10k spectators during the 2-day event.' },
+                  { text: '&#9656; Students showcased at Maker Faire\'s Premiere Showroom (2015-2016) and Robotics Showroom (2017), drawing over 100k spectators during the 2-day event.' },
                   { text: '&#9656; Further details of curriculum as explained above.' }
                 ]
               },
@@ -833,7 +833,7 @@ export default new Vuex.Store({
         imageListLength: 1,
         slug: 'EandE-TACHnology-Website',
         title: 'T.A.C.H.nology® Robotics',
-        headLine00: 'T.A.C.H.nology® Robotics: Silicon Valley\'s 1st Open-Source, Lower-Cost Alternative to LEGO®, TETRIX® & VEX® Systems',
+        headLine00: 'T.A.C.H.nology® Robotics: Silicon Valley\'s 1st Open-Source, Competition-Ready & Lower-Cost Alternative to LEGO®, TETRIX® & VEX® Systems',
         headLine01: '',
         headLine02: '',
         url: 'http://www.eande.world/',
