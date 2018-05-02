@@ -33,6 +33,35 @@
 
       </li>
     </ul>
+
+    <br>
+    <br>
+
+    <div class="curriculumSyllabus">
+      
+      <h1>Sample Semester Syllabus (Book Reference Upon Request)</h1>
+
+      <!-- <br> -->
+      <ul style="list-style:disc; margin-left:2em;">
+        <li>Week 01: Introducing Node.js</li>
+        <li>Week 02: npm (Node Package Manager)</li>
+        <li>Week 03: What Node.js Is Used For </li>
+        <li>Week 04: Callbacks</li>
+        <li>Week 05: HTTP</li>
+        <li>Week 06: Introducing Express</li>
+        <li>Week 07: More on Express</li>
+        <li>Week 08: Persisting Data</li>
+        <li>Week 09: Debugging Node.js Applications</li>
+        <li>Week 10: Testing Node.js Applications</li>
+        <li>Week 11: Deploying Node.js Applications</li>
+        <li>Week 12: Introducting Socket.IO</li>
+        <li>Week 13: A Socket.IO Chat Server</li>
+        <li>Week 14: A Streaming Twitter Client</li>
+        <li>Week 15: JSON APIs</li>
+
+      </ul>
+    </div>
+
   </div>
 </template>
 
@@ -148,4 +177,8 @@ b {
     }
   }
 }
+.curriculumSyllabus{
+  font-size: 100%;
+}
+
 </style>

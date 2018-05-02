@@ -33,6 +33,35 @@
 
       </li>
     </ul>
+
+    <br>
+    <br>
+
+    <div class="curriculumSyllabus">
+      
+      <h1>Sample Semester Syllabus (Book Reference Upon Request)</h1>
+
+      <!-- <br> -->
+      <ul style="list-style:disc; margin-left:2em;">
+        <li>Week 01: Intro & Setup</li>
+        <li>Week 02: Blink LED ~ Internal w/ Arduino IDE C/C++ Programming</li>
+        <li>Week 03: Servo_180-Degrees_Arm & Serial-Monitor</li>
+        <li>Week 04: Servo_Continuous-Degrees_Wheel, Serial-Monitor & User-Entry</li>
+        <li>Week 05: Infrared (Ir) Remote-Control on Servo_180-Degrees_Arm</li>
+        <li>Week 06: Hardware Chassis ~ Create Top & Bottom</li>
+        <li>Week 07: LCD Diagnostic: Servo_180-Degrees_Arm</li>
+        <li>Week 08: LCD Diagnostic: Servo_Continuous-Degrees_Wheel</li>
+        <li>Week 09: Hardware: Power-Grid</li>
+        <li>Week 10: Hardware: Rear-Servos & Infrared Receiver</li>
+        <li>Week 11: Rear-Servos: Rear-Servos, Wheels, T.A.C.H.NOLOGY® B.a.R.™ & Surface-Slider</li>
+        <li>Week 12: Rear-Servos: Go-Forward Straight-Line Fine-Tuning</li>
+        <li>Week 13: Mid-Right-Arm & Payload-Carrier-Box</li>
+        <li>Week 14: Helmet & Accessories</li>
+        <li>Week 15: Integration Test</li>
+
+      </ul>
+    </div>
+    
   </div>
 </template>
 
@@ -147,5 +176,8 @@ b {
     opacity: 0.5;
     }
   }
+}
+.curriculumSyllabus{
+  font-size: 100%;
 }
 </style>
