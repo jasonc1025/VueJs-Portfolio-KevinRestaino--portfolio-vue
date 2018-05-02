@@ -19,8 +19,8 @@
     <!-- <router-link v-else tag="a" to="/projects-robotics" @click.native="store.commit('tabModeSet','4')" style="text-align:center;"><scan style="text-align:center;">JavaScript/Python:<br>Robotics</scan></router-link> -->
     <router-link v-else tag="a" to="/projects-robotics" @click.native="store.commit('tabModeSet','4')">JavaScript/Python:<br>Robotics</router-link>
 
-    <router-link v-if="store.getters.tabModeGet==5" tag="a" to="/projects-industry-siemens" @click.native="store.commit('tabModeSet','5')"><b>JavaScript/Python:<br>Industry:Siemens</b></router-link>
-    <router-link v-else tag="a" to="/projects-industry-siemens" @click.native="store.commit('tabModeSet','5')">JavaScript/Python:<br>Industry:Siemens</router-link>
+    <router-link v-if="store.getters.tabModeGet==5" tag="a" to="/projects-industry-siemens" @click.native="store.commit('tabModeSet','5')"><b>JavaScript/Python:<br>Industry-Siemens</b></router-link>
+    <router-link v-else tag="a" to="/projects-industry-siemens" @click.native="store.commit('tabModeSet','5')">JavaScript/Python:<br>Industry-Siemens</router-link>
 
     <router-link v-if="store.getters.tabModeGet==6" tag="a" to="/resume" @click.native="store.commit('tabModeSet','6')"><b>Resum&eacute;</b></router-link>
     <router-link v-else tag="a" to="/resume" @click.native="store.commit('tabModeSet','6')">Resum&eacute;</router-link>

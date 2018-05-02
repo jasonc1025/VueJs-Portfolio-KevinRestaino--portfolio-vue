@@ -20,7 +20,7 @@
     <!-- <br> -->
 
 
-    <h1>...Inspires a Progressive Vision for<br>Student-Based 'Industry-Innovation' through Computer Science</h1>
+    <h1>...Inspires a Progressive Vision for<br>Students as 'Industry-Innovator' through Computer Science</h1>
     <!-- <br> -->
 
     <ul style="list-style:disc;">
@@ -30,7 +30,7 @@
       <br>
       <li>Traditionally, I've enjoyed coding and teaching <scanBold>Java, C#, C++ & C</scanBold> -- among many other Linux-Based languages/toolsets.</li>
       <li>Yet due to the global pervasiveness of Web/Cloud-Services and Robotics, Stack Overflow's 2018 Global Survey of 100K Developers concludes that two Open-Source Languages -- <scanBold>JavaScript</scanBold> and <scanBold>Python</scanBold> -- have taken our world by 'storm', at least for these past several years <scanSlideRef>(Slide #2)</scanSlideRef>.</li>
-      <li>Thus from our <a href="http://www.eande.world/" class="urlLink" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">Encourage and Empower's (EandE) Instructional R&D Lab</a>  (as based at my home/garage since 2004), I wish to present this <scanBold>Online Portfolio</scanBold> of <scanBold>JavaScript & Python Curriculum-Based Projects</scanBold> to spark our <scanBold>Student's Innovation</scanBold> within the <scanBold>Open-Source Ecosystem.</scanBold>.</li>
+      <li>Thus from our <a href="http://www.eande.world/" class="urlLink" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">Encourage and Empower's (EandE) Instructional R&D Lab</a>  (as based at my home/garage since 2004), I wish to present this <scanBold>Online Portfolio</scanBold> of <scanBold>JavaScript & Python Curriculum-Based Projects</scanBold> to spark our <scanBold>Student's Innovation</scanBold> within the <scanBold>Open-Source Global-Ecosystem</scanBold>.</li>
       <br>
       
       <!-- <li style="margin-left:2em;">And within the popular JavaScript Ecosystem, the following Leading Technologies are showcased:
