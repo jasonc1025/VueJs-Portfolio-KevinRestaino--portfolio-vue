@@ -33,6 +33,35 @@
 
       </li>
     </ul>
+
+    <br>
+    <br>
+
+    <div class="curriculumSyllabus">
+      
+      <h1>Sample Semester Syllabus (Book Reference Upon Request)</h1>
+
+      <!-- <br> -->
+      <ul style="list-style:disc; margin-left:2em;">
+        <li>Week 01: Introducing React</li>
+        <li>Week 02: Building Your First React App</li>
+        <li>Week 03: Components in React</li>
+        <li>Week 04: Styling in React</li>
+        <li>Week 05: Creating Complex Components</li>
+        <li>Week 06: Transferring Properties (Props)</li>
+        <li>Week 07: Meet JSX: Part 2</li>
+        <li>Week 08: Dealing with State</li>
+        <li>Week 09: Going from Data to UI</li>
+        <li>Week 10: Working with Events</li>
+        <li>Week 11: The Component Lifecycle</li>
+        <li>Week 12: Accessing DOM Elements</li>
+        <li>Week 13: Creating a Single-Page App Using React Router</li>
+        <li>Week 14: Building a Todo List App</li>
+        <li>Week 15: Setting Up Your React Development Environment</li>
+
+      </ul>
+    </div>
+
   </div>
 </template>
 
@@ -148,5 +177,8 @@ b {
       opacity: 0.5;
     }
   }
+}
+.curriculumSyllabus{
+  font-size: 100%;
 }
 </style>

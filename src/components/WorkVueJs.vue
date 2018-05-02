@@ -33,6 +33,35 @@
 
       </li>
     </ul>
+
+    <br>
+    <br>
+
+    <div class="curriculumSyllabus">
+      
+      <h1>Sample Semester Syllabus (Book Reference Upon Request)</h1>
+
+      <!-- <br> -->
+      <ul style="list-style:disc; margin-left:2em;">
+        <li>Week 01: Introducing Vue.js</li>
+        <li>Week 02: The Vue instance</li>
+        <li>Week 03: Adding interactivity</li>
+        <li>Week 04: Forms and inputs</li>
+        <li>Week 05: Conditionals, looping, and lists</li>
+        <li>Week 06: Working with components</li>
+        <li>Week 07: Conditionals, looping, and lists</li>
+        <li>Week 08: Advanced components and routing</li>
+        <li>Week 09: Transitions and animations</li>
+        <li>Week 10: Extending Vue</li>
+        <li>Week 11: Vuex: State Management Part 1</li>
+        <li>Week 12: Vuex: State Management Part 2</li>
+        <li>Week 13: Communicating with a server: Part 1</li>
+        <li>Week 14: Communicating with a server: Part 2</li>
+        <li>Week 15: Testing</li>
+
+      </ul>
+    </div>
+    
   </div>
 </template>
 
@@ -148,5 +177,8 @@ b {
       opacity: 0.5;
     }
   }
+}
+.curriculumSyllabus{
+  font-size: 100%;
 }
 </style>
