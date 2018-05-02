@@ -1,11 +1,11 @@
 <template>
   <div class="homeStyle">
 
-    <h1>A Vision for Silicon Valley's First <br>Open-Source, Competition-Ready & Lower-Cost Robotics System...</h1>
+    <h1>A Vision for Silicon Valley's First <br>Open-Source, Competition-Grade & Lower-Cost Robotics System...</h1>
 
     <!-- <br> -->
     <ul style="list-style:disc;">
-      <li>Since <scanBold>Co-Founding</scanBold> an <scanBold>Educational-Tech R&D Center</scanBold> -- <a href="http://www.eande.world/" class="urlLink" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">Encourage and Empower (EandE)</a> -- in 2004 at my home/garage, I've enjoyed serving as <scanBold>Sr. Instructor and Curriculum-Engineer</scanBold> where we developed <scanBold>"T.A.C.H.nology® Robotics w/ Arduino & Raspberry Pi"</scanBold> as Silicon Valley's 1st Open-Source, Competition-Ready & Lower-Cost Alternative to LEGO®, TETRIX® & VEX® Robotics.</li>
+      <li>Since <scanBold>Co-Founding</scanBold> an <scanBold>Educational-Tech R&D Center</scanBold> -- <a href="http://www.eande.world/" class="urlLink" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">Encourage and Empower (EandE)</a> -- in 2004 at my home/garage, I've enjoyed serving as <scanBold>Sr. Instructor and Curriculum-Engineer</scanBold> where we developed <scanBold>"T.A.C.H.nology® Robotics w/ Arduino & Raspberry Pi"</scanBold> as Silicon Valley's 1st Open-Source, Competition-Grade & Lower-Cost Alternative to LEGO®, TETRIX® & VEX® Robotics.</li>
 
       <li><scanBold>Innovations</scanBold> behind our Educational Robotics System include:
         <ul style="list-style:disc; margin-left:2em;">
