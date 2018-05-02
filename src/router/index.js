@@ -8,6 +8,7 @@ import WorkRobotics from '@/components/WorkRobotics'
 import WorkIndustrySiemens from '@/components/WorkIndustrySiemens'
 import Project from '@/components/Project.vue'
 import Home from '@/components/Home'
+import Vision from '@/components/Vision'
 import Resume from '@/components/Resume'
 import Error from '@/components/Error'
 
@@ -25,6 +26,11 @@ export default new Router({
       path: '/home',
       name: 'Home',
       component: Home
+    },
+    {
+      path: '/vision',
+      name: 'Vision',
+      component: Vision
     },
     {
       path: '/projects-react',

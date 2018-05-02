@@ -44,7 +44,7 @@ export default new Vuex.Store({
 
       {
         job_group_name: 'Education',
-        job_group_text: '(Ascending Order to Tell My Story)',
+        job_group_text: '(Ascending Order to Tell A Personal Story)',
         job_title: 'B.S. Electrical and Computer Engineering',
         job_company: 'University of California',
         job_location: 'Davis, CA',
