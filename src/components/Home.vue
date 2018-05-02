@@ -1,6 +1,32 @@
 <template>
   <div class="homeStyle">
 
+    <h1>Career Objective</h1>
+
+    <!-- <br> -->
+    <ul style="list-style:disc;">
+      <li>Whether as an Software Engineer</li>
+        <ul style="list-style:disc; margin-left:2em;">
+          <li>With Dual-Empahsis in both Software and Hardware Engineering as an Electrical and Computer Engineering Major at U.C. Davis</li>
+          <li>and Combined 15+ years in Engineering,</li>
+          <li>I specialize in both Web Full-Stack (Software) and Robotics (Software & Hardware) Development.</li>
+        </ul>
+      <li>Or as a Teacher for Software & Hardware Engineering,</li>
+        <ul style="list-style:disc; margin-left:2em;">
+          <li>With Professional Experience as a Teacher, Speaker and Communicator through Training from both Mills College (CA State Teacher Credential) and Western Seminary's Master of Arts Program (Homiletics' Top Honors)</li>
+          <li>and Cummulative 10+ years in Public & Private School Teaching,</li>
+          <li>I enjoy Encouraging and Empowering People through Teaching.</li>
+        </ul>
+      <li>I seek to Serve in either One of the above Two Occupations.</li>
+    </ul>
+
+<br>
+    <!-- <br> -->
+
+    <!-- * Archive: not need for now -->
+    <!-- Y AHG: <AccordionMenu :items_Stage01="items_Stage00"></AccordionMenu> -->
+    <AccordionMenu :items_Stage01="items_Stage00"></AccordionMenu>
+
     <h1>A Vision for Silicon Valley's First <br>Open-Source, Competition-Grade & Lower-Cost Robotics System...</h1>
 
     <!-- <br> -->
@@ -115,9 +141,6 @@
       
     </carousel>
     
-    <!-- * Archive: not need for now -->
-    <!-- Y AHG: <AccordionMenu :items_Stage01="items_Stage00"></AccordionMenu> -->
-
   </div>
 </template>
 
@@ -130,47 +153,39 @@ export default {
       tabMode: this.$myStore.state.tabMode,
       store: this.$myStore,
       // * '\n' does not work.  Yet '<br>' works.
+
+      // msg: 'Test for fun! asjdf kasjfd;l \n\n\n a;skdfja;sljdfksadj ;fljas lk;fj sak;lfj las;kj f;klasdj f;kasjdkfl;ajs dfjsa akdsf<br>Line2abc<br />Line3'
+      // Y msg: 'Test for fun! asjdf kasjfd;l a;skdfja;sljdfksadj ;fljas lk;fj sak;lfj las;kj f;klasdj f;kasjdkfl;ajs dfjsa akdsf<br>Line2abc<br>Line3',
+      // Y msg: 'Test for fun! asjdf kasjfd;l <scan style="color:red;">a;skdfja;sljdfksadj </scan>;fljas lk;fj sak;lfj las;kj f;klasdj f;kasjdkfl;ajs dfjsa akdsf<br>Line2abc<br>Line3',
+      // Y N:<scanSlideRef> ; msg: 'Test for fun! asjdf kasjfd;l <scan style="color:red;">a;skdfja;sljdfksadj </scan>;fljas <scanSlideRef>lk;fj</scanSlideRef> <img src="/static/work/home-dir/VueVsReact-RisingStarsDotJsDotOrg.png"> sak;lfj las;kj f;klasdj f;kasjdkfl;ajs dfjsa akdsf<br>Line2abc<br>Line3',
+
       items_Stage00: [
         {
-          title: 'How are you?',
-          // msg: 'Test for fun! asjdf kasjfd;l \n\n\n a;skdfja;sljdfksadj ;fljas lk;fj sak;lfj las;kj f;klasdj f;kasjdkfl;ajs dfjsa akdsf<br>Line2abc<br />Line3'
-          // Y msg: 'Test for fun! asjdf kasjfd;l a;skdfja;sljdfksadj ;fljas lk;fj sak;lfj las;kj f;klasdj f;kasjdkfl;ajs dfjsa akdsf<br>Line2abc<br>Line3',
-          // Y msg: 'Test for fun! asjdf kasjfd;l <scan style="color:red;">a;skdfja;sljdfksadj </scan>;fljas lk;fj sak;lfj las;kj f;klasdj f;kasjdkfl;ajs dfjsa akdsf<br>Line2abc<br>Line3',
-          msg: 'Test for fun! asjdf kasjfd;l <scan style="color:red;">a;skdfja;sljdfksadj </scan>;fljas <scanSlideRef>lk;fj</scanSlideRef> <img src="/static/work/home-dir/VueVsReact-RisingStarsDotJsDotOrg.png"> sak;lfj las;kj f;klasdj f;kasjdkfl;ajs dfjsa akdsf<br>Line2abc<br>Line3',
+          title: 'Whether as an Software Engineer...',
+          msg: '',
           itemsSub: [
-            {text: 'test1<br>test1.1<br>test1.2'},
-            {text: 'test2<br>test2.1<br>test2.2'},
-            {text: 'test3<br>test3.1<br>test3.2'}
+            {text: 'With Dual-Empahsis in both Software and Hardware Engineering as an Electrical and Computer Engineering Major at U.C. Davis'},
+            {text: 'and Combined 15+ years in Engineering,'},
+            {text: 'I specialize in both Web Full-Stack (Software) and Robotics (Software & Hardware) Development.'}
           ]
         },
         {
-          title: 'Who let the dog out?',
-          msg: 'I do not know, dude.',
+          title: '...Or as a Teacher for Software & Hardware Engineering,...',
+          msg: '',
           itemsSub: [
-            // {text: 'test1a<br>test1.1<br>te<scanSlideRef>st1.2</scanSlideRef>'},
-            {text: 'test1a<br>test1.1<br>test1.2'},
-            {text: 'test2a<br>test2.1<br>test2.2'},
-            {text: 'test3a<br>test3.1<br>test3.2'}
+            {text: 'With Professional Experience as a Teacher, Speaker and Communicator through Training from both Mills College (CA State Teacher Credential) and Western Seminary\'s Master of Arts Program (Homiletics\' Top Honors)'},
+            {text: 'and Cummulative 10+ years in Public & Private School Teaching,'},
+            {text: 'I enjoy Encouraging and Empowering People through Teaching.'}
           ]
         },
         {
-          title: '肚子好餓?',
-          msg: '吃芭樂啦！',
+          title: '...I seek to Serve in either One of the above Two Occupations.',
+          msg: '',
           itemsSub: [
-            {text: 'test1b<br>test1.1<br>test1.2'},
-            {text: 'test2b<br>test2.1<br>test2.2'},
-            {text: 'test3b<br>test3.1<br>test3.2'}
-          ]
-        },
-        {
-          title: 'Find hotels?',
-          msg: 'Trivago！',
-          itemsSub: [
-            {text: 'test1c<br>test1.1<br>test1.2'},
-            {text: 'test2c<br>test2.1<br>test2.2'},
-            {text: 'test3c<br>test3.1<br>test3.2'}
+            {text: 'Kindly Preview the above Tabs of Personal Projects showcasing Core Technologies from either the JavaScript or Python Ecosystem.'}
           ]
         }
+
       ]
     }
   }
