@@ -103,7 +103,7 @@ export default new Vuex.Store({
         [
           {text: '&#9656; California Mathematics Single-Subject Professional Clear Credentialed.'},
           {text: '&#9656; “Mid-Career Math & Science Teacher Preparation” Specialized Track.'},
-          {text: '&#9656; Special Intership in Partnership with Stanford University\'s Resources & Research.'}
+          {text: '&#9656; Student-Teaching in Partnership with Stanford University -and- Institute for Research on Learning (IRL), Palo Alto CA.'}
         ],
         skills_groups:
         [
@@ -413,7 +413,7 @@ export default new Vuex.Store({
 
                 skill_childs:
                 [
-                  { text: '&#9656; Using Game Engine Technology to Teach Computer Science Principles.' },
+                  { text: '&#9656; Pioneered \'Integrative Dual-Hemispheres Whole-Brain\' Pedagogy (as inspired by Stanford University\'s Research) by Teaching Abstract, Complex Computer-Concepts using Concrete, Intuitive Casual Video-Games (e.g. Flappy Bird) to Engage & Feed the Cognitive/Analytical Side of Learning, while the Entertaining/Competitive Qualities of the Gaming Experience Engages & Stimulates the Affective/Emotive Side of Learning.</a>' },
                   { text: '&#9656; Python for 3D Minecraft , Lua for Roblox and JavaScript for Construct 2.' },
                   { text: '&#9656; Flagship Class-Project “Itty Bitty Jr in Mutant Madness" Published on 2 Major App Stores:' },
                   { text: '&nbsp; &nbsp; &#9656; <a href="https://itunes.apple.com/ee/app/itty-bitty-jr-in-mutant-madness/id946673546?mt=8" class="urlLink" target="_blank" style="color:blue;text-decoration-line: underline;">Apple App Store (iOS)</a>' },
