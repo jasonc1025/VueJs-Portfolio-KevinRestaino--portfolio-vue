@@ -63,7 +63,7 @@ export default new Vuex.Store({
         [
           {
             skills_group_group_name: 'Teaching Subject Matter',
-            skills_group_group_text: '<span style="text-align:center;">The above two Upper-Divsion Projects -- Networks and MicoControllers -- nurtured my passsion for <br>Web Full-Stack and Robotics/Electronics, respectively.</span>',
+            skills_group_group_text: '<span style="text-align:center;">The above two Upper-Divsion Projects -- Networks and MicoControllers -- nurtured my passsion for <br>Web Full-Stack and Robotics, respectively.</span>',
             skills_group_name: null,
             skills_group_text: null,
             skills_group_timePeriod: {
@@ -185,7 +185,7 @@ export default new Vuex.Store({
       {
         job_group_name: 'Teaching Experience #1 of 5',
         job_group_text: '(Descending Order with Most Current First)',
-        job_title: 'Co-Founder, Instructor & Curriculum Engineer: Web Full-Stack & Robotics/Electronics',
+        job_title: 'Co-Founder, Instructor & Curriculum Engineer: Web Full-Stack & Robotics',
         // N job_company: 'Encourage and Empower (<scanEandE>EandE</scanEandE>)',
         // N job_company: 'Encourage and Empower (<scan class="eandeStyle">EandE</scan>)',
         // Y job_company: 'Encourage and Empower (<scan style="color: red;font-weight:500;">EandE</scan>)',
@@ -200,7 +200,7 @@ export default new Vuex.Store({
         job_childs:
         [
           { text: '&#9656; Traditionally, I\'ve enjoyed coding and teaching Java, C#, and C++ -- among many other Linux-Based tools.' },
-          { text: '&#9656; Yet due to the global pervasiveness of Web/Cloud-Services and Robotics/Electronics-Devices, Stack Overflow\'s 2018 Global Survey of 100K Developers concludes that two Open-Source languages -- JavaScript and Python -- have taken the world by storm, at least for these past several years <a href="https://insights.stackoverflow.com/survey/2018" class="skillUrl" target="_blank" style="color:blue;text-decoration-line:underline;font-size:75%">[https://insights.stackoverflow.com/survey/2018]</a>.' },
+          { text: '&#9656; Yet due to the global pervasiveness of Web/Cloud-Services and Robotics, Stack Overflow\'s 2018 Global Survey of 100K Developers concludes that two Open-Source languages -- JavaScript and Python -- have taken the world by storm, at least for these past several years <a href="https://insights.stackoverflow.com/survey/2018" class="skillUrl" target="_blank" style="color:blue;text-decoration-line:underline;font-size:75%">[https://insights.stackoverflow.com/survey/2018]</a>.' },
           { text: '&#9656; Thus from <scan style="color:red;font-weight:500;">EandE</scan>\'s Instructional R&D Lab (as based at my home/garage since 2004), I wish to present a portfolio of Industry-Inspired, Student-Based Projects that feature JavaScript and/or Python, along with their respective core API libraries (as noted below).  Below, the blue buttons link to live demo sites.' }
         ],
 

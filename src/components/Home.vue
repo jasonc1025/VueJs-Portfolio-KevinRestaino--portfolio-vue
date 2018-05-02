@@ -7,7 +7,7 @@
     <ul style="list-style:disc;">
       <li>Since <scanBold>Co-Founding</scanBold> an <scanBold>Educational-Tech R&D Center</scanBold> -- <a href="http://www.eande.world/" class="urlLink" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">Encourage and Empower (EandE)</a> -- in 2004 at my home/garage, I've enjoyed serving as <scanBold>Sr. Instructor and Curriculum-Engineer</scanBold> where we developed <scanBold>"T.A.C.H.nology® Robotics w/ Arduino & Raspberry Pi"</scanBold> as Silicon Valley's 1st Open-Source, Competition-Grade & Lower-Cost Alternative to LEGO®, TETRIX® & VEX® Robotics.</li>
 
-      <li><scanBold>Innovations</scanBold> behind our Educational Robotics System include:
+      <li><scanBold>Innovations</scanBold> behind our Educational Robotics System include (more details, photos and short videos can be found at <a href="http://www.eande.world/" class="urlLink" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">EandE</a>):
         <ul style="list-style:disc; margin-left:2em;">
           <li>Creative S.T.E.A.M.-Based Hardware-Chassis that integrates "T.echnology, A.rts & C.rafts... H.olistically" to inspire Industry-Grade Robotics to even Middle School students, as showcased at <scanBold>San Jose's Tech Museum and Bay Area's Maker Faire Premier Showroom</scanBold> (campus attracted 100k+ spectators),</li>
           <li>Industry-Leading Cloud-Based Raspbery-Pi Remote-Control System (Python & C++) that helped lead to a <scanBold>1-year alliance with Siemens-eMeter in Foster City</scanBold> to collaborate on Web Full-Stack Technologies (JavaScript & Python) for their Cloud-Based Energy Smart-Grids, and</li>
@@ -29,7 +29,7 @@
       <li>Thus our students do not passively-settle as 'industry-learners' -- but rather -- actively-contribute as 'industry-innovators' in responsibly building a stronger community... for life.</li>
       <br>
       <li>Traditionally, I've enjoyed coding and teaching <scanBold>Java, C#, C++ & C</scanBold> -- among many other Linux-Based languages/toolsets.</li>
-      <li>Yet due to the global pervasiveness of Web/Cloud-Services and Robotics/Electronics, Stack Overflow's 2018 Global Survey of 100K Developers concludes that two Open-Source Languages -- <scanBold>JavaScript</scanBold> and <scanBold>Python</scanBold> -- have taken our world by 'storm', at least for these past several years <scanSlideRef>(Slide #2)</scanSlideRef>.</li>
+      <li>Yet due to the global pervasiveness of Web/Cloud-Services and Robotics, Stack Overflow's 2018 Global Survey of 100K Developers concludes that two Open-Source Languages -- <scanBold>JavaScript</scanBold> and <scanBold>Python</scanBold> -- have taken our world by 'storm', at least for these past several years <scanSlideRef>(Slide #2)</scanSlideRef>.</li>
       <li>Thus from our <a href="http://www.eande.world/" class="urlLink" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">Encourage and Empower's (EandE) Instructional R&D Lab</a>  (as based at my home/garage since 2004), I wish to present this <scanBold>Online Portfolio</scanBold> of <scanBold>JavaScript & Python Curriculum-Based Projects</scanBold> to spark our <scanBold>Student's Innovation</scanBold> within the <scanBold>Open-Source Ecosystem.</scanBold>.</li>
       <br>
       
@@ -134,7 +134,9 @@ export default {
         {
           title: 'How are you?',
           // msg: 'Test for fun! asjdf kasjfd;l \n\n\n a;skdfja;sljdfksadj ;fljas lk;fj sak;lfj las;kj f;klasdj f;kasjdkfl;ajs dfjsa akdsf<br>Line2abc<br />Line3'
-          msg: 'Test for fun! asjdf kasjfd;l a;skdfja;sljdfksadj ;fljas lk;fj sak;lfj las;kj f;klasdj f;kasjdkfl;ajs dfjsa akdsf<br>Line2abc<br>Line3',
+          // Y msg: 'Test for fun! asjdf kasjfd;l a;skdfja;sljdfksadj ;fljas lk;fj sak;lfj las;kj f;klasdj f;kasjdkfl;ajs dfjsa akdsf<br>Line2abc<br>Line3',
+          // Y msg: 'Test for fun! asjdf kasjfd;l <scan style="color:red;">a;skdfja;sljdfksadj </scan>;fljas lk;fj sak;lfj las;kj f;klasdj f;kasjdkfl;ajs dfjsa akdsf<br>Line2abc<br>Line3',
+          msg: 'Test for fun! asjdf kasjfd;l <scan style="color:red;">a;skdfja;sljdfksadj </scan>;fljas <scanSlideRef>lk;fj</scanSlideRef> <img src="/static/work/home-dir/VueVsReact-RisingStarsDotJsDotOrg.png"> sak;lfj las;kj f;klasdj f;kasjdkfl;ajs dfjsa akdsf<br>Line2abc<br>Line3',
           itemsSub: [
             {text: 'test1<br>test1.1<br>test1.2'},
             {text: 'test2<br>test2.1<br>test2.2'},
@@ -145,6 +147,7 @@ export default {
           title: 'Who let the dog out?',
           msg: 'I do not know, dude.',
           itemsSub: [
+            // {text: 'test1a<br>test1.1<br>te<scanSlideRef>st1.2</scanSlideRef>'},
             {text: 'test1a<br>test1.1<br>test1.2'},
             {text: 'test2a<br>test2.1<br>test2.2'},
             {text: 'test3a<br>test3.1<br>test3.2'}
@@ -176,13 +179,12 @@ export default {
 
 <style scoped lang="scss">
 
-$fontSize_Bullet: small;
-$fontSize_Header: large;
-$fontSize_Url: small;
-$backgroundColor_LightGrey: #d9d9d9;  // rgb(217, 217, 217);
-$backgroundColor_DarkGrey: #bbb;  // rgb(187, 187, 187);
-$backgroundColor_Black: #000000 ;  // rgba(0, 0, 0, 1)
-
+  $fontSize_Bullet: small;
+  $fontSize_Header: large;
+  $fontSize_Url: small;
+  $backgroundColor_LightGrey: #d9d9d9;  // rgb(217, 217, 217);
+  $backgroundColor_DarkGrey: #bbb;  // rgb(187, 187, 187);
+  $backgroundColor_Black: #000000 ;  // rgba(0, 0, 0, 1)
 
   .urlLink {
     font-size: $fontSize_Url;
@@ -226,15 +228,12 @@ $backgroundColor_Black: #000000 ;  // rgba(0, 0, 0, 1)
     }
   }
 
- scanBold {
-   font-weight:500;
- }
   scanBold {
-   font-weight:500;
- } 
- scanSlideRef {
-   color: red;
-   font-weight:500;
- }
+    font-weight:500;
+  } 
+  scanSlideRef {
+    color: red;
+    font-weight:500;
+  }
 
 </style>
