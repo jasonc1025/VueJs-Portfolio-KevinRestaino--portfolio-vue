@@ -1,6 +1,6 @@
 .DS_Store
 node_modules/
-dist/
+#[jwc] Try to not ignore and allow upload to GitHub so local changes to 'accordion-menu' will be used: dist/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
