@@ -314,7 +314,7 @@ ul {
   .jobGroup{
     // [jwc] too major of a group for such a light color; use darkest background since most major group: background-color: #ccc;  // light-grey
     background-color: $backgroundColor_Black;
-    color:lightgray;
+    color: white; // orig, need white for clearest printout: lightgray;
     padding: 1.5em;  // was 2.0em
     margin-top: 1em;
     margin-bottom: 0.5em;

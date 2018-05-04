@@ -40,7 +40,7 @@ export default {
 
 <style lang="scss">
 html {
-  background-color: #f1f1f1;
+  background-color: rgb(255, 255, 255); // orig, need more white for clearest printing background: #f1f1f1;
   box-sizing: border-box;
   overflow-y: scroll;
   // [jwc] NOT NEEDED, AS SETTING AT <BODY> IS SUFFICIENT:  font-size: 40px;  //[test]
@@ -143,7 +143,7 @@ body {
 }
 
 a {
-  color: #888;
+  color: black;  // orig, need black for best printout: #888;
   text-decoration: none;
 }
 
