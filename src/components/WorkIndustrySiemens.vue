@@ -50,102 +50,104 @@ export default {
 </script>
 
 <style scoped lang="scss">
-h1 {
-  // [jwc]+2 color: red;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: left;
-  text-decoration: underline;
-  color:blue;}
-h2 {
-  // [jwc]+2 color: red;
-  font-size: 16px;
-  font-weight: 200;
-  text-align: left;
-}
-b { 
-    font-weight: bold;
-}
+  @import '../scss/_workStyleSheet.scss';
 
-.ulStyle {
-  display: flex;
-  flex-wrap: wrap;
+// h1 {
+//   // [jwc]+2 color: red;
+//   font-size: 16px;
+//   font-weight: 400;
+//   text-align: left;
+//   text-decoration: underline;
+//   color:blue;}
+// h2 {
+//   // [jwc]+2 color: red;
+//   font-size: 16px;
+//   font-weight: 200;
+//   text-align: left;
+// }
+// b { 
+//     font-weight: bold;
+// }
 
-  li {
-    width: 100%;
+// .ulStyle {
+//   display: flex;
+//   flex-wrap: wrap;
 
-    & + li {
-      margin-top: 36px;
-    }
+//   li {
+//     width: 100%;
 
-    a {
-      display: block;
-      position: relative;
-    }
+//     & + li {
+//       margin-top: 36px;
+//     }
 
-    h3 {
-      color: #fff;
-      font-size: 28px;
-      font-weight: 100;
-      margin-top: -9px;
-      opacity: 0;
-      padding: 0 16px;
-      position: absolute;
-      text-align: center;
-      // [jwc]+1 transform: translateY(-18px);
-      transform: translateY(-100px);
-      // [jwc] transition: 0.3s;
-      transition:1s;
-      top: 45%;  // [jwc] was 50% (too low)
-      width: 100%;
-      z-index: 1;
-    }
+//     a {
+//       display: block;
+//       position: relative;
+//     }
 
-    .imageContainer {
-      border-radius: 3px;
-      overflow: hidden;
-      position: relative;
+//     h3 {
+//       color: #fff;
+//       font-size: 28px;
+//       font-weight: 100;
+//       margin-top: -9px;
+//       opacity: 0;
+//       padding: 0 16px;
+//       position: absolute;
+//       text-align: center;
+//       // [jwc]+1 transform: translateY(-18px);
+//       transform: translateY(-100px);
+//       // [jwc] transition: 0.3s;
+//       transition:1s;
+//       top: 45%;  // [jwc] was 50% (too low)
+//       width: 100%;
+//       z-index: 1;
+//     }
 
-      &.loaded {
-        box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.35);
-      }
+//     .imageContainer {
+//       border-radius: 3px;
+//       overflow: hidden;
+//       position: relative;
 
-      &::after {
-        background-color: rgba(0,0,0,0);
-        border-radius: inherit;
-        content: '';
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        transition: 0.3s;
-        width: 100%;
-      }
-    }
+//       &.loaded {
+//         box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.35);
+//       }
 
-    .lazy {
-      min-height: 450px;
-    }
+//       &::after {
+//         background-color: rgba(0,0,0,0);
+//         border-radius: inherit;
+//         content: '';
+//         height: 100%;
+//         left: 0;
+//         position: absolute;
+//         top: 0;
+//         transition: 0.3s;
+//         width: 100%;
+//       }
+//     }
 
-    img {
-      display: block;
-      height: auto;
-      max-width: 100%;
-    }
+//     .lazy {
+//       min-height: 450px;
+//     }
 
-    a:hover {
-      h3 {
-        opacity: 1;
-        transform: translateY(0);
-      }
+//     img {
+//       display: block;
+//       height: auto;
+//       max-width: 100%;
+//     }
 
-      .imageContainer::after {
-        background-color: rgba(0,0,0,0.85);
-      }
-    }
-    .button:hover {
-    opacity: 0.5;
-    }
-  }
-}
+//     a:hover {
+//       h3 {
+//         opacity: 1;
+//         transform: translateY(0);
+//       }
+
+//       .imageContainer::after {
+//         background-color: rgba(0,0,0,0.85);
+//       }
+//     }
+//     .button:hover {
+//     opacity: 0.5;
+//     }
+//   }
+// }
 </style>
