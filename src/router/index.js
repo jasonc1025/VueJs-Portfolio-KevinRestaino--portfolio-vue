@@ -10,6 +10,7 @@ import Project from '@/components/Project.vue'
 import Home from '@/components/Home'
 import Vision from '@/components/Vision'
 import Resume from '@/components/Resume'
+import ResumeShort from '@/components/ResumeShort'
 import Error from '@/components/Error'
 
 Vue.use(Router)
@@ -66,6 +67,11 @@ export default new Router({
       path: '/Resume',
       name: 'Resume',
       component: Resume
+    },
+    {
+      path: '/ResumeShort',
+      name: 'ResumeShort',
+      component: ResumeShort
     },
     {
       path: '/work/:category/:slug',
