@@ -294,7 +294,7 @@ export default new Vuex.Store({
           {
             skills_group_group_name: null,
             skills_group_group_text: null,
-            skills_group_name: '&#9656; Other Robotics Taught:',
+            skills_group_name: '&#9656; Other Robotics Taught',
             skills_group_text: null,
             skills_group_timePeriod: {
               from: null,
@@ -304,7 +304,7 @@ export default new Vuex.Store({
             skills:
             [
               {
-                skill_head: 'Lego EV3/NXT2:',
+                skill_head: 'Lego EV3/NXT2',
                 skill_body: null,
                 skill_link: null,
                 skill_link_tab_index: null,
@@ -315,7 +315,7 @@ export default new Vuex.Store({
                 ]
               },
               {
-                skill_head: 'FTC Tetrix:',
+                skill_head: 'FTC Tetrix',
                 skill_body: null,
                 skill_link: null,
                 skill_link_tab_index: null,
@@ -367,7 +367,7 @@ export default new Vuex.Store({
             skills:
             [
               {
-                skill_head: 'CS 110: C Programming:',
+                skill_head: 'CS 110: C Programming',
                 skill_body: null,
                 skill_link: null,
                 skill_link_tab_index: null,
@@ -394,7 +394,7 @@ export default new Vuex.Store({
             skills:
             [
               {
-                skill_head: 'T.A.C.H.nology® Robotics w/ Arduino & Raspberry Pi:',
+                skill_head: 'T.A.C.H.nology® Robotics w/ Arduino & Raspberry Pi',
                 skill_body: null,
                 skill_link: null,
                 skill_link_tab_index: null,
@@ -406,7 +406,7 @@ export default new Vuex.Store({
                 ]
               },
               {
-                skill_head: 'Computer Science: “Game-ON Programming-2-Publishing”:',
+                skill_head: 'Computer Science: “Game-ON Programming-2-Publishing”',
                 skill_body: null,
                 skill_link: null,
                 skill_link_tab_index: null,
@@ -437,7 +437,7 @@ export default new Vuex.Store({
             skills:
             [
               {
-                skill_head: 'Programming & Robotics:',
+                skill_head: 'Programming & Robotics',
                 skill_body: null,
                 skill_link: null,
                 skill_link_tab_index: null,
