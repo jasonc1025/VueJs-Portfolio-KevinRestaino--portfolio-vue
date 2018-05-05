@@ -1,0 +1,15 @@
+// _globalStyleSheet.scss
+
+// [test]
+// $fontSize_Bullet: small;
+// $fontSize_Header: large;
+// $fontSize_Url: small;
+$fontSize_Bullet: 80%; // a little too small: 75%; // does not real-time adapt, not relative enough: smaller; // 80%; // 40%; // 80%;  // smaller;  // 20px;
+$fontSize_Standard: 100%; // does not real-time adapt, not relative enough: medium; 
+$fontSize_Header: 125%; // does not real-time adapt, not relative enough: larger;  // 40px;
+$fontSize_Footer: 80%; // does not real-time adapt, not relative enough: smaller;  // 20px;
+$fontSize_Url: 80%; // a little too small: 75%; // does not real-time adapt, not relative enough: smaller;  // 20px;
+
+$backgroundColor_LightGrey: #d9d9d9;  // rgb(217, 217, 217);
+$backgroundColor_DarkGrey: #bbb;  // rgb(187, 187, 187);
+$backgroundColor_Black: #000000 ;  // rgba(0, 0, 0, 1)

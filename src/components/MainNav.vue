@@ -66,7 +66,7 @@ export default {
   align-items: center;
   display: flex;
   justify-content: center;
-  margin: 9px auto 26px;
+  // not seem to be needed: margin: 9px auto 26px;
 
   a {
     border-bottom: 1px solid transparent;

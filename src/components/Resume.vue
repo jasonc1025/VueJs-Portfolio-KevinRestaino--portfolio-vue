@@ -188,18 +188,20 @@ export default {
 
 <style scoped lang="scss">
 
-// [test]
-// $fontSize_Bullet: small;
-// $fontSize_Header: large;
-// $fontSize_Url: small;
-$fontSize_Bullet: smaller; // 80%; // 40%; // 80%;  // smaller;  // 20px;
-$fontSize_Standard: medium; 
-$fontSize_Header: larger;  // 40px;
-$fontSize_Url: smaller;  // 20px;
+  @import '../scss/_globalStyleSheet.scss';
 
-$backgroundColor_LightGrey: #d9d9d9;  // rgb(217, 217, 217);
-$backgroundColor_DarkGrey: #bbb;  // rgb(187, 187, 187);
-$backgroundColor_Black: #000000 ;  // rgba(0, 0, 0, 1)
+// // [test]
+// // $fontSize_Bullet: small;
+// // $fontSize_Header: large;
+// // $fontSize_Url: small;
+// $fontSize_Bullet: smaller; // 80%; // 40%; // 80%;  // smaller;  // 20px;
+// $fontSize_Standard: medium; 
+// $fontSize_Header: larger;  // 40px;
+// $fontSize_Url: smaller;  // 20px;
+
+// $backgroundColor_LightGrey: #d9d9d9;  // rgb(217, 217, 217);
+// $backgroundColor_DarkGrey: #bbb;  // rgb(187, 187, 187);
+// $backgroundColor_Black: #000000 ;  // rgba(0, 0, 0, 1)
 
 ul {
   text-align: left;  // was 'center'

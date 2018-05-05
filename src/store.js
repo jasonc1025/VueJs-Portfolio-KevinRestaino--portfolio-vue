@@ -103,7 +103,7 @@ export default new Vuex.Store({
         [
           {text: '&#9656; California Mathematics Single-Subject Professional Clear Credentialed.'},
           {text: '&#9656; “Mid-Career Math & Science Teacher Preparation” Specialized Track.'},
-          {text: '&#9656; Student-Teaching in Partnership with Stanford University -and- Institute for Research on Learning (IRL), Palo Alto CA.'}
+          {text: '&#9656; Student-Teaching with Stanford University -and- Institute for Research on Learning (IRL), Palo Alto CA.'}
         ],
         skills_groups:
         [
@@ -220,7 +220,7 @@ export default new Vuex.Store({
             skills:
             [
               {
-                skill_head: 'React:',
+                skill_head: '&#9656; React:',
                 skill_body: 'JS Frontend: Apollo, Axios, Enzyme, Express, Gatsby, GraphQL, Jest, MongoDB, Particles.js, Redux',
                 skill_link: 'projects-react/',
                 skill_link_tab_index: '1',
@@ -232,7 +232,7 @@ export default new Vuex.Store({
               },
               {
                 // -- Archive: Vuetify
-                skill_head: 'Vue.js:',
+                skill_head: '&#9656; Vue.js:',
                 skill_body: 'JS Frontend: Apollo, Axios, Express, GraphQL, MongoDB, Nuxt, Stripe, SVG Grapics, TweenJs, Vuex',
                 skill_link: 'projects-vue-js/',
                 skill_link_tab_index: '2',
@@ -243,18 +243,18 @@ export default new Vuex.Store({
                 ]
               },
               {
-                skill_head: 'Node.js:',
+                skill_head: '&#9656; Node.js:',
                 skill_body: 'JS Backend: Axios, Express, MongoDB, Mongoose, Passport, Socket.io, WebSocket',
                 skill_link: 'projects-node-js/',
                 skill_link_tab_index: '3'
               },
               {
-                skill_head: 'Cloud/Servers:',
+                skill_head: '&#9656; Cloud/Servers:',
                 skill_body: 'Backend: Amazon AWS/EB, Digital Ocean NginX/Apache, Google-Firebase, Heroku, Netlify, Zeit-Now',
                 skill_link: null
               },
               {
-                skill_head: 'Others:',
+                skill_head: '&#9656; Others:',
                 skill_body: 'Python: Bottle, Flask -- JavaScript: Bootstrap, CSS, Highcharts, HTML, JQuery, SQL, Webpack',
                 skill_link: null
               }
@@ -275,7 +275,7 @@ export default new Vuex.Store({
             skills:
             [
               {
-                skill_head: 'Award-Winning Coding Editor:',
+                skill_head: '&#9656; Award-Winning Coding Editor:',
                 skill_body: 'Google\'s \'Blockly Drag-n-Drop\' Programmer (2016 \'Code for the Kingdom\' 2 Innovative Awards)',
                 skill_link: 'projects-robotics/',
                 skill_link_tab_index: '4',
@@ -304,7 +304,7 @@ export default new Vuex.Store({
             skills:
             [
               {
-                skill_head: 'Lego EV3/NXT2',
+                skill_head: '&#9656; Lego EV3/NXT2',
                 skill_body: null,
                 skill_link: null,
                 skill_link_tab_index: null,
@@ -315,7 +315,7 @@ export default new Vuex.Store({
                 ]
               },
               {
-                skill_head: 'FTC Tetrix',
+                skill_head: '&#9656; FTC Tetrix',
                 skill_body: null,
                 skill_link: null,
                 skill_link_tab_index: null,
@@ -341,7 +341,7 @@ export default new Vuex.Store({
             skills:
             [
               {
-                skill_head: 'Full-Stack Web Demo:',
+                skill_head: '&#9656; Full-Stack Web Demo:',
                 skill_body: 'JavaScript & Python Server/Client Programming for their Energy Smart-Grid Prototype',
                 skill_link: 'projects-robotics/',
                 skill_link_tab_index: '4',
@@ -367,7 +367,7 @@ export default new Vuex.Store({
             skills:
             [
               {
-                skill_head: 'CS 110: C Programming',
+                skill_head: '&#9656; CS 110: C Programming',
                 skill_body: null,
                 skill_link: null,
                 skill_link_tab_index: null,
@@ -394,7 +394,7 @@ export default new Vuex.Store({
             skills:
             [
               {
-                skill_head: 'T.A.C.H.nology® Robotics w/ Arduino & Raspberry Pi',
+                skill_head: '&#9656; T.A.C.H.nology® Robotics w/ Arduino & Raspberry Pi',
                 skill_body: null,
                 skill_link: null,
                 skill_link_tab_index: null,
@@ -406,7 +406,7 @@ export default new Vuex.Store({
                 ]
               },
               {
-                skill_head: 'Computer Science: “Game-ON Programming-2-Publishing”',
+                skill_head: '&#9656; Computer Science: “Game-ON Programming-2-Publishing”',
                 skill_body: null,
                 skill_link: null,
                 skill_link_tab_index: null,
@@ -437,7 +437,7 @@ export default new Vuex.Store({
             skills:
             [
               {
-                skill_head: 'Programming & Robotics',
+                skill_head: '&#9656; Programming & Robotics',
                 skill_body: null,
                 skill_link: null,
                 skill_link_tab_index: null,
@@ -466,7 +466,7 @@ export default new Vuex.Store({
             skills:
             [
               {
-                skill_head: 'SAT Math, AP Calculus AB, Algebra 1 & 2, Geometry, Trigonometry & Middle School Math',
+                skill_head: '&#9656; SAT Math, AP Calculus AB, Algebra 1 & 2, Geometry, Trigonometry & Middle School Math',
                 skill_body: null,
                 skill_link: null,
                 skill_link_tab_index: null,
@@ -549,13 +549,15 @@ export default new Vuex.Store({
         job_ageRange: 'Middle School',
         job_childs:
         [
-          { text: '&#9656; Five classes totaling over 125 students/day: three mainstream 7th grades, one sheltered 7th grade, and one mainstream 6th grade using Prentice Hall Middle Grade Courses 1 & 2.' }
+          { text: '&#9656; Five classes totaling over 125 students/day: three mainstream 7th grades, one sheltered 7th grade, and one mainstream 6th grade using Prentice Hall Middle Grade Courses 1 & 2.' },
+          { text: '&#9656; Reason for Leaving: Though approved for renewal to continue teaching at John Muir Middle, personally felt the need for higher training to be better equipped to serve our local community.  Thus enrolled into Western Seminary Masters program (see \'Education\' above).' }
         ],
         skills_groups:
         [
           {
             skills_group_group_name: null,
-            skills_group_group_text: '<span style="text-align:center;">Though approved for renewal to continue teaching at John Muir Middle, personally felt the need for higher training to be better equipped to serve our local community.  Thus enrolled into Western Seminary Masters program (see \'Education\' above).</span>',
+            // skills_group_group_text: '<span style="text-align:center;">Though approved for renewal to continue teaching at John Muir Middle, personally felt the need for higher training to be better equipped to serve our local community.  Thus enrolled into Western Seminary Masters program (see \'Education\' above).</span>',
+            skills_group_group_text: null,
             skills_group_name: null,
             skills_group_text: null,
             skills_group_timePeriod: {
@@ -593,13 +595,15 @@ export default new Vuex.Store({
         },
         job_childs:
         [
-          { text: '&#9656; Network TCP/IP Traffic & Route Diagnostics for Fibre Channel FCIP; Firmware & ASIC Co-Simulation Verification; Brocade and Ancor FC-Switch Systems Analysis.' }
+          { text: '&#9656; Network TCP/IP Traffic & Route Diagnostics for Fibre Channel FCIP; Firmware & ASIC Co-Simulation Verification; Brocade and Ancor FC-Switch Systems Analysis.' },
+          { text: '&#9656; Reason for Leaving: This served as an interim position, while seekeing a teaching position -- that later being an Intern position at Grace Community Covenant Church. (see \'Teaching Experience\' above).' }
         ],
         skills_groups:
         [
           {
             skills_group_group_name: null,
-            skills_group_group_text: '<span style="text-align:center;">This served as an interim position, while seekeing a teaching position -- that later being an Intern position at Grace Community Covenant Church. (see \'Teaching Experience\' above).</span>',
+            // skills_group_group_text: '<span style="text-align:center;">This served as an interim position, while seekeing a teaching position -- that later being an Intern position at Grace Community Covenant Church. (see \'Teaching Experience\' above).</span>',
+            skills_group_group_text: null,
             skills_group_name: null,
             skills_group_text: null,
             skills_group_timePeriod: {
@@ -637,13 +641,15 @@ export default new Vuex.Store({
         },
         job_childs:
         [
-          { text: '&#9656; Implemented FoxPro Relational Database for Satellite Tracking Operations; Integrated C and C++ modules for Database Manipulation.' }
+          { text: '&#9656; Implemented FoxPro Relational Database for Satellite Tracking Operations; Integrated C and C++ modules for Database Anaylysis.' },
+          { text: '&#9656; Reason for Leaving: Though work has been an extremely positive experience, personally felt inspired to work more directly with people -- especially after volunteering over 6 years teaching and mentoring youths in my local community.  Thus, enrolled into Mills College for the Teacher Credentialing program. (see \'Education\' above).' }
         ],
         skills_groups:
         [
           {
             skills_group_group_name: null,
-            skills_group_group_text: '<span style="text-align:center;">Though work has been an extremely positive experience, personally felt inspired to work more directly with people -- especially after volunteering over 6 years teaching and mentoring youths in my local community.  Thus, enrolled into Mills College for the Teacher Credentialing program. (see \'Education\' above).</span>',
+            // skills_group_group_text: '<span style="text-align:center;">Though work has been an extremely positive experience, personally felt inspired to work more directly with people -- especially after volunteering over 6 years teaching and mentoring youths in my local community.  Thus, enrolled into Mills College for the Teacher Credentialing program. (see \'Education\' above).</span>',
+            skills_group_group_text: null,
             skills_group_name: null,
             skills_group_text: null,
             skills_group_timePeriod: {
