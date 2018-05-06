@@ -28,9 +28,9 @@
       <button class="button fontSizeChange_Button" v-on:click="fontSize++">
         Font Size: +
       </button>
-      <scan class="fontSizeChange_TextStatus" v-bind:style="[fontSizeChange_00_Style, fontSizeChange_01_Style, { fontSize: fontSize + 'px' }]">
+      <p class="fontSizeChange_TextStatus" v-bind:style="[fontSizeChange_00_Style, fontSizeChange_01_Style, { fontSize: fontSize + 'px' }]">
         Font Size: {{ fontSize }}
-      </scan> 
+      </p> 
     </div>     
         
     </footer>
