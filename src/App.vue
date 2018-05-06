@@ -56,7 +56,7 @@ export default {
         color: 'red'
       },
       fontSizeChange_01_Style: {
-        color: 'black'
+        color: '#ccc' // 'grey'  // 'black'
       }
 
     }
@@ -233,6 +233,8 @@ export default {
   }
   .fontSizeChange_Button{
     margin-left: 1em;
+    border-width: 0px;
+    color: #ccc;
   }
 
   .fontSizeChange_TextStatus{
