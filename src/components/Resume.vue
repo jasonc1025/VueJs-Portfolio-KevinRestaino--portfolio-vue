@@ -7,6 +7,8 @@
       <li v-for="(job_) in jobs" :key='job_.id'>
 
         <div v-if="job_.job_group_name!=null" class="jobGroup">
+          <!-- N <p class="jobGroupName">** {{ key }}</p>
+          <p class="jobGroupName">*** {{ job_.id }}</p> -->
           <p class="jobGroupName">{{ job_.job_group_name }}</p>
           <p class="jobGroupText">{{ job_.job_group_text }}</p>
         </div>
@@ -87,14 +89,14 @@
               <div class="buttonGroup">
                 <!-- Y <router-link class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','00')">{{ skill_.skill_head }}:</router-link> -->
                 <!-- ? <router-link class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','`${ skill_.skill_link_tab_num }`')">{{ skill_.skill_head }}:</router-link> -->
-                <router-link v-if="skill_.skill_link_tab_index==='0'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','00')">{{ skill_.skill_head }}</router-link>
-                <router-link v-if="skill_.skill_link_tab_index==='1'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','01')">{{ skill_.skill_head }}</router-link>
-                <router-link v-if="skill_.skill_link_tab_index==='2'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','02')">{{ skill_.skill_head }}</router-link>
-                <router-link v-if="skill_.skill_link_tab_index==='3'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','03')">{{ skill_.skill_head }}</router-link>
-                <router-link v-if="skill_.skill_link_tab_index==='4'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','04')">{{ skill_.skill_head }}</router-link>
+                <router-link v-if="skill_.skill_link_tab_index==='0'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','00')" v-html="skill_.skill_head"></router-link>
+                <router-link v-if="skill_.skill_link_tab_index==='1'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','01')" v-html="skill_.skill_head"></router-link>
+                <router-link v-if="skill_.skill_link_tab_index==='2'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','02')" v-html="skill_.skill_head"></router-link>
+                <router-link v-if="skill_.skill_link_tab_index==='3'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','03')" v-html="skill_.skill_head"></router-link>
+                <router-link v-if="skill_.skill_link_tab_index==='4'"  class="button skillHead" tag="a" :to="`${ skill_.skill_link }`" @click.native="store.commit('tabModeSet','04')" v-html="skill_.skill_head"></router-link>
                 <!-- Y <a v-if="skill_.skill_link_tab_index==='5'"  class="button skillHead" href="http://www.eande.world">{{ skill_.skill_head }}:</a> -->
                 <!-- <a N v-if="skill_.skill_link_tab_index==='5'"  class="button skillHead" :href="`$(skill_.skill_link)`">{{ skill_.skill_link }}:</a> -->
-                <a v-if="skill_.skill_link_tab_index==='5'"  class="button skillHead" href="http://www.eande.world" target="_blank">{{ skill_.skill_head }}:</a>
+                <a v-if="skill_.skill_link_tab_index==='5'"  class="button skillHead" href="http://www.eande.world" target="_blank" v-html="skill_.skill_head">:</a>
                 <span class="skillBody">{{ skill_.skill_body }}</span>
               </div>
 
@@ -112,7 +114,7 @@
             <div v-else-if="skill_.skill_head != null && skill_.skill_link == null">
 
               <div>
-                <b class="skillHead">{{ skill_.skill_head }}</b>
+                <b class="skillHead" v-html="skill_.skill_head"></b>
                 <span class="skillBody">{{ skill_.skill_body }}</span>
               </div>
 
@@ -194,10 +196,10 @@ export default {
 // // $fontSize_Bullet: small;
 // // $fontSize_Header: large;
 // // $fontSize_Url: small;
-// $fontSize_Bullet: smaller; // 80%; // 40%; // 80%;  // smaller;  // 20px;
-// $fontSize_Standard: medium; 
-// $fontSize_Header: larger;  // 40px;
-// $fontSize_Url: smaller;  // 20px;
+// $fontSize_Bullet: 80%; // a little too small: 75%; // does not real-time adapt, not relative enough: smaller; // 80%; // 40%; // 80%;  // smaller;  // 20px;
+// $fontSize_Standard: 100%; // does not real-time adapt, not relative enough: medium; 
+// $fontSize_Header: 125%; // does not real-time adapt, not relative enough: larger;  // 40px;
+// $fontSize_Url: 80%; // a little too small: 75%; // does not real-time adapt, not relative enough: smaller;  // 20px;
 
 // $backgroundColor_LightGrey: #d9d9d9;  // rgb(217, 217, 217);
 // $backgroundColor_DarkGrey: #bbb;  // rgb(187, 187, 187);
@@ -336,7 +338,7 @@ ul {
 
   .skillsGroupGroup{
     // padding: 0.5em;
-    margin-bottom: 1em;
+    // not needed anymore, save space: margin-bottom: 1em;
     // [jwc]reserve shading for major sections, this minor section use grey-line: background-color: #d9d9d9;  // light-grey 
     // background-color: #ccc;  // light-grey 
     background-color: $backgroundColor_LightGrey;  // lighter-grey 
@@ -386,13 +388,15 @@ ul {
   .skillsGroup{
     font-weight: 300;
     // font-size: medium;
-    margin: 1em 1em 1em 1.5em;  // [jwc] change margin-left: 2em;
+    // margin: 1em 1.5em 1em 1.5em;  // [jwc] change margin-left: 2em;
+    margin: 0em 1.5em 0em 1.5em;  // [jwc] change margin-left: 2em;
   }
   // Enough to provide margin-left for 'skillBody-non-button' row to left-indent up to 'skillBody-button' row
   .skillsGroupHead{
     font-weight: 400;
     // margin-left: 1em;
     margin-right: 0.5em;
+    margin-top: 0.5em;
     // font-size: large;
     // background-color: yellow;  // to help highlight important positions
     background-color: $backgroundColor_LightGrey;  // to help highlight important positions,  #d9d9d9
@@ -410,7 +414,7 @@ ul {
   }
   .skillsGroupTimePeriod, .skillsGroupAgeRange{
     font-size: $fontSize_Bullet;
-    color: #aaa;  // [jwc] better ligher shading vs. 'font-weight'
+    // keep default for best contrast: color: #aaa;  // [jwc] better ligher shading vs. 'font-weight'
   }
 
   .skill{
