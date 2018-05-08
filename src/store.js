@@ -63,7 +63,7 @@ export default new Vuex.Store({
         [
           {
             skills_group_group_name: 'Teaching Subject Matter',
-            skills_group_group_text: '<span style="text-align:center;">The above two Upper-Divsion Projects -- Networks and MicoControllers -- nurtured my passsion for <br>Web Full-Stack and Robotics, respectively.</span>',
+            skills_group_group_text: '<span style="text-align:center;">The above two Upper-Division Projects -- Networks and MicroControllers -- nurtured my passion for <br>Web Full-Stack and Robotics, respectively.</span>',
             skills_group_name: null,
             skills_group_text: null,
             skills_group_timePeriod: {
@@ -109,7 +109,7 @@ export default new Vuex.Store({
         [
           {
             skills_group_group_name: 'Teaching Pedagogy & Classroom Management:',
-            skills_group_group_text: '<span style="text-align:center;">Mills College\'s relationship with Stanford University equiped me to teach over a decade in settings <br>from a San Leandro public school\'s 120+ students/day to East Palo Alto inner-city youth projects.</span>',
+            skills_group_group_text: '<span style="text-align:center;">Mills College\'s relationship with Stanford University equipped me to teach over a decade in settings <br>from a San Leandro public school\'s 120+ students/day to East Palo Alto inner-city youth projects.</span>',
             skills_group_name: null,
             skills_group_text: null,
             skills_group_timePeriod: {
@@ -201,7 +201,7 @@ export default new Vuex.Store({
         [
           { text: '&#9656; Traditionally, I\'ve enjoyed coding and teaching Java, C#, and C++ -- among many other Linux-Based tools.' },
           { text: '&#9656; Yet due to the global pervasiveness of Web/Cloud-Services and Robotics, Stack Overflow\'s 2018 Global Survey of 100K Developers concludes that two Open-Source languages -- JavaScript and Python -- have taken the world by storm, at least for these past several years <a href="https://insights.stackoverflow.com/survey/2018" class="skillUrl" target="_blank" style="color:blue;text-decoration-line:underline;font-size:75%">[https://insights.stackoverflow.com/survey/2018]</a>.' },
-          { text: '&#9656; Thus from <scan style="color:red;font-weight:500;">EandE</scan>\'s Instructional R&D Lab (as based at my home/garage since 2004), I wish to present a portfolio of Industry-Inspired, Curriculum-Based Projects that feature JavaScript and/or Python, along with their respective core API libraries (as noted below).  Below, the blue buttons link to live demo sites.' }
+          { text: '&#9656; Thus from <scan style="color:red;font-weight:500;">EandE</scan>\'s Instructional R&D Lab (as based at my home/garage since 2004), I wish to present a portfolio of Industry-Inspired, Curriculum-Based Projects that feature JavaScript and/or Python, along with their respective core API libraries (as noted below).  Below, the aqua-blue buttons link to live demo sites.' }
         ],
 
         skills_groups:
@@ -233,7 +233,7 @@ export default new Vuex.Store({
               {
                 // -- Archive: Vuetify
                 skill_head: '&#9656; Vue.js:',
-                skill_body: 'JS Frontend: Apollo, Axios, Express, GraphQL, MongoDB, Nuxt, Stripe, SVG Grapics, TweenJs, Vuex',
+                skill_body: 'JS Frontend: Apollo, Axios, Express, GraphQL, MongoDB, Nuxt, Stripe, SVG Graphics, TweenJs, Vuex',
                 skill_link: 'projects-vue-js/',
                 skill_link_tab_index: '2',
 
@@ -264,7 +264,7 @@ export default new Vuex.Store({
             skills_group_group_name: null,
             skills_group_group_text: null,
             skills_group_name: '&#9656; Silicon Valley\'s 1st Open-Source, Competition-Grade & Lower-Cost Alternative to LEGO®, TETRIX® & VEX® Robotics',
-            skills_group_text: '&#9656; As Showcased at Tech Museum (2014), San Jose -&- Maker Faire\'s Premiere Showroom, Bay Area (2015-2016)...<br>' +
+            skills_group_text: '&#9656; As Showcased at Tech Museum (2014), San Jose -&- Maker Faire\'s Premiere Showroom, Bay Area (2015-2016)<br>' +
                                '&#9656; <span style="font-weight:400"><u>T</u>.<u>A</u>.<u>C</u>.<u>H</u>.nology® Robotics w/ Arduino & Raspberry Pi</span><br>' +
                                '&#9656; Combining "<span style="font-weight:400"><u>T</u>.</span>echnology, <span style="font-weight:400"><u>A</u>.</span>rts & <span style="font-weight:400"><u>C</u>.</span>rafts... <span style="font-weight:400"><u>H</u>.</span>olistically" for Middle School, High School & College',
             skills_group_timePeriod: {
@@ -284,7 +284,7 @@ export default new Vuex.Store({
                 [
                   // * Both 'class="skillUrl"' not seem to work, weird.  There do inline-style.
                   {text: '&#9656; S.T.E.A.M. (Science, Tech, Engineering, Arts & Math) Curriculum'},
-                  {text: '&#9656; Web Full-Stack Remote-Control System using Rasberry Pi (JS, Python)'},
+                  {text: '&#9656; Web Full-Stack Remote-Control System using Raspberry Pi (JS, Python)'},
                   {text: '&#9656; Designed for M.assively E.ngaged C.o-op C.ompetition (M.E.C.C.®) Events'},
                   {text: '&#9656; More info on T.A.C.H.nology® Robotics at <scan style="color:red;font-weight:500;">EandE</scan>\'s Main Site: <a href="http://www.eande.world" class="skillUrl" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">http://www.EandE.world</a>'}
                 ]
@@ -311,7 +311,7 @@ export default new Vuex.Store({
 
                 skill_childs:
                 [
-                  {text: '&#9656; 1st Place & Top 5 Overall: Single-Sonar Line-Tracking at RoboGame\'s Jr-League, Lead Coach (<scan style="color:red;font-weight:500;">EandE</scan> Team, 2012 & 2013)'}
+                  {text: '&#9656; 1st & Top 5 Overall: Single-Sonar Line-Tracking at RoboGame Jr., Coach (<scan style="color:red;font-weight:500;">EandE</scan>, 2012 & 2013)'}
                 ]
               },
               {
@@ -322,7 +322,7 @@ export default new Vuex.Store({
 
                 skill_childs:
                 [
-                  {text: '&#9656; 1st Place: First Tech Challenge (FTC) Regionals, Lead Software Coach (King\'s Academy Robotics Team, Sunnyvale, 2016)'}
+                  {text: '&#9656; 1st: First Tech Challenge (FTC) Regionals, Software Coach (King\'s Academy Robotics, Sunnyvale, 2016)'}
                 ]
               }
             ]
@@ -374,8 +374,7 @@ export default new Vuex.Store({
 
                 skill_childs:
                 [
-                  { text: '&#9656; A Fundamental Prerequisite Course.' },
-                  { text: '&#9656; Though for only one semester, this teaching opportunity serves as a "baby first-step" for <scan style="color:red;font-weight:500;">EandE</scan> establishing Collegiate Alliances for Open-Source R&D Collaboration among Staff & Students.' }
+                  { text: '&#9656; A Fundamental Prerequisite Course.  Though for only one semester, this teaching opportunity serves as a strategic first-step for <scan style="color:red;font-weight:500;">EandE</scan> establishing Collegiate Alliances for Open-Source R&D Collaboration among Staff & Students.' }
                 ]
               }
             ]
@@ -401,8 +400,7 @@ export default new Vuex.Store({
 
                 skill_childs:
                 [
-                  { text: '&#9656; Students showcased at Maker Faire\'s Premiere Showroom (2015-2016) and Robotics Showroom (2017), drawing over 100k spectators during the 2-day event.' },
-                  { text: '&#9656; Further details of curriculum as explained above.' }
+                  { text: '&#9656; Students showcased at Maker Faire\'s Premiere Showroom (2015-2016) and Robotics Showroom (2017), drawing over 100k spectators during the 2-day event (further details of curriculum explained above).' }
                 ]
               },
               {
@@ -418,7 +416,7 @@ export default new Vuex.Store({
                   { text: '&#9656; Flagship Class-Project “Itty Bitty Jr in Mutant Madness" Published on 2 Major App Stores:' },
                   { text: '&nbsp; &nbsp; &#9656; <a href="https://itunes.apple.com/ee/app/itty-bitty-jr-in-mutant-madness/id946673546?mt=8" class="urlLink" target="_blank" style="color:blue;text-decoration-line: underline;">Apple App Store (iOS)</a>' },
                   { text: '&nbsp; &nbsp; &#9656; <a href="https://play.google.com/store/apps/details?id=org.EncourageAndEmpower.IttyBittyJrInMutantMadness" class="urlLink" target="_blank" style="color:blue;text-decoration-line: underline;">Google Play (Android)</a>' },
-                  { text: '&#9656; Above Project also Showcased at Maker Faire\'s Young Makers Regionals at S.J.\'s The Tech Museum and S.F.\'s Exploratoriuim.' }
+                  { text: '&#9656; Above Showcased at Maker Faire\'s Young Makers Regionals at S.J.\'s The Tech Museum and S.F.\'s Exploratoriuim.' }
                 ]
               }
             ]
@@ -641,7 +639,7 @@ export default new Vuex.Store({
         },
         job_childs:
         [
-          { text: '&#9656; Implemented FoxPro Relational Database for Satellite Tracking Operations; Integrated C and C++ modules for Database Anaylysis.' },
+          { text: '&#9656; Implemented FoxPro Relational Database for Satellite Tracking Operations; Integrated C and C++ modules for Database Analysis.' },
           { text: '&#9656; Reason for Leaving: Though work has been an extremely positive experience, personally felt inspired to work more directly with people -- especially after volunteering over 6 years teaching and mentoring youths in my local community.  Thus, enrolled into Mills College for the Teacher Credentialing program. (see \'Education\' above).' }
         ],
         skills_groups:
