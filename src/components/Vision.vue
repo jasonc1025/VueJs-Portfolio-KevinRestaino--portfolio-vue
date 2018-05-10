@@ -12,22 +12,22 @@
       <li><scanBold>Innovations</scanBold> behind our Educational Robotics System include (more details, photos and short videos can be found at <a href="http://www.eande.world/" class="urlLink" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">EandE</a>):
         <ul style="list-style:disc; margin-left:2em;">
           <li>Creative S.T.E.A.M.-Based Hardware-Chassis that integrates "T.echnology, A.rts & C.rafts... H.olistically" to inspire Industry-Grade Robotics to even Middle School students, as showcased at <scanBold>San Jose's Tech Museum and Bay Area's Maker Faire Premier Showroom</scanBold> (campus attracted 100k+ spectators),</li>
-          <li>Industry-Leading Cloud-Based Raspbery-Pi Remote-Control System (Python & C++) that helped lead to a <scanBold>1-year alliance with Siemens-eMeter in Foster City</scanBold> to collaborate on Web Full-Stack Technologies (JavaScript & Python) for their Cloud-Based Energy Smart-Grids, and</li>
+          <li>Industry-Leading Cloud-Based Raspberry-Pi Remote-Control System (Python & C++) that helped lead to a <scanBold>1-year alliance with Siemens-eMeter in Foster City</scanBold> to collaborate on Web Full-Stack Technologies (JavaScript & Python) for their Cloud-Based Energy Smart-Grids, and</li>
           <li>Award-Winning Google-Based 'Blockly Drag-n-Drop' C++ Coding Editor (JavaScript & Python) that opened an opportunity to serve as <scanBold>Adjunct Professor for CS110 'C 'Programming at Cogswell Polytechnical College in San Jose</scanBold>.</li>
         </ul>
       </li>
-      <li>These above experiences have inspired my R&D efforts at EandE to form the following <scanBold>Vision to Encourage and Empower</scanBold> our students regarding the <scanBold>#1 Hi-Tech Career Path… Web Development <scanSlideRef>(refer below to Slide #1)</scanSlideRef></scanBold>.</li>          
+      <li>These above experiences have inspired my R&D efforts at EandE to form the following <scanBold>Vision to Encourage and Empower</scanBold> our students regarding the <scanBold>#1 Hi-Tech Career Path… Web/Cloud Development <scanSlideRef>(refer below to Slide #1)</scanSlideRef></scanBold>.</li>          
 
     </ul>
     <!-- <br> -->
 
 
-    <h1>...Inspires a Progressive Vision for<br>Students as 'Industry-Innovator' through Computer Science</h1>
+    <h1>...Inspires a Progressive Vision for<br>Students as 'Web/Cloud-Innovators' through Computer Science</h1>
     <!-- <br> -->
 
     <ul style="list-style:disc;">
-      <li>As <scanBold>Open-Source Technology</scanBold> matures and becomes more mainstreamed into industy, students in Computer Science  -- especially for Colleges and Secondary Schools with limited resources -- are more freed from the previous struggle of playing 'catch-up' to a once 'closed-source, limited-access & high-cost' Hi-Tech field of the past.</li>
-      <li>And by properly harnessing this world-wide <scanBold>Open-Source Revolution</scanBold>, students can 1) be empowered to actually innovate with the 'best-of-the-best'… world-wide -- irregardless of age or socio-economic background -- and subsequently 2) be encouraged to give back to society through <scanBold>Open-Source Collaboration</scanBold>.</li>
+      <li>As <scanBold>Open-Source Web/Cloud Technologies</scanBold> mature and become more mainstreamed into industry, students in Computer Science  -- especially for Colleges and Secondary Schools with limited resources -- are more freed from the previous struggle of playing 'catch-up' to a once 'closed-source, limited-access & high-cost' Hi-Tech field of the past.</li>
+      <li>And by properly harnessing this global <scanBold>Open-Source Revolution</scanBold>, students can 1) be empowered to innovate with the 'best-of-the-best' world-wide -- regardless of age or socio-economic background -- and subsequently 2) be encouraged to give back to society through <scanBold>Open-Source Collaboration</scanBold>.</li>
       <li>Thus our students do not passively-settle as 'industry-learners' -- but rather -- actively-contribute as 'industry-innovators' in responsibly building a stronger community... for life.</li>
       <br>
       <li>Traditionally, I've enjoyed coding and teaching <scanBold>Java, C#, C++ & C</scanBold> -- among many other Linux-Based languages/toolsets.</li>
@@ -42,7 +42,7 @@
         </ul>
       </li> -->
 
-      <li>And with regards to the <scanBold>Most Popular Ecosystem: JavaScript</scanBold> <scanSlideRef>(Slide #2)</scanSlideRef>, the following Web Technologies are Showcased:
+      <li>And with regards to the <scanBold>Most Popular Ecosystem: JavaScript</scanBold> <scanSlideRef>(Slide #2)</scanSlideRef>, the following Web/Cloud Technologies are showcased:
         <ul style="list-style:disc; margin-left:2em;">
           <li>Front-end: <scanBold>React</scanBold> and <scanBold>Vue.js</scanBold> as Top 2 Frameworks in Popularity <scanSlideRef>(Slides #3, #4 & #5).</scanSlideRef></li>
           <li>Back-end: <scanBold>Node.js</scanBold> as Industry's #1 De Facto Standard <scanSlideRef>(Slide #6)</scanSlideRef>.</li>          
