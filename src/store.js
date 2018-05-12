@@ -58,9 +58,9 @@ export default new Vuex.Store({
         // },
         job_childs:
         [
-          {text: 'After serving for 10-years as a Motivational-Speaker at my previous church, such as for: '},
-          {text: '&nbsp; &nbsp; &#9656; Family Chapel Services (100+ attendance), Family Retreats (40+) & Jr/Sr High Outreaches (30+),'},
-          {text: 'I seek to serve the next \'10-years\' of my life, Teaching in a more Academic setting that utilizes my:'},
+          {text: 'After serving for 10-years as a Passionate Speaker for a Religious Center, such as in: '},
+          {text: '&nbsp; &nbsp; &#9656; Family Chapel Services (100+ attendance), Family Retreats (50+) & Jr/Sr High Outreaches (30+),'},
+          {text: 'I seek to serve the next \'10-years\' of my life, Teaching in a more Academic Context that utilizes my:'},
           {text: '&nbsp; &nbsp; &#9656; Prior 10-years experience as a \'Web/Cloud and Robotics\' Instructor & Curriculum Engineer and'},
           {text: '&nbsp; &nbsp; &#9656; Dual Teaching-Diplomas from Mills College and Western Seminary, respectively.'}
         ]
@@ -198,15 +198,15 @@ export default new Vuex.Store({
         },
         job_childs:
         [
-          {text: '&#9656; Highest Honor for PTS 514: Expository Sermons.'},
+          {text: '&#9656; Highest Honor for PTS 514: Expository Preaching/Teaching.'},
           {text: '&#9656; Middle & High School Youth and Family Ministry Practicum.'}
         ],
 
         skills_groups:
         [
           {
-            skills_group_group_name: 'Teaching Diploma II: Motivational Speaker',
-            skills_group_group_text: '<span style="text-align:center;">Western Seminary\'s program empowered my service as a Communicator for<br>Family Chapel Services (100+ attendance), Family Retreats (40+) & Jr./Sr. High Outreaches (30+).</span>',
+            skills_group_group_name: 'Teaching Diploma II: Large-Scale Speaking',
+            skills_group_group_text: '<span style="text-align:center;">Western Seminary\'s program empowered my service as a Dynamic Orator for:<br>Family Sunday Services (100+ attendance), High School to Elementary Friday Chapels (50+) & Children Church (50+)</span>',
             skills_group_name: null,
             skills_group_text: null,
             skills_group_timePeriod: {
@@ -545,7 +545,7 @@ export default new Vuex.Store({
 
         job_childs:
         [
-          { text: '&#9656; Motivational Speaker for Family Chapel Services (100+ attendance), Family Retreats (40+) & Jr./Sr. High Outreaches (30+).' },
+          { text: '&#9656; Large-Scale Speaker for Family Chapel Services (100+ attendance), Family Retreats (50+) & Jr./Sr. High Outreaches (30+).' },
           { text: '&#9656; Conducted Workshops to help Immigrant Asian-Parents Bridge Generation & Cultural Gap with Americanized Children.' }
         ]
       },
