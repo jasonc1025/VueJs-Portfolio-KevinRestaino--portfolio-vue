@@ -43,6 +43,58 @@ export default new Vuex.Store({
     jobs: [
 
       {
+        job_group_name: 'Career Objective',
+        job_group_text: null,
+        // job_group_text: 'Seeking the Next Season in my Life as a Teacher/Motivational-Speaker',
+        // job_group_text: '<span style="text-align:center;">After serving for 10-years as a Motivational-Speaker in my Previous Church for <br>&#9656; Family Chapel Services (100+ attendance), Family Retreats (40+) & Jr/Sr Hi Outreaches (30+),<br> I seek to serve the next 10-years of my life, Teaching in a more Academic setting that can better utilize my<br>&#9656;  Prior 10-years experience as a \'Web/Cloud and Robotics\' Instructor & Curriculum Engineer and<br>&#9656; Dual Teaching-Diplomas from Mills College and Western Seminary, respectively.</span>',
+        // job_title: '<span style="text-align:center;">After serving for 10-years as a Motivational-Speaker in my Previous Church for <br>&#9656; Family Chapel Services (100+ attendance), Family Retreats (40+) & Jr/Sr Hi Outreaches (30+),<br> I seek to serve the next 10-years of my life, Teaching in a more Academic setting that can better utilize my<br>&#9656;  Prior 10-years experience as a \'Web/Cloud and Robotics\' Instructor & Curriculum Engineer and<br>&#9656; Dual Teaching-Diplomas from Mills College and Western Seminary, respectively.</span>',
+        job_title: null,
+        job_company: null,
+        job_location: null,
+        job_timePeriod: {
+          from: null,
+          to: null
+        },
+        // },
+        job_childs:
+        [
+          {text: 'After serving for 10-years as a Motivational-Speaker in my Previous Church for '},
+          {text: '&#9656; Family Chapel Services (100+ attendance), Family Retreats (40+) & Jr/Sr High Outreaches (30+),'},
+          {text: 'I seek to serve the next \'10-years\' of my life, Teaching in a more Academic setting that utilizes my'},
+          {text: '&#9656; Prior 10-years experience as a \'Web/Cloud and Robotics\' Instructor & Curriculum Engineer and'},
+          {text: '&#9656; Dual Teaching-Diplomas from Mills College and Western Seminary, respectively.'}
+        ]
+
+        // skills_groups:
+        // [
+        //   {
+        //     skills_group_group_name: null,
+        //     skills_group_group_text: null,
+        //     skills_group_name: null,
+        //     skills_group_text: null,
+        //     skills_group_timePeriod: {
+        //       from: null,
+        //       to: null
+        //     },
+
+        //     skills:
+        //     [
+        //       {
+        //         skill_head: null,
+        //         skill_body: null,
+        //         skill_link: null,
+        //         skill_link_tab_index: null,
+
+        //         skill_childs:
+        //         [
+        //           {text: null}
+        //         ]
+        //       }
+        //     ]
+        //   }
+        // ]
+      },
+      {
         job_group_name: 'Education',
         job_group_text: '(Ascending Order to Tell A Personal Story)',
         job_title: 'B.S. Electrical and Computer Engineering',
@@ -62,8 +114,8 @@ export default new Vuex.Store({
         skills_groups:
         [
           {
-            skills_group_group_name: 'Teaching Subject Matter',
-            skills_group_group_text: '<span style="text-align:center;">The above two Upper-Division Projects -- Networks and MicroControllers -- nurtured my passion for <br>Web Full-Stack and Robotics, respectively.</span>',
+            skills_group_group_name: 'Dual Engineering Major: Software & Hardware',
+            skills_group_group_text: '<span style="text-align:center;">The above two Upper-Division Projects -- Networks and MicroControllers -- nurtured my passion for <br>Web Full-Stack (Software) and Robotics (Hardware), respectively.</span>',
             skills_group_name: null,
             skills_group_text: null,
             skills_group_timePeriod: {
@@ -88,7 +140,6 @@ export default new Vuex.Store({
           }
         ]
       },
-
       {
         job_group_name: null,
         job_group_text: null,
@@ -108,7 +159,7 @@ export default new Vuex.Store({
         skills_groups:
         [
           {
-            skills_group_group_name: 'Teaching Pedagogy & Classroom Management:',
+            skills_group_group_name: 'Teaching Diploma I: Pedagogy & Classroom Management',
             skills_group_group_text: '<span style="text-align:center;">Mills College\'s relationship with Stanford University equipped me to teach over a decade in settings <br>from a San Leandro public school\'s 120+ students/day to East Palo Alto inner-city youth projects.</span>',
             skills_group_name: null,
             skills_group_text: null,
@@ -154,8 +205,8 @@ export default new Vuex.Store({
         skills_groups:
         [
           {
-            skills_group_group_name: 'Teaching Pedagogy II & Higher Purpose',
-            skills_group_group_text: '<span style="text-align:center;">Western Seminary\'s program empowered me further regarding Teaching, Speaking & Communications.<br>Also their Missionary values helped me to Envision Teaching Technology as a Platform from which to Build Community, one Individual at a time.</span>',
+            skills_group_group_name: 'Teaching Diploma II: Motivational Speaker',
+            skills_group_group_text: '<span style="text-align:center;">Western Seminary\'s program empowered my service as a Communicator for<br>Family Chapel Services (100+ attendance), Family Retreats (40+) & Jr./Sr. High Outreaches (30+).</span>',
             skills_group_name: null,
             skills_group_text: null,
             skills_group_timePeriod: {
@@ -249,7 +300,7 @@ export default new Vuex.Store({
                 skill_link_tab_index: '3'
               },
               {
-                skill_head: '&#9656; Cloud/Servers:',
+                skill_head: '&#9656; Cloud/Server:',
                 skill_body: 'Backend: Amazon AWS/EB, Digital Ocean NginX/Apache, Google-Firebase, Heroku, Netlify, Zeit-Now',
                 skill_link: null
               },
@@ -442,7 +493,7 @@ export default new Vuex.Store({
 
                 skill_childs:
                 [
-                  { text: '&#9656; After Volunteer-Teaching for 6 Summers in their Youth Programs, Served as Technology Director for 4-Week Summer Camps serving Inner-City Kids regarding:' },
+                  { text: '&#9656; After Volunteer-Teaching for 6 Summers in their Youth Programs, Served as Technology Coordinator & Lead Instructor for 4-Week Summer Camps serving Inner-City Kids regarding:' },
                   { text: '&#9656;&#9656; Programming: Visual-Coding in Scratch 2.0 by M.I.T. -&- Code Studio by Code.org.' },
                   { text: '&#9656;&#9656; Robotics: Lego NXT2 Robotics.' },
                   { text: '&#9656; Trained and Supervised a Team of Instructors and Assistants.' }
@@ -482,7 +533,7 @@ export default new Vuex.Store({
       {
         job_group_name: 'Teaching Experiences #2 to #5',
         job_group_text: null,
-        job_title: 'Associate Pastor of Youth/Family Ministries',
+        job_title: 'Director & Associate Pastor of Youth/Family Ministries',
         job_company: 'South Bay Chinese Gospel Church',
         job_location: 'Fremont, CA',
         job_url: null,
@@ -494,8 +545,8 @@ export default new Vuex.Store({
 
         job_childs:
         [
-          { text: '&#9656; Teach Sunday School and Sunday Messages for Youth.' },
-          { text: '&#9656; Conducted Workshops to help Immigrant Asian-Parents Bridge the Generation & Cultural Gap with their Americanized Children.' }
+          { text: '&#9656; Motivational Speaker for Family Chapel Services (100+ attendance), Family Retreats (40+) & Jr./Sr. High Outreaches (30+).' },
+          { text: '&#9656; Conducted Workshops to help Immigrant Asian-Parents Bridge Generation & Cultural Gap with Americanized Children.' }
         ]
       },
       {

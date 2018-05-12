@@ -10,7 +10,7 @@
           <!-- N <p class="jobGroupName">** {{ key }}</p>
           <p class="jobGroupName">*** {{ job_.id }}</p> -->
           <p class="jobGroupName">{{ job_.job_group_name }}</p>
-          <p class="jobGroupText">{{ job_.job_group_text }}</p>
+          <p class="jobGroupText" v-html="job_.job_group_text"></p>
         </div>
 
         <div v-if="job_.job_title!=null" class="job">
@@ -19,7 +19,8 @@
               <!-- Y <span class="jobTitle" v-html="job_.job_title">{{ job_.job_title }}</span> -->
               <!-- <span class="jobTitle" style="font-size:30px" v-html="job_.job_title"></span> -->
               <!-- <span class="jobTitle" v-html="job_.job_title"></span> -->
-              <span class="jobTitle" v-html="job_.job_title">{{ job_.job_title }}</span>
+              <!-- <span class="jobTitle" v-html="job_.job_title">{{ job_.job_title }}</span> -->
+              <span class="jobTitle" v-html="job_.job_title"></span>
               <span class="jobTimePeriod">{{ job_.job_timePeriod.from }} – {{ job_.job_timePeriod.to }}</span>
             </li>
             <li class="jobBody">
