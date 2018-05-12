@@ -44,7 +44,7 @@ export default new Vuex.Store({
 
       {
         job_group_name: 'Career Objective',
-        job_group_text: null,
+        job_group_text: '&nbsp;',
         // job_group_text: 'Seeking the Next Season in my Life as a Teacher/Motivational-Speaker',
         // job_group_text: '<span style="text-align:center;">After serving for 10-years as a Motivational-Speaker in my Previous Church for <br>&#9656; Family Chapel Services (100+ attendance), Family Retreats (40+) & Jr/Sr Hi Outreaches (30+),<br> I seek to serve the next 10-years of my life, Teaching in a more Academic setting that can better utilize my<br>&#9656;  Prior 10-years experience as a \'Web/Cloud and Robotics\' Instructor & Curriculum Engineer and<br>&#9656; Dual Teaching-Diplomas from Mills College and Western Seminary, respectively.</span>',
         // job_title: '<span style="text-align:center;">After serving for 10-years as a Motivational-Speaker in my Previous Church for <br>&#9656; Family Chapel Services (100+ attendance), Family Retreats (40+) & Jr/Sr Hi Outreaches (30+),<br> I seek to serve the next 10-years of my life, Teaching in a more Academic setting that can better utilize my<br>&#9656;  Prior 10-years experience as a \'Web/Cloud and Robotics\' Instructor & Curriculum Engineer and<br>&#9656; Dual Teaching-Diplomas from Mills College and Western Seminary, respectively.</span>',
@@ -96,7 +96,7 @@ export default new Vuex.Store({
       },
       {
         job_group_name: 'Education',
-        job_group_text: '(Ascending Order to Tell A Personal Story)',
+        job_group_text: '(Ascending Order to Tell A Chronological Story)',
         job_title: 'B.S. Electrical and Computer Engineering',
         job_company: 'University of California',
         job_location: 'Davis, CA',
