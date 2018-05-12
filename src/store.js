@@ -58,11 +58,11 @@ export default new Vuex.Store({
         // },
         job_childs:
         [
-          {text: 'After serving for 10-years as a Motivational-Speaker in my Previous Church for '},
-          {text: '&#9656; Family Chapel Services (100+ attendance), Family Retreats (40+) & Jr/Sr High Outreaches (30+),'},
-          {text: 'I seek to serve the next \'10-years\' of my life, Teaching in a more Academic setting that utilizes my'},
-          {text: '&#9656; Prior 10-years experience as a \'Web/Cloud and Robotics\' Instructor & Curriculum Engineer and'},
-          {text: '&#9656; Dual Teaching-Diplomas from Mills College and Western Seminary, respectively.'}
+          {text: 'After serving for 10-years as a Motivational-Speaker at my previous church, such as for: '},
+          {text: '&nbsp; &nbsp; &#9656; Family Chapel Services (100+ attendance), Family Retreats (40+) & Jr/Sr High Outreaches (30+),'},
+          {text: 'I seek to serve the next \'10-years\' of my life, Teaching in a more Academic setting that utilizes my:'},
+          {text: '&nbsp; &nbsp; &#9656; Prior 10-years experience as a \'Web/Cloud and Robotics\' Instructor & Curriculum Engineer and'},
+          {text: '&nbsp; &nbsp; &#9656; Dual Teaching-Diplomas from Mills College and Western Seminary, respectively.'}
         ]
 
         // skills_groups:
