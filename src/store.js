@@ -58,7 +58,7 @@ export default new Vuex.Store({
         // },
         job_childs:
         [
-          {text: 'After serving for 10-years as a Passionate Speaker for a Religious Center, such as in: '},
+          {text: 'After serving for 10-years as a \'Passionate\' Speaker at a Religious Center for: '},
           {text: '&nbsp; &nbsp; &#9656; Family Chapel Services (100+ attendance), Family Retreats (50+) & Jr/Sr High Outreaches (30+),'},
           {text: 'I seek to serve the next \'10-years\' of my life, Teaching in a more Academic Context that utilizes my:'},
           {text: '&nbsp; &nbsp; &#9656; Prior 10-years experience as a \'Web/Cloud and Robotics\' Instructor & Curriculum Engineer and'},
