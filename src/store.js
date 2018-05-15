@@ -46,8 +46,8 @@ export default new Vuex.Store({
         job_group_name: 'Career Objective',
         job_group_text: '&nbsp;',
         // job_group_text: 'Seeking the Next Season in my Life as a Teacher/Motivational-Speaker',
-        // job_group_text: '<span style="text-align:center;">After serving for 10-years as a Motivational-Speaker in my Previous Church for <br>&#9656; Family Chapel Services (100+ attendance), Family Retreats (40+) & Jr/Sr Hi Outreaches (30+),<br> I seek to serve the next 10-years of my life, Teaching in a more Academic setting that can better utilize my<br>&#9656;  Prior 10-years experience as a \'Web/Cloud and Robotics\' Instructor & Curriculum Engineer and<br>&#9656; Dual Teaching-Diplomas from Mills College and Western Seminary, respectively.</span>',
-        // job_title: '<span style="text-align:center;">After serving for 10-years as a Motivational-Speaker in my Previous Church for <br>&#9656; Family Chapel Services (100+ attendance), Family Retreats (40+) & Jr/Sr Hi Outreaches (30+),<br> I seek to serve the next 10-years of my life, Teaching in a more Academic setting that can better utilize my<br>&#9656;  Prior 10-years experience as a \'Web/Cloud and Robotics\' Instructor & Curriculum Engineer and<br>&#9656; Dual Teaching-Diplomas from Mills College and Western Seminary, respectively.</span>',
+        // job_group_text: '<span style="text-align:center;">After serving for 10-years as a Motivational-Speaker in my Previous Church for <br>&#9656; Family Chapel Services (100+ attendance), Family Retreats (40+) & Jr/Sr Hi Outreaches (30+),<br> I seek to serve the next 10-years of my life, Teaching in a more Academic setting that can better utilize my<br>&#9656;  Prior 10-years experience as a \'Web and Robotics\' Instructor & Curriculum Engineer and<br>&#9656; Dual Teaching-Diplomas from Mills College and Western Seminary, respectively.</span>',
+        // job_title: '<span style="text-align:center;">After serving for 10-years as a Motivational-Speaker in my Previous Church for <br>&#9656; Family Chapel Services (100+ attendance), Family Retreats (40+) & Jr/Sr Hi Outreaches (30+),<br> I seek to serve the next 10-years of my life, Teaching in a more Academic setting that can better utilize my<br>&#9656;  Prior 10-years experience as a \'Web and Robotics\' Instructor & Curriculum Engineer and<br>&#9656; Dual Teaching-Diplomas from Mills College and Western Seminary, respectively.</span>',
         job_title: null,
         job_company: null,
         job_location: null,
@@ -61,7 +61,7 @@ export default new Vuex.Store({
           {text: 'After serving for 10-years as a \'Passionate\' Speaker at a Religious Center for: '},
           {text: '&nbsp; &nbsp; &#9656; Family Chapel Services (100+ attendance), Family Retreats (50+) & Jr/Sr High Outreaches (30+),'},
           {text: 'I seek to serve the next \'10-years\' of my life, Teaching in a more Academic Context that utilizes my:'},
-          {text: '&nbsp; &nbsp; &#9656; Prior 10-years experience as a \'Web/Cloud and Robotics\' Instructor & Curriculum Engineer and'},
+          {text: '&nbsp; &nbsp; &#9656; Prior 10-years experience as a \'Web and Robotics\' Instructor & Curriculum Engineer and'},
           {text: '&nbsp; &nbsp; &#9656; Dual Teaching-Diplomas from Mills College and Western Seminary, respectively.'}
         ]
 
@@ -251,7 +251,7 @@ export default new Vuex.Store({
         job_childs:
         [
           { text: '&#9656; Traditionally, I\'ve enjoyed coding and teaching Java, C#, and C++ -- among many other Linux-Based tools.' },
-          { text: '&#9656; Yet due to the global pervasiveness of Web/Cloud-Services and Robotics, Stack Overflow\'s 2018 Global Survey of 100K Developers concludes that two Open-Source languages -- JavaScript and Python -- have taken the world by storm, at least for these past several years <a href="https://insights.stackoverflow.com/survey/2018" class="skillUrl" target="_blank" style="color:blue;text-decoration-line:underline;font-size:75%">[https://insights.stackoverflow.com/survey/2018]</a>.' },
+          { text: '&#9656; Yet due to the global pervasiveness of Web-Services and Robotics, Stack Overflow\'s 2018 Global Survey of 100K Developers concludes that two Open-Source languages -- JavaScript and Python -- have taken the world by storm, at least for these past several years <a href="https://insights.stackoverflow.com/survey/2018" class="skillUrl" target="_blank" style="color:blue;text-decoration-line:underline;font-size:75%">[https://insights.stackoverflow.com/survey/2018]</a>.' },
           { text: '&#9656; Thus from <scan style="color:red;font-weight:500;">EandE</scan>\'s Instructional R&D Lab (as based at my home/garage since 2004), I wish to present a portfolio of Industry-Inspired, Curriculum-Based Projects that feature JavaScript and/or Python, along with their respective core API libraries (as noted below).  Below, the aqua-blue buttons link to live demo sites.' }
         ],
 
