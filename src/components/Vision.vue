@@ -11,7 +11,7 @@
 
       <li><scanBold>Innovations</scanBold> behind our Educational Robotics System include (more details, photos and short videos can be found at <a href="http://www.eande.world/" class="urlLink" target="_blank" style="color:blue;text-decoration-line:underline;font-size:100%">EandE</a>):
         <ul style="list-style:disc; margin-left:2em;">
-          <li>Creative S.T.E.A.M.-Based Hardware-Chassis that integrates "T.echnology, A.rts & C.rafts... H.olistically" to inspire Industry-Grade Robotics to even Middle School students, as showcased at <scanBold>San Jose's Tech Museum and Bay Area's Maker Faire Premier Showroom</scanBold> (campus attracted 100k+ spectators),</li>
+          <li>Creative S.T.E.A.M.-Based Hardware-Chassis that integrates "T.echnology, A.rts & C.rafts... H.olistically" to inspire Industry-Grade Robotics to both Primary & Secondary School students, as showcased at <scanBold>San Jose's Tech Museum and Bay Area's Maker Faire Premier Showroom</scanBold> (campus attracted 100k+ spectators),</li>
           <li>Industry-Leading Cloud-Based Raspberry-Pi Remote-Control System (Python & C++) that helped lead to a <scanBold>1-year alliance with Siemens-eMeter in Foster City</scanBold> to collaborate on Web Full-Stack Technologies (JavaScript & Python) for their Cloud-Based Energy Smart-Grids, and</li>
           <li>Award-Winning Google-Based 'Blockly Drag-n-Drop' C++ Coding Editor (JavaScript & Python) that opened an opportunity to serve as <scanBold>Adjunct Professor for CS110 'C 'Programming at Cogswell Polytechnical College in San Jose</scanBold>.</li>
         </ul>

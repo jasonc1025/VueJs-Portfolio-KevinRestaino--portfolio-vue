@@ -4,8 +4,8 @@
     <header class="header">
       <div class=headerUpper>
         <h1>Jason W Chan</h1>
-        <h2>Web Full-Stack & Robotics Instructor/Developer</h2>
-        <h2>Middle School, High School & Higher Ed</h2>
+        <h2>Web Full-Stack & Robotics Instructor / Developer</h2>
+        <h2>Primary, Secondary & Collegiate Ed</h2>
         <h4>jasonc@eande.world, mobile/text 408-828-5131, <a href="https://www.linkedin.com/in/jasonwchan1025/" class="urlLink" target="_blank">www.linkedin.com/in/jasonwchan1025/</a></h4>
       </div>
       
